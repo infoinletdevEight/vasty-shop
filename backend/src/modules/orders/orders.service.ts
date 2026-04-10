@@ -599,9 +599,9 @@ export class OrdersService {
             return order;
           }
 
-          // Fetch customer details from Supabase Auth
+          // Fetch customer details from the auth users table
           const userResponse: any = await this.db.getUserById(userId);
-          // Handle different response formats from Supabase
+          // Handle different response formats (legacy SDK shapes vs flat row)
           const customer = userResponse?.data?.user || userResponse?.user || userResponse;
 
           if (customer && customer.email) {
