@@ -3,12 +3,17 @@ export type PlanTier = 'free' | 'starter' | 'professional' | 'enterprise';
 export interface SubscriptionPlan {
   id: string;
   name: string;
-  tier: PlanTier;
+  description?: string;
+  tier?: PlanTier;
   price: number;
+  yearlyPrice?: number;
+  currency?: string;
   interval: 'month' | 'year';
   features: string[];
-  limits: PlanLimits;
-  stripePriceId?: string;
+  limits?: PlanLimits;
+  isPopular?: boolean;
+  stripePriceId?: string | null;
+  stripePriceIdYearly?: string | null;
 }
 
 export interface PlanLimits {
@@ -16,6 +21,8 @@ export interface PlanLimits {
   maxProducts: number;
   maxOrders: number;
   maxStorage: number;
+  stores: number;
+  products: number;
 }
 
 export interface Subscription {
@@ -68,10 +75,10 @@ export interface CancelSubscriptionRequest {
 }
 
 const PLAN_LIMITS: Record<PlanTier, PlanLimits> = {
-  free: { maxStores: 1, maxProducts: 10, maxOrders: 50, maxStorage: 100 },
-  starter: { maxStores: 2, maxProducts: 100, maxOrders: 500, maxStorage: 1024 },
-  professional: { maxStores: 5, maxProducts: 1000, maxOrders: 5000, maxStorage: 10240 },
-  enterprise: { maxStores: Infinity, maxProducts: Infinity, maxOrders: Infinity, maxStorage: Infinity },
+  free: { maxStores: 1, maxProducts: 10, maxOrders: 50, maxStorage: 100, stores: 1, products: 10 },
+  starter: { maxStores: 2, maxProducts: 100, maxOrders: 500, maxStorage: 1024, stores: 2, products: 100 },
+  professional: { maxStores: 5, maxProducts: 1000, maxOrders: 5000, maxStorage: 10240, stores: 5, products: 1000 },
+  enterprise: { maxStores: Infinity, maxProducts: Infinity, maxOrders: Infinity, maxStorage: Infinity, stores: Infinity, products: Infinity },
 };
 
 export function getPlanLimits(plan?: PlanTier): PlanLimits {
