@@ -63,7 +63,6 @@ Vasty Shop is an open-source multi-vendor e-commerce marketplace platform. Build
 | **Surge Pricing** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **Rental System** | ✅ | ❌ | ⚠️ Plugin | ❌ | ❌ |
 | **CMS/Blog** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Mobile App** | ✅ Flutter | ✅ Shopify app | ❌ | ❌ | ❌ |
 | **17 Languages** | ✅ | ✅ | ✅ | ⚠️ | ⚠️ |
 | **Self-Hosted** | ✅ Docker | ❌ | ✅ | ✅ | ✅ |
 | **Open Source** | ✅ MIT | ❌ | ✅ GPL | ✅ MIT | ✅ BSD |
@@ -123,7 +122,6 @@ npm run dev
 
 ### Platform
 - **17 Languages** -- AR, BN, DE, EN, ES, FR, HI, ID, IT, JA, KO, MS, PT, RU, TR, UR, ZH
-- **Mobile App** -- Flutter (iOS + Android)
 - **AI** -- Product recommendations, smart search
 - **Blog/CMS** -- Content management
 - **Chat** -- Real-time customer-vendor messaging
@@ -136,7 +134,6 @@ npm run dev
 |-------|------------|
 | **Backend** | NestJS, TypeScript, PostgreSQL (raw SQL), Redis, Socket.io |
 | **Frontend** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
-| **Mobile** | Flutter (iOS, Android) |
 | **Payments** | Stripe, Stripe Connect, PayPal |
 | **AI** | OpenAI (recommendations, search) |
 | **Search** | Qdrant (vector), PostgreSQL (full-text) |
@@ -151,7 +148,6 @@ vasty-shop/
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...
 │   └── migrations/       # PostgreSQL migrations
 ├── frontend/             # React + Vite + Tailwind (17 languages)
-├── mobile/               # Flutter app (iOS + Android)
 ├── shared/               # Shared types and utilities
 └── .github/workflows/    # CI/CD
 ```

@@ -5,4 +5,3 @@ Licensed under the MIT License.
 
 Backend: NestJS, TypeScript, PostgreSQL, Redis, Socket.IO, Stripe, OpenAI
 Frontend: React, Vite, Tailwind CSS, Radix UI, i18next (17 languages)
-Mobile: Flutter, Provider, Dio

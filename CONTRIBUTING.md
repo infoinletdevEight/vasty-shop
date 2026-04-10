@@ -17,5 +17,4 @@ cd frontend && npm install && npm run dev
 ## Code Style
 
 - TypeScript for backend and frontend
-- Dart for mobile (Flutter)
 - Prettier for formatting, ESLint for linting

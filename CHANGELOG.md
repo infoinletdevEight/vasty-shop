@@ -19,8 +19,6 @@
 - Flash sales, campaigns, coupons, gift cards
 - POS system, barcode scanning
 - Delivery management with zone-based pricing
-- 17-language i18n support (web + mobile)
-- Flutter mobile app
 - Real-time notifications and chat
 - Blog and CMS
 - Admin dashboard with analytics
