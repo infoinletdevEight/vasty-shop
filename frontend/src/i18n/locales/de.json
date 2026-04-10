@@ -145,7 +145,8 @@
       "terms": "AGB",
       "privacy": "Datenschutz",
       "contact": "Kontakt"
-    }
+    },
+    "startSelling": "Verkaufen starten"
   },
   "platformNavbar": {
     "howItWorks": "So funktioniert es",
@@ -554,7 +555,13 @@
       "inTransit": "Unterwegs",
       "outForDelivery": "In Zustellung",
       "delivered": "Geliefert"
-    }
+    },
+    "cancelWarning": "This action cannot be undone. The order will be cancelled and you will receive a refund if applicable.",
+    "cancelReasonPlaceholder": "Please tell us why you want to cancel this order...",
+    "cancelFailed": "Failed to cancel order",
+    "confirmCancel": "Yes, Cancel Order",
+    "orderCancelled": "Order cancelled successfully",
+    "cancelReason": "Reason for cancellation"
   },
   "profile": {
     "myProfile": "Mein Profil",
@@ -591,7 +598,8 @@
     "browseProducts": "Produkte durchsuchen",
     "addAllToCart": "Alle zum Warenkorb hinzufügen",
     "shareWishlist": "Wunschliste teilen",
-    "itemsInWishlist": "{{count}} Artikel in der Wunschliste"
+    "itemsInWishlist": "{{count}} Artikel in der Wunschliste",
+    "shareMessage": "Share your wishlist with friends and family"
   },
   "auth": {
     "welcomeBack": "Willkommen zurück",
@@ -601,7 +609,7 @@
     "joinToShop": "Registrieren Sie sich und beginnen Sie mit uns einzukaufen",
     "emailAddress": "E-Mail-Adresse",
     "emailOrUsername": "Email or Username",
-    "fullName": "Full Name",
+    "fullName": "Vollständiger Name",
     "password": "Passwort",
     "confirmPassword": "Passwort bestätigen",
     "newPassword": "New Password",
@@ -1275,7 +1283,8 @@
       "globalScale": "Globale Skalierung",
       "globalScaleDesc": "Bedienen Sie Kunden weltweit mit CDN-Auslieferung.",
       "support247": "24/7 Support",
-      "support247Desc": "KI-Chatbot + menschlicher Support jederzeit."
+      "support247Desc": "KI-Chatbot + menschlicher Support jederzeit.",
+      "viewAllFeatures": "View All Features"
     },
     "marketplacePreview": {
       "badge": "Marktplatz-Vorschau",
@@ -1538,7 +1547,7 @@
       "getItOn": "JETZT BEI",
       "downloadOn": "Laden im",
       "roles": {
-        "admin": "Admin",
+        "admin": "Administrator",
         "vendor": "Verkäufer",
         "customer": "Kunde",
         "delivery": "Lieferung"
@@ -2642,7 +2651,7 @@
       "to": "Bis",
       "customRange": "Benutzerdefinierter Zeitraum",
       "lastGenerated": "Last Generated",
-      "neverGenerated": "Never",
+      "neverGenerated": "Nie",
       "last7Days": "Letzte 7 Tage",
       "last30Days": "Letzte 30 Tage",
       "last90Days": "Letzte 90 Tage",
@@ -2970,7 +2979,7 @@
       "phone": "Enter your phone number",
       "address": "Enter your address",
       "bio": "Tell us about yourself...",
-      "typeDelete": "Type DELETE",
+      "typeDelete": "DELETE eingeben",
       "searchTeamMembers": "Search team members...",
       "teamMemberEmail": "Enter team member email",
       "invitationMessage": "Add a personal message to the invitation...",
@@ -2978,16 +2987,16 @@
       "shopDescription": "Describe your shop...",
       "businessName": "Your Business LLC",
       "streetAddress": "Street address",
-      "city": "City",
-      "state": "State",
-      "country": "Country",
+      "city": "Stadt",
+      "state": "Bundesland",
+      "country": "Land",
       "paypalClientId": "PayPal Client ID",
       "paypalSecret": "PayPal Secret",
       "seoTitle": "Your Shop - Premium Products",
       "seoDescription": "Describe your shop for search engines...",
       "productName": "Enter product name",
       "productDescription": "Describe your product...",
-      "searchCategories": "Search categories...",
+      "searchCategories": "Kategorien suchen...",
       "addTag": "Add tag & press Enter",
       "addFeature": "Add a feature (press Enter)",
       "specificationName": "Specification name",
@@ -2997,13 +3006,13 @@
       "returnCondition": "Add return condition",
       "metaDescription": "Brief description for search results",
       "enterPassword": "Enter password",
-      "deliveryRiderName": "Enter full name",
-      "deliveryRiderEmail": "Enter email address",
+      "deliveryRiderName": "Vollständigen Namen eingeben",
+      "deliveryRiderEmail": "E-Mail-Adresse eingeben",
       "deliveryRiderPhone": "Phone number",
       "createPassword": "Create a password (min 6 chars)",
       "shippingMethodName": "Standard Shipping",
       "zoneDescription": "Brief description of this delivery zone...",
-      "autoFilled": "Auto-filled from order",
+      "autoFilled": "Automatisch aus Bestellung ausgefüllt",
       "reviewSummary": "Summarize your experience",
       "reviewContent": "Share your experience with this shop...",
       "aiPrompt": "Describe your store... e.g., 'A modern fashion boutique for young professionals, with a focus on sustainable and minimalist clothing. Clean, elegant design with lots of whitespace.'",
@@ -3016,7 +3025,7 @@
       "buttonLink": "Button Link",
       "backgroundImageUrl": "Background Image URL",
       "imageUrl": "Image URL",
-      "value": "Value",
+      "value": "Wert",
       "label": "Label",
       "name": "Name",
       "role": "Role (e.g., Verified Buyer)",
@@ -3064,7 +3073,11 @@
       "storefront": "Schaufenster",
       "storefrontBuilder": "Storefront-Builder",
       "logout": "Abmelden",
-      "notifications": "Benachrichtigungen"
+      "notifications": "Benachrichtigungen",
+      "allProducts": "Alle Produkte",
+      "editStorefront": "Edit Storefront",
+      "viewStorefront": "View Storefront",
+      "addProduct": "Produkt hinzufügen"
     },
     "dashboard": {
       "title": "Händler-Dashboard",
@@ -3378,7 +3391,7 @@
       "paidOrders": "paid orders",
       "completed": "completed",
       "perCompletedOrder": "Per completed order",
-      "rating": "Rating",
+      "rating": "Bewertung",
       "revenueOrdersTrend": "Revenue & Orders Trend",
       "monthlyPerformance": "Monthly performance overview",
       "trafficSources": "Traffic Sources",
@@ -3494,9 +3507,9 @@
         "bogoDiscount": "BOGO Discount %",
         "minimumPurchase": "Minimum Purchase Amount",
         "leaveZero": "Leave 0 for no minimum",
-        "preview": "Preview",
+        "preview": "Vorschau",
         "applyTo": "Apply To",
-        "allProducts": "All Products",
+        "allProducts": "Alle Produkte",
         "applyToEntireStore": "Apply to entire store",
         "specificCategories": "Specific Categories",
         "selectCategories": "Select categories",
@@ -3521,6 +3534,16 @@
         "details": "Details",
         "products": "Products",
         "limits": "Limits"
+      },
+      "scheduled": "Geplant",
+      "expired": "Abgelaufen",
+      "all": "Alle",
+      "statuses": {
+        "scheduled": "Geplant",
+        "inactive": "Inaktiv",
+        "expired": "Abgelaufen",
+        "active": "Aktiv",
+        "all": "Alle"
       }
     },
     "campaigns": {
@@ -3554,7 +3577,7 @@
       "impressions": "Impressions",
       "clicks": "Clicks",
       "revenue": "Revenue",
-      "description": "Description",
+      "description": "Beschreibung",
       "campaignType": "Campaign Type",
       "bannerImageUrl": "Banner Image URL",
       "sendEmailNotification": "Send Email Notification",
@@ -3563,7 +3586,7 @@
       "totalImpressions": "Total Impressions",
       "clickThroughRate": "Click Through Rate",
       "campaignRevenue": "Campaign Revenue",
-      "cancel": "Cancel",
+      "cancel": "Abbrechen",
       "ctr": "CTR",
       "flashSale": "Flash Sale",
       "seasonal": "Seasonal",
@@ -3605,41 +3628,41 @@
       "noMethodsConfigured": "No delivery methods configured yet",
       "rate": "Rate",
       "delivery": "Delivery",
-      "carrier": "Carrier",
+      "carrier": "Spediteur",
       "trackingEnabled": "Tracking enabled",
       "enableTracking": "Enable Tracking",
-      "edit": "Edit",
-      "delete": "Delete",
-      "save": "Save",
-      "cancel": "Cancel",
-      "create": "Create",
-      "update": "Update",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "save": "Speichern",
+      "cancel": "Abbrechen",
+      "create": "Erstellen",
+      "update": "Aktualisieren",
       "noDeliveryZones": "No Delivery Zones",
       "noZonesCreated": "No delivery zones created yet",
       "noActiveShipments": "No Active Shipments",
       "noTrackingInfo": "No tracking information added yet",
-      "orderId": "Order ID",
-      "customer": "Customer",
-      "fullName": "Full Name",
-      "email": "Email",
-      "phone": "Phone",
-      "password": "Password",
+      "orderId": "Bestell-ID",
+      "customer": "Kunde",
+      "fullName": "Vollständiger Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "password": "Passwort",
       "shippingMethodName": "Shipping Method Name",
       "zoneDescription": "Zone Description",
       "zoneName": "Zonenname",
       "zoneType": "Zone Type",
-      "city": "City",
-      "state": "State",
-      "country": "Country",
+      "city": "Stadt",
+      "state": "Bundesland",
+      "country": "Land",
       "radius": "Radius",
-      "isActive": "Active",
+      "isActive": "Aktiv",
       "activeMethods": "Active Methods",
       "shippedToday": "Shipped Today",
       "inTransit": "In Transit",
       "avgDeliveryTime": "Avg Delivery Time",
       "days": "days",
       "selectCarrier": "Select Carrier",
-      "trackingNumber": "Tracking Number",
+      "trackingNumber": "Sendungsnummer",
       "estimatedDelivery": "Estimated Delivery",
       "shippingMethod": "Shipping Method",
       "selectMethod": "Select Method",
@@ -3647,7 +3670,7 @@
       "selectDeliveryMan": "Select Delivery Man",
       "deliveryFee": "Liefergebühr",
       "ownDeliveryMan": "Own Delivery Man",
-      "searchOrders": "Search orders...",
+      "searchOrders": "Bestellungen suchen...",
       "searchDeliveryMen": "Search delivery men...",
       "noOrdersFound": "No orders found",
       "noDeliveryMenFound": "No delivery men found",
@@ -3733,7 +3756,51 @@
       "selectDeliveryZoneOpt": "Lieferzone auswählen",
       "noDeliveryZonesAvailable": "Keine Lieferzonen verfügbar.",
       "registerAndSelect": "Registrieren & auswählen",
-      "registering": "Registrierung..."
+      "registering": "Registrierung...",
+      "idCopied": "ID copied",
+      "deliveryMethod": "Liefermethode",
+      "selectOrder": "Select Order",
+      "createZonesDescription": "Create delivery zones to define your service areas",
+      "addShipmentTracking": "Add Shipment Tracking",
+      "deliveryFeeNote": "Leave empty for free delivery",
+      "deliveryManCreatedSuccess": "Delivery man created successfully",
+      "kmCoverageRadius": "km Abdeckungsradius",
+      "zone": "Zone",
+      "autoFilledFromOrder": "Automatisch aus Bestellung ausgefüllt",
+      "myDeliveryMen": "My Delivery Men",
+      "carrierTrackingNote": "Enter the tracking number provided by the carrier",
+      "addDeliveryMenDesc": "Add delivery personnel to manage shipments",
+      "syncFromAuthUsers": "Sync from authenticated users",
+      "noDeliveryMenYet": "No delivery men yet",
+      "deliveryFeeLabel": "Liefergebühr",
+      "customerName": "Kundenname",
+      "addNewDeliveryMan": "Add New Delivery Man",
+      "noZonesAdded": "No zones added",
+      "deliveryPersonCanAccess": "The delivery person can access the app with these credentials",
+      "customerPhone": "Kundentelefon",
+      "standard": "Standard",
+      "pleaseAddZonesFirst": "Please add zones first",
+      "noZoneAssigned": "No zone assigned",
+      "orderSelected": "Order selected",
+      "noDeliveryMenAdded": "No delivery men added",
+      "passwordLabel": "Passwort",
+      "createPassword": "Passwort erstellen",
+      "express": "Express",
+      "deliveryZone": "Lieferzone",
+      "addFirstDeliveryMan": "Add your first delivery man",
+      "noMatchingDeliveryMan": "No matching delivery man",
+      "copyIdToClipboard": "Copy ID to clipboard",
+      "searchDeliveryMan": "Search delivery man",
+      "deliveryAddress": "Lieferadresse",
+      "enterCarrierTracking": "Enter carrier tracking number",
+      "autoGeneratedNote": "This will be auto-generated",
+      "methods": "Methoden",
+      "tracking": "Verfolgung",
+      "autoGeneratedTracking": "Auto-generated tracking number",
+      "registerNewDeliveryMan": "Register New Delivery Man",
+      "deliveryManIdLabel": "Delivery Man ID",
+      "manageYourDeliveryTeam": "Manage your delivery team",
+      "close": "Schließen"
     },
     "team": {
       "title": "Team",
@@ -3824,7 +3891,7 @@
       "invoiceHistory": "Invoice History",
       "noInvoices": "No invoices yet",
       "cancelSubscription": "Cancel Subscription?",
-      "monthly": "Monthly",
+      "monthly": "Monatlich",
       "yearly": "Yearly",
       "savePercent": "Save {{percent}}%",
       "save2Months": "2 Monate gratis",
@@ -3849,8 +3916,8 @@
       "popular": "Popular",
       "default": "Default",
       "expires": "Expires",
-      "description": "Description",
-      "actions": "Actions",
+      "description": "Beschreibung",
+      "actions": "Aktionen",
       "download": "Download",
       "subscriptionPayment": "Subscription payment",
       "cancelConfirmMessage": "Your subscription will remain active until the end of the current billing period. You won't be charged again.",
@@ -3951,14 +4018,14 @@
       "descriptionLabel": "Beschreibung",
       "logoLabel": "Shop-Logo",
       "bannerLabel": "Shop-Banner",
-      "uploadLogo": "Upload Logo",
+      "uploadLogo": "Logo hochladen",
       "uploadBanner": "Upload Banner",
-      "uploading": "Uploading...",
+      "uploading": "Wird hochgeladen...",
       "logoRecommended": "Recommended: 200x200px, max 5MB",
       "bannerRecommended": "Recommended: 1200x400px, max 5MB",
-      "emailLabel": "Email",
-      "phoneLabel": "Phone",
-      "addressLabel": "Address",
+      "emailLabel": "E-Mail",
+      "phoneLabel": "Telefon",
+      "addressLabel": "Adresse",
       "businessInfo": "Geschäftsinformationen",
       "businessNameLabel": "Firmenname *",
       "taxIdLabel": "Steuer-ID / USt-IdNr.",
@@ -3967,9 +4034,9 @@
       "stateLabel": "Bundesland",
       "zipCodeLabel": "Postleitzahl",
       "countryLabel": "Land",
-      "businessPhoneLabel": "Business Phone",
-      "businessEmailLabel": "Business Email",
-      "paymentMethods": "Payment Methods",
+      "businessPhoneLabel": "Geschäftstelefon",
+      "businessEmailLabel": "Geschäfts-E-Mail",
+      "paymentMethods": "Zahlungsmethoden",
       "customerPaymentOptions": "Customer Payment Options",
       "customerPaymentDesc": "Choose which payment methods are available to your customers at checkout",
       "creditCardPayments": "Credit card payments",
@@ -3977,7 +4044,7 @@
       "secretKey": "Secret Key",
       "clientId": "Client ID",
       "paypalPayments": "PayPal payments",
-      "orderConfirmation": "Order Confirmation",
+      "orderConfirmation": "Bestellbestätigung",
       "orderConfirmationDesc": "Send email when order is placed",
       "orderShipped": "Order Shipped",
       "orderShippedDesc": "Send email when order ships",
@@ -4001,7 +4068,7 @@
       "domainDesc": "Configure your shop's subdomain and custom domain for a professional storefront URL.",
       "subdomain": "Subdomain",
       "subdomainDesc": "Your free storefront URL",
-      "checkAvailability": "Check",
+      "checkAvailability": "Prüfen",
       "subdomainAvailable": "is available!",
       "subdomainTaken": "This subdomain is already taken. Try another one.",
       "customDomain": "Custom Domain",
@@ -4279,7 +4346,18 @@
         }
       },
       "errors": {
-        "storeNameExists": "Ein Shop mit diesem Namen existiert bereits"
+        "storeNameExists": "Ein Shop mit diesem Namen existiert bereits",
+        "storeLimitReached": "You have reached the maximum number of stores for your plan. Please upgrade to create more stores."
+      },
+      "limits": {
+        "description": "You have created {{current}} out of {{max}} stores allowed on your {{plan}} plan.",
+        "upgradeButton": "Plan upgraden",
+        "storesUsed": "Stores Used",
+        "unlimited": "Unlimited stores available on your plan",
+        "currentPlan": "Aktueller Plan",
+        "remaining": "You can create {{remaining}} more store(s) ({{max}} total on your plan)",
+        "modalDescription": "You have created {{current}} out of {{max}} stores allowed on your {{plan}} plan. Upgrade your plan to create more stores.",
+        "title": "Store Limit Reached"
       }
     },
     "shopSelection": {
@@ -4497,7 +4575,20 @@
       "discardProduct": "Produkt verwerfen",
       "discardMessage": "Sind Sie sicher, dass Sie dieses Produkt verwerfen möchten? Alle nicht gespeicherten Änderungen gehen verloren.",
       "discard": "Verwerfen",
-      "keepEditing": "Weiter bearbeiten"
+      "keepEditing": "Weiter bearbeiten",
+      "limits": {
+        "currentPlan": "Aktueller Plan",
+        "remaining": "You can add {{remaining}} more product(s) ({{max}} total on your plan)",
+        "unlimited": "Unlimited products available on your plan",
+        "title": "Product Limit Reached",
+        "description": "You have added {{current}} out of {{max}} products allowed on your {{plan}} plan.",
+        "modalDescription": "You have added {{current}} out of {{max}} products allowed on your {{plan}} plan. Upgrade your plan to add more products.",
+        "upgradeButton": "Plan upgraden",
+        "productsUsed": "Products Used"
+      },
+      "errors": {
+        "productLimitReached": "Product limit reached. Please upgrade your plan to add more products."
+      }
     },
     "profile": {
       "backToHome": "Zurück zur Startseite",
@@ -4553,8 +4644,8 @@
       "minutesAgo": "Min. her",
       "hoursAgo": "Std. her",
       "daysAgo": "Tage her",
-"recently": "Kürzlich",
-"customer": "Kunde",
+      "recently": "Kürzlich",
+      "customer": "Kunde",
       "newOrder": "Neue Bestellung",
       "newOrderMsg": "Bestellung #{{orderNumber}} von {{customerName}}",
       "orderProcessing": "Bestellung wird bearbeitet",
@@ -5415,7 +5506,9 @@
       "forDelivery": "Für Lieferpartner",
       "pricingPlans": "Preise & Pläne",
       "payments": "Zahlungen & Abrechnung",
-      "support": "Support & Kontakt"
+      "support": "Support & Kontakt",
+      "paymentsAndBilling": "Payments & Billing",
+      "supportAndContact": "Support & Kontakt"
     },
     "vendorNav": {
       "createStore": "Shop erstellen",
@@ -5427,29 +5520,57 @@
       "mobileApp": "Mobile App Builder",
       "analytics": "Analysen & Berichte",
       "deliverySetup": "Lieferung einrichten",
-      "teamManagement": "Teamverwaltung"
+      "teamManagement": "Teamverwaltung",
+      "analyticsAndReports": "Analytik & Berichte",
+      "orderManagement": "Bestellverwaltung",
+      "gettingStarted": "Erste Schritte",
+      "storeSetup": "Shop-Einrichtung",
+      "productManagement": "Produktverwaltung"
     },
     "customerNav": {
       "browseShop": "Stöbern & Kaufen",
       "cartCheckout": "Warenkorb & Kasse",
       "trackOrders": "Bestellungen verfolgen",
-      "reviewsWishlist": "Bewertungen & Wunschliste"
+      "reviewsWishlist": "Bewertungen & Wunschliste",
+      "accountSetup": "Kontoeinrichtung",
+      "ordersAndTracking": "Bestellungen & Verfolgung",
+      "paymentsAndRefunds": "Zahlungen & Rückerstattungen",
+      "browsingAndSearch": "Durchsuchen & Suchen"
     },
     "deliveryNav": {
       "howDeliveryWorks": "Wie Lieferung funktioniert",
       "deliveryDashboard": "Liefer-Dashboard",
-      "earnings": "Einnahmen & Auszahlungen"
+      "earnings": "Einnahmen & Auszahlungen",
+      "earningsAndPayouts": "Einnahmen & Auszahlungen",
+      "appSetup": "App-Einrichtung",
+      "acceptingOrders": "Bestellungen annehmen",
+      "requirements": "Anforderungen"
     },
     "introduction": {
       "title": "Einführung",
       "welcome": "Willkommen bei <strong>Vasty</strong> — der All-in-One Multi-Vendor E-Commerce-Plattform. Ob Sie Verkäufer sind, der Produkte verkaufen möchte, Kunde, der in mehreren Shops einkauft, oder Lieferpartner, der Geld verdient, dieser Leitfaden deckt alles ab, was Sie wissen müssen.",
       "whatIsVasty": "Was ist Vasty?",
       "features": {
-        "multiVendor": "<strong>Multi-Vendor-Marktplatz</strong> — Mehrere Shops auf einer Plattform",
         "aiPowered": "<strong>KI-gestützte Tools</strong> — Erstellen Sie Shops und Produkte mit KI-Unterstützung",
         "mobileApp": "<strong>Mobile App Builder</strong> — Verwandeln Sie Ihren Shop in eine native App",
         "payments": "<strong>Integrierte Zahlungen</strong> — Sichere Zahlung über Stripe",
-        "delivery": "<strong>Liefernetzwerk</strong> — Integriertes Lieferpartner-System"
+        "delivery": "<strong>Liefernetzwerk</strong> — Integriertes Lieferpartner-System",
+        "securePayments": {
+          "title": "Secure Payments",
+          "desc": "Integrated payment processing with Stripe"
+        },
+        "realTimeTracking": {
+          "title": "Echtzeit-Verfolgung",
+          "desc": "Track orders from placement to delivery"
+        },
+        "multiVendor": {
+          "title": "Multi-Vendor Marketplace",
+          "desc": "Host multiple vendors with independent store management"
+        },
+        "analytics": {
+          "title": "Analytik",
+          "desc": "Detailed insights for vendors and platform performance"
+        }
       },
       "userTypes": "Benutzertypen",
       "table": {
@@ -5474,11 +5595,22 @@
           "/delivery/dashboard"
         ],
         "admin": [
-          "Admin",
+          "Administrator",
           "Plattform verwalten, Shops genehmigen",
           "/admin"
         ]
-      }
+      },
+      "whatIsThisPlatform": "What is {{appName}}?",
+      "platformPoints": [
+        "Vendors can create and manage their online stores",
+        "Customers can discover and buy from multiple vendors",
+        "Delivery partners can fulfill orders and earn money",
+        "All parties benefit from integrated, secure payment processing"
+      ],
+      "platformOverview": "Platform Overview",
+      "welcomeDesc": "Vasty is a comprehensive marketplace platform that connects vendors, customers, and delivery partners. Whether you want to start your online store, buy products from local vendors, or earn money as a delivery partner, Vasty provides all the tools you need.",
+      "platformDesc": "Vasty operates as a multi-vendor marketplace where:",
+      "keyFeatures": "Key Features"
     },
     "quickStart": {
       "title": "Schnellstart",
@@ -5504,6 +5636,37 @@
         "startSellingDesc": "Erstellen Sie Ihren ersten Shop",
         "startShopping": "Einkaufen starten",
         "startShoppingDesc": "Alle Produkte durchsuchen"
+      },
+      "forCustomers": {
+        "steps": [
+          "Create your account or sign in",
+          "Browse products and vendors",
+          "Add items to your cart",
+          "Checkout with your preferred payment method",
+          "Track your order in real-time"
+        ],
+        "title": "For Customers"
+      },
+      "forVendors": {
+        "steps": [
+          "Register as a vendor",
+          "Complete your store setup",
+          "Add your products with images and descriptions",
+          "Configure payment and delivery options",
+          "Start receiving orders!"
+        ],
+        "title": "For Vendors"
+      },
+      "desc": "Get started with Vasty in minutes",
+      "forDelivery": {
+        "title": "For Delivery Partners",
+        "steps": [
+          "Sign up as a delivery partner",
+          "Complete verification and onboarding",
+          "Download the delivery app",
+          "Set your availability and area",
+          "Start accepting delivery requests"
+        ]
       }
     },
     "forVendors": {
@@ -5700,7 +5863,26 @@
           "Kundendemografie",
           "Konversionsraten",
           "Traffic-Quellen"
-        ]
+        ],
+        "items": [
+          {
+            "title": "Sales Reports",
+            "desc": "Track daily, weekly, and monthly sales performance."
+          },
+          {
+            "title": "Customer Insights",
+            "desc": "Understand your customer base and buying patterns."
+          },
+          {
+            "title": "Product Performance",
+            "desc": "See which products sell best and optimize your catalog."
+          },
+          {
+            "title": "Traffic Analytics",
+            "desc": "Monitor store visits and conversion rates."
+          }
+        ],
+        "desc": "Monitor your store's performance with built-in analytics:"
       },
       "deliverySetup": {
         "title": "Lieferung einrichten",
@@ -5735,6 +5917,86 @@
             ]
           ]
         }
+      },
+      "orderManagement": {
+        "items": [
+          {
+            "title": "Order Notifications",
+            "desc": "Receive instant notifications for new orders and respond quickly."
+          },
+          {
+            "title": "Order Processing",
+            "desc": "Update order status as you prepare and ship products to customers."
+          },
+          {
+            "title": "Customer Communication",
+            "desc": "Communicate with customers about their orders through the platform."
+          }
+        ],
+        "desc": "Process and fulfill orders efficiently:",
+        "title": "Bestellverwaltung"
+      },
+      "storeSetup": {
+        "items": [
+          {
+            "title": "Store Logo & Branding",
+            "desc": "Upload a high-quality logo and choose colors that match your brand."
+          },
+          {
+            "title": "Store Description",
+            "desc": "Write a clear, compelling description of what you sell and what makes your store unique."
+          },
+          {
+            "title": "Kontaktinformationen",
+            "desc": "Provide accurate contact details so customers can reach you easily."
+          },
+          {
+            "title": "Business Hours & Policies",
+            "desc": "Set your business hours, shipping policies, and return policies."
+          }
+        ],
+        "desc": "Your store profile is your storefront on Vasty. Make it stand out:",
+        "title": "Shop-Einrichtung"
+      },
+      "gettingStarted": {
+        "steps": [
+          {
+            "title": "Account Registration",
+            "desc": "Create your vendor account with your business email. You'll need to verify your email address before continuing."
+          },
+          {
+            "title": "Business Verification",
+            "desc": "Provide the required business documentation, including tax information and identity verification, to activate your store."
+          },
+          {
+            "title": "Shop-Einrichtung",
+            "desc": "Customize your store profile with branding, logo, description, and contact information."
+          }
+        ],
+        "title": "Getting Started as a Vendor",
+        "desc": "Setting up your store on Vasty is simple. Follow these steps to start selling:"
+      },
+      "productManagement": {
+        "desc": "Add and manage your products effectively:",
+        "title": "Produktverwaltung",
+        "items": [
+          {
+            "title": "Product Listings",
+            "desc": "Create detailed product listings with titles, descriptions, and high-quality images."
+          },
+          {
+            "title": "Pricing & Inventory",
+            "desc": "Set competitive prices and keep stock levels up to date."
+          },
+          {
+            "title": "Categories & Tags",
+            "desc": "Organize products into categories and use tags for better discoverability."
+          },
+          {
+            "title": "Variants & Options",
+            "desc": "Add product variants such as size, color, or material."
+          }
+        ]
       }
     },
     "forCustomers": {
@@ -5788,6 +6050,94 @@
         "title": "Bewertungen & Wunschliste",
         "leaveReviews": "<strong>Bewertungen hinterlassen</strong> — Produkte nach dem Kauf bewerten, um anderen Käufern zu helfen",
         "wishlist": "<strong>Wunschliste</strong> — Produkte für später speichern unter <code>/wishlist</code>"
+      },
+      "accountSetup": {
+        "title": "Kontoeinrichtung",
+        "items": [
+          {
+            "title": "Create Account",
+            "desc": "Sign up with your email or use social login (Google, Facebook) for quick access."
+          },
+          {
+            "title": "Profile Information",
+            "desc": "Add your name, profile picture, and communication preferences."
+          },
+          {
+            "title": "Saved Addresses",
+            "desc": "Add multiple delivery addresses for quick checkout."
+          },
+          {
+            "title": "Zahlungsmethoden",
+            "desc": "Securely save your preferred payment methods for faster purchases."
+          }
+        ],
+        "desc": "Create your customer account and start shopping:"
+      },
+      "orders": {
+        "desc": "Place orders and track them in real time:",
+        "title": "Bestellungen & Verfolgung",
+        "items": [
+          {
+            "title": "Place an Order",
+            "desc": "Add items to your cart and check out with your preferred payment method."
+          },
+          {
+            "title": "Bestellbestätigung",
+            "desc": "Receive instant confirmation with order details and estimated delivery time."
+          },
+          {
+            "title": "Echtzeit-Verfolgung",
+            "desc": "Track your order status from processing to delivery."
+          },
+          {
+            "title": "Bestellverlauf",
+            "desc": "View past orders and reorder favorite items easily."
+          }
+        ]
+      },
+      "payments": {
+        "desc": "Safe and secure payment processing:",
+        "items": [
+          {
+            "title": "Zahlungsmethoden",
+            "desc": "Pay securely with credit/debit cards, digital wallets, or cash on delivery."
+          },
+          {
+            "title": "Secure Transactions",
+            "desc": "All payments are processed securely through Stripe with encryption."
+          },
+          {
+            "title": "Refund Requests",
+            "desc": "Request refunds for eligible orders within the specified timeframe."
+          },
+          {
+            "title": "Refund Processing",
+            "desc": "Approved refunds are returned to the original payment method within 5-10 business days."
+          }
+        ],
+        "title": "Zahlungen & Rückerstattungen"
+      },
+      "browsing": {
+        "items": [
+          {
+            "title": "Search Products",
+            "desc": "Use the search bar to find specific products across all vendors."
+          },
+          {
+            "title": "Browse Categories",
+            "desc": "Explore products by category to discover new items."
+          },
+          {
+            "title": "Filter & Sort",
+            "desc": "Refine results by price, rating, vendor, and more."
+          },
+          {
+            "title": "Wunschliste",
+            "desc": "Save items to your wishlist for later purchase."
+          }
+        ],
+        "desc": "Discover products and vendors that match your needs:",
+        "title": "Durchsuchen & Suchen"
       }
     },
     "forDelivery": {
@@ -5862,6 +6212,91 @@
           "Einnahmen werden vom Verkäufer verwaltet, für den Sie arbeiten",
           "Abgeschlossene Lieferungen und Trinkgeld verfolgen",
           "Lieferverlauf und Leistung anzeigen"
+        ],
+        "items": [
+          {
+            "title": "Base Fare",
+            "desc": "Earn a base fare for each completed delivery."
+          },
+          {
+            "title": "Distance & Time",
+            "desc": "Additional earnings based on delivery distance and time."
+          },
+          {
+            "title": "Trinkgelder",
+            "desc": "Keep 100% of customer tips."
+          },
+          {
+            "title": "Weekly Payouts",
+            "desc": "Receive earnings directly to your bank account every week."
+          }
+        ],
+        "desc": "How you earn and get paid as a delivery partner:"
+      },
+      "acceptingOrders": {
+        "title": "Bestellungen annehmen",
+        "desc": "How to handle delivery requests:",
+        "items": [
+          {
+            "title": "Receive Requests",
+            "desc": "Get notified when a new order is available in your area."
+          },
+          {
+            "title": "Accept or Decline",
+            "desc": "Review order details and choose whether to accept the delivery."
+          },
+          {
+            "title": "Pick Up",
+            "desc": "Navigate to the vendor location and pick up the order."
+          },
+          {
+            "title": "Deliver",
+            "desc": "Navigate to the customer address and complete the delivery."
+          }
+        ]
+      },
+      "appSetup": {
+        "title": "App-Einrichtung",
+        "desc": "Get started with the delivery partner app:",
+        "items": [
+          {
+            "title": "Download the App",
+            "desc": "Download the Vasty delivery app from the App Store or Google Play."
+          },
+          {
+            "title": "Anmelden",
+            "desc": "Log in with your delivery partner credentials."
+          },
+          {
+            "title": "Enable Location",
+            "desc": "Allow location access for order assignment and navigation."
+          },
+          {
+            "title": "Set Availability",
+            "desc": "Toggle your availability to start receiving delivery requests."
+          }
+        ]
+      },
+      "requirements": {
+        "desc": "What you need to become a delivery partner:",
+        "title": "Anforderungen",
+        "items": [
+          {
+            "title": "Age & Documentation",
+            "desc": "Be at least 18 years old with valid government-issued ID."
+          },
+          {
+            "title": "Vehicle",
+            "desc": "Own or have access to a reliable vehicle (car, motorcycle, or bicycle)."
+          },
+          {
+            "title": "Smartphone",
+            "desc": "Have a smartphone to use the delivery app and receive orders."
+          },
+          {
+            "title": "Background Check",
+            "desc": "Pass a background check and driving record review."
+          }
         ]
       }
     },
@@ -5909,7 +6344,12 @@
       },
       "annualDiscount": "15% sparen bei jährlicher Abrechnung",
       "cardTitle": "Vollständige Preisdetails anzeigen",
-      "cardDescription": "Alle Plan-Funktionen vergleichen"
+      "cardDescription": "Alle Plan-Funktionen vergleichen",
+      "customPlans": "Custom Plans",
+      "getStarted": "Get Started",
+      "desc": "Choose the plan that fits your business",
+      "intro": "Vasty offers flexible pricing plans for vendors of all sizes.",
+      "compare": "Compare Plans"
     },
     "paymentsAndBilling": {
       "title": "Zahlungen & Abrechnung",
@@ -5938,7 +6378,50 @@
           "Jederzeit kündigen oder upgraden",
           "Rechnungen zum Download verfügbar"
         ]
-      }
+      },
+      "sections": {
+        "refundPolicy": {
+          "items": [
+            "Refund requests must be made within 14 days of delivery",
+            "Items must be returned in original condition",
+            "Approved refunds are processed within 5-10 business days",
+            "Refunds are issued to the original payment method"
+          ],
+          "desc": "Understanding refunds on Vasty:",
+          "title": "Refund Policy"
+        },
+        "invoicing": {
+          "title": "Invoicing",
+          "items": [
+            "Automatic invoice generation for every order",
+            "Downloadable invoices in PDF format",
+            "Tax information included where applicable",
+            "Access to complete billing history from your account"
+          ],
+          "desc": "Invoices and billing documents:"
+        },
+        "vendorPayouts": {
+          "title": "Vendor Payouts",
+          "items": [
+            "Weekly automatic payouts to your connected bank account",
+            "Minimum payout threshold of $50",
+            "Platform fees are deducted before payout",
+            "Detailed transaction history available in your dashboard"
+          ],
+          "desc": "How and when vendors receive their earnings:"
+        },
+        "paymentMethods": {
+          "title": "Zahlungsmethoden",
+          "desc": "Supported payment methods on the platform:",
+          "items": [
+            "Credit and debit cards (Visa, Mastercard, American Express)",
+            "Digital wallets (Apple Pay, Google Pay)",
+            "Bank transfers for selected regions",
+            "Cash on delivery where available"
+          ]
+        }
+      },
+      "desc": "Learn about payments, billing, and financial operations on Vasty."
     },
     "supportAndContact": {
       "title": "Support & Kontakt",
@@ -5952,8 +6435,59 @@
         "faqsDescription": "Häufige Fragen beantwortet",
         "contactTitle": "Kontaktformular",
         "contactDescription": "Senden Sie uns eine Nachricht"
-      }
-    }
+      },
+      "channels": {
+        "title": "Support Channels",
+        "items": [
+          {
+            "title": "Email Support",
+            "desc": "Send us an email at support@vastyshop.com and we'll respond within 24 hours."
+          },
+          {
+            "title": "Live Chat",
+            "desc": "Chat with our support team in real time from the Help Center."
+          },
+          {
+            "title": "Help Articles",
+            "desc": "Browse our knowledge base for answers to common questions."
+          }
+        ]
+      },
+      "businessHours": {
+        "hours": "Monday - Friday: 9:00 AM - 6:00 PM",
+        "title": "Geschäftszeiten",
+        "note": "Weekend support is available for urgent issues only."
+      },
+      "commonIssues": {
+        "title": "Common Issues",
+        "items": [
+          {
+            "title": "Login Problems",
+            "desc": "Having trouble signing in? Try resetting your password."
+          },
+          {
+            "title": "Payment Issues",
+            "desc": "Payment not going through? Check your card details or try a different method."
+          },
+          {
+            "title": "Order Tracking",
+            "desc": "Can't find your order? Check the order history in your account."
+          },
+          {
+            "title": "Account Verification",
+            "desc": "Need to verify your account? Follow the verification email we sent you."
+          }
+        ]
+      },
+      "desc": "Get help and contact our support team."
+    },
+    "getInTouch": "Kontakt aufnehmen",
+    "title": "Hilfezentrum",
+    "searchPlaceholder": "Search help articles...",
+    "quickLinks": "Schnelllinks",
+    "subtitle": "Find answers to common questions and learn how to use Vasty",
+    "contactSupportDesc": "Can't find what you're looking for? Our support team is here to help.",
+    "contactSupport": "Support kontaktieren"
   },
   "mobileNav": {
     "myProfile": "Mein Profil",

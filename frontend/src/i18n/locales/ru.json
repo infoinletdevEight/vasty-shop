@@ -145,7 +145,8 @@
       "terms": "Условия использования",
       "privacy": "Политика конфиденциальности",
       "contact": "Связаться с нами"
-    }
+    },
+    "sellOnVasty": "Sell on Vasty"
   },
   "mobileNav": {
     "myProfile": "Мой профиль",
@@ -425,7 +426,7 @@
     "fullName": "Полное имя",
     "firstName": "Имя",
     "lastName": "Фамилия",
-    "email": "Email",
+    "email": "Электронная почта",
     "phone": "Телефон",
     "address": "Адрес",
     "addressLine1": "Адрес (строка 1)",
@@ -697,7 +698,7 @@
     "subjectPlaceholder": "Чем мы можем помочь?",
     "message": "Сообщение",
     "messagePlaceholder": "Расскажите подробнее о вашем вопросе...",
-    "email": "Email",
+    "email": "Электронная почта",
     "emailPlaceholder": "ваш@email.com",
     "sendMessage": "Отправить сообщение",
     "sending": "Отправка...",
@@ -750,7 +751,7 @@
       "businessInquiries": "Деловые запросы",
       "ourAddress": "Наш адрес",
       "followUs": "Подписывайтесь",
-      "email": "Email",
+      "email": "Электронная почта",
       "hours": "Часы работы",
       "support247": "Поддержка 24/7"
     },
@@ -975,7 +976,7 @@
         "button": "Начать чат"
       },
       "email": {
-        "title": "Email",
+        "title": "Электронная почта",
         "description": "Ответ в течение 24 часов",
         "button": "Написать"
       },
@@ -1363,7 +1364,7 @@
         "yearlyBack": "Это $3,000/год в вашем кармане"
       },
       "free": {
-        "name": "Free",
+        "name": "Бесплатно",
         "description": "Ваш первый магазин",
         "feature1": "1 магазин с 10 товарами",
         "feature2": "Бесплатный поддомен (yourstore.example.com)",
@@ -1609,7 +1610,9 @@
       "forDelivery": "Для партнёров по доставке",
       "pricingPlans": "Тарифы и планы",
       "payments": "Платежи и биллинг",
-      "support": "Поддержка и контакты"
+      "support": "Поддержка и контакты",
+      "paymentsAndBilling": "Payments & Billing",
+      "supportAndContact": "Поддержка и контакты"
     },
     "vendorNav": {
       "createStore": "Создать магазин",
@@ -1621,35 +1624,63 @@
       "mobileApp": "Конструктор мобильного приложения",
       "analytics": "Аналитика и отчёты",
       "deliverySetup": "Настройка доставки",
-      "teamManagement": "Управление командой"
+      "teamManagement": "Управление командой",
+      "analyticsAndReports": "Аналитика и отчеты",
+      "orderManagement": "Управление заказами",
+      "gettingStarted": "Начало работы",
+      "storeSetup": "Настройка магазина",
+      "productManagement": "Управление товарами"
     },
     "customerNav": {
       "browseShop": "Просмотр и покупки",
       "cartCheckout": "Корзина и оформление",
       "trackOrders": "Отслеживание заказов",
-      "reviewsWishlist": "Отзывы и избранное"
+      "reviewsWishlist": "Отзывы и избранное",
+      "accountSetup": "Настройка аккаунта",
+      "ordersAndTracking": "Заказы и отслеживание",
+      "paymentsAndRefunds": "Платежи и возвраты",
+      "browsingAndSearch": "Просмотр и поиск"
     },
     "deliveryNav": {
       "howDeliveryWorks": "Как работает доставка",
       "deliveryDashboard": "Панель доставки",
-      "earnings": "Заработок и выплаты"
+      "earnings": "Заработок и выплаты",
+      "earningsAndPayouts": "Доходы и выплаты",
+      "appSetup": "Настройка приложения",
+      "acceptingOrders": "Принятие заказов",
+      "requirements": "Требования"
     },
     "introduction": {
       "title": "Введение",
       "welcome": "Добро пожаловать в <strong>{{appName}}</strong> — универсальную мультивендорную платформу электронной коммерции. Независимо от того, являетесь ли вы продавцом, покупателем или партнёром по доставке, это руководство охватывает всё, что вам нужно знать.",
       "whatIsThisPlatform": "Что такое {{appName}}?",
       "features": {
-        "multiVendor": "<strong>Мультивендорный маркетплейс</strong> — Множество магазинов на одной платформе",
         "aiPowered": "<strong>AI-инструменты</strong> — Создание магазинов и товаров с помощью AI",
         "mobileApp": "<strong>Конструктор мобильных приложений</strong> — Превратите магазин в нативное приложение",
         "payments": "<strong>Интегрированные платежи</strong> — Безопасная оплата через Stripe",
-        "delivery": "<strong>Сеть доставки</strong> — Встроенная система партнёров по доставке"
+        "delivery": "<strong>Сеть доставки</strong> — Встроенная система партнёров по доставке",
+        "securePayments": {
+          "title": "Secure Payments",
+          "desc": "Integrated payment processing with Stripe"
+        },
+        "realTimeTracking": {
+          "title": "Отслеживание в реальном времени",
+          "desc": "Track orders from placement to delivery"
+        },
+        "multiVendor": {
+          "title": "Multi-Vendor Marketplace",
+          "desc": "Host multiple vendors with independent store management"
+        },
+        "analytics": {
+          "title": "Аналитика",
+          "desc": "Detailed insights for vendors and platform performance"
+        }
       },
       "userTypes": "Типы пользователей",
       "table": {
         "headers": [
           "User Type",
-          "Description",
+          "Описание",
           "Access"
         ],
         "vendor": [
@@ -1658,7 +1689,7 @@
           "/vendor/dashboard"
         ],
         "customer": [
-          "Customer",
+          "Клиент",
           "Browse stores, buy products, track orders",
           "/explore"
         ],
@@ -1668,11 +1699,22 @@
           "/delivery/dashboard"
         ],
         "admin": [
-          "Admin",
+          "Администратор",
           "Manage platform, approve stores",
           "/admin"
         ]
-      }
+      },
+      "whatIsVasty": "What is Vasty?",
+      "platformPoints": [
+        "Vendors can create and manage their online stores",
+        "Customers can discover and buy from multiple vendors",
+        "Delivery partners can fulfill orders and earn money",
+        "All parties benefit from integrated, secure payment processing"
+      ],
+      "platformOverview": "Platform Overview",
+      "welcomeDesc": "Vasty is a comprehensive marketplace platform that connects vendors, customers, and delivery partners. Whether you want to start your online store, buy products from local vendors, or earn money as a delivery partner, Vasty provides all the tools you need.",
+      "platformDesc": "Vasty operates as a multi-vendor marketplace where:",
+      "keyFeatures": "Key Features"
     },
     "quickStart": {
       "title": "Быстрый старт",
@@ -1698,6 +1740,37 @@
         "startSellingDesc": "Создайте первый магазин",
         "startShopping": "Начать покупки",
         "startShoppingDesc": "Просмотрите все товары"
+      },
+      "forCustomers": {
+        "steps": [
+          "Create your account or sign in",
+          "Browse products and vendors",
+          "Add items to your cart",
+          "Checkout with your preferred payment method",
+          "Track your order in real-time"
+        ],
+        "title": "For Customers"
+      },
+      "forVendors": {
+        "steps": [
+          "Register as a vendor",
+          "Complete your store setup",
+          "Add your products with images and descriptions",
+          "Configure payment and delivery options",
+          "Start receiving orders!"
+        ],
+        "title": "For Vendors"
+      },
+      "desc": "Get started with Vasty in minutes",
+      "forDelivery": {
+        "title": "For Delivery Partners",
+        "steps": [
+          "Sign up as a delivery partner",
+          "Complete verification and onboarding",
+          "Download the delivery app",
+          "Set your availability and area",
+          "Start accepting delivery requests"
+        ]
       }
     },
     "forVendors": {
@@ -1734,7 +1807,7 @@
           "headers": [
             "Section",
             "Path",
-            "Description"
+            "Описание"
           ],
           "rows": [
             [
@@ -1753,7 +1826,7 @@
               "View and process customer orders"
             ],
             [
-              "Analytics",
+              "Аналитика",
               "/vendor/analytics",
               "Sales reports and insights"
             ],
@@ -1810,33 +1883,33 @@
         "viewAt": "View all orders at",
         "table": {
           "headers": [
-            "Status",
-            "Description",
+            "Статус",
+            "Описание",
             "Action"
           ],
           "rows": [
             [
-              "Pending",
+              "В ожидании",
               "New order received",
               "Review and confirm"
             ],
             [
-              "Processing",
+              "Обработка",
               "Order confirmed, preparing",
               "Prepare for shipping"
             ],
             [
-              "Shipped",
+              "Отправлено",
               "Order handed to delivery",
               "Add tracking info"
             ],
             [
-              "Delivered",
+              "Доставлено",
               "Customer received order",
               "Complete"
             ],
             [
-              "Cancelled",
+              "Отменено",
               "Order cancelled",
               "Process refund if needed"
             ]
@@ -1894,7 +1967,26 @@
           "Демография клиентов",
           "Конверсия",
           "Источники трафика"
-        ]
+        ],
+        "items": [
+          {
+            "title": "Sales Reports",
+            "desc": "Track daily, weekly, and monthly sales performance."
+          },
+          {
+            "title": "Customer Insights",
+            "desc": "Understand your customer base and buying patterns."
+          },
+          {
+            "title": "Product Performance",
+            "desc": "See which products sell best and optimize your catalog."
+          },
+          {
+            "title": "Traffic Analytics",
+            "desc": "Monitor store visits and conversion rates."
+          }
+        ],
+        "desc": "Monitor your store's performance with built-in analytics:"
       },
       "deliverySetup": {
         "title": "Настройка доставки",
@@ -1916,19 +2008,99 @@
           ],
           "rows": [
             [
-              "Owner",
+              "Владелец",
               "Full access to all features"
             ],
             [
-              "Manager",
+              "Менеджер",
               "Manage products, orders, and customers"
             ],
             [
-              "Staff",
+              "Персонал",
               "Process orders and respond to customers"
             ]
           ]
         }
+      },
+      "orderManagement": {
+        "items": [
+          {
+            "title": "Order Notifications",
+            "desc": "Receive instant notifications for new orders and respond quickly."
+          },
+          {
+            "title": "Order Processing",
+            "desc": "Update order status as you prepare and ship products to customers."
+          },
+          {
+            "title": "Customer Communication",
+            "desc": "Communicate with customers about their orders through the platform."
+          }
+        ],
+        "desc": "Process and fulfill orders efficiently:",
+        "title": "Управление заказами"
+      },
+      "storeSetup": {
+        "items": [
+          {
+            "title": "Store Logo & Branding",
+            "desc": "Upload a high-quality logo and choose colors that match your brand."
+          },
+          {
+            "title": "Store Description",
+            "desc": "Write a clear, compelling description of what you sell and what makes your store unique."
+          },
+          {
+            "title": "Контактная информация",
+            "desc": "Provide accurate contact details so customers can reach you easily."
+          },
+          {
+            "title": "Business Hours & Policies",
+            "desc": "Set your business hours, shipping policies, and return policies."
+          }
+        ],
+        "desc": "Your store profile is your storefront on Vasty. Make it stand out:",
+        "title": "Настройка магазина"
+      },
+      "gettingStarted": {
+        "steps": [
+          {
+            "title": "Account Registration",
+            "desc": "Create your vendor account with your business email. You'll need to verify your email address before continuing."
+          },
+          {
+            "title": "Business Verification",
+            "desc": "Provide the required business documentation, including tax information and identity verification, to activate your store."
+          },
+          {
+            "title": "Настройка магазина",
+            "desc": "Customize your store profile with branding, logo, description, and contact information."
+          }
+        ],
+        "title": "Getting Started as a Vendor",
+        "desc": "Setting up your store on Vasty is simple. Follow these steps to start selling:"
+      },
+      "productManagement": {
+        "desc": "Add and manage your products effectively:",
+        "title": "Управление товарами",
+        "items": [
+          {
+            "title": "Product Listings",
+            "desc": "Create detailed product listings with titles, descriptions, and high-quality images."
+          },
+          {
+            "title": "Pricing & Inventory",
+            "desc": "Set competitive prices and keep stock levels up to date."
+          },
+          {
+            "title": "Categories & Tags",
+            "desc": "Organize products into categories and use tags for better discoverability."
+          },
+          {
+            "title": "Variants & Options",
+            "desc": "Add product variants such as size, color, or material."
+          }
+        ]
       }
     },
     "forCustomers": {
@@ -1982,6 +2154,94 @@
         "title": "Отзывы и избранное",
         "leaveReviews": "<strong>Оставляйте отзывы</strong> — Оценивайте товары после покупки",
         "wishlist": "<strong>Избранное</strong> — Сохраняйте товары на потом по адресу <code>/wishlist</code>"
+      },
+      "accountSetup": {
+        "title": "Настройка аккаунта",
+        "items": [
+          {
+            "title": "Create Account",
+            "desc": "Sign up with your email or use social login (Google, Facebook) for quick access."
+          },
+          {
+            "title": "Profile Information",
+            "desc": "Add your name, profile picture, and communication preferences."
+          },
+          {
+            "title": "Saved Addresses",
+            "desc": "Add multiple delivery addresses for quick checkout."
+          },
+          {
+            "title": "Способы оплаты",
+            "desc": "Securely save your preferred payment methods for faster purchases."
+          }
+        ],
+        "desc": "Create your customer account and start shopping:"
+      },
+      "orders": {
+        "desc": "Place orders and track them in real time:",
+        "title": "Заказы и отслеживание",
+        "items": [
+          {
+            "title": "Place an Order",
+            "desc": "Add items to your cart and check out with your preferred payment method."
+          },
+          {
+            "title": "Подтверждение заказа",
+            "desc": "Receive instant confirmation with order details and estimated delivery time."
+          },
+          {
+            "title": "Отслеживание в реальном времени",
+            "desc": "Track your order status from processing to delivery."
+          },
+          {
+            "title": "История заказов",
+            "desc": "View past orders and reorder favorite items easily."
+          }
+        ]
+      },
+      "payments": {
+        "desc": "Safe and secure payment processing:",
+        "items": [
+          {
+            "title": "Способы оплаты",
+            "desc": "Pay securely with credit/debit cards, digital wallets, or cash on delivery."
+          },
+          {
+            "title": "Secure Transactions",
+            "desc": "All payments are processed securely through Stripe with encryption."
+          },
+          {
+            "title": "Refund Requests",
+            "desc": "Request refunds for eligible orders within the specified timeframe."
+          },
+          {
+            "title": "Refund Processing",
+            "desc": "Approved refunds are returned to the original payment method within 5-10 business days."
+          }
+        ],
+        "title": "Платежи и возвраты"
+      },
+      "browsing": {
+        "items": [
+          {
+            "title": "Search Products",
+            "desc": "Use the search bar to find specific products across all vendors."
+          },
+          {
+            "title": "Browse Categories",
+            "desc": "Explore products by category to discover new items."
+          },
+          {
+            "title": "Filter & Sort",
+            "desc": "Refine results by price, rating, vendor, and more."
+          },
+          {
+            "title": "Список желаний",
+            "desc": "Save items to your wishlist for later purchase."
+          }
+        ],
+        "desc": "Discover products and vendors that match your needs:",
+        "title": "Просмотр и поиск"
       }
     },
     "forDelivery": {
@@ -2018,7 +2278,7 @@
           "headers": [
             "Section",
             "Path",
-            "Description"
+            "Описание"
           ],
           "rows": [
             [
@@ -2032,7 +2292,7 @@
               "View and manage assigned deliveries"
             ],
             [
-              "Earnings",
+              "Доходы",
               "/delivery/earnings",
               "Track your income"
             ],
@@ -2056,6 +2316,91 @@
           "Заработок управляется продавцом",
           "Отслеживайте выполненные доставки и чаевые",
           "Просматривайте историю и показатели"
+        ],
+        "items": [
+          {
+            "title": "Base Fare",
+            "desc": "Earn a base fare for each completed delivery."
+          },
+          {
+            "title": "Distance & Time",
+            "desc": "Additional earnings based on delivery distance and time."
+          },
+          {
+            "title": "Чаевые",
+            "desc": "Keep 100% of customer tips."
+          },
+          {
+            "title": "Weekly Payouts",
+            "desc": "Receive earnings directly to your bank account every week."
+          }
+        ],
+        "desc": "How you earn and get paid as a delivery partner:"
+      },
+      "acceptingOrders": {
+        "title": "Принятие заказов",
+        "desc": "How to handle delivery requests:",
+        "items": [
+          {
+            "title": "Receive Requests",
+            "desc": "Get notified when a new order is available in your area."
+          },
+          {
+            "title": "Accept or Decline",
+            "desc": "Review order details and choose whether to accept the delivery."
+          },
+          {
+            "title": "Pick Up",
+            "desc": "Navigate to the vendor location and pick up the order."
+          },
+          {
+            "title": "Deliver",
+            "desc": "Navigate to the customer address and complete the delivery."
+          }
+        ]
+      },
+      "appSetup": {
+        "title": "Настройка приложения",
+        "desc": "Get started with the delivery partner app:",
+        "items": [
+          {
+            "title": "Download the App",
+            "desc": "Download the Vasty delivery app from the App Store or Google Play."
+          },
+          {
+            "title": "Войти",
+            "desc": "Log in with your delivery partner credentials."
+          },
+          {
+            "title": "Enable Location",
+            "desc": "Allow location access for order assignment and navigation."
+          },
+          {
+            "title": "Set Availability",
+            "desc": "Toggle your availability to start receiving delivery requests."
+          }
+        ]
+      },
+      "requirements": {
+        "desc": "What you need to become a delivery partner:",
+        "title": "Требования",
+        "items": [
+          {
+            "title": "Age & Documentation",
+            "desc": "Be at least 18 years old with valid government-issued ID."
+          },
+          {
+            "title": "Vehicle",
+            "desc": "Own or have access to a reliable vehicle (car, motorcycle, or bicycle)."
+          },
+          {
+            "title": "Smartphone",
+            "desc": "Have a smartphone to use the delivery app and receive orders."
+          },
+          {
+            "title": "Background Check",
+            "desc": "Pass a background check and driving record review."
+          }
         ]
       }
     },
@@ -2072,7 +2417,7 @@
         ],
         "rows": [
           [
-            "Free",
+            "Бесплатно",
             "$0/month",
             "1",
             "10",
@@ -2103,7 +2448,12 @@
       },
       "annualDiscount": "Сэкономьте 15% при годовой оплате",
       "cardTitle": "Подробное сравнение тарифов",
-      "cardDescription": "Сравните все функции планов"
+      "cardDescription": "Сравните все функции планов",
+      "customPlans": "Custom Plans",
+      "getStarted": "Get Started",
+      "desc": "Choose the plan that fits your business",
+      "intro": "Vasty offers flexible pricing plans for vendors of all sizes.",
+      "compare": "Compare Plans"
     },
     "paymentsAndBilling": {
       "title": "Платежи и биллинг",
@@ -2132,7 +2482,50 @@
           "Отмена или обновление в любое время",
           "Счета доступны для скачивания"
         ]
-      }
+      },
+      "sections": {
+        "refundPolicy": {
+          "items": [
+            "Refund requests must be made within 14 days of delivery",
+            "Items must be returned in original condition",
+            "Approved refunds are processed within 5-10 business days",
+            "Refunds are issued to the original payment method"
+          ],
+          "desc": "Understanding refunds on Vasty:",
+          "title": "Refund Policy"
+        },
+        "invoicing": {
+          "title": "Invoicing",
+          "items": [
+            "Automatic invoice generation for every order",
+            "Downloadable invoices in PDF format",
+            "Tax information included where applicable",
+            "Access to complete billing history from your account"
+          ],
+          "desc": "Invoices and billing documents:"
+        },
+        "vendorPayouts": {
+          "title": "Vendor Payouts",
+          "items": [
+            "Weekly automatic payouts to your connected bank account",
+            "Minimum payout threshold of $50",
+            "Platform fees are deducted before payout",
+            "Detailed transaction history available in your dashboard"
+          ],
+          "desc": "How and when vendors receive their earnings:"
+        },
+        "paymentMethods": {
+          "title": "Способы оплаты",
+          "desc": "Supported payment methods on the platform:",
+          "items": [
+            "Credit and debit cards (Visa, Mastercard, American Express)",
+            "Digital wallets (Apple Pay, Google Pay)",
+            "Bank transfers for selected regions",
+            "Cash on delivery where available"
+          ]
+        }
+      },
+      "desc": "Learn about payments, billing, and financial operations on Vasty."
     },
     "supportAndContact": {
       "title": "Поддержка и контакты",
@@ -2146,8 +2539,59 @@
         "faqsDescription": "Ответы на частые вопросы",
         "contactTitle": "Форма обратной связи",
         "contactDescription": "Отправьте нам сообщение"
-      }
-    }
+      },
+      "channels": {
+        "title": "Support Channels",
+        "items": [
+          {
+            "title": "Email Support",
+            "desc": "Send us an email at support@vastyshop.com and we'll respond within 24 hours."
+          },
+          {
+            "title": "Live Chat",
+            "desc": "Chat with our support team in real time from the Help Center."
+          },
+          {
+            "title": "Help Articles",
+            "desc": "Browse our knowledge base for answers to common questions."
+          }
+        ]
+      },
+      "businessHours": {
+        "hours": "Monday - Friday: 9:00 AM - 6:00 PM",
+        "title": "Часы работы",
+        "note": "Weekend support is available for urgent issues only."
+      },
+      "commonIssues": {
+        "title": "Common Issues",
+        "items": [
+          {
+            "title": "Login Problems",
+            "desc": "Having trouble signing in? Try resetting your password."
+          },
+          {
+            "title": "Payment Issues",
+            "desc": "Payment not going through? Check your card details or try a different method."
+          },
+          {
+            "title": "Order Tracking",
+            "desc": "Can't find your order? Check the order history in your account."
+          },
+          {
+            "title": "Account Verification",
+            "desc": "Need to verify your account? Follow the verification email we sent you."
+          }
+        ]
+      },
+      "desc": "Get help and contact our support team."
+    },
+    "getInTouch": "Связаться",
+    "title": "Центр помощи",
+    "searchPlaceholder": "Search help articles...",
+    "quickLinks": "Быстрые ссылки",
+    "subtitle": "Find answers to common questions and learn how to use Vasty",
+    "contactSupportDesc": "Can't find what you're looking for? Our support team is here to help.",
+    "contactSupport": "Связаться с поддержкой"
   },
   "legal": {
     "breadcrumb": "Юридическая информация",
@@ -2759,7 +3203,7 @@
     "customize": "Настроить",
     "referralLink": "Реферальная ссылка",
     "copyLink": "Копировать ссылку",
-    "email": "Email",
+    "email": "Электронная почта",
     "whatsapp": "WhatsApp",
     "createCustomCode": "Создать свой код",
     "makeItMemorable": "Сделайте его запоминающимся!",
@@ -2910,7 +3354,7 @@
       "activeUsers": "Активные пользователи",
       "bannedUsers": "Заблокированные пользователи",
       "userName": "Имя пользователя",
-      "email": "Email",
+      "email": "Электронная почта",
       "role": "Роль",
       "status": "Статус",
       "joinedDate": "Дата регистрации",
@@ -3027,7 +3471,7 @@
       "noDescription": "Описание не указано",
       "ownerDetails": "Данные владельца",
       "ownerName": "Имя",
-      "ownerEmail": "Email",
+      "ownerEmail": "Электронная почта",
       "businessDocuments": "Бизнес-документы",
       "rejectionReason": "Причина отклонения",
       "takeAction": "Принять решение",
@@ -3092,7 +3536,7 @@
       "productsCount": "Товары",
       "status": "Статус",
       "noCategories": "Категории не найдены",
-      "searchCategories": "Search categories...",
+      "searchCategories": "Поиск категорий...",
       "categoryCreated": "Категория создана",
       "categoryUpdated": "Категория обновлена",
       "categoryDeleted": "Категория удалена",
@@ -3123,11 +3567,11 @@
       "amount": "Сумма",
       "status": "Статус",
       "date": "Дата",
-      "paymentMethod": "Method",
+      "paymentMethod": "Метод",
       "completed": "Выполнен",
       "pending": "В ожидании",
       "failed": "Failed",
-      "refunded": "Refunded",
+      "refunded": "Возвращено",
       "noPayments": "No Transactions Found",
       "noPaymentsMatch": "Try adjusting your search or filter criteria",
       "paymentsWillAppear": "Payment transactions will appear here once orders are placed",
@@ -3150,7 +3594,7 @@
       "reviewer": "Reviewer",
       "product": "Товар",
       "shop": "Магазин",
-      "rating": "Rating",
+      "rating": "Рейтинг",
       "comment": "Comment",
       "date": "Дата",
       "status": "Статус",
@@ -3207,7 +3651,7 @@
       "allStatus": "All Status",
       "qualified": "Qualified",
       "rewarded": "Rewarded",
-      "expired": "Expired",
+      "expired": "Истек",
       "clearFilters": "Clear filters",
       "rewardType": "Reward Type",
       "storeCredit": "Store Credit",
@@ -3268,13 +3712,13 @@
       "subtitle": "Send and manage platform notifications",
       "allNotifications": "All Notifications",
       "sendNotification": "Send Notification",
-      "notificationType": "Type",
+      "notificationType": "Тип",
       "recipients": "Recipients",
       "message": "Message",
       "sentDate": "Sent Date",
       "status": "Статус",
       "sent": "Sent",
-      "scheduled": "Scheduled",
+      "scheduled": "Запланировано",
       "draft": "Черновик",
       "noNotifications": "No notifications found",
       "notificationSent": "Notification sent successfully",
@@ -3292,7 +3736,7 @@
       "unread": "Unread",
       "searchPlaceholder": "Search by title or message...",
       "filters": "Фильтры",
-      "type": "Type",
+      "type": "Тип",
       "noNotificationsMatch": "No notifications match your current filters",
       "adjustFilters": "Try adjusting your search or filter criteria",
       "notificationsWillAppear": "Notifications will appear here once they are sent",
@@ -3307,7 +3751,7 @@
       "titlePlaceholder": "Enter notification title...",
       "messageLabel": "Message",
       "messagePlaceholder": "Enter notification message...",
-      "typeLabel": "Type",
+      "typeLabel": "Тип",
       "recipientsLabel": "Recipients",
       "allAdmins": "All Admins",
       "allVendors": "All Vendors",
@@ -3404,7 +3848,7 @@
       "subtitle": "Configure platform-wide settings",
       "general": "General",
       "payments": "Платежи",
-      "email": "Email",
+      "email": "Электронная почта",
       "security": "Security",
       "payment": "Payment",
       "maintenance": "Maintenance",
@@ -3413,14 +3857,14 @@
       "platformLogo": "Platform Logo",
       "currency": "Default Currency",
       "currencyRequired": "Default Currency *",
-      "language": "Default Language",
+      "language": "Язык по умолчанию",
       "languageRequired": "Default Language *",
       "timezone": "Timezone",
       "commissionRate": "Commission Rate",
       "minWithdrawal": "Minimum Withdrawal",
       "maintenanceMode": "Maintenance Mode",
-      "settingsSaved": "Settings saved successfully",
-      "settingsFailed": "Failed to save settings",
+      "settingsSaved": "Настройки успешно сохранены",
+      "settingsFailed": "Не удалось сохранить настройки",
       "settingsFailedLoad": "Failed to load settings",
       "validationFailed": "Validation failed",
       "fixErrors": "Please fix the errors and try again",
@@ -3432,8 +3876,8 @@
       "logoUploaded": "Logo uploaded successfully",
       "rememberSave": "Remember to save your changes",
       "logoUploadFailed": "Failed to upload logo",
-      "uploading": "Uploading...",
-      "uploadLogo": "Upload Logo",
+      "uploading": "Загрузка...",
+      "uploadLogo": "Загрузить логотип",
       "logoRecommended": "Recommended: 200x200px, max 5MB",
       "supportEmailRequired": "Support Email *",
       "generalSettings": "General Settings",
@@ -3448,7 +3892,7 @@
       "orderValueFreeShipping": "Order value for free shipping",
       "commissionInfo": "Commission Information",
       "commissionInfoDesc": "The platform commission rate will be automatically deducted from vendor sales. Changes will apply to new orders only.",
-      "shopSettings": "Shop Settings",
+      "shopSettings": "Настройки магазина",
       "configureShopApproval": "Configure shop approval and verification requirements",
       "autoApproveShops": "Auto-approve New Shops",
       "autoApproveDesc": "Automatically approve shop registrations without manual review",
@@ -3503,9 +3947,9 @@
     "login": {
       "title": "Admin Login",
       "subtitle": "Sign in to access admin panel",
-      "email": "Email",
-      "password": "Password",
-      "signIn": "Sign In",
+      "email": "Электронная почта",
+      "password": "Пароль",
+      "signIn": "Войти",
       "forgotPassword": "Forgot Password?",
       "invalidCredentials": "Invalid credentials",
       "loggingIn": "Signing in...",
@@ -3554,7 +3998,8 @@
       "update": "Обновить",
       "logOut": "Выйти",
       "logoutSuccess": "Вы успешно вышли",
-      "searchPlaceholder": "Search products, orders..."
+      "searchPlaceholder": "Search products, orders...",
+      "na": "Н/Д"
     },
     "profile": {
       "backToHome": "Back to Home",
@@ -3566,7 +4011,7 @@
       "email": "Email Address",
       "emailCannotChange": "Email cannot be changed",
       "phone": "Phone Number",
-      "address": "Address",
+      "address": "Адрес",
       "bio": "Bio",
       "saveChanges": "Save Changes",
       "saving": "Saving...",
@@ -3577,10 +4022,10 @@
       "selectImageFile": "Please select an image file",
       "imageSizeLimit": "Image size must be less than 5MB",
       "deleteAccount": {
-        "title": "Delete Account",
+        "title": "Удалить аккаунт",
         "description": "Once you delete your account, all of your data including shops and products will be permanently removed. This action cannot be undone.",
         "button": "Delete My Account",
-        "modalTitle": "Delete Account",
+        "modalTitle": "Удалить аккаунт",
         "modalDescription": "This will permanently delete your account and all associated data including:",
         "profileInfo": "Your profile information",
         "shopsAndProducts": "All your shops and products",
@@ -3588,7 +4033,7 @@
         "earningsRecords": "Earnings records",
         "confirmPrompt": "Type <strong>DELETE</strong> to confirm:",
         "cancel": "Отмена",
-        "confirm": "Delete Account",
+        "confirm": "Удалить аккаунт",
         "success": "Account deleted successfully",
         "failed": "Failed to delete account. Please contact support."
       }
@@ -3647,7 +4092,7 @@
       "phone": "Enter your phone number",
       "address": "Enter your address",
       "bio": "Tell us about yourself...",
-      "typeDelete": "Type DELETE",
+      "typeDelete": "Введите DELETE",
       "searchTeamMembers": "Search team members...",
       "teamMemberEmail": "Enter team member email",
       "invitationMessage": "Add a personal message to the invitation...",
@@ -3655,16 +4100,16 @@
       "shopDescription": "Describe your shop...",
       "businessName": "Your Business LLC",
       "streetAddress": "Street address",
-      "city": "City",
-      "state": "State",
-      "country": "Country",
+      "city": "Город",
+      "state": "Регион",
+      "country": "Страна",
       "paypalClientId": "PayPal Client ID",
       "paypalSecret": "PayPal Secret",
       "seoTitle": "Your Shop - Premium Products",
       "seoDescription": "Describe your shop for search engines...",
       "productName": "Enter product name",
       "productDescription": "Describe your product...",
-      "searchCategories": "Search categories...",
+      "searchCategories": "Поиск категорий...",
       "addTag": "Add tag & press Enter",
       "addFeature": "Add a feature (press Enter)",
       "specificationName": "Specification name",
@@ -3674,13 +4119,13 @@
       "returnCondition": "Add return condition",
       "metaDescription": "Brief description for search results",
       "enterPassword": "Enter password",
-      "deliveryRiderName": "Enter full name",
-      "deliveryRiderEmail": "Enter email address",
+      "deliveryRiderName": "Введите полное имя",
+      "deliveryRiderEmail": "Введите адрес электронной почты",
       "deliveryRiderPhone": "Phone number",
       "createPassword": "Create a password (min 6 chars)",
       "shippingMethodName": "Standard Shipping",
       "zoneDescription": "Brief description of this delivery zone...",
-      "autoFilled": "Auto-filled from order",
+      "autoFilled": "Автоматически заполнено из заказа",
       "reviewSummary": "Summarize your experience",
       "reviewContent": "Share your experience with this shop...",
       "aiPrompt": "Describe your store... e.g., 'A modern fashion boutique for young professionals, with a focus on sustainable and minimalist clothing. Clean, elegant design with lots of whitespace.'",
@@ -3693,7 +4138,7 @@
       "buttonLink": "Button Link",
       "backgroundImageUrl": "Background Image URL",
       "imageUrl": "Image URL",
-      "value": "Value",
+      "value": "Значение",
       "label": "Label",
       "name": "Имя",
       "role": "Role (e.g., Verified Buyer)",
@@ -3737,13 +4182,13 @@
       "team": "Team",
       "billing": "Billing",
       "settings": "Настройки",
-      "shopSettings": "Shop Settings",
+      "shopSettings": "Настройки магазина",
       "accountSettings": "Account Settings",
       "storefront": "Storefront",
       "storefrontBuilder": "Storefront Builder",
       "logout": "Выйти",
       "allProducts": "Все товары",
-      "addProduct": "Add Product",
+      "addProduct": "Добавить товар",
       "viewStorefront": "View Storefront",
       "editStorefront": "Edit Storefront"
     },
@@ -3762,12 +4207,12 @@
       "recentOrders": "Недавние заказы",
       "topProducts": "Топ-товары",
       "quickActions": "Быстрые действия",
-      "addProduct": "Add Product",
+      "addProduct": "Добавить товар",
       "viewOrders": "View Orders",
       "manageProducts": "Manage Products",
       "viewAnalytics": "View Analytics",
       "customizeStorefront": "Customize Storefront",
-      "shopSettings": "Shop Settings",
+      "shopSettings": "Настройки магазина",
       "vsLastPeriod": "за прошлый период",
       "noOrders": "No orders yet",
       "noProducts": "No products yet",
@@ -3784,7 +4229,7 @@
       "customize": "Customize",
       "deliveryCosts": "Delivery Costs",
       "designStorefront": "Design your storefront",
-      "details": "Details",
+      "details": "Детали",
       "earningsBreakdown": "Earnings Breakdown",
       "editStorefront": "Edit storefront",
       "getStartedSubtitle": "Complete these steps to start selling",
@@ -3811,7 +4256,7 @@
       "title": "Товары",
       "subtitle": "Manage your products",
       "allProducts": "Все товары",
-      "addProduct": "Add Product",
+      "addProduct": "Добавить товар",
       "editProduct": "Edit Product",
       "deleteProduct": "Delete Product",
       "productName": "Product Name",
@@ -3834,7 +4279,7 @@
       "productDeleted": "Product deleted successfully",
       "uploadImages": "Upload Images",
       "dragDropImages": "Drag and drop images here",
-      "basicInfo": "Basic Information",
+      "basicInfo": "Основная информация",
       "pricing": "Pricing",
       "inventory": "Inventory",
       "shipping": "Shipping",
@@ -3870,7 +4315,7 @@
       "updateInventory": "Update Inventory",
       "updatePrice": "Update Price",
       "updateStatus": "Update Status",
-      "value": "Value",
+      "value": "Значение",
       "noProductsYet": "Товаров пока нет",
       "noProductsFound": "Товары не найдены",
       "startBuildingInventory": "Start building your inventory by adding your first product.",
@@ -3888,7 +4333,7 @@
       "whoCanSee": "Who can see this?",
       "featuredProduct": "Featured Product",
       "quickActions": "Быстрые действия",
-      "password": "Password",
+      "password": "Пароль",
       "statuses": {
         "draft": "Черновик",
         "published": "Опубликовано"
@@ -3897,7 +4342,15 @@
         "public": "Public",
         "private": "Private",
         "passwordProtected": "Password Protected"
-      }
+      },
+      "tabs": {
+        "shippingCare": "Shipping & Care",
+        "marketingSeo": "Marketing & SEO",
+        "productInfo": "Product Info"
+      },
+      "preview": "Предпросмотр",
+      "saveProduct": "Save Product",
+      "saveDraft": "Save Draft"
     },
     "orders": {
       "title": "Заказы",
@@ -3923,15 +4376,15 @@
       "shipped": "Отправлен",
       "delivered": "Доставлен",
       "cancelled": "Отменён",
-      "refunded": "Refunded",
+      "refunded": "Возвращено",
       "noOrders": "Заказы не найдены",
-      "searchOrders": "Search orders...",
+      "searchOrders": "Поиск заказов...",
       "markAsProcessing": "Mark as Processing",
       "markAsShipped": "Mark as Shipped",
       "markAsDelivered": "Mark as Delivered",
       "cancelOrder": "Cancel Order",
       "printInvoice": "Print Invoice",
-      "trackingNumber": "Tracking Number",
+      "trackingNumber": "Номер отслеживания",
       "addTrackingNumber": "Add Tracking Number",
       "acceptOrder": "Accept Order",
       "allMethods": "All Methods",
@@ -3955,24 +4408,33 @@
       "totalOrders": "Всего заказов",
       "noOrdersYet": "No Orders Yet",
       "ordersWillAppear": "Orders will appear here once customers start purchasing from your shop.",
-      "failedToLoad": "Failed to load orders"
+      "failedToLoad": "Failed to load orders",
+      "statuses": {
+        "shipped": "Отправлено",
+        "delivered": "Доставлено",
+        "pending": "В ожидании",
+        "completed": "Завершено",
+        "refunded": "Возвращено",
+        "processing": "Обработка",
+        "cancelled": "Отменено"
+      }
     },
     "customers": {
       "title": "Клиенты",
       "subtitle": "View your customers",
       "allCustomers": "All Customers",
-      "customerName": "Customer Name",
-      "email": "Email",
+      "customerName": "Имя клиента",
+      "email": "Электронная почта",
       "phone": "Телефон",
       "orders": "Заказы",
       "totalSpent": "Всего потрачено",
       "lastOrder": "Last Order",
       "viewCustomer": "View Customer",
       "customerDetails": "Customer Details",
-      "orderHistory": "Order History",
+      "orderHistory": "История заказов",
       "noCustomers": "No customers yet",
       "searchCustomers": "Search customers...",
-      "address": "Address",
+      "address": "Адрес",
       "adjustFilters": "Попробуйте изменить фильтры",
       "avgOrder": "Avg Order",
       "avgOrderValue": "Average Order Value",
@@ -4042,7 +4504,7 @@
       "paidOrders": "paid orders",
       "completed": "completed",
       "perCompletedOrder": "Per completed order",
-      "rating": "Rating",
+      "rating": "Рейтинг",
       "revenueOrdersTrend": "Revenue & Orders Trend",
       "monthlyPerformance": "Monthly performance overview",
       "trafficSources": "Traffic Sources",
@@ -4061,7 +4523,7 @@
       "shopReviews": "Shop Reviews",
       "reviewer": "Reviewer",
       "product": "Товар",
-      "rating": "Rating",
+      "rating": "Рейтинг",
       "comment": "Comment",
       "date": "Дата",
       "reply": "Reply",
@@ -4158,7 +4620,7 @@
         "bogoDiscount": "BOGO Discount %",
         "minimumPurchase": "Minimum Purchase Amount",
         "leaveZero": "Leave 0 for no minimum",
-        "preview": "Preview",
+        "preview": "Предпросмотр",
         "applyTo": "Apply To",
         "allProducts": "Все товары",
         "applyToEntireStore": "Apply to entire store",
@@ -4182,9 +4644,19 @@
         "previous": "Назад",
         "next": "Далее",
         "updateOffer": "Update Offer",
-        "details": "Details",
+        "details": "Детали",
         "products": "Товары",
         "limits": "Limits"
+      },
+      "scheduled": "Запланировано",
+      "expired": "Истек",
+      "all": "Все",
+      "statuses": {
+        "scheduled": "Запланировано",
+        "inactive": "Неактивный",
+        "expired": "Истек",
+        "active": "Активный",
+        "all": "Все"
       }
     },
     "campaigns": {
@@ -4198,7 +4670,7 @@
       "deleteCampaign": "Delete Campaign",
       "duplicateCampaign": "Duplicate campaign",
       "campaignName": "Campaign Name",
-      "type": "Type",
+      "type": "Тип",
       "status": "Статус",
       "startDate": "Start Date",
       "endDate": "End Date",
@@ -4255,14 +4727,14 @@
       "description": "Описание",
       "baseCost": "Base Cost",
       "estimatedDays": "Estimated Days",
-      "zones": "Zones",
+      "zones": "Зоны",
       "freeShippingThreshold": "Free Shipping Threshold",
       "status": "Статус",
       "noMethods": "No delivery methods",
       "noMethodsConfigured": "No delivery methods configured yet",
       "rate": "Rate",
       "delivery": "Delivery",
-      "carrier": "Carrier",
+      "carrier": "Перевозчик",
       "trackingEnabled": "Tracking enabled",
       "enableTracking": "Enable Tracking",
       "edit": "Редактировать",
@@ -4277,17 +4749,17 @@
       "noTrackingInfo": "No tracking information added yet",
       "orderId": "ID заказа",
       "customer": "Клиент",
-      "fullName": "Full Name",
-      "email": "Email",
+      "fullName": "Полное имя",
+      "email": "Электронная почта",
       "phone": "Телефон",
-      "password": "Password",
+      "password": "Пароль",
       "shippingMethodName": "Shipping Method Name",
       "zoneDescription": "Zone Description",
       "zoneName": "Zone Name",
       "zoneType": "Zone Type",
-      "city": "City",
-      "state": "State",
-      "country": "Country",
+      "city": "Город",
+      "state": "Регион",
+      "country": "Страна",
       "radius": "Radius",
       "isActive": "Активный",
       "activeMethods": "Active Methods",
@@ -4296,15 +4768,15 @@
       "avgDeliveryTime": "Avg Delivery Time",
       "days": "days",
       "selectCarrier": "Select Carrier",
-      "trackingNumber": "Tracking Number",
+      "trackingNumber": "Номер отслеживания",
       "estimatedDelivery": "Ожидаемая доставка",
       "shippingMethod": "Shipping Method",
       "selectMethod": "Select Method",
       "selectZone": "Select Zone",
       "selectDeliveryMan": "Select Delivery Man",
-      "deliveryFee": "Delivery Fee",
+      "deliveryFee": "Стоимость доставки",
       "ownDeliveryMan": "Own Delivery Man",
-      "searchOrders": "Search orders...",
+      "searchOrders": "Поиск заказов...",
       "searchDeliveryMen": "Search delivery men...",
       "noOrdersFound": "Заказы не найдены",
       "noDeliveryMenFound": "No delivery men found",
@@ -4335,7 +4807,113 @@
       "failedToSaveTracking": "Failed to save shipment tracking",
       "orderAssigned": "Order assigned to delivery man!",
       "failedToAssign": "Shipment created but failed to assign to delivery man",
-      "pleaseAssignManually": "Please assign manually"
+      "pleaseAssignManually": "Please assign manually",
+      "registering": "Registering...",
+      "trackingCarrierHint": "Enter the tracking number from the carrier",
+      "noDeliveryZonesAvailable": "No delivery zones available",
+      "idCopied": "ID copied",
+      "deliveryMethod": "Способ доставки",
+      "statuses": {
+        "pending": "В ожидании",
+        "shipped": "Отправлено",
+        "inactive": "Неактивный",
+        "processing": "Обработка",
+        "delivered": "Доставлено",
+        "active": "Активный",
+        "cancelled": "Отменено"
+      },
+      "selectOrder": "Select Order",
+      "assigningZoneFor": "Assigning zone for {{name}}",
+      "selectDeliveryZone": "Select Delivery Zone",
+      "loginStep2": "Enter the email and password",
+      "createZonesDescription": "Create delivery zones to define your service areas",
+      "tableHeaders": {
+        "actions": "Действия",
+        "orderId": "ID заказа",
+        "estDelivery": "Est. Delivery",
+        "trackingNumber": "Номер отслеживания",
+        "method": "Метод",
+        "status": "Статус",
+        "carrier": "Перевозчик",
+        "customer": "Клиент"
+      },
+      "addShipmentTracking": "Add Shipment Tracking",
+      "deliveryFeeNote": "Leave empty for free delivery",
+      "deliveryManCreatedSuccess": "Delivery man created successfully",
+      "kmCoverageRadius": "км радиус охвата",
+      "zone": "Зона",
+      "autoFilledFromOrder": "Автоматически заполнено из заказа",
+      "failedToUpdateZone": "Failed to update zone",
+      "tabs": {
+        "methods": "Методы",
+        "zones": "Зоны",
+        "tracking": "Отслеживание",
+        "deliveryMen": "Delivery Men"
+      },
+      "myDeliveryMen": "My Delivery Men",
+      "createZone": "Create Zone",
+      "trackingNumberRequired": "Tracking number is required",
+      "registerAndSelect": "Register and Select",
+      "editZoneAssignment": "Edit Zone Assignment",
+      "assign": "Назначить",
+      "carrierTrackingNote": "Enter the tracking number provided by the carrier",
+      "free": "Бесплатно",
+      "updateZone": "Update Zone",
+      "addDeliveryMenDesc": "Add delivery personnel to manage shipments",
+      "syncFromAuthUsers": "Sync from authenticated users",
+      "noDeliveryMenYet": "No delivery men yet",
+      "loginStep1": "Open the delivery app",
+      "deliveryFeeLabel": "Стоимость доставки",
+      "customerName": "Имя клиента",
+      "addNewDeliveryMan": "Add New Delivery Man",
+      "noZonesAdded": "No zones added",
+      "deliveryPersonCanAccess": "The delivery person can access the app with these credentials",
+      "customerPhone": "Телефон клиента",
+      "standard": "Стандарт",
+      "loginInstructions": "Login Instructions",
+      "trackingAutoPlaceholder": "Will be auto-generated",
+      "trackingCarrierPlaceholder": "e.g. 1Z999AA10123456784",
+      "pleaseAddZonesFirst": "Please add zones first",
+      "noZoneAssigned": "No zone assigned",
+      "deliveryZoneOptional": "Delivery Zone (Optional)",
+      "orderSelected": "Order selected",
+      "noDeliveryMenAdded": "No delivery men added",
+      "passwordLabel": "Пароль",
+      "createPassword": "Создать пароль",
+      "express": "Экспресс",
+      "updateTracking": "Update Tracking",
+      "trackingAutoHint": "The tracking number will be generated automatically",
+      "enterEmailAddress": "Введите адрес электронной почты",
+      "deliveryFeeHint": "Enter the delivery fee for this zone",
+      "regenerate": "Пересоздать",
+      "enterFullName": "Введите полное имя",
+      "loginStep3": "Start accepting deliveries",
+      "orderAssignedTo": "Order assigned to {{name}}",
+      "deliveryZone": "Зона доставки",
+      "failedToAssignOrder": "Failed to assign order",
+      "addFirstDeliveryMan": "Add your first delivery man",
+      "createTracking": "Create Tracking",
+      "noMatchingDeliveryMan": "No matching delivery man",
+      "selectDeliveryZoneOpt": "Select delivery zone (optional)",
+      "zoneAssignmentUpdated": "Zone assignment updated",
+      "copyIdToClipboard": "Copy ID to clipboard",
+      "emailLabel": "Электронная почта",
+      "searchDeliveryMan": "Search delivery man",
+      "enterPhoneNumber": "Введите номер телефона",
+      "noZonesAvailable": "No zones available",
+      "deliveryAddress": "Адрес доставки",
+      "name": "Имя",
+      "enterCarrierTracking": "Enter carrier tracking number",
+      "autoGeneratedNote": "This will be auto-generated",
+      "methods": "Методы",
+      "tracking": "Отслеживание",
+      "autoGeneratedTracking": "Auto-generated tracking number",
+      "noZone": "No zone",
+      "phoneLabel": "Телефон",
+      "registerNewDeliveryMan": "Register New Delivery Man",
+      "deliveryManIdLabel": "Delivery Man ID",
+      "manageYourDeliveryTeam": "Manage your delivery team",
+      "close": "Закрыть"
     },
     "team": {
       "title": "Team",
@@ -4345,9 +4923,8 @@
       "editMember": "Edit Member",
       "removeMember": "Remove Member",
       "memberName": "Member Name",
-      "email": "Email",
+      "email": "Электронная почта",
       "role": "Роль",
-      "permissions": "Permissions",
       "status": "Статус",
       "lastActive": "Последняя активность",
       "noMembers": "No team members",
@@ -4377,15 +4954,40 @@
       "fullAccess": "Full Access",
       "resendInvitation": "Resend invitation",
       "cancelInvitation": "Cancel invitation",
-      "expires": "Expires"
+      "expires": "Expires",
+      "permissions": {
+        "manageTeam": "Manage Team",
+        "manageShop": "Manage Shop",
+        "manageOrders": "Manage Orders",
+        "manageProductsDesc": "Can create, edit, and delete products",
+        "viewAnalytics": "View Analytics",
+        "manageShopDesc": "Can manage shop settings and configuration",
+        "manageOrdersDesc": "Can view, update, and manage all orders",
+        "updateOrderStatus": "Update Order Status",
+        "shopSettings": "Настройки магазина",
+        "manageProducts": "Manage Products",
+        "shopSettingsDesc": "Can access and modify shop settings",
+        "viewOrdersDesc": "Can view all orders without modifying them",
+        "updateOrderStatusDesc": "Can update the status of orders",
+        "viewOrders": "View Orders",
+        "manageTeamDesc": "Can invite, edit, and remove team members",
+        "viewAnalyticsDesc": "Can view analytics and reports"
+      },
+      "roles": {
+        "admin": "Администратор",
+        "staff": "Персонал",
+        "manager": "Менеджер",
+        "owner": "Владелец"
+      },
+      "cancel": "Отмена"
     },
     "billing": {
       "title": "Billing & Subscription",
       "subtitle": "Manage your subscription and billing information",
-      "currentPlan": "Current Plan",
-      "upgradePlan": "Upgrade Plan",
+      "currentPlan": "Текущий план",
+      "upgradePlan": "Обновить план",
       "billingHistory": "Billing History",
-      "paymentMethods": "Payment Methods",
+      "paymentMethods": "Способы оплаты",
       "addPaymentMethod": "Add Payment Method",
       "addMethod": "Add Method",
       "invoices": "Invoices",
@@ -4438,34 +5040,34 @@
     },
     "settings": {
       "shop": {
-        "title": "Shop Settings",
+        "title": "Настройки магазина",
         "subtitle": "Configure your shop",
-        "basicInfo": "Basic Information",
+        "basicInfo": "Основная информация",
         "shopName": "Название магазина",
         "shopDescription": "Shop Description",
         "shopLogo": "Shop Logo",
         "shopBanner": "Shop Banner",
         "category": "Категория",
         "contactInfo": "Контактная информация",
-        "email": "Email",
+        "email": "Электронная почта",
         "phone": "Телефон",
-        "address": "Address",
+        "address": "Адрес",
         "socialMedia": "Social Media",
-        "businessHours": "Business Hours",
+        "businessHours": "Часы работы",
         "policies": "Policies",
         "returnPolicy": "Return Policy",
         "shippingPolicy": "Shipping Policy",
         "saveSettings": "Save Settings",
-        "settingsSaved": "Settings saved successfully"
+        "settingsSaved": "Настройки успешно сохранены"
       },
       "account": {
         "title": "Account Settings",
         "subtitle": "Manage your account",
         "profile": "Profile",
-        "fullName": "Full Name",
-        "email": "Email",
+        "fullName": "Полное имя",
+        "email": "Электронная почта",
         "phone": "Телефон",
-        "password": "Password",
+        "password": "Пароль",
         "changePassword": "Change Password",
         "currentPassword": "Current Password",
         "newPassword": "New Password",
@@ -4476,7 +5078,7 @@
         "security": "Security",
         "twoFactorAuth": "Two-Factor Authentication",
         "saveSettings": "Save Settings",
-        "settingsSaved": "Settings saved successfully"
+        "settingsSaved": "Настройки успешно сохранены"
       },
       "accountSettings": "Account Settings",
       "accountSettingsDesc": "Manage your account preferences and security",
@@ -4487,7 +5089,7 @@
       "confirmPasswordPlaceholder": "Confirm your new password",
       "dangerZone": "Danger Zone",
       "dangerZoneDesc": "Irreversible and destructive actions",
-      "deleteAccount": "Delete Account",
+      "deleteAccount": "Удалить аккаунт",
       "deleteAccountDesc": "Permanently delete your account and all associated data",
       "enable": "Enable",
       "enterCurrentPassword": "Enter your current password",
@@ -4515,7 +5117,7 @@
         "domain": "Domain",
         "advanced": "Advanced"
       },
-      "pageTitle": "Shop Settings",
+      "pageTitle": "Настройки магазина",
       "pageSubtitle": "Configure your shop preferences",
       "loadingSettings": "Loading shop settings...",
       "saveChanges": "Save Changes",
@@ -4529,25 +5131,25 @@
       "descriptionLabel": "Описание",
       "logoLabel": "Shop Logo",
       "bannerLabel": "Shop Banner",
-      "uploadLogo": "Upload Logo",
+      "uploadLogo": "Загрузить логотип",
       "uploadBanner": "Upload Banner",
-      "uploading": "Uploading...",
+      "uploading": "Загрузка...",
       "logoRecommended": "Recommended: 200x200px, max 5MB",
       "bannerRecommended": "Recommended: 1200x400px, max 5MB",
-      "emailLabel": "Email",
+      "emailLabel": "Электронная почта",
       "phoneLabel": "Телефон",
-      "addressLabel": "Address",
+      "addressLabel": "Адрес",
       "businessInfo": "Business Information",
       "businessNameLabel": "Business Name *",
       "taxIdLabel": "Tax ID / EIN",
       "businessAddressLabel": "Business Address",
-      "cityLabel": "City",
-      "stateLabel": "State",
+      "cityLabel": "Город",
+      "stateLabel": "Регион",
       "zipCodeLabel": "ZIP Code",
-      "countryLabel": "Country",
-      "businessPhoneLabel": "Business Phone",
-      "businessEmailLabel": "Business Email",
-      "paymentMethods": "Payment Methods",
+      "countryLabel": "Страна",
+      "businessPhoneLabel": "Деловой телефон",
+      "businessEmailLabel": "Деловая электронная почта",
+      "paymentMethods": "Способы оплаты",
       "customerPaymentOptions": "Customer Payment Options",
       "customerPaymentDesc": "Choose which payment methods are available to your customers at checkout",
       "creditCardPayments": "Credit card payments",
@@ -4555,7 +5157,7 @@
       "secretKey": "Secret Key",
       "clientId": "Client ID",
       "paypalPayments": "PayPal payments",
-      "orderConfirmation": "Order Confirmation",
+      "orderConfirmation": "Подтверждение заказа",
       "orderConfirmationDesc": "Send email when order is placed",
       "orderShipped": "Order Shipped",
       "orderShippedDesc": "Send email when order ships",
@@ -4579,7 +5181,7 @@
       "domainDesc": "Configure your shop's subdomain and custom domain for a professional storefront URL.",
       "subdomain": "Subdomain",
       "subdomainDesc": "Your free storefront URL",
-      "checkAvailability": "Check",
+      "checkAvailability": "Проверить",
       "subdomainAvailable": "is available!",
       "subdomainTaken": "This subdomain is already taken. Try another one.",
       "customDomain": "Custom Domain",
@@ -4611,7 +5213,39 @@
       "headerScripts": "Header Scripts",
       "headerScriptsDesc": "Scripts to inject in the <head> section",
       "footerScripts": "Footer Scripts",
-      "footerScriptsDesc": "Scripts to inject before </body> (recommended for performance)"
+      "footerScriptsDesc": "Scripts to inject before </body> (recommended for performance)",
+      "domainSettingsDesc": "Configure your custom domain and SSL settings",
+      "redirectToCustomDomain": "Redirect to custom domain",
+      "urlCopied": "URL copied",
+      "paymentCodDesc": "Accept cash on delivery payments",
+      "paymentPaypalDesc": "Accept payments via PayPal",
+      "paymentBankDesc": "Accept payments via bank transfer",
+      "dnsValue": "Значение",
+      "ogImageUrl": "Open Graph Image URL",
+      "customerPaymentOptionsDesc": "Configure the payment options available to your customers at checkout",
+      "domainVerifiedError": "Domain verification failed",
+      "never": "Никогда",
+      "dnsType": "Тип",
+      "characters": "символов",
+      "warningAdvancedDesc": "These settings are intended for advanced users. Incorrect configuration may break your store.",
+      "yourStorefrontUrls": "Your Storefront URLs",
+      "recommended": "Рекомендуется",
+      "paymentCardDesc": "Accept credit and debit card payments via Stripe",
+      "domainVerifiedSuccess": "Domain verified successfully",
+      "monthly": "Ежемесячно",
+      "dnsConfigRequired": "DNS configuration required",
+      "warningAdvanced": "Advanced Settings Warning",
+      "daily": "Ежедневно",
+      "weekly": "Еженедельно",
+      "redirectToCustomDomainDesc": "Automatically redirect traffic from the default URL to your custom domain",
+      "sslActiveDesc": "SSL certificate is active and secure",
+      "check": "Проверить",
+      "dnsName": "Имя",
+      "addDnsRecord": "Add DNS Record",
+      "domainActiveDesc": "Your custom domain is active and serving traffic",
+      "enableSitemapDesc": "Enable sitemap generation to help search engines index your store",
+      "separateKeywords": "Separate keywords with commas",
+      "secret": "Секрет"
     },
     "createShop": {
       "title": "Create Your Store",
@@ -4623,19 +5257,19 @@
       "shopName": "Название магазина",
       "shopDescription": "Shop Description",
       "category": "Категория",
-      "email": "Email",
+      "email": "Электронная почта",
       "phone": "Телефон",
-      "address": "Address",
+      "address": "Адрес",
       "uploadDocuments": "Upload Documents",
       "businessLicense": "Business License",
       "identityDocument": "Identity Document",
       "createShop": "Create Shop",
       "shopCreated": "Shop created successfully",
       "pendingApproval": "Your shop is pending approval",
-      "languageSettings": "Language Settings",
-      "defaultLanguage": "Default Language",
+      "languageSettings": "Настройки языка",
+      "defaultLanguage": "Язык по умолчанию",
       "defaultLanguageHint": "The primary language for your store's content",
-      "additionalLanguages": "Additional Languages",
+      "additionalLanguages": "Дополнительные языки",
       "additionalLanguagesHint": "Select languages your store will support (customers can switch between these)",
       "defaultLanguageRequired": "Default language is always included",
       "benefits": {
@@ -4651,21 +5285,21 @@
         "storeCategory": "Store Category",
         "selectCategory": "Select a category (optional)",
         "categoryHint": "Choose the category that best describes your store",
-        "languageSettings": "Language Settings",
-        "defaultLanguage": "Default Language",
+        "languageSettings": "Настройки языка",
+        "defaultLanguage": "Язык по умолчанию",
         "defaultLanguageHint": "The primary language for your store's content",
-        "additionalLanguages": "Additional Languages",
+        "additionalLanguages": "Дополнительные языки",
         "additionalLanguagesHint": "Select languages your store will support (customers can switch between these)",
-        "businessEmail": "Business Email",
+        "businessEmail": "Деловая электронная почта",
         "businessName": "Legal Business Name",
         "businessNamePlaceholder": "Your Business LLC (optional)",
-        "businessType": "Business Type",
+        "businessType": "Тип бизнеса",
         "businessTypes": {
           "individual": "Individual / Sole Proprietor",
           "llc": "LLC",
           "corporation": "Corporation"
         },
-        "businessPhone": "Business Phone",
+        "businessPhone": "Деловой телефон",
         "phoneHint": "Optional. Enter phone number without country code.",
         "creating": "Creating Store...",
         "createStore": "Create Store",
@@ -4675,10 +5309,10 @@
         "title": "Store Limit Reached",
         "description": "You have created {{current}} out of {{max}} stores allowed on your {{plan}} plan.",
         "modalDescription": "You have created {{current}} out of {{max}} stores allowed on your {{plan}} plan. Upgrade your plan to create more stores.",
-        "upgradeButton": "Upgrade Plan",
+        "upgradeButton": "Обновить план",
         "remaining": "You can create {{remaining}} more store(s) ({{max}} total on your plan)",
         "unlimited": "Unlimited stores available on your plan",
-        "currentPlan": "Current Plan",
+        "currentPlan": "Текущий план",
         "storesUsed": "Stores Used"
       },
       "planModal": {
@@ -4698,7 +5332,7 @@
         "twoMonthsFree": "2 months free",
         "plans": {
           "free": {
-            "name": "Free",
+            "name": "Бесплатно",
             "description": "Start your first store",
             "features": {
               "storeWithProducts": "1 store with 10 products",
@@ -4790,28 +5424,28 @@
           "storeUrlHint": "Your store URL will be: example.com/{{slug}}",
           "description": "Store Description",
           "descriptionPlaceholder": "Tell customers what makes your store special...",
-          "languageSettings": "Language Settings",
-          "defaultLanguage": "Default Language",
+          "languageSettings": "Настройки языка",
+          "defaultLanguage": "Язык по умолчанию",
           "defaultLanguageHint": "Primary language for your store content",
-          "additionalLanguages": "Additional Languages",
+          "additionalLanguages": "Дополнительные языки",
           "additionalLanguagesHint": "Select languages your store will support"
         },
         "step3": {
           "title": "Business Information",
           "subtitle": "How can customers reach you?",
-          "businessEmail": "Business Email",
+          "businessEmail": "Деловая электронная почта",
           "businessEmailPlaceholder": "store@yourbusiness.com",
           "businessEmailError": "Business email is required",
           "businessEmailInvalid": "Please enter a valid email",
           "businessName": "Legal Business Name",
           "businessNamePlaceholder": "Your Business LLC (optional)",
-          "businessType": "Business Type",
+          "businessType": "Тип бизнеса",
           "businessTypes": {
             "individual": "Individual / Sole Proprietor",
             "llc": "LLC",
             "corporation": "Corporation"
           },
-          "businessPhone": "Business Phone",
+          "businessPhone": "Деловой телефон",
           "businessPhonePlaceholder": "(555) 123-4567"
         },
         "step4": {
@@ -4819,8 +5453,8 @@
           "subtitle": "Review your store details before going live",
           "storeName": "Store Name",
           "category": "Категория",
-          "businessEmail": "Business Email",
-          "businessType": "Business Type",
+          "businessEmail": "Деловая электронная почта",
+          "businessType": "Тип бизнеса",
           "languages": "Languages",
           "whatHappensNext": "What happens next?",
           "nextSteps": {
@@ -4858,7 +5492,7 @@
     "storefront": {
       "title": "Storefront Builder",
       "subtitle": "Customize your store's appearance",
-      "preview": "Preview",
+      "preview": "Предпросмотр",
       "publish": "Publish",
       "saveDraft": "Save Draft",
       "theme": "Theme",
@@ -4884,7 +5518,7 @@
     "storefrontBuilder": {
       "loadingStorefront": "Loading storefront...",
       "backToDashboard": "Back to Dashboard",
-      "preview": "Preview",
+      "preview": "Предпросмотр",
       "save": "Сохранить",
       "saving": "Saving...",
       "publish": "Publish",
@@ -4915,7 +5549,7 @@
       "deleteSection": "Delete section"
     },
     "productAdd": {
-      "basicInfo": "Basic Information",
+      "basicInfo": "Основная информация",
       "productName": "Product Name",
       "brand": "Brand",
       "description": "Описание",
@@ -4964,7 +5598,7 @@
       "returnPolicy": "Return Policy",
       "noActiveCampaigns": "No active campaigns",
       "noActiveOffers": "No active offers",
-      "searchCategories": "Search categories...",
+      "searchCategories": "Поиск категорий...",
       "noCategoriesFound": "Категории не найдены",
       "addTagPlaceholder": "Add tag & press Enter",
       "enterProductName": "Enter product name",
@@ -4977,7 +5611,7 @@
       "specificationName": "Specification name",
       "specificationValue": "Specification value",
       "specification": "Specification",
-      "value": "Value",
+      "value": "Значение",
       "profitMargin": "Profit Margin",
       "clickToUpload": "Click to upload images",
       "imageFormats": "JPG, PNG, GIF (Max 5MB)",
@@ -5054,10 +5688,10 @@
         "title": "Product Limit Reached",
         "description": "You have added {{current}} out of {{max}} products allowed on your {{plan}} plan.",
         "modalDescription": "You have added {{current}} out of {{max}} products allowed on your {{plan}} plan. Upgrade your plan to add more products.",
-        "upgradeButton": "Upgrade Plan",
+        "upgradeButton": "Обновить план",
         "remaining": "You can add {{remaining}} more product(s) ({{max}} total on your plan)",
         "unlimited": "Unlimited products available on your plan",
-        "currentPlan": "Current Plan",
+        "currentPlan": "Текущий план",
         "productsUsed": "Products Used"
       },
       "errors": {
@@ -5070,9 +5704,9 @@
       "failedToLoadSettings": "Failed to load settings",
       "validationFailed": "Validation failed",
       "pleaseFixErrors": "Please fix the errors and try again",
-      "settingsSaved": "Settings saved successfully",
+      "settingsSaved": "Настройки успешно сохранены",
       "settingsSavedDesc": "Your shop settings have been updated",
-      "failedToSaveSettings": "Failed to save settings",
+      "failedToSaveSettings": "Не удалось сохранить настройки",
       "invalidFileType": "Invalid file type",
       "pleaseUploadImage": "Please upload an image file",
       "fileTooLarge": "File too large",
@@ -5139,6 +5773,11 @@
       "syncingDeliveryMen": "Syncing delivery men from auth users...",
       "failedToSync": "Failed to sync",
       "idCopied": "ID copied to clipboard!"
+    },
+    "shopSwitcher": {
+      "activeShop": "Active Shop",
+      "selectShop": "Select Shop",
+      "switching": "Switching..."
     }
   },
   "delivery": {
@@ -5166,9 +5805,9 @@
       "availableOrders": "Available Orders",
       "activeOrders": "Active Orders",
       "history": "History",
-      "earnings": "Earnings",
+      "earnings": "Доходы",
       "reviews": "Отзывы",
-      "zones": "Zones",
+      "zones": "Зоны",
       "profile": "Profile",
       "settings": "Настройки",
       "logout": "Выйти",
@@ -5208,7 +5847,7 @@
       "ordersWaiting": "orders waiting",
       "pending": "pending",
       "performance": "Performance",
-      "rating": "Rating",
+      "rating": "Рейтинг",
       "rider": "Rider",
       "thisWeek": "this week",
       "totalEarned": "Total Earned"
@@ -5225,7 +5864,7 @@
       "customer": "Клиент",
       "shop": "Магазин",
       "distance": "Distance",
-      "deliveryFee": "Delivery Fee",
+      "deliveryFee": "Стоимость доставки",
       "tip": "Tip",
       "status": "Статус",
       "actions": "Действия",
@@ -5245,7 +5884,7 @@
       "orderDetails": "Детали заказа",
       "pickupAddress": "Pickup Address",
       "deliveryAddress": "Адрес доставки",
-      "customerPhone": "Customer Phone",
+      "customerPhone": "Телефон клиента",
       "orderItems": "Order Items",
       "specialInstructions": "Special Instructions",
       "callCustomer": "Call Customer",
@@ -5274,7 +5913,7 @@
       "orderAccepted": "Order accepted successfully",
       "orderDeclined": "Order declined",
       "pickupLocation": "Pickup Location",
-      "searchOrders": "Search orders...",
+      "searchOrders": "Поиск заказов...",
       "updateFailed": "Failed to update order status",
       "all": "Все",
       "activeFilter": "Активный",
@@ -5292,7 +5931,7 @@
       "date": "Дата",
       "pickup": "Pickup",
       "dropoff": "Dropoff",
-      "earnings": "Earnings",
+      "earnings": "Доходы",
       "status": "Статус",
       "noHistory": "No delivery history",
       "filterByDate": "Filter by Date",
@@ -5301,8 +5940,8 @@
       "delivered": "Доставлен",
       "delivery": "Delivery",
       "deliveryAddress": "Адрес доставки",
-      "deliveryFee": "Delivery Fee",
-      "details": "Details",
+      "deliveryFee": "Стоимость доставки",
+      "details": "Детали",
       "earned": "Earned",
       "noDeliveriesMatch": "No deliveries match your search",
       "of": "из",
@@ -5321,7 +5960,7 @@
       "tipAmount": "tip"
     },
     "earnings": {
-      "title": "Earnings",
+      "title": "Доходы",
       "subtitle": "Track your earnings",
       "totalEarnings": "Total Earnings",
       "pendingEarnings": "Pending Earnings",
@@ -5332,7 +5971,7 @@
       "withdrawFunds": "Withdraw Funds",
       "earningsHistory": "Earnings History",
       "deliveryFees": "Delivery Fees",
-      "tips": "Tips",
+      "tips": "Чаевые",
       "bonuses": "Bonuses",
       "deductions": "Deductions",
       "netEarnings": "Net Earnings",
@@ -5399,7 +6038,7 @@
       "averageRating": "Average Rating",
       "totalReviews": "Total Reviews",
       "recentReviews": "Recent Reviews",
-      "rating": "Rating",
+      "rating": "Рейтинг",
       "comment": "Comment",
       "customer": "Клиент",
       "date": "Дата",
@@ -5425,7 +6064,7 @@
       "assignedZone": "Assigned Zone",
       "contactVendor": "Contact Vendor",
       "contactVendorToChange": "Contact your vendor to change your zone",
-      "kmCoverageRadius": "km coverage radius",
+      "kmCoverageRadius": "км радиус охвата",
       "myZone": "My Zone",
       "noZoneAssigned": "No Zone Assigned",
       "receiveOrdersInZone": "You will receive orders from this zone",
@@ -5435,8 +6074,8 @@
       "title": "Profile",
       "subtitle": "Manage your profile",
       "personalInfo": "Personal Information",
-      "fullName": "Full Name",
-      "email": "Email",
+      "fullName": "Полное имя",
+      "email": "Электронная почта",
       "phone": "Телефон",
       "vehicleInfo": "Vehicle Information",
       "vehicleType": "Vehicle Type",
@@ -5455,7 +6094,7 @@
       "saveProfile": "Save Profile",
       "profileSaved": "Profile saved successfully",
       "accountDeleted": "Account deleted successfully",
-      "deleteAccount": "Delete Account",
+      "deleteAccount": "Удалить аккаунт",
       "deleteConfirmMessage": "This action cannot be undone. All your data will be permanently deleted.",
       "deleteFailed": "Failed to delete account",
       "deleteItem1": "Your profile and personal information",
@@ -5473,8 +6112,8 @@
       "profileUpdated": "Profile updated successfully",
       "selectImageFile": "Please select an image file",
       "toConfirm": "to confirm",
-      "typeDelete": "Type",
-      "typeDeletePlaceholder": "Type DELETE",
+      "typeDelete": "Тип",
+      "typeDeletePlaceholder": "Введите DELETE",
       "updateFailed": "Failed to update profile",
       "uploadFailed": "Failed to upload image"
     },
@@ -5492,7 +6131,7 @@
       "preferredZones": "Preferred Zones",
       "language": "Language",
       "saveSettings": "Save Settings",
-      "settingsSaved": "Settings saved successfully",
+      "settingsSaved": "Настройки успешно сохранены",
       "appVersion": "App Version",
       "autoAcceptOrders": "Auto Accept Orders",
       "autoAcceptOrdersDesc": "Automatically accept new delivery requests",
@@ -5508,7 +6147,7 @@
       "privacySecurityDesc": "Manage your privacy and security settings",
       "pushNotificationsDesc": "Receive push notifications for orders",
       "saveChanges": "Save Changes",
-      "saveFailed": "Failed to save settings",
+      "saveFailed": "Не удалось сохранить настройки",
       "sound": "Sound",
       "soundDesc": "Play sound for new orders",
       "startTime": "Start Time",
@@ -5524,8 +6163,8 @@
       "subtitle": "Sign in to start delivering",
       "email": "Email Address",
       "phone": "Телефон",
-      "password": "Password",
-      "signIn": "Sign In",
+      "password": "Пароль",
+      "signIn": "Войти",
       "signingIn": "Signing in...",
       "forgotPassword": "Forgot Password?",
       "noAccount": "Want to become a delivery partner?",
@@ -5674,7 +6313,7 @@
       "downloadMyData": "Download My Data",
       "downloadDataDesc": "Request a copy of your personal data in compliance with GDPR",
       "downloadData": "Download Data",
-      "deleteAccount": "Delete Account",
+      "deleteAccount": "Удалить аккаунт",
       "deleteAccountDesc": "Permanently delete your account and all associated data. This action cannot be undone.",
       "deleteConfirmation": "Are you sure you want to delete your account? This action is permanent and cannot be undone. All your data, orders, and preferences will be permanently deleted.",
       "typeDeleteToConfirm": "Type \"DELETE\" to confirm"
@@ -5754,9 +6393,9 @@
       "dashboard": "Панель управления",
       "personalInfo": "Personal Info",
       "addresses": "Addresses",
-      "paymentMethods": "Payment Methods",
-      "orderHistory": "Order History",
-      "wishlist": "Wishlist",
+      "paymentMethods": "Способы оплаты",
+      "orderHistory": "История заказов",
+      "wishlist": "Список желаний",
       "settings": "Настройки"
     },
     "notAuthenticated": {
@@ -5825,7 +6464,7 @@
       "phone": "Phone Number",
       "profilePhoto": "Profile Photo",
       "profileAlt": "Profile",
-      "uploading": "Uploading...",
+      "uploading": "Загрузка...",
       "uploadNewPhoto": "Upload New Photo",
       "photoRequirements": "JPG, PNG or GIF. Max 5MB.",
       "saving": "Saving...",
@@ -5838,7 +6477,7 @@
       "addFirst": "Add Your First Address"
     },
     "paymentMethods": {
-      "title": "Payment Methods",
+      "title": "Способы оплаты",
       "addNew": "Add New Card",
       "noMethods": "No saved payment methods",
       "secureMessage": "Payment methods are processed securely at checkout",
@@ -5846,7 +6485,7 @@
       "expires": "Expires"
     },
     "orderHistory": {
-      "title": "Order History",
+      "title": "История заказов",
       "noOrders": "No orders yet",
       "startShopping": "Start Shopping",
       "placedOn": "Placed on {{date}}",
@@ -5870,12 +6509,12 @@
       "goToSettings": "Go to Settings"
     },
     "deleteAccount": {
-      "title": "Delete Account",
+      "title": "Удалить аккаунт",
       "warning": "Once you delete your account, all of your data will be permanently removed. This action cannot be undone.",
       "button": "Delete My Account"
     },
     "deleteModal": {
-      "title": "Delete Account",
+      "title": "Удалить аккаунт",
       "description": "This will permanently delete your account and all associated data including:",
       "items": {
         "profile": "Your profile information",
@@ -5883,10 +6522,10 @@
         "addresses": "Saved addresses and payment methods",
         "wishlist": "Wishlist items"
       },
-      "confirmPrompt": "Type",
+      "confirmPrompt": "Тип",
       "toConfirm": "to confirm:",
-      "placeholder": "Type DELETE",
-      "confirmButton": "Delete Account"
+      "placeholder": "Введите DELETE",
+      "confirmButton": "Удалить аккаунт"
     },
     "memberSince": "Member since {{year}}",
     "logout": "Выйти"

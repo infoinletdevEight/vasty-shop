@@ -145,7 +145,8 @@
       "terms": "नियम और शर्तें",
       "privacy": "गोपनीयता नीति",
       "contact": "संपर्क करें"
-    }
+    },
+    "sellOnVasty": "Sell on Vasty"
   },
   "mobileNav": {
     "myProfile": "मेरी प्रोफ़ाइल",
@@ -1363,7 +1364,7 @@
         "yearlyBack": "यह $3,000/वर्ष आपकी जेब में वापस"
       },
       "free": {
-        "name": "Free",
+        "name": "मुफ्त",
         "description": "अपना पहला स्टोर शुरू करें",
         "feature1": "10 उत्पादों के साथ 1 स्टोर",
         "feature2": "मुफ़्त सबडोमेन (yourstore.example.com)",
@@ -1520,7 +1521,7 @@
       "sellDescription": "Start your online business today. बनाएं your store, add products, and reach new customers.",
       "easySetup": "Easy Setup",
       "easySetupDesc": "बनाएं your store in minutes",
-      "productManagement": "Product Management",
+      "productManagement": "उत्पाद प्रबंधन",
       "productManagementDesc": "जोड़ें unlimited products",
       "analytics": "एनालिटिक्स",
       "analyticsDesc": "Track your sales & growth",
@@ -1609,7 +1610,9 @@
       "forDelivery": "For डिलीवरी Partners",
       "pricingPlans": "Pricing & Plans",
       "payments": "भुगतानs & बिलिंग",
-      "support": "Support & Contact"
+      "support": "सहायता और संपर्क",
+      "paymentsAndBilling": "Payments & Billing",
+      "supportAndContact": "सहायता और संपर्क"
     },
     "vendorNav": {
       "createStore": "बनाएं Your स्टोर",
@@ -1621,29 +1624,57 @@
       "mobileApp": "Mobile App Builder",
       "analytics": "एनालिटिक्स & Reports",
       "deliverySetup": "डिलीवरी Setup",
-      "teamManagement": "Team Management"
+      "teamManagement": "Team Management",
+      "analyticsAndReports": "एनालिटिक्स और रिपोर्ट",
+      "orderManagement": "ऑर्डर प्रबंधन",
+      "gettingStarted": "शुरुआत करना",
+      "storeSetup": "स्टोर सेटअप",
+      "productManagement": "उत्पाद प्रबंधन"
     },
     "customerNav": {
       "browseShop": "Browse & दुकान",
       "cartCheckout": "Cart & Checkout",
       "trackOrders": "Track ऑर्डर",
-      "reviewsWishlist": "समीक्षाएं & Wishlist"
+      "reviewsWishlist": "समीक्षाएं & Wishlist",
+      "accountSetup": "खाता सेटअप",
+      "ordersAndTracking": "ऑर्डर और ट्रैकिंग",
+      "paymentsAndRefunds": "भुगतान और रिफंड",
+      "browsingAndSearch": "ब्राउज़िंग और खोज"
     },
     "deliveryNav": {
       "howDeliveryWorks": "How डिलीवरी Works",
       "deliveryDashboard": "डिलीवरी डैशबोर्ड",
-      "earnings": "Earnings & Payouts"
+      "earnings": "कमाई और भुगतान",
+      "earningsAndPayouts": "कमाई और भुगतान",
+      "appSetup": "ऐप सेटअप",
+      "acceptingOrders": "ऑर्डर स्वीकार करना",
+      "requirements": "आवश्यकताएं"
     },
     "introduction": {
       "title": "Introduction",
       "welcome": "Welcome to <strong>{{appName}}</strong> — the all-in-one multi-vendor e-commerce platform. Whether you're a vendor looking to sell products, a customer shopping from multiple stores, or a delivery partner earning money, this guide covers everything you need to know.",
       "whatIsThisPlatform": "What is {{appName}}?",
       "features": {
-        "multiVendor": "<strong>Multi-vendor marketplace</strong> — Multiple stores on one platform",
         "aiPowered": "<strong>AI-powered tools</strong> — बनाएं stores and products with AI assistance",
         "mobileApp": "<strong>Mobile app builder</strong> — Turn your store into a native app",
         "payments": "<strong>Integrated payments</strong> — Secure checkout via Stripe",
-        "delivery": "<strong>डिलीवरी network</strong> — Built-in delivery partner system"
+        "delivery": "<strong>डिलीवरी network</strong> — Built-in delivery partner system",
+        "securePayments": {
+          "title": "Secure Payments",
+          "desc": "Integrated payment processing with Stripe"
+        },
+        "realTimeTracking": {
+          "title": "वास्तविक समय ट्रैकिंग",
+          "desc": "Track orders from placement to delivery"
+        },
+        "multiVendor": {
+          "title": "Multi-Vendor Marketplace",
+          "desc": "Host multiple vendors with independent store management"
+        },
+        "analytics": {
+          "title": "एनालिटिक्स",
+          "desc": "Detailed insights for vendors and platform performance"
+        }
       },
       "userTypes": "User Types",
       "table": {
@@ -1672,7 +1703,18 @@
           "Manage platform, approve stores",
           "/admin"
         ]
-      }
+      },
+      "whatIsVasty": "What is Vasty?",
+      "platformPoints": [
+        "Vendors can create and manage their online stores",
+        "Customers can discover and buy from multiple vendors",
+        "Delivery partners can fulfill orders and earn money",
+        "All parties benefit from integrated, secure payment processing"
+      ],
+      "platformOverview": "Platform Overview",
+      "welcomeDesc": "Vasty is a comprehensive marketplace platform that connects vendors, customers, and delivery partners. Whether you want to start your online store, buy products from local vendors, or earn money as a delivery partner, Vasty provides all the tools you need.",
+      "platformDesc": "Vasty operates as a multi-vendor marketplace where:",
+      "keyFeatures": "Key Features"
     },
     "quickStart": {
       "title": "Quick Start",
@@ -1694,10 +1736,41 @@
         "linkText": "Browse Marketplace"
       },
       "cards": {
-        "startSelling": "Start Selling",
+        "startSelling": "बेचना शुरू करें",
         "startSellingDesc": "बनाएं your first store",
         "startShopping": "Start दुकानping",
         "startShoppingDesc": "Browse all products"
+      },
+      "forCustomers": {
+        "steps": [
+          "Create your account or sign in",
+          "Browse products and vendors",
+          "Add items to your cart",
+          "Checkout with your preferred payment method",
+          "Track your order in real-time"
+        ],
+        "title": "For Customers"
+      },
+      "forVendors": {
+        "steps": [
+          "Register as a vendor",
+          "Complete your store setup",
+          "Add your products with images and descriptions",
+          "Configure payment and delivery options",
+          "Start receiving orders!"
+        ],
+        "title": "For Vendors"
+      },
+      "desc": "Get started with Vasty in minutes",
+      "forDelivery": {
+        "title": "For Delivery Partners",
+        "steps": [
+          "Sign up as a delivery partner",
+          "Complete verification and onboarding",
+          "Download the delivery app",
+          "Set your availability and area",
+          "Start accepting delivery requests"
+        ]
       }
     },
     "forVendors": {
@@ -1894,7 +1967,26 @@
           "ग्राहक demographics",
           "Conversion rates",
           "Traffic sources"
-        ]
+        ],
+        "items": [
+          {
+            "title": "Sales Reports",
+            "desc": "Track daily, weekly, and monthly sales performance."
+          },
+          {
+            "title": "Customer Insights",
+            "desc": "Understand your customer base and buying patterns."
+          },
+          {
+            "title": "Product Performance",
+            "desc": "See which products sell best and optimize your catalog."
+          },
+          {
+            "title": "Traffic Analytics",
+            "desc": "Monitor store visits and conversion rates."
+          }
+        ],
+        "desc": "Monitor your store's performance with built-in analytics:"
       },
       "deliverySetup": {
         "title": "डिलीवरी Setup",
@@ -1916,19 +2008,99 @@
           ],
           "rows": [
             [
-              "Owner",
+              "मालिक",
               "Full access to all features"
             ],
             [
-              "Manager",
+              "प्रबंधक",
               "Manage products, orders, and customers"
             ],
             [
-              "Staff",
+              "स्टाफ",
               "Process orders and respond to customers"
             ]
           ]
         }
+      },
+      "orderManagement": {
+        "items": [
+          {
+            "title": "Order Notifications",
+            "desc": "Receive instant notifications for new orders and respond quickly."
+          },
+          {
+            "title": "Order Processing",
+            "desc": "Update order status as you prepare and ship products to customers."
+          },
+          {
+            "title": "Customer Communication",
+            "desc": "Communicate with customers about their orders through the platform."
+          }
+        ],
+        "desc": "Process and fulfill orders efficiently:",
+        "title": "ऑर्डर प्रबंधन"
+      },
+      "storeSetup": {
+        "items": [
+          {
+            "title": "Store Logo & Branding",
+            "desc": "Upload a high-quality logo and choose colors that match your brand."
+          },
+          {
+            "title": "Store Description",
+            "desc": "Write a clear, compelling description of what you sell and what makes your store unique."
+          },
+          {
+            "title": "संपर्क जानकारी",
+            "desc": "Provide accurate contact details so customers can reach you easily."
+          },
+          {
+            "title": "Business Hours & Policies",
+            "desc": "Set your business hours, shipping policies, and return policies."
+          }
+        ],
+        "desc": "Your store profile is your storefront on Vasty. Make it stand out:",
+        "title": "स्टोर सेटअप"
+      },
+      "gettingStarted": {
+        "steps": [
+          {
+            "title": "Account Registration",
+            "desc": "Create your vendor account with your business email. You'll need to verify your email address before continuing."
+          },
+          {
+            "title": "Business Verification",
+            "desc": "Provide the required business documentation, including tax information and identity verification, to activate your store."
+          },
+          {
+            "title": "स्टोर सेटअप",
+            "desc": "Customize your store profile with branding, logo, description, and contact information."
+          }
+        ],
+        "title": "Getting Started as a Vendor",
+        "desc": "Setting up your store on Vasty is simple. Follow these steps to start selling:"
+      },
+      "productManagement": {
+        "desc": "Add and manage your products effectively:",
+        "title": "उत्पाद प्रबंधन",
+        "items": [
+          {
+            "title": "Product Listings",
+            "desc": "Create detailed product listings with titles, descriptions, and high-quality images."
+          },
+          {
+            "title": "Pricing & Inventory",
+            "desc": "Set competitive prices and keep stock levels up to date."
+          },
+          {
+            "title": "Categories & Tags",
+            "desc": "Organize products into categories and use tags for better discoverability."
+          },
+          {
+            "title": "Variants & Options",
+            "desc": "Add product variants such as size, color, or material."
+          }
+        ]
       }
     },
     "forCustomers": {
@@ -1982,6 +2154,94 @@
         "title": "समीक्षाएं & Wishlist",
         "leaveReviews": "<strong>Leave समीक्षाएं</strong> — Rate products after purchase to help other shoppers",
         "wishlist": "<strong>Wishlist</strong> — सहेजें products for later at <code>/wishlist</code>"
+      },
+      "accountSetup": {
+        "title": "खाता सेटअप",
+        "items": [
+          {
+            "title": "Create Account",
+            "desc": "Sign up with your email or use social login (Google, Facebook) for quick access."
+          },
+          {
+            "title": "Profile Information",
+            "desc": "Add your name, profile picture, and communication preferences."
+          },
+          {
+            "title": "Saved Addresses",
+            "desc": "Add multiple delivery addresses for quick checkout."
+          },
+          {
+            "title": "भुगतान के तरीके",
+            "desc": "Securely save your preferred payment methods for faster purchases."
+          }
+        ],
+        "desc": "Create your customer account and start shopping:"
+      },
+      "orders": {
+        "desc": "Place orders and track them in real time:",
+        "title": "ऑर्डर और ट्रैकिंग",
+        "items": [
+          {
+            "title": "Place an Order",
+            "desc": "Add items to your cart and check out with your preferred payment method."
+          },
+          {
+            "title": "ऑर्डर पुष्टि",
+            "desc": "Receive instant confirmation with order details and estimated delivery time."
+          },
+          {
+            "title": "वास्तविक समय ट्रैकिंग",
+            "desc": "Track your order status from processing to delivery."
+          },
+          {
+            "title": "ऑर्डर इतिहास",
+            "desc": "View past orders and reorder favorite items easily."
+          }
+        ]
+      },
+      "payments": {
+        "desc": "Safe and secure payment processing:",
+        "items": [
+          {
+            "title": "भुगतान के तरीके",
+            "desc": "Pay securely with credit/debit cards, digital wallets, or cash on delivery."
+          },
+          {
+            "title": "Secure Transactions",
+            "desc": "All payments are processed securely through Stripe with encryption."
+          },
+          {
+            "title": "Refund Requests",
+            "desc": "Request refunds for eligible orders within the specified timeframe."
+          },
+          {
+            "title": "Refund Processing",
+            "desc": "Approved refunds are returned to the original payment method within 5-10 business days."
+          }
+        ],
+        "title": "भुगतान और रिफंड"
+      },
+      "browsing": {
+        "items": [
+          {
+            "title": "Search Products",
+            "desc": "Use the search bar to find specific products across all vendors."
+          },
+          {
+            "title": "Browse Categories",
+            "desc": "Explore products by category to discover new items."
+          },
+          {
+            "title": "Filter & Sort",
+            "desc": "Refine results by price, rating, vendor, and more."
+          },
+          {
+            "title": "इच्छा सूची",
+            "desc": "Save items to your wishlist for later purchase."
+          }
+        ],
+        "desc": "Discover products and vendors that match your needs:",
+        "title": "ब्राउज़िंग और खोज"
       }
     },
     "forDelivery": {
@@ -2032,7 +2292,7 @@
               "देखें and manage assigned deliveries"
             ],
             [
-              "Earnings",
+              "कमाई",
               "/delivery/earnings",
               "Track your income"
             ],
@@ -2050,12 +2310,97 @@
         }
       },
       "earnings": {
-        "title": "Earnings & Payouts",
+        "title": "कमाई और भुगतान",
         "features": [
           "देखें earnings at <code>/delivery/earnings</code>",
           "Earnings are managed by the vendor you work for",
           "Track completed deliveries and tips",
           "देखें delivery history and performance"
+        ],
+        "items": [
+          {
+            "title": "Base Fare",
+            "desc": "Earn a base fare for each completed delivery."
+          },
+          {
+            "title": "Distance & Time",
+            "desc": "Additional earnings based on delivery distance and time."
+          },
+          {
+            "title": "टिप्स",
+            "desc": "Keep 100% of customer tips."
+          },
+          {
+            "title": "Weekly Payouts",
+            "desc": "Receive earnings directly to your bank account every week."
+          }
+        ],
+        "desc": "How you earn and get paid as a delivery partner:"
+      },
+      "acceptingOrders": {
+        "title": "ऑर्डर स्वीकार करना",
+        "desc": "How to handle delivery requests:",
+        "items": [
+          {
+            "title": "Receive Requests",
+            "desc": "Get notified when a new order is available in your area."
+          },
+          {
+            "title": "Accept or Decline",
+            "desc": "Review order details and choose whether to accept the delivery."
+          },
+          {
+            "title": "Pick Up",
+            "desc": "Navigate to the vendor location and pick up the order."
+          },
+          {
+            "title": "Deliver",
+            "desc": "Navigate to the customer address and complete the delivery."
+          }
+        ]
+      },
+      "appSetup": {
+        "title": "ऐप सेटअप",
+        "desc": "Get started with the delivery partner app:",
+        "items": [
+          {
+            "title": "Download the App",
+            "desc": "Download the Vasty delivery app from the App Store or Google Play."
+          },
+          {
+            "title": "साइन इन",
+            "desc": "Log in with your delivery partner credentials."
+          },
+          {
+            "title": "Enable Location",
+            "desc": "Allow location access for order assignment and navigation."
+          },
+          {
+            "title": "Set Availability",
+            "desc": "Toggle your availability to start receiving delivery requests."
+          }
+        ]
+      },
+      "requirements": {
+        "desc": "What you need to become a delivery partner:",
+        "title": "आवश्यकताएं",
+        "items": [
+          {
+            "title": "Age & Documentation",
+            "desc": "Be at least 18 years old with valid government-issued ID."
+          },
+          {
+            "title": "Vehicle",
+            "desc": "Own or have access to a reliable vehicle (car, motorcycle, or bicycle)."
+          },
+          {
+            "title": "Smartphone",
+            "desc": "Have a smartphone to use the delivery app and receive orders."
+          },
+          {
+            "title": "Background Check",
+            "desc": "Pass a background check and driving record review."
+          }
         ]
       }
     },
@@ -2103,7 +2448,12 @@
       },
       "annualDiscount": "सहेजें 15% with annual billing",
       "cardTitle": "देखें Full Pricing Details",
-      "cardDescription": "Compare all plan features"
+      "cardDescription": "Compare all plan features",
+      "customPlans": "Custom Plans",
+      "getStarted": "Get Started",
+      "desc": "Choose the plan that fits your business",
+      "intro": "Vasty offers flexible pricing plans for vendors of all sizes.",
+      "compare": "Compare Plans"
     },
     "paymentsAndBilling": {
       "title": "भुगतानs & बिलिंग",
@@ -2132,10 +2482,53 @@
           "रद्द करें or upgrade anytime",
           "इनवॉइसs available for download"
         ]
-      }
+      },
+      "sections": {
+        "refundPolicy": {
+          "items": [
+            "Refund requests must be made within 14 days of delivery",
+            "Items must be returned in original condition",
+            "Approved refunds are processed within 5-10 business days",
+            "Refunds are issued to the original payment method"
+          ],
+          "desc": "Understanding refunds on Vasty:",
+          "title": "Refund Policy"
+        },
+        "invoicing": {
+          "title": "Invoicing",
+          "items": [
+            "Automatic invoice generation for every order",
+            "Downloadable invoices in PDF format",
+            "Tax information included where applicable",
+            "Access to complete billing history from your account"
+          ],
+          "desc": "Invoices and billing documents:"
+        },
+        "vendorPayouts": {
+          "title": "Vendor Payouts",
+          "items": [
+            "Weekly automatic payouts to your connected bank account",
+            "Minimum payout threshold of $50",
+            "Platform fees are deducted before payout",
+            "Detailed transaction history available in your dashboard"
+          ],
+          "desc": "How and when vendors receive their earnings:"
+        },
+        "paymentMethods": {
+          "title": "भुगतान के तरीके",
+          "desc": "Supported payment methods on the platform:",
+          "items": [
+            "Credit and debit cards (Visa, Mastercard, American Express)",
+            "Digital wallets (Apple Pay, Google Pay)",
+            "Bank transfers for selected regions",
+            "Cash on delivery where available"
+          ]
+        }
+      },
+      "desc": "Learn about payments, billing, and financial operations on Vasty."
     },
     "supportAndContact": {
-      "title": "Support & Contact",
+      "title": "सहायता और संपर्क",
       "contactUs": "संपर्क करें",
       "email": "ईमेल:",
       "supportEmail": "support@example.com",
@@ -2146,8 +2539,59 @@
         "faqsDescription": "Common questions answered",
         "contactTitle": "Contact Form",
         "contactDescription": "Send us a message"
-      }
-    }
+      },
+      "channels": {
+        "title": "Support Channels",
+        "items": [
+          {
+            "title": "Email Support",
+            "desc": "Send us an email at support@vastyshop.com and we'll respond within 24 hours."
+          },
+          {
+            "title": "Live Chat",
+            "desc": "Chat with our support team in real time from the Help Center."
+          },
+          {
+            "title": "Help Articles",
+            "desc": "Browse our knowledge base for answers to common questions."
+          }
+        ]
+      },
+      "businessHours": {
+        "hours": "Monday - Friday: 9:00 AM - 6:00 PM",
+        "title": "व्यावसायिक घंटे",
+        "note": "Weekend support is available for urgent issues only."
+      },
+      "commonIssues": {
+        "title": "Common Issues",
+        "items": [
+          {
+            "title": "Login Problems",
+            "desc": "Having trouble signing in? Try resetting your password."
+          },
+          {
+            "title": "Payment Issues",
+            "desc": "Payment not going through? Check your card details or try a different method."
+          },
+          {
+            "title": "Order Tracking",
+            "desc": "Can't find your order? Check the order history in your account."
+          },
+          {
+            "title": "Account Verification",
+            "desc": "Need to verify your account? Follow the verification email we sent you."
+          }
+        ]
+      },
+      "desc": "Get help and contact our support team."
+    },
+    "getInTouch": "संपर्क करें",
+    "title": "सहायता केंद्र",
+    "searchPlaceholder": "Search help articles...",
+    "quickLinks": "त्वरित लिंक",
+    "subtitle": "Find answers to common questions and learn how to use Vasty",
+    "contactSupportDesc": "Can't find what you're looking for? Our support team is here to help.",
+    "contactSupport": "सहायता से संपर्क करें"
   },
   "legal": {
     "breadcrumb": "Legal",
@@ -2675,7 +3119,7 @@
         "cartDesc": "Your shopping cart",
         "checkout": "Checkout",
         "checkoutDesc": "Complete your purchase",
-        "wishlist": "Wishlist",
+        "wishlist": "इच्छा सूची",
         "wishlistDesc": "सहेजेंd items",
         "login": "Login",
         "loginDesc": "साइन इन to your account",
@@ -2705,7 +3149,7 @@
         "deliveryDashboardDesc": "Manage deliveries",
         "availableOrders": "Available ऑर्डर",
         "availableOrdersDesc": "देखें available orders",
-        "earnings": "Earnings",
+        "earnings": "कमाई",
         "earningsDesc": "Track your earnings",
         "aboutUs": "About Us",
         "aboutUsDesc": "Learn about {{appName}}",
@@ -2893,9 +3337,9 @@
       "cancelled": "रद्द",
       "customers": "ग्राहक",
       "vendors": "विक्रेताs",
-      "daily": "Daily",
-      "weekly": "Weekly",
-      "monthly": "Monthly",
+      "daily": "दैनिक",
+      "weekly": "साप्ताहिक",
+      "monthly": "मासिक",
       "orders": "orders",
       "units": "units",
       "failedToLoad": "लोड करने में विफल platform analytics",
@@ -2981,7 +3425,7 @@
       "exportSuccess": "User list exported सफलतापूर्वक",
       "exportFailed": "निर्यात करने में विफल users",
       "shops": "दुकानs",
-      "contactInfo": "Contact Information",
+      "contactInfo": "संपर्क जानकारी",
       "phone": "फोन",
       "joined": "Joined",
       "lastLogin": "Last Login",
@@ -3002,7 +3446,7 @@
       "rejectShop": "Reject दुकान",
       "viewShop": "देखें दुकान",
       "shopName": "दुकान नाम",
-      "owner": "Owner",
+      "owner": "मालिक",
       "category": "श्रेणी",
       "status": "स्थिति",
       "appliedDate": "Applied तिथि",
@@ -3040,7 +3484,7 @@
       "title": "सभी ऑर्डर",
       "subtitle": "Manage orders across all shops",
       "allOrders": "सभी ऑर्डर",
-      "orderId": "Order ID",
+      "orderId": "ऑर्डर आईडी",
       "customer": "ग्राहक",
       "shop": "दुकान",
       "amount": "राशि",
@@ -3123,7 +3567,7 @@
       "amount": "राशि",
       "status": "स्थिति",
       "date": "तिथि",
-      "paymentMethod": "Method",
+      "paymentMethod": "तरीका",
       "completed": "पूर्ण",
       "pending": "लंबित",
       "failed": "Failed",
@@ -3150,7 +3594,7 @@
       "reviewer": "Reviewer",
       "product": "Product",
       "shop": "दुकान",
-      "rating": "Rating",
+      "rating": "रेटिंग",
       "comment": "Comment",
       "date": "तिथि",
       "status": "स्थिति",
@@ -3207,7 +3651,7 @@
       "allStatus": "सभी स्थिति",
       "qualified": "Qualified",
       "rewarded": "Rewarded",
-      "expired": "Expired",
+      "expired": "समाप्त",
       "clearFilters": "Clear filters",
       "rewardType": "Reward Type",
       "storeCredit": "स्टोर Credit",
@@ -3268,13 +3712,13 @@
       "subtitle": "Send and manage platform notifications",
       "allNotifications": "सभी सूचनाएं",
       "sendNotification": "Send नहींtification",
-      "notificationType": "Type",
+      "notificationType": "प्रकार",
       "recipients": "Recipients",
       "message": "Message",
       "sentDate": "Sent तिथि",
       "status": "स्थिति",
       "sent": "Sent",
-      "scheduled": "Scheduled",
+      "scheduled": "निर्धारित",
       "draft": "ड्राफ़्ट",
       "noNotifications": "कोई सूचना नहीं found",
       "notificationSent": "नहींtification sent सफलतापूर्वक",
@@ -3292,7 +3736,7 @@
       "unread": "Unread",
       "searchPlaceholder": "खोजें by title or message...",
       "filters": "फ़िल्टरs",
-      "type": "Type",
+      "type": "प्रकार",
       "noNotificationsMatch": "कोई सूचना नहीं match your current filters",
       "adjustFilters": "Try adjusting your search or filter criteria",
       "notificationsWillAppear": "सूचनाएं will appear here once they are sent",
@@ -3307,7 +3751,7 @@
       "titlePlaceholder": "Enter notification title...",
       "messageLabel": "Message",
       "messagePlaceholder": "Enter notification message...",
-      "typeLabel": "Type",
+      "typeLabel": "प्रकार",
       "recipientsLabel": "Recipients",
       "allAdmins": "सभी एडमिनs",
       "allVendors": "सभी विक्रेताs",
@@ -3413,7 +3857,7 @@
       "platformLogo": "Platform Logo",
       "currency": "Default Currency",
       "currencyRequired": "Default Currency *",
-      "language": "Default Language",
+      "language": "डिफ़ॉल्ट भाषा",
       "languageRequired": "Default Language *",
       "timezone": "Timezone",
       "commissionRate": "Commission Rate",
@@ -3432,8 +3876,8 @@
       "logoUploaded": "Logo uploaded सफलतापूर्वक",
       "rememberSave": "Remember to save your changes",
       "logoUploadFailed": "Failed to upload logo",
-      "uploading": "Uploading...",
-      "uploadLogo": "Upload Logo",
+      "uploading": "अपलोड हो रहा है...",
+      "uploadLogo": "लोगो अपलोड करें",
       "logoRecommended": "Recommended: 200x200px, max 5MB",
       "supportEmailRequired": "Support ईमेल *",
       "generalSettings": "General सेटिंग्स",
@@ -3554,7 +3998,8 @@
       "update": "अपडेट करें",
       "logOut": "लॉग आउट",
       "logoutSuccess": "लॉगआउट हो गया सफलतापूर्वक",
-      "searchPlaceholder": "खोजें products, orders..."
+      "searchPlaceholder": "खोजें products, orders...",
+      "na": "लागू नहीं"
     },
     "profile": {
       "backToHome": "वापस to Home",
@@ -3647,7 +4092,7 @@
       "phone": "Enter your phone number",
       "address": "Enter your address",
       "bio": "Tell us about yourself...",
-      "typeDelete": "Type DELETE",
+      "typeDelete": "DELETE टाइप करें",
       "searchTeamMembers": "खोजें team members...",
       "teamMemberEmail": "Enter team member email",
       "invitationMessage": "जोड़ें a personal message to the invitation...",
@@ -3674,13 +4119,13 @@
       "returnCondition": "जोड़ें return condition",
       "metaDescription": "Brief description for search results",
       "enterPassword": "Enter password",
-      "deliveryRiderName": "Enter full name",
-      "deliveryRiderEmail": "Enter email address",
+      "deliveryRiderName": "पूरा नाम दर्ज करें",
+      "deliveryRiderEmail": "ईमेल पता दर्ज करें",
       "deliveryRiderPhone": "फोन number",
       "createPassword": "बनाएं a password (min 6 chars)",
       "shippingMethodName": "Standard शिपिंग",
       "zoneDescription": "Brief description of this delivery zone...",
-      "autoFilled": "Auto-filled from order",
+      "autoFilled": "ऑर्डर से स्वतः भरा गया",
       "reviewSummary": "Summarize your experience",
       "reviewContent": "Share your experience with this shop...",
       "aiPrompt": "Describe your store... e.g., 'A modern fashion boutique for young professionals, with a focus on sustainable and minimalist clothing. Clean, elegant design with lots of whitespace.'",
@@ -3693,7 +4138,7 @@
       "buttonLink": "Button Link",
       "backgroundImageUrl": "वापसground Image URL",
       "imageUrl": "Image URL",
-      "value": "Value",
+      "value": "मान",
       "label": "Label",
       "name": "नाम",
       "role": "Role (e.g., सत्यापित Buyer)",
@@ -3784,7 +4229,7 @@
       "customize": "Customize",
       "deliveryCosts": "डिलीवरी Costs",
       "designStorefront": "Design your storefront",
-      "details": "Details",
+      "details": "विवरण",
       "earningsBreakdown": "Earnings Breakdown",
       "editStorefront": "संपादित करें storefront",
       "getStartedSubtitle": "Complete these steps to start selling",
@@ -3834,7 +4279,7 @@
       "productDeleted": "Product deleted सफलतापूर्वक",
       "uploadImages": "Upload Images",
       "dragDropImages": "Drag and drop images here",
-      "basicInfo": "Basic Information",
+      "basicInfo": "बुनियादी जानकारी",
       "pricing": "Pricing",
       "inventory": "Inventory",
       "shipping": "शिपिंग",
@@ -3870,7 +4315,7 @@
       "updateInventory": "अपडेट करें Inventory",
       "updatePrice": "अपडेट करें मूल्य",
       "updateStatus": "अपडेट करें स्थिति",
-      "value": "Value",
+      "value": "मान",
       "noProductsYet": "नहीं उत्पाद Yet",
       "noProductsFound": "नहीं उत्पाद Found",
       "startBuildingInventory": "Start building your inventory by adding your first product.",
@@ -3897,13 +4342,21 @@
         "public": "Public",
         "private": "Private",
         "passwordProtected": "पासवर्ड Protected"
-      }
+      },
+      "tabs": {
+        "shippingCare": "Shipping & Care",
+        "marketingSeo": "Marketing & SEO",
+        "productInfo": "Product Info"
+      },
+      "preview": "पूर्वावलोकन",
+      "saveProduct": "Save Product",
+      "saveDraft": "Save Draft"
     },
     "orders": {
       "title": "ऑर्डर",
       "subtitle": "Manage your orders",
       "allOrders": "सभी ऑर्डर",
-      "orderId": "Order ID",
+      "orderId": "ऑर्डर आईडी",
       "customer": "ग्राहक",
       "items": "Items",
       "total": "कुल",
@@ -3955,7 +4408,16 @@
       "totalOrders": "कुल ऑर्डर",
       "noOrdersYet": "नहीं ऑर्डर Yet",
       "ordersWillAppear": "ऑर्डर will appear here once customers start purchasing from your shop.",
-      "failedToLoad": "लोड करने में विफल orders"
+      "failedToLoad": "लोड करने में विफल orders",
+      "statuses": {
+        "shipped": "भेज दिया गया",
+        "delivered": "वितरित",
+        "pending": "लंबित",
+        "completed": "पूर्ण",
+        "refunded": "धनवापसी",
+        "processing": "प्रसंस्करण",
+        "cancelled": "रद्द"
+      }
     },
     "customers": {
       "title": "ग्राहक",
@@ -3977,7 +4439,7 @@
       "avgOrder": "Avg Order",
       "avgOrderValue": "Average Order Value",
       "contact": "Contact",
-      "contactInfo": "Contact Information",
+      "contactInfo": "संपर्क जानकारी",
       "customer": "ग्राहक",
       "customerSince": "ग्राहक Since",
       "customersWillAppear": "ग्राहक will appear here after their first purchase",
@@ -4042,7 +4504,7 @@
       "paidOrders": "paid orders",
       "completed": "completed",
       "perCompletedOrder": "Per completed order",
-      "rating": "Rating",
+      "rating": "रेटिंग",
       "revenueOrdersTrend": "राजस्व & ऑर्डर Trend",
       "monthlyPerformance": "Monthly performance overview",
       "trafficSources": "Traffic Sources",
@@ -4061,7 +4523,7 @@
       "shopReviews": "दुकान समीक्षाएं",
       "reviewer": "Reviewer",
       "product": "Product",
-      "rating": "Rating",
+      "rating": "रेटिंग",
       "comment": "Comment",
       "date": "तिथि",
       "reply": "Reply",
@@ -4158,7 +4620,7 @@
         "bogoDiscount": "BOGO छूट %",
         "minimumPurchase": "Minimum Purchase राशि",
         "leaveZero": "Leave 0 for no minimum",
-        "preview": "Preview",
+        "preview": "पूर्वावलोकन",
         "applyTo": "Apply To",
         "allProducts": "सभी उत्पाद",
         "applyToEntireStore": "Apply to entire store",
@@ -4182,9 +4644,19 @@
         "previous": "पिछला",
         "next": "अगला",
         "updateOffer": "अपडेट करें Offer",
-        "details": "Details",
+        "details": "विवरण",
         "products": "उत्पाद",
         "limits": "Limits"
+      },
+      "scheduled": "निर्धारित",
+      "expired": "समाप्त",
+      "all": "सभी",
+      "statuses": {
+        "scheduled": "निर्धारित",
+        "inactive": "निष्क्रिय",
+        "expired": "समाप्त",
+        "active": "सक्रिय",
+        "all": "सभी"
       }
     },
     "campaigns": {
@@ -4198,7 +4670,7 @@
       "deleteCampaign": "हटाएं Campaign",
       "duplicateCampaign": "Duplicate campaign",
       "campaignName": "Campaign नाम",
-      "type": "Type",
+      "type": "प्रकार",
       "status": "स्थिति",
       "startDate": "Start तिथि",
       "endDate": "End तिथि",
@@ -4255,14 +4727,14 @@
       "description": "विवरण",
       "baseCost": "Base Cost",
       "estimatedDays": "Estimated Days",
-      "zones": "Zones",
+      "zones": "क्षेत्र",
       "freeShippingThreshold": "मुफ़्त शिपिंग Threshold",
       "status": "स्थिति",
       "noMethods": "नहीं delivery methods",
       "noMethodsConfigured": "नहीं delivery methods configured yet",
       "rate": "Rate",
       "delivery": "डिलीवरी",
-      "carrier": "Carrier",
+      "carrier": "वाहक",
       "trackingEnabled": "Tracking enabled",
       "enableTracking": "Enable Tracking",
       "edit": "संपादित करें",
@@ -4275,7 +4747,7 @@
       "noZonesCreated": "नहीं delivery zones created yet",
       "noActiveShipments": "नहीं सक्रिय Shipments",
       "noTrackingInfo": "नहीं tracking information added yet",
-      "orderId": "Order ID",
+      "orderId": "ऑर्डर आईडी",
       "customer": "ग्राहक",
       "fullName": "पूरा नाम",
       "email": "ईमेल",
@@ -4335,7 +4807,113 @@
       "failedToSaveTracking": "सहेजने में विफल shipment tracking",
       "orderAssigned": "Order assigned to delivery man!",
       "failedToAssign": "Shipment created but failed to assign to delivery man",
-      "pleaseAssignManually": "Please assign manually"
+      "pleaseAssignManually": "Please assign manually",
+      "registering": "Registering...",
+      "trackingCarrierHint": "Enter the tracking number from the carrier",
+      "noDeliveryZonesAvailable": "No delivery zones available",
+      "idCopied": "ID copied",
+      "deliveryMethod": "डिलीवरी विधि",
+      "statuses": {
+        "pending": "लंबित",
+        "shipped": "भेज दिया गया",
+        "inactive": "निष्क्रिय",
+        "processing": "प्रसंस्करण",
+        "delivered": "वितरित",
+        "active": "सक्रिय",
+        "cancelled": "रद्द"
+      },
+      "selectOrder": "Select Order",
+      "assigningZoneFor": "Assigning zone for {{name}}",
+      "selectDeliveryZone": "Select Delivery Zone",
+      "loginStep2": "Enter the email and password",
+      "createZonesDescription": "Create delivery zones to define your service areas",
+      "tableHeaders": {
+        "actions": "कार्रवाई",
+        "orderId": "ऑर्डर आईडी",
+        "estDelivery": "Est. Delivery",
+        "trackingNumber": "ट्रैकिंग नंबर",
+        "method": "तरीका",
+        "status": "स्थिति",
+        "carrier": "वाहक",
+        "customer": "ग्राहक"
+      },
+      "addShipmentTracking": "Add Shipment Tracking",
+      "deliveryFeeNote": "Leave empty for free delivery",
+      "deliveryManCreatedSuccess": "Delivery man created successfully",
+      "kmCoverageRadius": "किमी कवरेज त्रिज्या",
+      "zone": "क्षेत्र",
+      "autoFilledFromOrder": "ऑर्डर से स्वतः भरा गया",
+      "failedToUpdateZone": "Failed to update zone",
+      "tabs": {
+        "methods": "तरीके",
+        "zones": "क्षेत्र",
+        "tracking": "ट्रैकिंग",
+        "deliveryMen": "Delivery Men"
+      },
+      "myDeliveryMen": "My Delivery Men",
+      "createZone": "Create Zone",
+      "trackingNumberRequired": "Tracking number is required",
+      "registerAndSelect": "Register and Select",
+      "editZoneAssignment": "Edit Zone Assignment",
+      "assign": "असाइन करें",
+      "carrierTrackingNote": "Enter the tracking number provided by the carrier",
+      "free": "मुफ्त",
+      "updateZone": "Update Zone",
+      "addDeliveryMenDesc": "Add delivery personnel to manage shipments",
+      "syncFromAuthUsers": "Sync from authenticated users",
+      "noDeliveryMenYet": "No delivery men yet",
+      "loginStep1": "Open the delivery app",
+      "deliveryFeeLabel": "डिलीवरी शुल्क",
+      "customerName": "ग्राहक का नाम",
+      "addNewDeliveryMan": "Add New Delivery Man",
+      "noZonesAdded": "No zones added",
+      "deliveryPersonCanAccess": "The delivery person can access the app with these credentials",
+      "customerPhone": "ग्राहक का फ़ोन",
+      "standard": "मानक",
+      "loginInstructions": "Login Instructions",
+      "trackingAutoPlaceholder": "Will be auto-generated",
+      "trackingCarrierPlaceholder": "e.g. 1Z999AA10123456784",
+      "pleaseAddZonesFirst": "Please add zones first",
+      "noZoneAssigned": "No zone assigned",
+      "deliveryZoneOptional": "Delivery Zone (Optional)",
+      "orderSelected": "Order selected",
+      "noDeliveryMenAdded": "No delivery men added",
+      "passwordLabel": "पासवर्ड",
+      "createPassword": "पासवर्ड बनाएं",
+      "express": "एक्सप्रेस",
+      "updateTracking": "Update Tracking",
+      "trackingAutoHint": "The tracking number will be generated automatically",
+      "enterEmailAddress": "ईमेल पता दर्ज करें",
+      "deliveryFeeHint": "Enter the delivery fee for this zone",
+      "regenerate": "पुनः बनाएं",
+      "enterFullName": "पूरा नाम दर्ज करें",
+      "loginStep3": "Start accepting deliveries",
+      "orderAssignedTo": "Order assigned to {{name}}",
+      "deliveryZone": "डिलीवरी क्षेत्र",
+      "failedToAssignOrder": "Failed to assign order",
+      "addFirstDeliveryMan": "Add your first delivery man",
+      "createTracking": "Create Tracking",
+      "noMatchingDeliveryMan": "No matching delivery man",
+      "selectDeliveryZoneOpt": "Select delivery zone (optional)",
+      "zoneAssignmentUpdated": "Zone assignment updated",
+      "copyIdToClipboard": "Copy ID to clipboard",
+      "emailLabel": "ईमेल",
+      "searchDeliveryMan": "Search delivery man",
+      "enterPhoneNumber": "फ़ोन नंबर दर्ज करें",
+      "noZonesAvailable": "No zones available",
+      "deliveryAddress": "डिलीवरी पता",
+      "name": "नाम",
+      "enterCarrierTracking": "Enter carrier tracking number",
+      "autoGeneratedNote": "This will be auto-generated",
+      "methods": "तरीके",
+      "tracking": "ट्रैकिंग",
+      "autoGeneratedTracking": "Auto-generated tracking number",
+      "noZone": "No zone",
+      "phoneLabel": "फ़ोन",
+      "registerNewDeliveryMan": "Register New Delivery Man",
+      "deliveryManIdLabel": "Delivery Man ID",
+      "manageYourDeliveryTeam": "Manage your delivery team",
+      "close": "बंद करें"
     },
     "team": {
       "title": "Team",
@@ -4347,7 +4925,6 @@
       "memberName": "Member नाम",
       "email": "ईमेल",
       "role": "Role",
-      "permissions": "Permissions",
       "status": "स्थिति",
       "lastActive": "Last सक्रिय",
       "noMembers": "नहीं team members",
@@ -4377,13 +4954,38 @@
       "fullAccess": "Full Access",
       "resendInvitation": "Resend invitation",
       "cancelInvitation": "रद्द करें invitation",
-      "expires": "Expires"
+      "expires": "Expires",
+      "permissions": {
+        "manageTeam": "Manage Team",
+        "manageShop": "Manage Shop",
+        "manageOrders": "Manage Orders",
+        "manageProductsDesc": "Can create, edit, and delete products",
+        "viewAnalytics": "View Analytics",
+        "manageShopDesc": "Can manage shop settings and configuration",
+        "manageOrdersDesc": "Can view, update, and manage all orders",
+        "updateOrderStatus": "Update Order Status",
+        "shopSettings": "दुकान सेटिंग्स",
+        "manageProducts": "Manage Products",
+        "shopSettingsDesc": "Can access and modify shop settings",
+        "viewOrdersDesc": "Can view all orders without modifying them",
+        "updateOrderStatusDesc": "Can update the status of orders",
+        "viewOrders": "View Orders",
+        "manageTeamDesc": "Can invite, edit, and remove team members",
+        "viewAnalyticsDesc": "Can view analytics and reports"
+      },
+      "roles": {
+        "admin": "एडमिन",
+        "staff": "स्टाफ",
+        "manager": "प्रबंधक",
+        "owner": "मालिक"
+      },
+      "cancel": "रद्द करें"
     },
     "billing": {
       "title": "बिलिंग & सब्सक्रिप्शन",
       "subtitle": "Manage your subscription and billing information",
-      "currentPlan": "Current Plan",
-      "upgradePlan": "Upgrade Plan",
+      "currentPlan": "वर्तमान योजना",
+      "upgradePlan": "योजना अपग्रेड करें",
       "billingHistory": "बिलिंग History",
       "paymentMethods": "भुगतान विधिs",
       "addPaymentMethod": "जोड़ें भुगतान विधि",
@@ -4402,7 +5004,7 @@
       "invoiceHistory": "इनवॉइस History",
       "noInvoices": "नहीं invoices yet",
       "cancelSubscription": "रद्द करें सब्सक्रिप्शन?",
-      "monthly": "Monthly",
+      "monthly": "मासिक",
       "yearly": "Yearly",
       "savePercent": "सहेजें {{percent}}%",
       "save2Months": "2 months free",
@@ -4440,18 +5042,18 @@
       "shop": {
         "title": "दुकान सेटिंग्स",
         "subtitle": "Configure your shop",
-        "basicInfo": "Basic Information",
+        "basicInfo": "बुनियादी जानकारी",
         "shopName": "दुकान नाम",
         "shopDescription": "दुकान विवरण",
         "shopLogo": "दुकान Logo",
         "shopBanner": "दुकान Banner",
         "category": "श्रेणी",
-        "contactInfo": "Contact Information",
+        "contactInfo": "संपर्क जानकारी",
         "email": "ईमेल",
         "phone": "फोन",
         "address": "जोड़ेंress",
         "socialMedia": "Social Media",
-        "businessHours": "Business Hours",
+        "businessHours": "व्यावसायिक घंटे",
         "policies": "Policies",
         "returnPolicy": "Return Policy",
         "shippingPolicy": "शिपिंग Policy",
@@ -4529,9 +5131,9 @@
       "descriptionLabel": "विवरण",
       "logoLabel": "दुकान Logo",
       "bannerLabel": "दुकान Banner",
-      "uploadLogo": "Upload Logo",
+      "uploadLogo": "लोगो अपलोड करें",
       "uploadBanner": "Upload Banner",
-      "uploading": "Uploading...",
+      "uploading": "अपलोड हो रहा है...",
       "logoRecommended": "Recommended: 200x200px, max 5MB",
       "bannerRecommended": "Recommended: 1200x400px, max 5MB",
       "emailLabel": "ईमेल",
@@ -4579,7 +5181,7 @@
       "domainDesc": "Configure your shop's subdomain and custom domain for a professional storefront URL.",
       "subdomain": "Subdomain",
       "subdomainDesc": "Your free storefront URL",
-      "checkAvailability": "Check",
+      "checkAvailability": "जांचें",
       "subdomainAvailable": "is available!",
       "subdomainTaken": "This subdomain is already taken. Try another one.",
       "customDomain": "Custom Domain",
@@ -4611,7 +5213,39 @@
       "headerScripts": "Header Scripts",
       "headerScriptsDesc": "Scripts to inject in the <head> section",
       "footerScripts": "Footer Scripts",
-      "footerScriptsDesc": "Scripts to inject before </body> (recommended for performance)"
+      "footerScriptsDesc": "Scripts to inject before </body> (recommended for performance)",
+      "domainSettingsDesc": "Configure your custom domain and SSL settings",
+      "redirectToCustomDomain": "Redirect to custom domain",
+      "urlCopied": "URL copied",
+      "paymentCodDesc": "Accept cash on delivery payments",
+      "paymentPaypalDesc": "Accept payments via PayPal",
+      "paymentBankDesc": "Accept payments via bank transfer",
+      "dnsValue": "मान",
+      "ogImageUrl": "Open Graph Image URL",
+      "customerPaymentOptionsDesc": "Configure the payment options available to your customers at checkout",
+      "domainVerifiedError": "Domain verification failed",
+      "never": "कभी नहीं",
+      "dnsType": "प्रकार",
+      "characters": "अक्षर",
+      "warningAdvancedDesc": "These settings are intended for advanced users. Incorrect configuration may break your store.",
+      "yourStorefrontUrls": "Your Storefront URLs",
+      "recommended": "अनुशंसित",
+      "paymentCardDesc": "Accept credit and debit card payments via Stripe",
+      "domainVerifiedSuccess": "Domain verified successfully",
+      "monthly": "मासिक",
+      "dnsConfigRequired": "DNS configuration required",
+      "warningAdvanced": "Advanced Settings Warning",
+      "daily": "दैनिक",
+      "weekly": "साप्ताहिक",
+      "redirectToCustomDomainDesc": "Automatically redirect traffic from the default URL to your custom domain",
+      "sslActiveDesc": "SSL certificate is active and secure",
+      "check": "जांचें",
+      "dnsName": "नाम",
+      "addDnsRecord": "Add DNS Record",
+      "domainActiveDesc": "Your custom domain is active and serving traffic",
+      "enableSitemapDesc": "Enable sitemap generation to help search engines index your store",
+      "separateKeywords": "Separate keywords with commas",
+      "secret": "गुप्त"
     },
     "createShop": {
       "title": "बनाएं Your स्टोर",
@@ -4633,7 +5267,7 @@
       "shopCreated": "दुकान created सफलतापूर्वक",
       "pendingApproval": "Your shop is pending approval",
       "languageSettings": "Language सेटिंग्स",
-      "defaultLanguage": "Default Language",
+      "defaultLanguage": "डिफ़ॉल्ट भाषा",
       "defaultLanguageHint": "The primary language for your store's content",
       "additionalLanguages": "जोड़ेंitional Languages",
       "additionalLanguagesHint": "Select languages your store will support (customers can switch between these)",
@@ -4652,14 +5286,14 @@
         "selectCategory": "Select a category (optional)",
         "categoryHint": "Choose the category that best describes your store",
         "languageSettings": "Language सेटिंग्स",
-        "defaultLanguage": "Default Language",
+        "defaultLanguage": "डिफ़ॉल्ट भाषा",
         "defaultLanguageHint": "The primary language for your store's content",
         "additionalLanguages": "जोड़ेंitional Languages",
         "additionalLanguagesHint": "Select languages your store will support (customers can switch between these)",
         "businessEmail": "Business ईमेल",
         "businessName": "Legal Business नाम",
         "businessNamePlaceholder": "Your Business LLC (optional)",
-        "businessType": "Business Type",
+        "businessType": "व्यावसायिक प्रकार",
         "businessTypes": {
           "individual": "Individual / Sole Proprietor",
           "llc": "LLC",
@@ -4675,10 +5309,10 @@
         "title": "स्टोर Limit Reached",
         "description": "You have created {{current}} out of {{max}} stores allowed on your {{plan}} plan.",
         "modalDescription": "You have created {{current}} out of {{max}} stores allowed on your {{plan}} plan. Upgrade your plan to create more stores.",
-        "upgradeButton": "Upgrade Plan",
+        "upgradeButton": "योजना अपग्रेड करें",
         "remaining": "You can create {{remaining}} more store(s) ({{max}} total on your plan)",
         "unlimited": "Unlimited stores available on your plan",
-        "currentPlan": "Current Plan",
+        "currentPlan": "वर्तमान योजना",
         "storesUsed": "स्टोरs Used"
       },
       "planModal": {
@@ -4691,7 +5325,7 @@
         "currentUsage": "You currently have {{count}} store(s). मुफ़्त plan allows only 1 store.",
         "upgradeRequired": "Upgrade to a paid plan to create more stores.",
         "limitReached": "Limit Reached",
-        "monthly": "Monthly",
+        "monthly": "मासिक",
         "yearly": "Yearly",
         "perMonth": "/month",
         "perYear": "/year",
@@ -4791,7 +5425,7 @@
           "description": "स्टोर विवरण",
           "descriptionPlaceholder": "Tell customers what makes your store special...",
           "languageSettings": "Language सेटिंग्स",
-          "defaultLanguage": "Default Language",
+          "defaultLanguage": "डिफ़ॉल्ट भाषा",
           "defaultLanguageHint": "Primary language for your store content",
           "additionalLanguages": "जोड़ेंitional Languages",
           "additionalLanguagesHint": "Select languages your store will support"
@@ -4805,7 +5439,7 @@
           "businessEmailInvalid": "Please enter a valid email",
           "businessName": "Legal Business नाम",
           "businessNamePlaceholder": "Your Business LLC (optional)",
-          "businessType": "Business Type",
+          "businessType": "व्यावसायिक प्रकार",
           "businessTypes": {
             "individual": "Individual / Sole Proprietor",
             "llc": "LLC",
@@ -4820,7 +5454,7 @@
           "storeName": "स्टोर नाम",
           "category": "श्रेणी",
           "businessEmail": "Business ईमेल",
-          "businessType": "Business Type",
+          "businessType": "व्यावसायिक प्रकार",
           "languages": "Languages",
           "whatHappensNext": "What happens next?",
           "nextSteps": {
@@ -4858,7 +5492,7 @@
     "storefront": {
       "title": "स्टोरफ्रंट बिल्डर",
       "subtitle": "Customize your store's appearance",
-      "preview": "Preview",
+      "preview": "पूर्वावलोकन",
       "publish": "Publish",
       "saveDraft": "सहेजें ड्राफ़्ट",
       "theme": "Theme",
@@ -4884,7 +5518,7 @@
     "storefrontBuilder": {
       "loadingStorefront": "लोड हो रहा है storefront...",
       "backToDashboard": "वापस to डैशबोर्ड",
-      "preview": "Preview",
+      "preview": "पूर्वावलोकन",
       "save": "सहेजें",
       "saving": "सहेजा जा रहा है...",
       "publish": "Publish",
@@ -4915,7 +5549,7 @@
       "deleteSection": "हटाएं section"
     },
     "productAdd": {
-      "basicInfo": "Basic Information",
+      "basicInfo": "बुनियादी जानकारी",
       "productName": "Product नाम",
       "brand": "Brand",
       "description": "विवरण",
@@ -4977,7 +5611,7 @@
       "specificationName": "Specification name",
       "specificationValue": "Specification value",
       "specification": "Specification",
-      "value": "Value",
+      "value": "मान",
       "profitMargin": "Profit Margin",
       "clickToUpload": "Click to upload images",
       "imageFormats": "JPG, PNG, GIF (Max 5MB)",
@@ -5054,10 +5688,10 @@
         "title": "Product Limit Reached",
         "description": "You have added {{current}} out of {{max}} products allowed on your {{plan}} plan.",
         "modalDescription": "You have added {{current}} out of {{max}} products allowed on your {{plan}} plan. Upgrade your plan to add more products.",
-        "upgradeButton": "Upgrade Plan",
+        "upgradeButton": "योजना अपग्रेड करें",
         "remaining": "You can add {{remaining}} more product(s) ({{max}} total on your plan)",
         "unlimited": "Unlimited products available on your plan",
-        "currentPlan": "Current Plan",
+        "currentPlan": "वर्तमान योजना",
         "productsUsed": "उत्पाद Used"
       },
       "errors": {
@@ -5139,6 +5773,11 @@
       "syncingDeliveryMen": "Syncing delivery men from auth users...",
       "failedToSync": "Failed to sync",
       "idCopied": "ID copied to clipboard!"
+    },
+    "shopSwitcher": {
+      "activeShop": "Active Shop",
+      "selectShop": "Select Shop",
+      "switching": "Switching..."
     }
   },
   "delivery": {
@@ -5166,9 +5805,9 @@
       "availableOrders": "Available ऑर्डर",
       "activeOrders": "सक्रिय ऑर्डर",
       "history": "History",
-      "earnings": "Earnings",
+      "earnings": "कमाई",
       "reviews": "समीक्षाएं",
-      "zones": "Zones",
+      "zones": "क्षेत्र",
       "profile": "प्रोफ़ाइल",
       "settings": "सेटिंग्स",
       "logout": "Logout",
@@ -5208,7 +5847,7 @@
       "ordersWaiting": "orders waiting",
       "pending": "pending",
       "performance": "Performance",
-      "rating": "Rating",
+      "rating": "रेटिंग",
       "rider": "Rider",
       "thisWeek": "this week",
       "totalEarned": "कुल Earned"
@@ -5219,7 +5858,7 @@
       "available": "Available",
       "active": "सक्रिय",
       "completed": "पूर्ण",
-      "orderId": "Order ID",
+      "orderId": "ऑर्डर आईडी",
       "pickup": "Pickup",
       "dropoff": "Dropoff",
       "customer": "ग्राहक",
@@ -5288,11 +5927,11 @@
       "allDeliveries": "सभी Deliveries",
       "completed": "पूर्ण",
       "cancelled": "रद्द",
-      "orderId": "Order ID",
+      "orderId": "ऑर्डर आईडी",
       "date": "तिथि",
       "pickup": "Pickup",
       "dropoff": "Dropoff",
-      "earnings": "Earnings",
+      "earnings": "कमाई",
       "status": "स्थिति",
       "noHistory": "नहीं delivery history",
       "filterByDate": "फ़िल्टर by तिथि",
@@ -5302,7 +5941,7 @@
       "delivery": "डिलीवरी",
       "deliveryAddress": "डिलीवरी पता",
       "deliveryFee": "डिलीवरी Fee",
-      "details": "Details",
+      "details": "विवरण",
       "earned": "Earned",
       "noDeliveriesMatch": "नहीं deliveries match your search",
       "of": "of",
@@ -5321,7 +5960,7 @@
       "tipAmount": "tip"
     },
     "earnings": {
-      "title": "Earnings",
+      "title": "कमाई",
       "subtitle": "Track your earnings",
       "totalEarnings": "कुल Earnings",
       "pendingEarnings": "लंबित Earnings",
@@ -5332,7 +5971,7 @@
       "withdrawFunds": "Withdraw Funds",
       "earningsHistory": "Earnings History",
       "deliveryFees": "डिलीवरी Fees",
-      "tips": "Tips",
+      "tips": "टिप्स",
       "bonuses": "Bonuses",
       "deductions": "Deductions",
       "netEarnings": "Net Earnings",
@@ -5399,7 +6038,7 @@
       "averageRating": "औसत रेटिंग",
       "totalReviews": "कुल समीक्षाएं",
       "recentReviews": "Recent समीक्षाएं",
-      "rating": "Rating",
+      "rating": "रेटिंग",
       "comment": "Comment",
       "customer": "ग्राहक",
       "date": "तिथि",
@@ -5425,7 +6064,7 @@
       "assignedZone": "Assigned Zone",
       "contactVendor": "Contact विक्रेता",
       "contactVendorToChange": "Contact your vendor to change your zone",
-      "kmCoverageRadius": "km coverage radius",
+      "kmCoverageRadius": "किमी कवरेज त्रिज्या",
       "myZone": "My Zone",
       "noZoneAssigned": "नहीं Zone Assigned",
       "receiveOrdersInZone": "You will receive orders from this zone",
@@ -5473,8 +6112,8 @@
       "profileUpdated": "प्रोफ़ाइल updated सफलतापूर्वक",
       "selectImageFile": "Please select an image file",
       "toConfirm": "to confirm",
-      "typeDelete": "Type",
-      "typeDeletePlaceholder": "Type DELETE",
+      "typeDelete": "प्रकार",
+      "typeDeletePlaceholder": "DELETE टाइप करें",
       "updateFailed": "अपडेट करने में विफल profile",
       "uploadFailed": "Failed to upload image"
     },
@@ -5756,7 +6395,7 @@
       "addresses": "जोड़ेंresses",
       "paymentMethods": "भुगतान विधिs",
       "orderHistory": "ऑर्डर इतिहास",
-      "wishlist": "Wishlist",
+      "wishlist": "इच्छा सूची",
       "settings": "सेटिंग्स"
     },
     "notAuthenticated": {
@@ -5825,7 +6464,7 @@
       "phone": "फोन नंबर",
       "profilePhoto": "प्रोफ़ाइल Photo",
       "profileAlt": "प्रोफ़ाइल",
-      "uploading": "Uploading...",
+      "uploading": "अपलोड हो रहा है...",
       "uploadNewPhoto": "Upload New Photo",
       "photoRequirements": "JPG, PNG or GIF. Max 5MB.",
       "saving": "सहेजा जा रहा है...",
@@ -5883,9 +6522,9 @@
         "addresses": "सहेजेंd addresses and payment methods",
         "wishlist": "Wishlist items"
       },
-      "confirmPrompt": "Type",
+      "confirmPrompt": "प्रकार",
       "toConfirm": "to confirm:",
-      "placeholder": "Type DELETE",
+      "placeholder": "DELETE टाइप करें",
       "confirmButton": "खाता हटाएं"
     },
     "memberSince": "Member since {{year}}",

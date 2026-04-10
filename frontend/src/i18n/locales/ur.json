@@ -145,7 +145,8 @@
       "terms": "شرائط و ضوابط",
       "privacy": "رازداری کی پالیسی",
       "contact": "ہم سے رابطہ کریں"
-    }
+    },
+    "sellOnVasty": "Sell on Vasty"
   },
   "mobileNav": {
     "myProfile": "میرا پروفائل",
@@ -1609,7 +1610,9 @@
       "forDelivery": "ترسیل کے شراکت داروں کے لیے",
       "pricingPlans": "قیمتیں اور پلانز",
       "payments": "ادائیگیاں اور بلنگ",
-      "support": "سپورٹ اور رابطہ"
+      "support": "سپورٹ اور رابطہ",
+      "supportAndContact": "سپورٹ اور رابطہ",
+      "paymentsAndBilling": "Payments & Billing"
     },
     "vendorNav": {
       "createStore": "اپنا اسٹور بنائیں",
@@ -1621,29 +1624,57 @@
       "mobileApp": "موبائل ایپ بلڈر",
       "analytics": "تجزیات اور رپورٹس",
       "deliverySetup": "ترسیل کا سیٹ اپ",
-      "teamManagement": "ٹیم مینجمنٹ"
+      "teamManagement": "ٹیم مینجمنٹ",
+      "analyticsAndReports": "تجزیات اور رپورٹس",
+      "orderManagement": "آرڈر مینجمنٹ",
+      "productManagement": "پروڈکٹ مینجمنٹ",
+      "storeSetup": "اسٹور سیٹ اپ",
+      "gettingStarted": "شروعات"
     },
     "customerNav": {
       "browseShop": "براؤز اور خریداری",
       "cartCheckout": "کارٹ اور چیک آؤٹ",
       "trackOrders": "آرڈرز ٹریک کریں",
-      "reviewsWishlist": "جائزے اور خواہش فہرست"
+      "reviewsWishlist": "جائزے اور خواہش فہرست",
+      "accountSetup": "اکاؤنٹ سیٹ اپ",
+      "paymentsAndRefunds": "ادائیگیاں اور ریفنڈز",
+      "ordersAndTracking": "آرڈرز اور ٹریکنگ",
+      "browsingAndSearch": "براؤزنگ اور تلاش"
     },
     "deliveryNav": {
       "howDeliveryWorks": "ترسیل کیسے کام کرتی ہے",
       "deliveryDashboard": "ترسیل ڈیش بورڈ",
-      "earnings": "آمدنی اور ادائیگیاں"
+      "earnings": "آمدنی اور ادائیگیاں",
+      "earningsAndPayouts": "کمائی اور پے آؤٹس",
+      "appSetup": "ایپ سیٹ اپ",
+      "acceptingOrders": "آرڈرز قبول کرنا",
+      "requirements": "تقاضے"
     },
     "introduction": {
       "title": "تعارف",
       "welcome": "<strong>{{appName}}</strong> میں خوش آمدید — آل ان ون ملٹی وینڈر ای کامرس پلیٹ فارم۔ چاہے آپ مصنوعات فروخت کرنے والے وینڈر ہوں، متعدد اسٹورز سے خریداری کرنے والے صارف ہوں، یا پیسے کمانے والے ترسیل پارٹنر ہوں، یہ گائیڈ وہ سب کچھ شامل کرتی ہے جو آپ کو جاننا ضروری ہے۔",
       "whatIsThisPlatform": "{{appName}} کیا ہے؟",
       "features": {
-        "multiVendor": "<strong>ملٹی وینڈر مارکیٹ پلیس</strong> — ایک پلیٹ فارم پر متعدد اسٹورز",
         "aiPowered": "<strong>AI سے چلنے والے ٹولز</strong> — AI مدد سے اسٹورز اور مصنوعات بنائیں",
         "mobileApp": "<strong>موبائل ایپ بلڈر</strong> — اپنے اسٹور کو مقامی ایپ میں تبدیل کریں",
         "payments": "<strong>مربوط ادائیگیاں</strong> — Stripe کے ذریعے محفوظ چیک آؤٹ",
-        "delivery": "<strong>ترسیل نیٹ ورک</strong> — مربوط ترسیل پارٹنر سسٹم"
+        "delivery": "<strong>ترسیل نیٹ ورک</strong> — مربوط ترسیل پارٹنر سسٹم",
+        "securePayments": {
+          "title": "Secure Payments",
+          "desc": "Integrated payment processing with Stripe"
+        },
+        "multiVendor": {
+          "desc": "Host multiple vendors with independent store management",
+          "title": "Multi-Vendor Marketplace"
+        },
+        "analytics": {
+          "desc": "Detailed insights for vendors and platform performance",
+          "title": "تجزیات"
+        },
+        "realTimeTracking": {
+          "desc": "Track orders from placement to delivery",
+          "title": "ریئل ٹائم ٹریکنگ"
+        }
       },
       "userTypes": "صارف کی اقسام",
       "table": {
@@ -1672,7 +1703,18 @@
           "پلیٹ فارم منظم کریں، اسٹورز منظور کریں",
           "/admin"
         ]
-      }
+      },
+      "keyFeatures": "Key Features",
+      "platformOverview": "Platform Overview",
+      "welcomeDesc": "Vasty is a comprehensive marketplace platform that connects vendors, customers, and delivery partners. Whether you want to start your online store, buy products from local vendors, or earn money as a delivery partner, Vasty provides all the tools you need.",
+      "platformDesc": "Vasty operates as a multi-vendor marketplace where:",
+      "whatIsVasty": "What is Vasty?",
+      "platformPoints": [
+        "Vendors can create and manage their online stores",
+        "Customers can discover and buy from multiple vendors",
+        "Delivery partners can fulfill orders and earn money",
+        "All parties benefit from integrated, secure payment processing"
+      ]
     },
     "quickStart": {
       "title": "فوری آغاز",
@@ -1698,6 +1740,37 @@
         "startSellingDesc": "اپنا پہلا اسٹور بنائیں",
         "startShopping": "خریداری شروع کریں",
         "startShoppingDesc": "تمام مصنوعات براؤز کریں"
+      },
+      "forCustomers": {
+        "steps": [
+          "Create your account or sign in",
+          "Browse products and vendors",
+          "Add items to your cart",
+          "Checkout with your preferred payment method",
+          "Track your order in real-time"
+        ],
+        "title": "For Customers"
+      },
+      "forDelivery": {
+        "title": "For Delivery Partners",
+        "steps": [
+          "Sign up as a delivery partner",
+          "Complete verification and onboarding",
+          "Download the delivery app",
+          "Set your availability and area",
+          "Start accepting delivery requests"
+        ]
+      },
+      "desc": "Get started with Vasty in minutes",
+      "forVendors": {
+        "title": "For Vendors",
+        "steps": [
+          "Register as a vendor",
+          "Complete your store setup",
+          "Add your products with images and descriptions",
+          "Configure payment and delivery options",
+          "Start receiving orders!"
+        ]
       }
     },
     "forVendors": {
@@ -1737,14 +1810,46 @@
             "تفصیل"
           ],
           "rows": [
-            ["ڈیش بورڈ", "/vendor/dashboard", "فروخت، آرڈرز، اور اعداد و شمار کا جائزہ"],
-            ["مصنوعات", "/vendor/products", "اپنی مصنوعات کی فہرست منظم کریں"],
-            ["آرڈرز", "/vendor/orders", "صارفین کے آرڈرز دیکھیں اور کارروائی کریں"],
-            ["تجزیات", "/vendor/analytics", "فروخت کی رپورٹس اور بصیرت"],
-            ["صارفین", "/vendor/customers", "صارفین کی فہرست اور تفصیلات"],
-            ["جائزے", "/vendor/reviews", "صارفین کے جائزے اور درجہ بندی"],
-            ["پیشکشیں", "/vendor/offers", "رعایتیں اور پروموشنز"],
-            ["ترتیبات", "/vendor/settings", "اسٹور کی ترتیبات اور ترتیب"]
+            [
+              "ڈیش بورڈ",
+              "/vendor/dashboard",
+              "فروخت، آرڈرز، اور اعداد و شمار کا جائزہ"
+            ],
+            [
+              "مصنوعات",
+              "/vendor/products",
+              "اپنی مصنوعات کی فہرست منظم کریں"
+            ],
+            [
+              "آرڈرز",
+              "/vendor/orders",
+              "صارفین کے آرڈرز دیکھیں اور کارروائی کریں"
+            ],
+            [
+              "تجزیات",
+              "/vendor/analytics",
+              "فروخت کی رپورٹس اور بصیرت"
+            ],
+            [
+              "صارفین",
+              "/vendor/customers",
+              "صارفین کی فہرست اور تفصیلات"
+            ],
+            [
+              "جائزے",
+              "/vendor/reviews",
+              "صارفین کے جائزے اور درجہ بندی"
+            ],
+            [
+              "پیشکشیں",
+              "/vendor/offers",
+              "رعایتیں اور پروموشنز"
+            ],
+            [
+              "ترتیبات",
+              "/vendor/settings",
+              "اسٹور کی ترتیبات اور ترتیب"
+            ]
           ]
         }
       },
@@ -1777,13 +1882,37 @@
         "title": "آرڈرز کا انتظام",
         "viewAt": "تمام آرڈرز دیکھیں",
         "table": {
-          "headers": ["حیثیت", "تفصیل", "عمل"],
+          "headers": [
+            "حیثیت",
+            "تفصیل",
+            "عمل"
+          ],
           "rows": [
-            ["زیر التوا", "نیا آرڈر موصول", "جائزہ لیں اور تصدیق کریں"],
-            ["کارروائی جاری", "آرڈر کی تصدیق، تیاری", "شپنگ کے لیے تیار کریں"],
-            ["بھیج دیا گیا", "آرڈر ترسیل کو دیا گیا", "ٹریکنگ معلومات شامل کریں"],
-            ["ترسیل مکمل", "صارف نے آرڈر وصول کیا", "مکمل"],
-            ["منسوخ", "آرڈر منسوخ", "اگر ضرورت ہو تو رقم واپسی"]
+            [
+              "زیر التوا",
+              "نیا آرڈر موصول",
+              "جائزہ لیں اور تصدیق کریں"
+            ],
+            [
+              "کارروائی جاری",
+              "آرڈر کی تصدیق، تیاری",
+              "شپنگ کے لیے تیار کریں"
+            ],
+            [
+              "بھیج دیا گیا",
+              "آرڈر ترسیل کو دیا گیا",
+              "ٹریکنگ معلومات شامل کریں"
+            ],
+            [
+              "ترسیل مکمل",
+              "صارف نے آرڈر وصول کیا",
+              "مکمل"
+            ],
+            [
+              "منسوخ",
+              "آرڈر منسوخ",
+              "اگر ضرورت ہو تو رقم واپسی"
+            ]
           ]
         }
       },
@@ -1838,6 +1967,25 @@
           "صارفین کی آبادیاتی معلومات",
           "تبدیلی کی شرحیں",
           "ٹریفک ذرائع"
+        ],
+        "desc": "Monitor your store's performance with built-in analytics:",
+        "items": [
+          {
+            "title": "Sales Reports",
+            "desc": "Track daily, weekly, and monthly sales performance."
+          },
+          {
+            "title": "Customer Insights",
+            "desc": "Understand your customer base and buying patterns."
+          },
+          {
+            "title": "Product Performance",
+            "desc": "See which products sell best and optimize your catalog."
+          },
+          {
+            "title": "Traffic Analytics",
+            "desc": "Monitor store visits and conversion rates."
+          }
         ]
       },
       "deliverySetup": {
@@ -1854,13 +2002,105 @@
         "title": "ٹیم مینجمنٹ",
         "addAt": "ٹیم ممبرز شامل کریں",
         "table": {
-          "headers": ["کردار", "اجازتیں"],
+          "headers": [
+            "کردار",
+            "اجازتیں"
+          ],
           "rows": [
-            ["مالک", "تمام خصوصیات تک مکمل رسائی"],
-            ["مینیجر", "مصنوعات، آرڈرز، اور صارفین کا انتظام"],
-            ["سٹاف", "آرڈرز کی کارروائی اور صارفین کو جواب دیں"]
+            [
+              "مالک",
+              "تمام خصوصیات تک مکمل رسائی"
+            ],
+            [
+              "مینیجر",
+              "مصنوعات، آرڈرز، اور صارفین کا انتظام"
+            ],
+            [
+              "سٹاف",
+              "آرڈرز کی کارروائی اور صارفین کو جواب دیں"
+            ]
           ]
         }
+      },
+      "orderManagement": {
+        "title": "آرڈر مینجمنٹ",
+        "items": [
+          {
+            "title": "Order Notifications",
+            "desc": "Receive instant notifications for new orders and respond quickly."
+          },
+          {
+            "title": "Order Processing",
+            "desc": "Update order status as you prepare and ship products to customers."
+          },
+          {
+            "title": "Customer Communication",
+            "desc": "Communicate with customers about their orders through the platform."
+          }
+        ],
+        "desc": "Process and fulfill orders efficiently:"
+      },
+      "productManagement": {
+        "desc": "Add and manage your products effectively:",
+        "items": [
+          {
+            "title": "Product Listings",
+            "desc": "Create detailed product listings with titles, descriptions, and high-quality images."
+          },
+          {
+            "title": "Pricing & Inventory",
+            "desc": "Set competitive prices and keep stock levels up to date."
+          },
+          {
+            "title": "Categories & Tags",
+            "desc": "Organize products into categories and use tags for better discoverability."
+          },
+          {
+            "title": "Variants & Options",
+            "desc": "Add product variants such as size, color, or material."
+          }
+        ],
+        "title": "پروڈکٹ مینجمنٹ"
+      },
+      "gettingStarted": {
+        "title": "Getting Started as a Vendor",
+        "desc": "Setting up your store on Vasty is simple. Follow these steps to start selling:",
+        "steps": [
+          {
+            "title": "Account Registration",
+            "desc": "Create your vendor account with your business email. You'll need to verify your email address before continuing."
+          },
+          {
+            "title": "Business Verification",
+            "desc": "Provide the required business documentation, including tax information and identity verification, to activate your store."
+          },
+          {
+            "title": "اسٹور سیٹ اپ",
+            "desc": "Customize your store profile with branding, logo, description, and contact information."
+          }
+        ]
+      },
+      "storeSetup": {
+        "items": [
+          {
+            "title": "Store Logo & Branding",
+            "desc": "Upload a high-quality logo and choose colors that match your brand."
+          },
+          {
+            "title": "Store Description",
+            "desc": "Write a clear, compelling description of what you sell and what makes your store unique."
+          },
+          {
+            "title": "رابطہ کی معلومات",
+            "desc": "Provide accurate contact details so customers can reach you easily."
+          },
+          {
+            "title": "Business Hours & Policies",
+            "desc": "Set your business hours, shipping policies, and return policies."
+          }
+        ],
+        "desc": "Your store profile is your storefront on Vasty. Make it stand out:",
+        "title": "اسٹور سیٹ اپ"
       }
     },
     "forCustomers": {
@@ -1914,6 +2154,94 @@
         "title": "جائزے اور خواہش فہرست",
         "leaveReviews": "<strong>جائزے دیں</strong> — خریداری کے بعد مصنوعات کی درجہ بندی کریں تاکہ دوسرے خریداروں کی مدد ہو",
         "wishlist": "<strong>خواہش فہرست</strong> — بعد میں کے لیے مصنوعات <code>/wishlist</code> پر محفوظ کریں"
+      },
+      "browsing": {
+        "title": "براؤزنگ اور تلاش",
+        "items": [
+          {
+            "title": "Search Products",
+            "desc": "Use the search bar to find specific products across all vendors."
+          },
+          {
+            "title": "Browse Categories",
+            "desc": "Explore products by category to discover new items."
+          },
+          {
+            "title": "Filter & Sort",
+            "desc": "Refine results by price, rating, vendor, and more."
+          },
+          {
+            "title": "خواہش کی فہرست",
+            "desc": "Save items to your wishlist for later purchase."
+          }
+        ],
+        "desc": "Discover products and vendors that match your needs:"
+      },
+      "accountSetup": {
+        "desc": "Create your customer account and start shopping:",
+        "items": [
+          {
+            "title": "Create Account",
+            "desc": "Sign up with your email or use social login (Google, Facebook) for quick access."
+          },
+          {
+            "title": "Profile Information",
+            "desc": "Add your name, profile picture, and communication preferences."
+          },
+          {
+            "title": "Saved Addresses",
+            "desc": "Add multiple delivery addresses for quick checkout."
+          },
+          {
+            "title": "ادائیگی کے طریقے",
+            "desc": "Securely save your preferred payment methods for faster purchases."
+          }
+        ],
+        "title": "اکاؤنٹ سیٹ اپ"
+      },
+      "orders": {
+        "title": "آرڈرز اور ٹریکنگ",
+        "desc": "Place orders and track them in real time:",
+        "items": [
+          {
+            "title": "Place an Order",
+            "desc": "Add items to your cart and check out with your preferred payment method."
+          },
+          {
+            "title": "آرڈر کی تصدیق",
+            "desc": "Receive instant confirmation with order details and estimated delivery time."
+          },
+          {
+            "title": "ریئل ٹائم ٹریکنگ",
+            "desc": "Track your order status from processing to delivery."
+          },
+          {
+            "title": "آرڈر کی تاریخ",
+            "desc": "View past orders and reorder favorite items easily."
+          }
+        ]
+      },
+      "payments": {
+        "items": [
+          {
+            "title": "ادائیگی کے طریقے",
+            "desc": "Pay securely with credit/debit cards, digital wallets, or cash on delivery."
+          },
+          {
+            "title": "Secure Transactions",
+            "desc": "All payments are processed securely through Stripe with encryption."
+          },
+          {
+            "title": "Refund Requests",
+            "desc": "Request refunds for eligible orders within the specified timeframe."
+          },
+          {
+            "title": "Refund Processing",
+            "desc": "Approved refunds are returned to the original payment method within 5-10 business days."
+          }
+        ],
+        "title": "ادائیگیاں اور ریفنڈز",
+        "desc": "Safe and secure payment processing:"
       }
     },
     "forDelivery": {
@@ -1947,13 +2275,37 @@
         "title": "ترسیل ڈیش بورڈ",
         "accessAt": "اپنے ڈیش بورڈ تک رسائی",
         "table": {
-          "headers": ["سیکشن", "پاتھ", "تفصیل"],
+          "headers": [
+            "سیکشن",
+            "پاتھ",
+            "تفصیل"
+          ],
           "rows": [
-            ["ڈیش بورڈ", "/delivery/dashboard", "جائزہ اور دستیاب آرڈرز"],
-            ["آرڈرز", "/delivery/orders", "تفویض شدہ ترسیلات دیکھیں اور منظم کریں"],
-            ["آمدنی", "/delivery/earnings", "اپنی آمدنی ٹریک کریں"],
-            ["تاریخ", "/delivery/history", "ماضی کی ترسیلات"],
-            ["پروفائل", "/delivery/profile", "آپ کا پروفائل اور ترتیبات"]
+            [
+              "ڈیش بورڈ",
+              "/delivery/dashboard",
+              "جائزہ اور دستیاب آرڈرز"
+            ],
+            [
+              "آرڈرز",
+              "/delivery/orders",
+              "تفویض شدہ ترسیلات دیکھیں اور منظم کریں"
+            ],
+            [
+              "آمدنی",
+              "/delivery/earnings",
+              "اپنی آمدنی ٹریک کریں"
+            ],
+            [
+              "تاریخ",
+              "/delivery/history",
+              "ماضی کی ترسیلات"
+            ],
+            [
+              "پروفائل",
+              "/delivery/profile",
+              "آپ کا پروفائل اور ترتیبات"
+            ]
           ]
         }
       },
@@ -1964,24 +2316,144 @@
           "آمدنی آپ کے وینڈر کی طرف سے منظم ہوتی ہے",
           "مکمل ترسیلات اور ٹپس ٹریک کریں",
           "ترسیل کی تاریخ اور کارکردگی دیکھیں"
-        ]
+        ],
+        "items": [
+          {
+            "title": "Base Fare",
+            "desc": "Earn a base fare for each completed delivery."
+          },
+          {
+            "title": "Distance & Time",
+            "desc": "Additional earnings based on delivery distance and time."
+          },
+          {
+            "title": "ٹپس",
+            "desc": "Keep 100% of customer tips."
+          },
+          {
+            "title": "Weekly Payouts",
+            "desc": "Receive earnings directly to your bank account every week."
+          }
+        ],
+        "desc": "How you earn and get paid as a delivery partner:"
+      },
+      "acceptingOrders": {
+        "items": [
+          {
+            "title": "Receive Requests",
+            "desc": "Get notified when a new order is available in your area."
+          },
+          {
+            "title": "Accept or Decline",
+            "desc": "Review order details and choose whether to accept the delivery."
+          },
+          {
+            "title": "Pick Up",
+            "desc": "Navigate to the vendor location and pick up the order."
+          },
+          {
+            "title": "Deliver",
+            "desc": "Navigate to the customer address and complete the delivery."
+          }
+        ],
+        "desc": "How to handle delivery requests:",
+        "title": "آرڈرز قبول کرنا"
+      },
+      "appSetup": {
+        "items": [
+          {
+            "title": "Download the App",
+            "desc": "Download the Vasty delivery app from the App Store or Google Play."
+          },
+          {
+            "title": "سائن ان",
+            "desc": "Log in with your delivery partner credentials."
+          },
+          {
+            "title": "Enable Location",
+            "desc": "Allow location access for order assignment and navigation."
+          },
+          {
+            "title": "Set Availability",
+            "desc": "Toggle your availability to start receiving delivery requests."
+          }
+        ],
+        "title": "ایپ سیٹ اپ",
+        "desc": "Get started with the delivery partner app:"
+      },
+      "requirements": {
+        "items": [
+          {
+            "title": "Age & Documentation",
+            "desc": "Be at least 18 years old with valid government-issued ID."
+          },
+          {
+            "title": "Vehicle",
+            "desc": "Own or have access to a reliable vehicle (car, motorcycle, or bicycle)."
+          },
+          {
+            "title": "Smartphone",
+            "desc": "Have a smartphone to use the delivery app and receive orders."
+          },
+          {
+            "title": "Background Check",
+            "desc": "Pass a background check and driving record review."
+          }
+        ],
+        "title": "تقاضے",
+        "desc": "What you need to become a delivery partner:"
       }
     },
     "pricingPlans": {
       "title": "قیمتیں اور پلانز",
       "subtitle": "{{appName}} ہر کاروباری سائز کے لیے لچکدار پلانز پیش کرتا ہے۔ <strong>تمام پلانز پر صفر ٹرانزیکشن فیس!</strong>",
       "table": {
-        "headers": ["پلان", "قیمت", "اسٹورز", "مصنوعات", "خصوصیات"],
+        "headers": [
+          "پلان",
+          "قیمت",
+          "اسٹورز",
+          "مصنوعات",
+          "خصوصیات"
+        ],
         "rows": [
-          ["مفت", "$0/ماہ", "1", "10", "بنیادی اسٹور فرنٹ، معیاری سپورٹ"],
-          ["سٹارٹر", "$29.99/ماہ", "2", "100", "جدید تخصیص، ترجیحی سپورٹ"],
-          ["پرو", "$79.99/ماہ", "5", "لامحدود", "موبائل ایپ، پریمیم تھیمز، تجزیات"],
-          ["بزنس", "$199.99/ماہ", "لامحدود", "لامحدود", "API رسائی، وقف مینیجر، وائٹ لیبل"]
+          [
+            "مفت",
+            "$0/ماہ",
+            "1",
+            "10",
+            "بنیادی اسٹور فرنٹ، معیاری سپورٹ"
+          ],
+          [
+            "سٹارٹر",
+            "$29.99/ماہ",
+            "2",
+            "100",
+            "جدید تخصیص، ترجیحی سپورٹ"
+          ],
+          [
+            "پرو",
+            "$79.99/ماہ",
+            "5",
+            "لامحدود",
+            "موبائل ایپ، پریمیم تھیمز، تجزیات"
+          ],
+          [
+            "بزنس",
+            "$199.99/ماہ",
+            "لامحدود",
+            "لامحدود",
+            "API رسائی، وقف مینیجر، وائٹ لیبل"
+          ]
         ]
       },
       "annualDiscount": "سالانہ بلنگ کے ساتھ 15% بچائیں",
       "cardTitle": "مکمل قیمتوں کی تفصیلات دیکھیں",
-      "cardDescription": "تمام پلان خصوصیات کا موازنہ کریں"
+      "cardDescription": "تمام پلان خصوصیات کا موازنہ کریں",
+      "customPlans": "Custom Plans",
+      "compare": "Compare Plans",
+      "desc": "Choose the plan that fits your business",
+      "intro": "Vasty offers flexible pricing plans for vendors of all sizes.",
+      "getStarted": "Get Started"
     },
     "paymentsAndBilling": {
       "title": "ادائیگیاں اور بلنگ",
@@ -2010,7 +2482,50 @@
           "کسی بھی وقت منسوخ یا اپ گریڈ کریں",
           "رسیدیں ڈاؤن لوڈ کے لیے دستیاب"
         ]
-      }
+      },
+      "sections": {
+        "refundPolicy": {
+          "desc": "Understanding refunds on Vasty:",
+          "title": "Refund Policy",
+          "items": [
+            "Refund requests must be made within 14 days of delivery",
+            "Items must be returned in original condition",
+            "Approved refunds are processed within 5-10 business days",
+            "Refunds are issued to the original payment method"
+          ]
+        },
+        "vendorPayouts": {
+          "items": [
+            "Weekly automatic payouts to your connected bank account",
+            "Minimum payout threshold of $50",
+            "Platform fees are deducted before payout",
+            "Detailed transaction history available in your dashboard"
+          ],
+          "desc": "How and when vendors receive their earnings:",
+          "title": "Vendor Payouts"
+        },
+        "invoicing": {
+          "items": [
+            "Automatic invoice generation for every order",
+            "Downloadable invoices in PDF format",
+            "Tax information included where applicable",
+            "Access to complete billing history from your account"
+          ],
+          "desc": "Invoices and billing documents:",
+          "title": "Invoicing"
+        },
+        "paymentMethods": {
+          "items": [
+            "Credit and debit cards (Visa, Mastercard, American Express)",
+            "Digital wallets (Apple Pay, Google Pay)",
+            "Bank transfers for selected regions",
+            "Cash on delivery where available"
+          ],
+          "desc": "Supported payment methods on the platform:",
+          "title": "ادائیگی کے طریقے"
+        }
+      },
+      "desc": "Learn about payments, billing, and financial operations on Vasty."
     },
     "supportAndContact": {
       "title": "سپورٹ اور رابطہ",
@@ -2024,8 +2539,59 @@
         "faqsDescription": "عام سوالات کے جوابات",
         "contactTitle": "رابطہ فارم",
         "contactDescription": "ہمیں پیغام بھیجیں"
-      }
-    }
+      },
+      "channels": {
+        "items": [
+          {
+            "title": "Email Support",
+            "desc": "Send us an email at support@vastyshop.com and we'll respond within 24 hours."
+          },
+          {
+            "title": "Live Chat",
+            "desc": "Chat with our support team in real time from the Help Center."
+          },
+          {
+            "title": "Help Articles",
+            "desc": "Browse our knowledge base for answers to common questions."
+          }
+        ],
+        "title": "Support Channels"
+      },
+      "commonIssues": {
+        "title": "Common Issues",
+        "items": [
+          {
+            "title": "Login Problems",
+            "desc": "Having trouble signing in? Try resetting your password."
+          },
+          {
+            "title": "Payment Issues",
+            "desc": "Payment not going through? Check your card details or try a different method."
+          },
+          {
+            "title": "Order Tracking",
+            "desc": "Can't find your order? Check the order history in your account."
+          },
+          {
+            "title": "Account Verification",
+            "desc": "Need to verify your account? Follow the verification email we sent you."
+          }
+        ]
+      },
+      "businessHours": {
+        "title": "کاروباری اوقات",
+        "hours": "Monday - Friday: 9:00 AM - 6:00 PM",
+        "note": "Weekend support is available for urgent issues only."
+      },
+      "desc": "Get help and contact our support team."
+    },
+    "quickLinks": "فوری لنکس",
+    "getInTouch": "رابطہ کریں",
+    "title": "مدد مرکز",
+    "subtitle": "Find answers to common questions and learn how to use Vasty",
+    "searchPlaceholder": "Search help articles...",
+    "contactSupportDesc": "Can't find what you're looking for? Our support team is here to help.",
+    "contactSupport": "سپورٹ سے رابطہ"
   },
   "legal": {
     "breadcrumb": "قانونی",
@@ -3453,7 +4019,8 @@
       "update": "اپ ڈیٹ",
       "logOut": "لاگ آؤٹ",
       "logoutSuccess": "کامیابی سے لاگ آؤٹ ہو گیا",
-      "searchPlaceholder": "مصنوعات، آرڈرز تلاش کریں..."
+      "searchPlaceholder": "مصنوعات، آرڈرز تلاش کریں...",
+      "na": "N/A"
     },
     "sidebar": {
       "dashboard": "ڈیش بورڈ",
@@ -3584,7 +4151,60 @@
         "public": "عوامی",
         "private": "نجی",
         "passwordProtected": "پاس ورڈ محفوظ"
-      }
+      },
+      "discountPlaceholder": "Enter discount %",
+      "shopNotFound": "Shop Not Found",
+      "value": "قدر",
+      "selectShop": "Select Shop",
+      "clearSearch": "Clear Search",
+      "password": "پاس ورڈ",
+      "tabs": {
+        "marketingSeo": "Marketing & SEO",
+        "productInfo": "Product Info",
+        "shippingCare": "Shipping & Care"
+      },
+      "updateInventory": "Update Inventory",
+      "sales": "Sales",
+      "selectAction": "Select Action",
+      "saveDraft": "Save Draft",
+      "actionType": "Action Type",
+      "increaseByAmount": "Increase by Amount",
+      "saveProduct": "Save Product",
+      "trend": "Trend",
+      "createShopMessage": "Please create a shop or ensure you are logged in with a valid shop account.",
+      "inventoryAction": "Inventory Action",
+      "shopNotFoundMessage": "This shop doesn't exist or you don't have access to it. Please select one of your shops.",
+      "import": "Import",
+      "noProductsMatchSearch": "No products match your search criteria. Try adjusting your filters.",
+      "discountHint": "Enter discount percentage",
+      "clear": "Clear",
+      "editing": "Editing",
+      "deleteProducts": "Delete Products",
+      "whoCanSee": "Who can see this?",
+      "selectStatus": "Select Status",
+      "archived": "Archived",
+      "featuredProduct": "Featured Product",
+      "deleteWarning": "This action cannot be undone",
+      "productsSelected": "products selected",
+      "updatePrice": "Update Price",
+      "newStatus": "New Status",
+      "updateStatus": "Update Status",
+      "preview": "پیش منظر",
+      "createShop": "Create Shop",
+      "deleteSelected": "Delete Selected",
+      "enterQuantity": "Enter quantity",
+      "products": "products",
+      "setToValue": "Set to Value",
+      "publicationStatus": "Publication Status",
+      "quickActions": "Quick Actions",
+      "bulkEditProducts": "Bulk Edit Products",
+      "priceRange": "Price Range",
+      "product": "Product",
+      "schedulePublishing": "Schedule Publishing",
+      "applyDiscount": "Apply Discount",
+      "bulkEdit": "Bulk Edit",
+      "decreaseByAmount": "Decrease by Amount",
+      "applyChanges": "Apply Changes"
     },
     "orders": {
       "title": "آرڈرز",
@@ -3623,7 +4243,35 @@
       "acceptOrder": "آرڈر قبول کریں",
       "noOrdersYet": "ابھی تک کوئی آرڈر نہیں",
       "ordersWillAppear": "صارفین آپ کی دکان سے خریداری شروع کرنے پر آرڈرز یہاں ظاہر ہوں گے۔",
-      "failedToLoad": "آرڈرز لوڈ کرنے میں ناکامی"
+      "failedToLoad": "آرڈرز لوڈ کرنے میں ناکامی",
+      "cancelling": "Cancelling...",
+      "cancellationReason": "Cancellation Reason",
+      "dateRange": "Date Range",
+      "quantity": "Quantity",
+      "enterCancellationReason": "Enter cancellation reason",
+      "bankTransfer": "Bank Transfer",
+      "statuses": {
+        "refunded": "رقم واپس",
+        "pending": "زیر التوا",
+        "completed": "مکمل",
+        "shipped": "بھیج دیا گیا",
+        "delivered": "پہنچا دیا گیا",
+        "processing": "پروسیسنگ",
+        "cancelled": "منسوخ"
+      },
+      "subtotal": "Subtotal",
+      "totalOrders": "Total Orders",
+      "shipping": "Shipping",
+      "orderDate": "Order Date",
+      "creditCard": "Credit Card",
+      "products": "Products",
+      "confirmCancellation": "Confirm Cancellation",
+      "paypal": "PayPal",
+      "orderStatus": "Order Status",
+      "allMethods": "All Methods",
+      "clearFilters": "Clear Filters",
+      "cancelConfirmMessage": "Are you sure you want to cancel this order?",
+      "paymentMethod": "Payment Method"
     },
     "customers": {
       "title": "صارفین",
@@ -3642,7 +4290,27 @@
       "searchCustomers": "صارفین تلاش کریں...",
       "totalCustomers": "کل صارفین",
       "totalOrders": "کل آرڈرز",
-      "totalRevenue": "کل آمدنی"
+      "totalRevenue": "کل آمدنی",
+      "contactInfo": "رابطہ کی معلومات",
+      "noOrdersFound": "No orders found",
+      "sortBySpent": "Sort by Spent",
+      "customerSince": "Customer Since",
+      "recentOrders": "Recent Orders",
+      "sortByOrders": "Sort by Orders",
+      "avgOrder": "Avg Order",
+      "sortByLastOrder": "Sort by Last Order",
+      "avgOrderValue": "Average Order Value",
+      "contact": "Contact",
+      "adjustFilters": "Try adjusting your filters",
+      "address": "پتہ",
+      "customersWillAppear": "Customers will appear here after their first purchase",
+      "viewAllOrders": "View All Orders",
+      "exportList": "Export List",
+      "vipCustomers": "VIP Customers",
+      "failedToLoad": "Failed to load customers",
+      "sortByName": "Sort by Name",
+      "customer": "گاہک",
+      "sendEmail": "Send Email"
     },
     "analytics": {
       "title": "تجزیات",
@@ -3668,7 +4336,38 @@
       "last90Days": "آخری 90 دن",
       "loading": "تجزیات لوڈ ہو رہے ہیں...",
       "failedToLoad": "تجزیات لوڈ کرنے میں ناکامی",
-      "exportReport": "رپورٹ برآمد کریں"
+      "exportReport": "رپورٹ برآمد کریں",
+      "whereVisitorsComeFrom": "Where your visitors come from",
+      "last6Months": "Last 6 Months",
+      "custom": "Custom",
+      "impressions": "Impressions",
+      "comingSoonDescription": "Basic shop statistics are shown above. Detailed revenue trends, category performance, and customer insights will be available as your shop grows.",
+      "completed": "completed",
+      "topProducts": "Top Products",
+      "previousPeriod": "Previous Period",
+      "conversions": "Conversions",
+      "categoryPerformance": "Category Performance",
+      "paidOrders": "paid orders",
+      "clicks": "Clicks",
+      "customerInsights": "Customer Insights",
+      "revenueOrdersTrend": "Revenue & Orders Trend",
+      "last3Months": "Last 3 Months",
+      "trafficSources": "Traffic Sources",
+      "perCompletedOrder": "Per completed order",
+      "topCategories": "Top Performing Categories",
+      "allTime": "All Time",
+      "revenueChart": "Revenue Chart",
+      "category": "Category",
+      "customerBehavior": "Customer behavior metrics",
+      "monthlyPerformance": "Monthly performance overview",
+      "sales": "Sales",
+      "rating": "درجہ بندی",
+      "salesByCategory": "Sales by product category",
+      "lastYear": "Last Year",
+      "compareWith": "Compare with",
+      "ordersChart": "Orders Chart",
+      "comingSoon": "Detailed Analytics Coming Soon",
+      "growth": "Growth"
     },
     "reviews": {
       "title": "صارفین کے جائزے",
@@ -3680,7 +4379,45 @@
       "reply": "جواب",
       "replyToReview": "جائزے کا جواب دیں",
       "outOf5": "5 میں سے",
-      "postReply": "جواب پوسٹ کریں"
+      "postReply": "جواب پوسٹ کریں",
+      "replyPosted": "Reply posted successfully",
+      "featured": "Featured",
+      "yourResponse": "Your Response",
+      "replyPlaceholder": "Thank the customer for their feedback...",
+      "failedToLoad": "Failed to load reviews",
+      "failedToReport": "Failed to report review",
+      "reportConfirmMessage": "Are you sure you want to report this review as inappropriate? Our team will investigate this matter.",
+      "failedToSubmitReply": "Failed to submit reply",
+      "noReviewsMatchCriteria": "No reviews match your search criteria",
+      "addedToFeatured": "Review added to featured",
+      "showReview": "Show review",
+      "ratingDistribution": "Rating Distribution",
+      "reportReview": "Report Review",
+      "helpfulVotes": "Helpful Votes",
+      "report": "Report",
+      "shopReviews": "Shop Reviews",
+      "all": "تمام",
+      "noReviewsYet": "You haven't received any reviews yet",
+      "failedToUpdate": "Failed to update review",
+      "product": "Product",
+      "reportedSuccessfully": "Review reported successfully",
+      "shopResponse": "Shop Response",
+      "reviewShown": "Review shown",
+      "rating": "درجہ بندی",
+      "noReviewsFound": "No Reviews Found",
+      "loading": "Loading reviews...",
+      "removedFromFeatured": "Review removed from featured",
+      "failedToUpdateVisibility": "Failed to update review visibility",
+      "hideReview": "Hide review",
+      "peopleFoundHelpful": "{{count}} people found this helpful",
+      "reviewer": "Reviewer",
+      "reviewHidden": "Review hidden",
+      "editReply": "Edit Reply",
+      "replyUpdated": "Reply updated successfully",
+      "enterReplyMessage": "Please enter a reply message",
+      "productReviews": "Product Reviews",
+      "date": "Date",
+      "comment": "Comment"
     },
     "offers": {
       "title": "پیشکشیں اور رعایتیں",
@@ -3700,7 +4437,81 @@
       "noOffers": "کوئی پیشکشیں نہیں ملیں",
       "offerCreated": "پیشکش کامیابی سے بنائی گئی",
       "offerUpdated": "پیشکش کامیابی سے اپ ڈیٹ ہو گئی",
-      "offerDeleted": "پیشکش کامیابی سے حذف ہو گئی"
+      "offerDeleted": "پیشکش کامیابی سے حذف ہو گئی",
+      "wizard": {
+        "days": "days",
+        "bogoDiscount": "BOGO Discount %",
+        "percentageOff": "Percentage Off",
+        "details": "تفصیلات",
+        "offerDetails": "Offer Details",
+        "applyToEntireStore": "Apply to entire store",
+        "next": "Next",
+        "summary": "Summary",
+        "limits": "Limits",
+        "discountAmount": "Discount Amount",
+        "couponCodeLabel": "Coupon Code *",
+        "chooseProducts": "Choose individual products",
+        "generate": "Generate",
+        "fixedAmount": "Fixed Amount",
+        "usageLimits": "Usage Limits",
+        "discountConfiguration": "Discount Configuration",
+        "perCustomerHint": "How many times each customer can use this offer",
+        "updateOffer": "Update Offer",
+        "discountPercentage": "Discount Percentage",
+        "endDateLabel": "End Date *",
+        "allProducts": "تمام پروڈکٹس",
+        "startDateLabel": "Start Date *",
+        "specificCategories": "Specific Categories",
+        "minimumPurchase": "Minimum Purchase Amount",
+        "perCustomerLimit": "Per Customer Limit",
+        "preview": "پیش منظر",
+        "buyOneGetOne": "Buy One Get One",
+        "leaveZero": "Leave 0 for no minimum",
+        "freeShipping": "Free Shipping",
+        "products": "Products",
+        "selectDates": "Select dates",
+        "selectCategories": "Select categories",
+        "selectApplyTo": "Select which products or categories this offer applies to",
+        "specificProducts": "Specific Products",
+        "applyTo": "Apply To",
+        "previous": "Previous",
+        "offerNameLabel": "Offer Name *",
+        "schedule": "Schedule",
+        "leaveZeroUnlimited": "Leave 0 for unlimited",
+        "offerTypeLabel": "Offer Type *",
+        "totalUsageLimit": "Total Usage Limit",
+        "duration": "Duration"
+      },
+      "used": "Used",
+      "all": "تمام",
+      "totalUsage": "Total Usage",
+      "pageSubtitle": "Create and manage promotional offers",
+      "statuses": {
+        "inactive": "غیر فعال",
+        "scheduled": "شیڈول شدہ",
+        "all": "تمام",
+        "expired": "میعاد ختم",
+        "active": "فعال"
+      },
+      "tryAgain": "Try Again",
+      "loadingOffers": "Loading offers...",
+      "remaining": "Remaining",
+      "createNewOffer": "Create New Offer",
+      "createOffer": "Create Offer",
+      "pageTitle": "Offers & Coupons",
+      "expired": "میعاد ختم",
+      "status": "حیثیت",
+      "usageLimit": "Usage Limit",
+      "maxDiscount": "Maximum Discount",
+      "conversionRate": "Conversion Rate",
+      "active": "فعال",
+      "discount": "Discount",
+      "inactive": "غیر فعال",
+      "minOrderAmount": "Minimum Order Amount",
+      "revenueImpact": "Revenue Impact",
+      "scheduled": "شیڈول شدہ",
+      "activeOffers": "Active Offers",
+      "usage": "Usage"
     },
     "campaigns": {
       "title": "مہمات",
@@ -3709,7 +4520,47 @@
       "createAndManage": "پروموشنل مہمات بنائیں اور منظم کریں",
       "noCampaigns": "کوئی مہمات نہیں ملیں",
       "createCampaign": "مہم بنائیں",
-      "activeCampaigns": "فعال مہمات"
+      "activeCampaigns": "فعال مہمات",
+      "failedToLoad": "Failed to Load Campaigns",
+      "exclusive": "Exclusive",
+      "seasonal": "Seasonal",
+      "bannerImageUrl": "Banner Image URL",
+      "refresh": "Refresh",
+      "holiday": "Holiday",
+      "totalImpressions": "Total Impressions",
+      "cancel": "منسوخ کریں",
+      "noMatchSearch": "No campaigns match your search criteria",
+      "editCampaign": "Edit Campaign",
+      "flashSale": "Flash Sale",
+      "deleteCampaign": "Delete Campaign",
+      "updateCampaign": "Update Campaign",
+      "duplicateCampaign": "Duplicate campaign",
+      "sendEmailNotification": "Send Email Notification",
+      "clickThroughRate": "Click Through Rate",
+      "startCreatingFirst": "Start by creating your first campaign",
+      "notifyCustomers": "Notify customers when campaign starts",
+      "clearance": "Clearance",
+      "timeline": "Campaign Timeline",
+      "description": "تفصیل",
+      "status": "حیثیت",
+      "campaignRevenue": "Campaign Revenue",
+      "allCampaigns": "All Campaigns",
+      "clicks": "Clicks",
+      "impressions": "Impressions",
+      "budget": "Budget",
+      "addCampaign": "Add Campaign",
+      "loading": "Loading campaigns...",
+      "reach": "Reach",
+      "endDate": "End Date",
+      "ctr": "CTR",
+      "startDate": "Start Date",
+      "type": "قسم",
+      "emailEnabled": "Email enabled",
+      "campaignType": "Campaign Type",
+      "revenue": "Revenue",
+      "conversions": "Conversions",
+      "newArrival": "New Arrival",
+      "campaignName": "Campaign Name"
     },
     "delivery": {
       "title": "ترسیل اور شپنگ",
@@ -3721,7 +4572,202 @@
       "addZone": "ترسیل زون شامل کریں",
       "addDeliveryMan": "ترسیل شخص شامل کریں",
       "noMethods": "کوئی ترسیل طریقے نہیں",
-      "activeMethods": "فعال طریقے"
+      "activeMethods": "فعال طریقے",
+      "selectDeliveryZone": "Select Delivery Zone",
+      "deliveryFee": "ترسیل کی فیس",
+      "customer": "گاہک",
+      "carrierTrackingNote": "Enter the tracking number provided by the carrier",
+      "updateZone": "Update Zone",
+      "noZonesAdded": "No zones added",
+      "tableHeaders": {
+        "trackingNumber": "ٹریکنگ نمبر",
+        "status": "حیثیت",
+        "orderId": "آرڈر آئی ڈی",
+        "method": "طریقہ",
+        "estDelivery": "Est. Delivery",
+        "carrier": "کیریئر",
+        "customer": "گاہک",
+        "actions": "اعمال"
+      },
+      "password": "پاس ورڈ",
+      "deliveryManRegistered": "Delivery man registered successfully!",
+      "methodName": "Method Name",
+      "selectDeliveryMan": "Select Delivery Man",
+      "isActive": "فعال",
+      "pleaseEnterPassword": "Please enter a password (min 6 characters)",
+      "deliveryFeeLabel": "ترسیل کی فیس",
+      "registerDeliveryMan": "Register Delivery Man",
+      "noActiveShipments": "No Active Shipments",
+      "enableTracking": "Enable Tracking",
+      "pleaseEnterEmail": "Please enter email address",
+      "trackingEnabled": "Tracking enabled",
+      "pleaseEnterNamePhone": "Please enter name and phone number",
+      "deliveryManCreatedSuccess": "Delivery man created successfully",
+      "email": "ای میل",
+      "inTransit": "In Transit",
+      "assign": "تفویض کریں",
+      "addDeliveryMenDesc": "Add delivery personnel to manage shipments",
+      "avgDeliveryTime": "Avg Delivery Time",
+      "trackingAutoPlaceholder": "Will be auto-generated",
+      "selectCarrier": "Select Carrier",
+      "createAndAssign": "Create & Assign",
+      "description": "تفصیل",
+      "noMatchingDeliveryMan": "No matching delivery man",
+      "methods": "طریقے",
+      "noZone": "No zone",
+      "close": "بند کریں",
+      "assigningZoneFor": "Assigning zone for {{name}}",
+      "createZonesDescription": "Create delivery zones to define your service areas",
+      "trackingNumberRequired": "Tracking number is required",
+      "city": "شہر",
+      "assignToOrder": "Assign to Order",
+      "deleteMethod": "Delete Delivery Method",
+      "deliveryFeeHint": "Enter the delivery fee for this zone",
+      "edit": "ترمیم",
+      "searchDeliveryMan": "Search delivery man",
+      "editZone": "Edit Delivery Zone",
+      "deliveryManIdLabel": "Delivery Man ID",
+      "pleaseLogInAgain": "Please log in again",
+      "update": "اپ ڈیٹ",
+      "addShipmentTracking": "Add Shipment Tracking",
+      "free": "مفت",
+      "tabs": {
+        "zones": "زونز",
+        "tracking": "ٹریکنگ",
+        "deliveryMen": "Delivery Men",
+        "methods": "طریقے"
+      },
+      "orderSelected": "Order selected",
+      "emailLabel": "ای میل",
+      "statuses": {
+        "active": "فعال",
+        "delivered": "پہنچا دیا گیا",
+        "shipped": "بھیج دیا گیا",
+        "cancelled": "منسوخ",
+        "processing": "پروسیسنگ",
+        "inactive": "غیر فعال",
+        "pending": "زیر التوا"
+      },
+      "selectOrder": "Select Order",
+      "zoneNameRequired": "Zone name is required",
+      "loginStep2": "Enter the email and password",
+      "myDeliveryMen": "My Delivery Men",
+      "shopNotFound": "Shop not found",
+      "addNewDeliveryMan": "Add New Delivery Man",
+      "loginInstructions": "Login Instructions",
+      "noZonesCreated": "No delivery zones created yet",
+      "radius": "Radius",
+      "failedToAssignOrder": "Failed to assign order",
+      "enterPhoneNumber": "فون نمبر درج کریں",
+      "pleaseAssignManually": "Please assign manually",
+      "customerPhone": "گاہک کا فون",
+      "carrier": "کیریئر",
+      "createPassword": "پاس ورڈ بنائیں",
+      "noMethodsConfigured": "No delivery methods configured yet",
+      "manageYourDeliveryTeam": "Manage your delivery team",
+      "failedToSaveZone": "Failed to save delivery zone",
+      "deliveryFeeNote": "Leave empty for free delivery",
+      "state": "ریاست",
+      "zone": "علاقہ",
+      "editZoneAssignment": "Edit Zone Assignment",
+      "syncFromAuthUsers": "Sync from authenticated users",
+      "searchDeliveryMen": "Search delivery men...",
+      "baseCost": "Base Cost",
+      "loginStep3": "Start accepting deliveries",
+      "shipmentTracking": "Shipment Tracking",
+      "trackingCarrierHint": "Enter the tracking number from the carrier",
+      "deliveryManAdded": "Delivery man added",
+      "createZone": "Create Zone",
+      "failedToRegister": "Failed to register delivery man",
+      "zoneName": "Zone Name",
+      "fullName": "پورا نام",
+      "enterEmailAddress": "ای میل ایڈریس درج کریں",
+      "regenerate": "دوبارہ بنائیں",
+      "deliveryZone": "ترسیل کا علاقہ",
+      "addFirstDeliveryMan": "Add your first delivery man",
+      "failedToDeleteMethod": "Failed to delete delivery method",
+      "trackingNumber": "ٹریکنگ نمبر",
+      "phone": "فون",
+      "selectMethod": "Select Method",
+      "enterCarrierTracking": "Enter carrier tracking number",
+      "tracking": "ٹریکنگ",
+      "deliveryMethodCreated": "Delivery method created",
+      "create": "بنائیں",
+      "sessionExpired": "Session expired",
+      "noOrdersFound": "No orders found",
+      "ownDeliveryMan": "Own Delivery Man",
+      "failedToSaveMethod": "Failed to save delivery method",
+      "zones": "زونز",
+      "autoGeneratedTracking": "Auto-generated tracking number",
+      "shippedToday": "Shipped Today",
+      "autoFilledFromOrder": "آرڈر سے خودکار طور پر بھرا گیا",
+      "orderAssigned": "Order assigned to delivery man!",
+      "orderId": "آرڈر آئی ڈی",
+      "shippingMethodName": "Shipping Method Name",
+      "trackingAutoHint": "The tracking number will be generated automatically",
+      "enterFullName": "پورا نام درج کریں",
+      "confirmDeleteMethod": "Are you sure you want to delete this delivery method? This action cannot be undone.",
+      "phoneLabel": "فون",
+      "delete": "حذف کریں",
+      "registering": "Registering...",
+      "editTracking": "Edit Tracking",
+      "noDeliveryMenYet": "No delivery men yet",
+      "customerName": "گاہک کا نام",
+      "trackingCarrierPlaceholder": "e.g. 1Z999AA10123456784",
+      "noZoneAssigned": "No zone assigned",
+      "estimatedDelivery": "Estimated Delivery",
+      "shippingMethod": "Shipping Method",
+      "deliveryMethodUpdated": "Delivery method updated",
+      "autoGeneratedNote": "This will be auto-generated",
+      "deliveryZoneUpdated": "Delivery zone updated",
+      "noDeliveryZonesAvailable": "No delivery zones available",
+      "zoneType": "Zone Type",
+      "kmCoverageRadius": "کلومیٹر کوریج ریڈیس",
+      "save": "محفوظ کریں",
+      "registerAndSelect": "Register and Select",
+      "cancel": "منسوخ کریں",
+      "standard": "معیاری",
+      "editMethod": "Edit Delivery Method",
+      "shipmentTrackingUpdated": "Shipment tracking updated",
+      "deliveryMethodDeleted": "Delivery method deleted",
+      "country": "ملک",
+      "days": "days",
+      "selectDeliveryZoneOpt": "Select delivery zone (optional)",
+      "noZonesAvailable": "No zones available",
+      "noDeliveryMenFound": "No delivery men found",
+      "name": "نام",
+      "zoneDescription": "Zone Description",
+      "loginStep1": "Open the delivery app",
+      "deliveryZoneCreated": "Delivery zone created",
+      "deliveryZoneOptional": "Delivery Zone (Optional)",
+      "estimatedDays": "Estimated Days",
+      "shipmentTrackingCreated": "Shipment tracking created",
+      "failedToAssign": "Shipment created but failed to assign to delivery man",
+      "copyIdToClipboard": "Copy ID to clipboard",
+      "freeShippingThreshold": "Free Shipping Threshold",
+      "deliveryAddress": "ترسیل کا پتہ",
+      "noTrackingInfo": "No tracking information added yet",
+      "registerNewDeliveryMan": "Register New Delivery Man",
+      "rate": "Rate",
+      "deliveryMethod": "ترسیل کا طریقہ",
+      "selectZone": "Select Zone",
+      "failedToUpdateZone": "Failed to update zone",
+      "status": "حیثیت",
+      "searchOrders": "آرڈرز تلاش کریں...",
+      "noDeliveryZones": "No Delivery Zones",
+      "deliveryPersonCanAccess": "The delivery person can access the app with these credentials",
+      "pleaseAddZonesFirst": "Please add zones first",
+      "passwordLabel": "پاس ورڈ",
+      "express": "ایکسپریس",
+      "orderAssignedTo": "Order assigned to {{name}}",
+      "idCopied": "ID copied",
+      "delivery": "Delivery",
+      "noDeliveryMenAdded": "No delivery men added",
+      "updateTracking": "Update Tracking",
+      "createTracking": "Create Tracking",
+      "zoneAssignmentUpdated": "Zone assignment updated",
+      "addTracking": "Add Tracking",
+      "failedToSaveTracking": "Failed to save shipment tracking"
     },
     "team": {
       "title": "ٹیم",
@@ -3731,7 +4777,63 @@
       "inviteMember": "ممبر مدعو کریں",
       "noMembers": "کوئی ٹیم ممبرز نہیں",
       "totalMembers": "کل ممبرز",
-      "sendInvitation": "دعوت نامہ بھیجیں"
+      "sendInvitation": "دعوت نامہ بھیجیں",
+      "cancelInvitation": "Cancel invitation",
+      "roleLabel": "Role *",
+      "inviteFirst": "Invite your first team member",
+      "permissions": {
+        "updateOrderStatus": "Update Order Status",
+        "viewOrders": "View Orders",
+        "manageProductsDesc": "Can create, edit, and delete products",
+        "updateOrderStatusDesc": "Can update the status of orders",
+        "viewAnalytics": "View Analytics",
+        "manageProducts": "Manage Products",
+        "manageTeamDesc": "Can invite, edit, and remove team members",
+        "manageOrdersDesc": "Can view, update, and manage all orders",
+        "manageTeam": "Manage Team",
+        "manageOrders": "Manage Orders",
+        "shopSettings": "شاپ کی ترتیبات",
+        "shopSettingsDesc": "Can access and modify shop settings",
+        "viewAnalyticsDesc": "Can view analytics and reports",
+        "manageShop": "Manage Shop",
+        "viewOrdersDesc": "Can view all orders without modifying them",
+        "manageShopDesc": "Can manage shop settings and configuration"
+      },
+      "roles": {
+        "admin": "ایڈمن",
+        "staff": "عملہ",
+        "owner": "مالک",
+        "manager": "مینیجر"
+      },
+      "personalMessage": "Personal Message (optional)",
+      "pendingInvitations": "Pending Invitations",
+      "cancel": "منسوخ کریں",
+      "updated": "Updated",
+      "role": "Role",
+      "admins": "Admins",
+      "inviteTeamMember": "Invite Team Member",
+      "removeMember": "Remove Member",
+      "resendInvitation": "Resend invitation",
+      "pendingInvites": "Pending Invites",
+      "updating": "Updating...",
+      "permissionsLabel": "Permissions",
+      "sending": "Sending...",
+      "emailAddressLabel": "Email Address *",
+      "pageSubtitle": "Manage your team and permissions",
+      "expires": "Expires",
+      "email": "ای میل",
+      "lastActive": "Last Active",
+      "pending": "زیر التوا",
+      "updatePermissions": "Update Permissions",
+      "active": "فعال",
+      "managePermissions": "Manage Permissions",
+      "joined": "Joined",
+      "status": "حیثیت",
+      "memberName": "Member Name",
+      "editMember": "Edit Member",
+      "noTeamMembers": "No team members found",
+      "fullAccess": "Full Access",
+      "pageTitle": "Team Members"
     },
     "billing": {
       "title": "بلنگ اور سبسکرپشن",
@@ -3744,7 +4846,51 @@
       "monthly": "ماہانہ",
       "yearly": "سالانہ",
       "cancelSubscription": "سبسکرپشن منسوخ کریں؟",
-      "freePlan": "مفت پلان"
+      "freePlan": "مفت پلان",
+      "subscriptionResumedDesc": "Your subscription will continue as normal.",
+      "savePercent": "Save {{percent}}%",
+      "download": "Download",
+      "failedToResume": "Failed to resume subscription",
+      "status": "حیثیت",
+      "addPaymentMethod": "Add Payment Method",
+      "failedToAddPaymentMethod": "Failed to add payment method",
+      "nextBillingDate": "Next Billing Date",
+      "actions": "اعمال",
+      "subscriptionCanceled": "Subscription canceled",
+      "canceling": "Canceling...",
+      "plan": "Plan",
+      "save2Months": "2 months free",
+      "subscriptionPayment": "Subscription payment",
+      "default": "Default",
+      "description": "تفصیل",
+      "paymentMethodRemoved": "Payment method removed",
+      "popular": "Popular",
+      "upgrade": "Upgrade",
+      "noPaymentMethods": "No payment methods added yet",
+      "year": "year",
+      "resuming": "Resuming...",
+      "addMethod": "Add Method",
+      "amount": "Amount",
+      "failedToCancel": "Failed to cancel subscription",
+      "failedToStartCheckout": "Failed to start checkout",
+      "yesCancel": "Yes, Cancel",
+      "availablePlans": "Available Plans",
+      "expires": "Expires",
+      "noInvoices": "No invoices yet",
+      "failedToRemovePaymentMethod": "Failed to remove payment method",
+      "invoiceHistory": "Invoice History",
+      "subscriptionCanceledDesc": "Your subscription will remain active until the end of the billing period.",
+      "cardEndingIn": "ending in",
+      "currentSubscription": "Current Subscription",
+      "billingCycle": "Billing Cycle",
+      "downloadInvoice": "Download Invoice",
+      "date": "Date",
+      "subscriptionResumed": "Subscription resumed",
+      "accessUntil": "Access Until",
+      "resumeSubscription": "Resume Subscription",
+      "month": "month",
+      "cancelConfirmMessage": "Your subscription will remain active until the end of the current billing period. You won't be charged again.",
+      "keepSubscription": "Keep Subscription"
     },
     "settings": {
       "shop": {
@@ -3756,7 +4902,17 @@
         "shopLogo": "دکان کا لوگو",
         "shopBanner": "دکان کا بینر",
         "saveSettings": "ترتیبات محفوظ کریں",
-        "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں"
+        "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں",
+        "address": "پتہ",
+        "shippingPolicy": "Shipping Policy",
+        "category": "Category",
+        "policies": "Policies",
+        "contactInfo": "رابطہ کی معلومات",
+        "businessHours": "کاروباری اوقات",
+        "returnPolicy": "Return Policy",
+        "phone": "فون",
+        "email": "ای میل",
+        "socialMedia": "Social Media"
       },
       "account": {
         "title": "اکاؤنٹ ترتیبات",
@@ -3766,7 +4922,17 @@
         "newPassword": "نیا پاس ورڈ",
         "confirmPassword": "پاس ورڈ کی تصدیق",
         "saveSettings": "ترتیبات محفوظ کریں",
-        "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں"
+        "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں",
+        "profile": "Profile",
+        "fullName": "پورا نام",
+        "notifications": "Notifications",
+        "phone": "فون",
+        "pushNotifications": "Push Notifications",
+        "email": "ای میل",
+        "emailNotifications": "Email Notifications",
+        "security": "Security",
+        "twoFactorAuth": "Two-Factor Authentication",
+        "password": "پاس ورڈ"
       },
       "tabs": {
         "general": "عمومی",
@@ -3781,7 +4947,159 @@
       "pageSubtitle": "اپنی دکان کی ترجیحات ترتیب دیں",
       "saveChanges": "تبدیلیاں محفوظ کریں",
       "savingChanges": "محفوظ ہو رہا ہے...",
-      "saveAllChanges": "تمام تبدیلیاں محفوظ کریں"
+      "saveAllChanges": "تمام تبدیلیاں محفوظ کریں",
+      "paymentBankDesc": "Accept payments via bank transfer",
+      "orderConfirmation": "آرڈر کی تصدیق",
+      "footerScriptsDesc": "Scripts to inject before </body> (recommended for performance)",
+      "newsletterDesc": "Receive our newsletter with tips and updates",
+      "check": "چیک کریں",
+      "never": "کبھی نہیں",
+      "orderConfirmationDesc": "Send email when order is placed",
+      "customCss": "Custom CSS",
+      "weekly": "ہفتہ وار",
+      "redirectToCustomDomainDesc": "Automatically redirect traffic from the default URL to your custom domain",
+      "newCustomersDesc": "Get notified when you have new customers",
+      "secret": "خفیہ",
+      "checkAvailability": "چیک کریں",
+      "advancedSettings": "Advanced Settings",
+      "ogImage": "Open Graph Image URL",
+      "publishableKey": "Publishable Key",
+      "productReviews": "Product Reviews",
+      "headerScripts": "Header Scripts",
+      "smsAlerts": "SMS Alerts",
+      "enterNewPassword": "Enter your new password",
+      "shopSlugLabel": "Shop Slug *",
+      "deleteAccountDesc": "Permanently delete your account and all associated data",
+      "uploadBanner": "Upload Banner",
+      "enable": "Enable",
+      "subdomain": "Subdomain",
+      "orderUpdates": "Order Updates",
+      "domainSettingsDesc": "Configure your custom domain and SSL settings",
+      "domainVerifiedError": "Domain verification failed",
+      "metaTitleCharacters": "characters (Recommended: 50-60)",
+      "emailDigestFrequency": "Email Digest Frequency",
+      "domainVerified": "Domain Verified",
+      "subdomainTaken": "This subdomain is already taken. Try another one.",
+      "orderShipped": "Order Shipped",
+      "stateLabel": "ریاست",
+      "deleteAccount": "اکاؤنٹ حذف کریں",
+      "logoRecommended": "Recommended: 200x200px, max 5MB",
+      "addressLabel": "پتہ",
+      "redirectDesc": "Redirect subdomain visitors to your custom domain",
+      "dnsType": "قسم",
+      "businessAddressLabel": "Business Address",
+      "paymentCardDesc": "Accept credit and debit card payments via Stripe",
+      "footerScripts": "Footer Scripts",
+      "sslActive": "SSL Certificate Active",
+      "dnsName": "نام",
+      "logoLabel": "Shop Logo",
+      "dnsValue": "قدر",
+      "customerPaymentOptions": "Customer Payment Options",
+      "newCustomers": "New Customers",
+      "orderShippedDesc": "Send email when order ships",
+      "twoFactorDesc": "Add an extra layer of security to your account",
+      "storefrontUrls": "Your Storefront URLs",
+      "paymentMethods": "ادائیگی کے طریقے",
+      "businessPhoneLabel": "کاروباری فون",
+      "paypalPayments": "PayPal payments",
+      "subdomainDesc": "Your free storefront URL",
+      "paymentPaypalDesc": "Accept payments via PayPal",
+      "sitemapDesc": "Helps search engines discover your shop pages",
+      "customerPaymentOptionsDesc": "Configure the payment options available to your customers at checkout",
+      "yourStorefrontUrls": "Your Storefront URLs",
+      "businessNameLabel": "Business Name *",
+      "advancedWarning": "Warning: Advanced Settings",
+      "domainVerifiedSuccess": "Domain verified successfully",
+      "customDomainDesc": "Use your own domain (Pro plan required)",
+      "bannerRecommended": "Recommended: 1200x400px, max 5MB",
+      "clientId": "Client ID",
+      "subdomainAvailable": "is available!",
+      "orderDelivered": "Order Delivered",
+      "dangerZoneDesc": "Irreversible and destructive actions",
+      "uploading": "اپ لوڈ ہو رہا ہے...",
+      "dnsPropagation": "DNS propagation can take up to 48 hours",
+      "promotionsDesc": "Receive promotional emails and special offers",
+      "orderUpdatesDesc": "Get notified about order status changes",
+      "redirectToDomain": "Redirect to custom domain",
+      "loadingSettings": "Loading shop settings...",
+      "generalInfo": "General Information",
+      "domainSettings": "Domain Settings",
+      "ogImageUrl": "Open Graph Image URL",
+      "analyticsCodeDesc": "Track visitor behavior and shop performance",
+      "dangerZone": "Danger Zone",
+      "characters": "حروف",
+      "recommended": "تجویز کردہ",
+      "enterCurrentPassword": "Enter your current password",
+      "analyticsCode": "Analytics Code (Google Analytics, etc.)",
+      "emailLabel": "ای میل",
+      "enableSitemapDesc": "Enable sitemap generation to help search engines index your store",
+      "authenticatorDesc": "Use an authenticator app for two-factor authentication",
+      "dnsInstructions": "Add the following DNS record to your domain:",
+      "verify": "Verify",
+      "warningAdvancedDesc": "These settings are intended for advanced users. Incorrect configuration may break your store.",
+      "customerPaymentDesc": "Choose which payment methods are available to your customers at checkout",
+      "dnsConfiguration": "DNS Configuration Required",
+      "countryLabel": "ملک",
+      "taxIdLabel": "Tax ID / EIN",
+      "verificationPending": "Verification Pending",
+      "domainActiveDesc": "Your custom domain is active and serving traffic",
+      "metaKeywords": "Meta Keywords",
+      "enableSitemap": "Enable automatic sitemap generation",
+      "urlCopied": "URL copied",
+      "accountSettingsDesc": "Manage your account preferences and security",
+      "productReviewsDesc": "Get notified when customers review your products",
+      "domainActive": "Your custom domain is active",
+      "shopNameLabel": "Shop Name *",
+      "phoneLabel": "فون",
+      "creditCardPayments": "Credit card payments",
+      "accountSettings": "Account Settings",
+      "bannerLabel": "Shop Banner",
+      "warningAdvanced": "Advanced Settings Warning",
+      "metaTitle": "Meta Title",
+      "daily": "روزانہ",
+      "secretKey": "Secret Key",
+      "uploadLogo": "لوگو اپ لوڈ کریں",
+      "addDnsRecords": "Add DNS records and verify your domain",
+      "headerScriptsDesc": "Scripts to inject in the <head> section",
+      "customDomain": "Custom Domain",
+      "descriptionLabel": "تفصیل",
+      "customCssDesc": "Add custom styles to personalize your shop appearance",
+      "updatePassword": "Update Password",
+      "domainDesc": "Configure your shop's subdomain and custom domain for a professional storefront URL.",
+      "metaDescription": "Meta Description",
+      "sslSecure": "Your site is secure with HTTPS",
+      "authenticatorApp": "Authenticator App",
+      "promotions": "Promotions",
+      "verificationFailed": "Verification Failed",
+      "notificationDesc": "Choose how you want to be notified",
+      "confirmPasswordPlaceholder": "Confirm your new password",
+      "metaKeywordsHint": "Separate keywords with commas",
+      "cityLabel": "شہر",
+      "advancedWarningDesc": "These settings are for advanced users only. Incorrect code may break your shop or create security issues.",
+      "zipCodeLabel": "ZIP Code",
+      "newsletter": "Newsletter",
+      "addDnsRecord": "Add DNS Record",
+      "savingAllChanges": "Saving All Changes...",
+      "notConfigured": "Not Configured",
+      "redirectToCustomDomain": "Redirect to custom domain",
+      "paymentCodDesc": "Accept cash on delivery payments",
+      "businessInfo": "Business Information",
+      "monthly": "ماہانہ",
+      "dnsConfigRequired": "DNS configuration required",
+      "dnsNotFound": "DNS records not found. Please check your configuration.",
+      "seoSettings": "SEO Settings",
+      "slugHint": "Used in shop URL (lowercase letters, numbers, hyphens only)",
+      "sslActiveDesc": "SSL certificate is active and secure",
+      "smsAlertsDesc": "Receive SMS notifications",
+      "changing": "Changing...",
+      "ogImageRecommended": "Recommended: 1200x630px for social media sharing",
+      "yourDomain": "Your domain",
+      "businessEmailLabel": "کاروباری ای میل",
+      "orderDeliveredDesc": "Send email when order is delivered",
+      "metaDescriptionCharacters": "characters (Recommended: 150-160)",
+      "confirmNewPassword": "Confirm New Password",
+      "notificationPreferences": "Notification Preferences",
+      "separateKeywords": "Separate keywords with commas"
     },
     "createShop": {
       "title": "اپنا اسٹور بنائیں",
@@ -3803,7 +5121,26 @@
         "descriptionPlaceholder": "اپنے اسٹور کی وضاحت کریں (اختیاری)",
         "creating": "اسٹور بنایا جا رہا ہے...",
         "createStore": "اسٹور بنائیں",
-        "footerNote": "آپ بعد میں ترتیبات میں اپنے اسٹور کی تفصیلات اپ ڈیٹ کر سکتے ہیں"
+        "footerNote": "آپ بعد میں ترتیبات میں اپنے اسٹور کی تفصیلات اپ ڈیٹ کر سکتے ہیں",
+        "businessNamePlaceholder": "Your Business LLC (optional)",
+        "additionalLanguages": "اضافی زبانیں",
+        "selectCategory": "Select a category (optional)",
+        "additionalLanguagesHint": "Select languages your store will support (customers can switch between these)",
+        "businessEmail": "کاروباری ای میل",
+        "businessType": "کاروبار کی قسم",
+        "businessTypes": {
+          "individual": "Individual / Sole Proprietor",
+          "llc": "LLC",
+          "corporation": "Corporation"
+        },
+        "businessPhone": "کاروباری فون",
+        "defaultLanguageHint": "The primary language for your store's content",
+        "businessName": "Legal Business Name",
+        "phoneHint": "Optional. Enter phone number without country code.",
+        "categoryHint": "Choose the category that best describes your store",
+        "languageSettings": "زبان کی ترتیبات",
+        "storeCategory": "Store Category",
+        "defaultLanguage": "پہلے سے طے شدہ زبان"
       },
       "wizard": {
         "steps": {
@@ -3814,15 +5151,40 @@
         },
         "step1": {
           "title": "آپ کیا فروخت کریں گے؟",
-          "subtitle": "وہ زمرہ منتخب کریں جو آپ کے اسٹور کی بہترین وضاحت کرے"
+          "subtitle": "وہ زمرہ منتخب کریں جو آپ کے اسٹور کی بہترین وضاحت کرے",
+          "error": "Please select a store type"
         },
         "step2": {
           "title": "اپنے اسٹور کا نام رکھیں",
-          "subtitle": "اپنے برانڈ کے لیے ایک یادگار نام منتخب کریں"
+          "subtitle": "اپنے برانڈ کے لیے ایک یادگار نام منتخب کریں",
+          "defaultLanguage": "پہلے سے طے شدہ زبان",
+          "storeNamePlaceholder": "e.g., Urban Style Co.",
+          "additionalLanguagesHint": "Select languages your store will support",
+          "descriptionPlaceholder": "Tell customers what makes your store special...",
+          "languageSettings": "زبان کی ترتیبات",
+          "description": "Store Description",
+          "storeUrlHint": "Your store URL will be: vasty.shop/{{slug}}",
+          "storeName": "Store Name",
+          "storeNameMinError": "Store name must be at least 3 characters",
+          "additionalLanguages": "اضافی زبانیں",
+          "storeNameError": "Store name is required",
+          "defaultLanguageHint": "Primary language for your store content"
         },
         "step4": {
           "title": "لانچ کے لیے تیار!",
-          "subtitle": "لائیو ہونے سے پہلے اپنے اسٹور کی تفصیلات کا جائزہ لیں"
+          "subtitle": "لائیو ہونے سے پہلے اپنے اسٹور کی تفصیلات کا جائزہ لیں",
+          "category": "Category",
+          "storeName": "Store Name",
+          "businessEmail": "کاروباری ای میل",
+          "languages": "Languages",
+          "nextSteps": {
+            "step3": "Add products and start selling",
+            "step4": "Customize your storefront anytime",
+            "step2": "You'll be taken to your vendor dashboard",
+            "step1": "Your store will be created instantly"
+          },
+          "businessType": "کاروبار کی قسم",
+          "whatHappensNext": "What happens next?"
         },
         "navigation": {
           "continue": "جاری رکھیں",
@@ -3830,8 +5192,140 @@
           "creatingStore": "اسٹور بنایا جا رہا ہے..."
         },
         "success": "اسٹور کامیابی سے بنایا گیا!",
-        "error": "اسٹور بنانے میں ناکامی"
-      }
+        "error": "اسٹور بنانے میں ناکامی",
+        "step3": {
+          "businessEmail": "کاروباری ای میل",
+          "businessNamePlaceholder": "Your Business LLC (optional)",
+          "businessPhonePlaceholder": "(555) 123-4567",
+          "businessName": "Legal Business Name",
+          "subtitle": "How can customers reach you?",
+          "title": "Business Information",
+          "businessEmailError": "Business email is required",
+          "businessEmailInvalid": "Please enter a valid email",
+          "businessTypes": {
+            "individual": "Individual / Sole Proprietor",
+            "corporation": "Corporation",
+            "llc": "LLC"
+          },
+          "businessType": "کاروبار کی قسم",
+          "businessEmailPlaceholder": "store@yourbusiness.com",
+          "businessPhone": "کاروباری فون"
+        },
+        "storeTypes": {
+          "beauty": "Beauty & Wellness",
+          "gifts": "Gifts & Occasions",
+          "art": "Art & Crafts",
+          "fashion": "Fashion & Apparel",
+          "food": "Food & Beverages",
+          "general": "General Store",
+          "electronics": "Electronics & Tech",
+          "sports": "Sports & Outdoors",
+          "other": "Other",
+          "home": "Home & Living",
+          "books": "Books & Media",
+          "automotive": "Automotive"
+        },
+        "stepOf": "Step {{current}} of {{total}}"
+      },
+      "planModal": {
+        "plans": {
+          "pro": {
+            "features": {
+              "teamMembers": "5 team members",
+              "mobileApp": "Mobile app for customers",
+              "prioritySupport": "Priority support (Email & Chat)",
+              "advancedAnalytics": "Advanced analytics & reports",
+              "advancedPromotions": "Advanced promotions & campaigns",
+              "customDomainPerStore": "Custom domain per store",
+              "storesUnlimited": "5 stores with unlimited products"
+            },
+            "name": "Pro",
+            "description": "Grow your business"
+          },
+          "starter": {
+            "features": {
+              "premiumThemes": "Premium storefront themes",
+              "basicAnalytics": "Basic analytics dashboard",
+              "customDomain": "Custom domain",
+              "emailSupport": "Email support",
+              "teamMembers": "2 team members",
+              "storesUnlimited": "2 stores with unlimited products"
+            },
+            "name": "Starter",
+            "description": "Launch & grow"
+          },
+          "free": {
+            "name": "مفت",
+            "features": {
+              "basicTheme": "Basic storefront theme",
+              "freeSubdomain": "Free subdomain (yourstore.vasty.shop)",
+              "communitySupport": "Community support",
+              "standardCheckout": "Standard checkout",
+              "marketplaceListing": "Marketplace listing",
+              "storeWithProducts": "1 store with 10 products"
+            },
+            "description": "Start your first store"
+          },
+          "business": {
+            "name": "Business",
+            "features": {
+              "fullAnalytics": "Full analytics + custom reports",
+              "whiteLabel": "White-label solution",
+              "fullMobileApp": "Full mobile app (All panels)",
+              "teamMembers": "15 team members",
+              "customDomainPerStore": "Custom domain per store",
+              "apiAccess": "API access for integrations",
+              "unlimitedStores": "Unlimited stores & products"
+            },
+            "description": "Scale without limits"
+          }
+        },
+        "title": "Choose Your Plan",
+        "monthly": "ماہانہ",
+        "continueWithFree": "Continue with Free",
+        "perMonth": "/month",
+        "popular": "POPULAR",
+        "limitReached": "Limit Reached",
+        "yearly": "Yearly",
+        "perYear": "/year",
+        "upgradeRequired": "Upgrade to a paid plan to create more stores.",
+        "twoMonthsFree": "2 months free",
+        "currentUsage": "You currently have {{count}} store(s). Free plan allows only 1 store.",
+        "subtitle": "Select a plan to get started with your store",
+        "skipNote": "You can always upgrade later from your billing settings",
+        "subscribeToPlan": "Subscribe to Plan"
+      },
+      "errors": {
+        "storeLimitReached": "You have reached the maximum number of stores for your plan. Please upgrade to create more stores.",
+        "storeNameExists": "A store with this name already exists"
+      },
+      "benefits": {
+        "noMonthlyFees": "No monthly fees",
+        "freeToStart": "Free to start",
+        "support247": "24/7 Support"
+      },
+      "businessLicense": "Business License",
+      "limits": {
+        "storesUsed": "Stores Used",
+        "description": "You have created {{current}} out of {{max}} stores allowed on your {{plan}} plan.",
+        "currentPlan": "موجودہ پلان",
+        "unlimited": "Unlimited stores available on your plan",
+        "title": "Store Limit Reached",
+        "upgradeButton": "پلان اپ گریڈ کریں",
+        "remaining": "You can create {{remaining}} more store(s) ({{max}} total on your plan)",
+        "modalDescription": "You have created {{current}} out of {{max}} stores allowed on your {{plan}} plan. Upgrade your plan to create more stores."
+      },
+      "defaultLanguageRequired": "Default language is always included",
+      "defaultLanguage": "پہلے سے طے شدہ زبان",
+      "defaultLanguageHint": "The primary language for your store's content",
+      "uploadDocuments": "Upload Documents",
+      "additionalLanguages": "اضافی زبانیں",
+      "email": "ای میل",
+      "phone": "فون",
+      "additionalLanguagesHint": "Select languages your store will support (customers can switch between these)",
+      "address": "پتہ",
+      "languageSettings": "زبان کی ترتیبات",
+      "identityDocument": "Identity Document"
     },
     "shopSelection": {
       "title": "دکان منتخب کریں",
@@ -3839,7 +5333,15 @@
       "createNew": "نئی دکان بنائیں",
       "noShops": "آپ کی ابھی تک کوئی دکانیں نہیں ہیں",
       "noShopsYet": "ابھی تک کوئی دکانیں نہیں",
-      "selectShop": "منظم کرنے کے لیے دکان منتخب کریں"
+      "selectShop": "منظم کرنے کے لیے دکان منتخب کریں",
+      "createFirst": "Create your first shop to get started",
+      "noShopsMessage": "You haven't created any shops yet",
+      "loadingShops": "Loading your shops...",
+      "createFirstShop": "Create your first shop",
+      "errorTitle": "Error Loading Shops",
+      "createNewShopDesc": "Start a new online store",
+      "createFirstShopButton": "Create Your First Shop",
+      "createNewShop": "Create New Shop"
     },
     "storefront": {
       "title": "اسٹور فرنٹ بلڈر",
@@ -3847,7 +5349,25 @@
       "preview": "پیش نظارہ",
       "publish": "شائع کریں",
       "saveDraft": "ڈرافٹ محفوظ کریں",
-      "changesSaved": "تبدیلیاں کامیابی سے محفوظ ہو گئیں"
+      "changesSaved": "تبدیلیاں کامیابی سے محفوظ ہو گئیں",
+      "urlCopied": "URL copied to clipboard",
+      "mobile": "Mobile",
+      "copyFailed": "Failed to copy URL",
+      "tablet": "Tablet",
+      "edit": "ترمیم",
+      "theme": "Theme",
+      "desktop": "Desktop",
+      "footer": "Footer",
+      "homepage": "Homepage",
+      "customCSS": "Custom CSS",
+      "refresh": "Refresh",
+      "copyUrl": "Copy URL",
+      "productPage": "Product Page",
+      "fonts": "Fonts",
+      "colors": "Colors",
+      "openNewTab": "Open in New Tab",
+      "layout": "Layout",
+      "header": "Header"
     },
     "storefrontBuilder": {
       "loadingStorefront": "اسٹور فرنٹ لوڈ ہو رہا ہے...",
@@ -3864,7 +5384,23 @@
       "pages": "صفحات",
       "addSection": "سیکشن شامل کریں",
       "storePublished": "اسٹور شائع ہو گیا!",
-      "storefrontIsLive": "آپ کا اسٹور فرنٹ اب لائیو ہے"
+      "storefrontIsLive": "آپ کا اسٹور فرنٹ اب لائیو ہے",
+      "noSectionsYet": "No sections yet",
+      "customJavascript": "Custom JavaScript",
+      "header": "Header",
+      "openInNewTab": "Open in new tab",
+      "showSection": "Show section",
+      "generalSettings": "General Settings",
+      "duplicateSection": "Duplicate section",
+      "deleteSection": "Delete section",
+      "hideSection": "Hide section",
+      "customCss": "Custom CSS",
+      "page": "Page",
+      "footer": "Footer",
+      "noTemplatesAvailable": "No section templates available for this page",
+      "addingTo": "Adding to",
+      "addFirstSection": "Add your first section",
+      "closePreview": "Close Preview"
     },
     "profile": {
       "backToHome": "ہوم پر واپس",
@@ -3881,8 +5417,27 @@
       "deleteAccount": {
         "title": "اکاؤنٹ حذف کریں",
         "description": "اکاؤنٹ حذف کرنے سے دکانوں اور مصنوعات سمیت آپ کا تمام ڈیٹا مستقل طور پر ہٹا دیا جائے گا۔",
-        "button": "میرا اکاؤنٹ حذف کریں"
-      }
+        "button": "میرا اکاؤنٹ حذف کریں",
+        "earningsRecords": "Earnings records",
+        "cancel": "منسوخ کریں",
+        "profileInfo": "Your profile information",
+        "modalTitle": "اکاؤنٹ حذف کریں",
+        "shopsAndProducts": "All your shops and products",
+        "success": "Account deleted successfully",
+        "modalDescription": "This will permanently delete your account and all associated data including:",
+        "confirmPrompt": "Type <strong>DELETE</strong> to confirm:",
+        "confirm": "اکاؤنٹ حذف کریں",
+        "failed": "Failed to delete account. Please contact support.",
+        "orderHistory": "Order history and analytics"
+      },
+      "avatarUploadFailed": "Failed to upload avatar",
+      "avatarUploadSuccess": "Avatar uploaded successfully",
+      "imageSizeLimit": "Image size must be less than 5MB",
+      "phone": "Phone Number",
+      "bio": "Bio",
+      "address": "پتہ",
+      "emailCannotChange": "Email cannot be changed",
+      "selectImageFile": "Please select an image file"
     },
     "notifications": {
       "title": "اطلاعات",
@@ -3892,7 +5447,34 @@
       "empty": "ابھی تک کوئی اطلاعات نہیں",
       "markAllRead": "سب پڑھی ہوئی بنائیں",
       "newOrder": "نیا آرڈر موصول",
-      "newOrderMsg": "{{customerName}} سے آرڈر #{{orderNumber}}"
+      "newOrderMsg": "{{customerName}} سے آرڈر #{{orderNumber}}",
+      "loadError": "Failed to load notifications",
+      "orderProcessing": "Order Processing",
+      "orderDelivered": "Order Delivered",
+      "markedAllRead": "All notifications marked as read",
+      "orderCancelled": "Order Cancelled",
+      "newReview": "New Review",
+      "allMarkedRead": "All notifications marked as read",
+      "minutesAgo": "min ago",
+      "newReviewMsg": "{{customerName}} gave you a {{rating}}-star review",
+      "recently": "Recently",
+      "refresh": "Refresh",
+      "orderShipped": "Order Shipped",
+      "filter": {
+        "read": "Read",
+        "unread": "Unread",
+        "all": "تمام"
+      },
+      "orderProcessingMsg": "Order #{{orderNumber}} is being processed",
+      "orderDeliveredMsg": "Order #{{orderNumber}} has been delivered",
+      "hoursAgo": "hours ago",
+      "customer": "گاہک",
+      "refreshed": "Notifications refreshed",
+      "orderCancelledMsg": "Order #{{orderNumber}} has been cancelled",
+      "orderShippedMsg": "Order #{{orderNumber}} has been shipped",
+      "justNow": "Just now",
+      "viewAll": "View all notifications",
+      "daysAgo": "days ago"
     },
     "placeholders": {
       "searchCampaigns": "مہمات تلاش کریں...",
@@ -3904,14 +5486,88 @@
       "phone": "اپنا فون نمبر درج کریں",
       "shopName": "دکان کا نام درج کریں",
       "productName": "مصنوعات کا نام درج کریں",
-      "productDescription": "اپنی مصنوعات کی وضاحت کریں..."
+      "productDescription": "اپنی مصنوعات کی وضاحت کریں...",
+      "headline": "Headline",
+      "deliveryRiderPhone": "Phone number",
+      "autoFilled": "آرڈر سے خودکار طور پر بھرا گیا",
+      "seoDescription": "Describe your shop for search engines...",
+      "metaDescription": "Brief description for search results",
+      "replyPlaceholder": "Thank you for your review...",
+      "sizeChart": "Size (S, M, L)",
+      "addKeyword": "Add keyword...",
+      "value": "قدر",
+      "shippingMethodName": "Standard Shipping",
+      "campaignName": "Summer Flash Sale 2024",
+      "label": "Label",
+      "deliveryRiderName": "پورا نام درج کریں",
+      "name": "نام",
+      "buttonText": "Button Text",
+      "bio": "Tell us about yourself...",
+      "campaignDescription": "Campaign description...",
+      "role": "Role (e.g., Verified Buyer)",
+      "address": "Enter your address",
+      "addFeature": "Add a feature (press Enter)",
+      "linkLabel": "Label",
+      "state": "ریاست",
+      "streetAddress": "Street address",
+      "typeDelete": "DELETE ٹائپ کریں",
+      "min": "Min",
+      "invitationMessage": "Add a personal message to the invitation...",
+      "aiPrompt": "Describe your store... e.g., 'A modern fashion boutique for young professionals, with a focus on sustainable and minimalist clothing. Clean, elegant design with lots of whitespace.'",
+      "addTag": "Add tag & press Enter",
+      "paypalClientId": "PayPal Client ID",
+      "paypalSecret": "PayPal Secret",
+      "searchCategories": "زمرے تلاش کریں...",
+      "teamMemberEmail": "Enter team member email",
+      "specificationName": "Specification name",
+      "bannerImageUrl": "Enter banner image URL",
+      "appName": "My Awesome App",
+      "columnTitle": "Column Title",
+      "returnCondition": "Add return condition",
+      "seoTitle": "Your Shop - Premium Products",
+      "max": "Max",
+      "buttonLink": "Button Link",
+      "createPassword": "Create a password (min 6 chars)",
+      "specificationValue": "Specification value",
+      "city": "شہر",
+      "shopDescription": "Describe your shop...",
+      "businessName": "Your Business LLC",
+      "offerName": "Summer Sale 2024",
+      "reviewContent": "Share your experience with this shop...",
+      "reviewContentPlaceholder": "Review content...",
+      "deliveryRiderEmail": "ای میل ایڈریس درج کریں",
+      "careInstruction": "Add care instruction (e.g., Machine wash cold)",
+      "backgroundImageUrl": "Background Image URL",
+      "reviewSummary": "Summarize your experience",
+      "subheadline": "Subheadline",
+      "searchTeamMembers": "Search team members...",
+      "country": "ملک",
+      "zoneDescription": "Brief description of this delivery zone...",
+      "imageUrl": "Image URL",
+      "enterPassword": "Enter password"
     },
     "aiPrompt": {
       "poweredByAI": "AI سے تقویت یافتہ",
       "describeDreamStore": "اپنے خوابوں کے اسٹور کی وضاحت کریں",
       "tellUsAboutStore": "ہمیں اپنے اسٹور کے بارے میں بتائیں اور ہم آپ کے لیے ایک خوبصورت ویب سائٹ اور موبائل ایپس بنائیں گے۔",
       "generateStorefront": "میرا اسٹور فرنٹ بنائیں",
-      "generateStore": "میرا اسٹور بنائیں"
+      "generateStore": "میرا اسٹور بنائیں",
+      "vendorPanel": "Vendor Panel",
+      "generateOrEdit": "Generate a new configuration or edit your existing one.",
+      "editExistingApp": "Edit Existing App",
+      "selectMobileAppPanels": "Select Mobile App Panels",
+      "chooseStyle": "Choose a Style",
+      "listening": "Listening...",
+      "website": "Website",
+      "generateMobileApp": "Generate My Mobile App",
+      "customerPanel": "Customer Panel",
+      "targetAudience": "Target Audience",
+      "allPanelsIncluded": "All panels are included (cannot be deselected)",
+      "takesAbout": "Takes about {{seconds}} seconds. You can customize everything after.",
+      "trySuggestions": "Try these suggestions:",
+      "targetAudiencePlaceholder": "e.g., Young professionals aged 25-35, fashion-conscious, urban",
+      "whatToGenerate": "What do you want to generate?",
+      "deliveryPanel": "Delivery Panel"
     },
     "productAdd": {
       "basicInfo": "بنیادی معلومات",
@@ -3937,7 +5593,131 @@
         "productNameRequired": "مصنوعات کا نام ضروری ہے",
         "priceMustBePositive": "قیمت 0 سے زیادہ ہونی چاہیے",
         "quantityCannotBeNegative": "مقدار منفی نہیں ہو سکتی"
-      }
+      },
+      "specPresets": {
+        "brand": "Brand",
+        "dimensions": "Dimensions",
+        "weight": "Weight",
+        "countryOfOrigin": "Country of Origin"
+      },
+      "noActiveOffers": "No active offers",
+      "returnPresets": {
+        "noFinalSale": "No final sale items",
+        "originalPackaging": "Original packaging required",
+        "unwornWithTags": "Items must be unworn with original tags"
+      },
+      "standardShippingDays": "Standard Shipping Days",
+      "sizeChart": "Size Chart",
+      "toast": {
+        "draftRestored": "Draft restored",
+        "validationError": "Validation Error",
+        "fixErrorsDescription": "Please fix the errors before submitting",
+        "error": "Error",
+        "shopContextNotFound": "Shop context not found",
+        "draftRestoredDescription": "Your previous work has been restored"
+      },
+      "lengthHeader": "Length",
+      "seoDescriptionPlaceholder": "Brief description for search results",
+      "urlSlug": "URL Slug",
+      "stockStatus": "Stock Status",
+      "variantAttributes": {
+        "color": "Color",
+        "size": "Size"
+      },
+      "returnConditions": "Return Conditions",
+      "seoTitlePlaceholder": "SEO title",
+      "clickToUpload": "Click to upload images",
+      "discardMessage": "Are you sure you want to discard this product? All unsaved changes will be lost.",
+      "primary": "Primary",
+      "sizePlaceholder": "Size (S, M, L)",
+      "metaDescription": "Meta Description",
+      "discard": "Discard",
+      "descriptionPlaceholder": "Describe your product...",
+      "material": "Material",
+      "hipsPlaceholder": "Hips (36-38\")",
+      "tags": "Tags",
+      "limits": {
+        "modalDescription": "You have added {{current}} out of {{max}} products allowed on your {{plan}} plan. Upgrade your plan to add more products.",
+        "title": "Product Limit Reached",
+        "productsUsed": "Products Used",
+        "currentPlan": "موجودہ پلان",
+        "upgradeButton": "پلان اپ گریڈ کریں",
+        "unlimited": "Unlimited products available on your plan",
+        "description": "You have added {{current}} out of {{max}} products allowed on your {{plan}} plan.",
+        "remaining": "You can add {{remaining}} more product(s) ({{max}} total on your plan)"
+      },
+      "imageFormats": "JPG, PNG, GIF (Max 5MB)",
+      "waistPlaceholder": "Waist (28-30\")",
+      "taxRate": "Tax Rate (%)",
+      "materialPlaceholder": "e.g., 100% Cotton, Polyester blend, etc.",
+      "linkToOffers": "Link to Offers",
+      "errors": {
+        "productLimitReached": "Product limit reached. Please upgrade your plan to add more products."
+      },
+      "discardProduct": "Discard Product",
+      "freeShippingThreshold": "Free Shipping Threshold ($)",
+      "shippingInfo": "Shipping Information",
+      "colorName": "Color name",
+      "trackInventory": "Track inventory",
+      "hipsHeader": "Hips",
+      "carePresets": {
+        "tumbleDryLow": "Tumble dry low",
+        "ironOnLowHeat": "Iron on low heat",
+        "machineWashCold": "Machine wash cold",
+        "dryCleanOnly": "Dry clean only",
+        "doNotBleach": "Do not bleach"
+      },
+      "flashSale": "Flash Sale",
+      "expressShippingDays": "Express Shipping Days",
+      "profitMargin": "Profit Margin",
+      "linkToCampaigns": "Link to Campaigns",
+      "addSizePlaceholder": "Add size...",
+      "features": "Features",
+      "expressShippingCost": "Express Shipping Cost ($)",
+      "addCareInstructionPlaceholder": "Add care instruction (e.g., Machine wash cold)",
+      "outOfStock": "Out of Stock",
+      "nextDayDeliveryCost": "Next Day Delivery Cost ($)",
+      "freeReturnShipping": "Free Return Shipping",
+      "endDateTime": "End Date & Time",
+      "addFeaturePlaceholder": "Add a feature (press Enter)",
+      "addReturnConditionPlaceholder": "Add return condition",
+      "inStock": "In Stock",
+      "searchCategories": "زمرے تلاش کریں...",
+      "noActiveCampaigns": "No active campaigns",
+      "lengthPlaceholder": "Length (27\")",
+      "enterProductName": "Enter product name",
+      "chestHeader": "Chest",
+      "lowStock": "Low Stock",
+      "barcode": "Barcode",
+      "campaignsOffers": "Campaigns & Offers",
+      "careInstructions": "Care Instructions",
+      "addTagPlaceholder": "Add tag & press Enter",
+      "addSize": "Add Size",
+      "costPerItem": "Cost per Item",
+      "sellingPriceHint": "Price customer pays",
+      "noCategoriesFound": "No categories found",
+      "sizeHeader": "Size",
+      "colors": "Colors",
+      "sizes": "Sizes",
+      "chestPlaceholder": "Chest (34-36\")",
+      "brandPlaceholder": "e.g., Nike, Apple, Samsung",
+      "specification": "Specification",
+      "generateSKU": "Generate SKU",
+      "compareAtPrice": "Compare-at Price",
+      "metaTitle": "Meta Title",
+      "refundProcessingDays": "Refund Processing Days",
+      "flashSalePrice": "Flash Sale Price",
+      "specificationValue": "Specification value",
+      "specificationName": "Specification name",
+      "productImage": "Product image",
+      "originalPriceHint": "Shows as crossed out (for discounts)",
+      "keepEditing": "Keep Editing",
+      "lowStockAlert": "Low Stock Alert",
+      "value": "قدر",
+      "specifications": "Specifications",
+      "waistHeader": "Waist",
+      "anErrorOccurred": "An error occurred",
+      "returnWindow": "Return Window (Days)"
     },
     "toasts": {
       "shopNotFound": "دکان نہیں ملی",
@@ -3949,7 +5729,76 @@
       "orderAcceptedDesc": "آرڈر قبول ہو گیا ہے اور تیار کیا جا رہا ہے",
       "orderCancelled": "آرڈر منسوخ",
       "orderCancelledDesc": "آرڈر منسوخ ہو گیا ہے",
-      "shopSelected": "دکان کامیابی سے منتخب ہو گئی!"
+      "shopSelected": "دکان کامیابی سے منتخب ہو گئی!",
+      "offerUpdated": "Offer updated successfully",
+      "invitationCancelled": "Invitation cancelled",
+      "teamMemberRemoved": "Team member removed",
+      "customerListExported": "Customer list exported successfully",
+      "pleaseSelectInventoryAction": "Please select inventory action and enter a value",
+      "uploadSizeLimit": "Please upload an image smaller than 5MB",
+      "permissionsUpdated": "Permissions updated successfully",
+      "pleaseFixErrors": "Please fix the errors and try again",
+      "failedToDeleteProduct": "Failed to delete product",
+      "offerDeleted": "Offer deleted successfully",
+      "pleaseUploadImage": "Please upload an image file",
+      "invalidFileType": "Invalid file type",
+      "zoneDeleted": "Zone deleted",
+      "validationFailed": "Validation failed",
+      "perCustomerLimitMin": "Per customer limit must be at least 1",
+      "minimumPurchaseNegative": "Minimum purchase cannot be negative",
+      "failedToUpdate": "Failed to update",
+      "failedToDeleteCampaign": "Failed to delete campaign",
+      "failedToLoadAnalytics": "Failed to load analytics data",
+      "failedToLoadCustomers": "Failed to load customers",
+      "campaignUpdated": "Campaign updated successfully",
+      "failedToSaveSettings": "ترتیبات محفوظ کرنے میں ناکامی",
+      "fillRequiredFields": "Please fill in all required fields",
+      "pleaseSelectStatus": "Please select a status",
+      "pleaseEnterValidNumber": "Please enter a valid number",
+      "provideCancellationReason": "Please provide a cancellation reason",
+      "invitationSent": "Invitation sent successfully",
+      "idCopied": "ID copied to clipboard!",
+      "failedToSaveCampaign": "Failed to save campaign",
+      "syncingDeliveryMen": "Syncing delivery men from auth users...",
+      "failedToLoadOffer": "Failed to load offer",
+      "failedToLoadProduct": "Failed to load product",
+      "fileTooLarge": "File too large",
+      "pleaseSelectAction": "Please select an action",
+      "offerNameRequired": "Offer name is required",
+      "discountExceedsLimit": "Percentage discount cannot exceed 100%",
+      "failedToLoadCategoriesProducts": "Failed to load categories and products",
+      "invitationResent": "Invitation resent successfully",
+      "couponCopied": "Coupon code copied to clipboard",
+      "discountValueRequired": "Discount value must be greater than 0",
+      "pleaseEnterDiscount": "Please enter a discount percentage",
+      "skuGenerated": "SKU generated",
+      "shopContextNotFound": "Shop context not found",
+      "startDateRequired": "Start date is required",
+      "endDateRequired": "End date is required",
+      "errorLoadingOrders": "Error Loading Orders",
+      "failedToUpdateDeliveryStatus": "Failed to update delivery method status",
+      "imageUploaded": "Image uploaded",
+      "campaignCreated": "Campaign created successfully",
+      "failedToSync": "Failed to sync",
+      "couponCodeMinLength": "Coupon code must be at least 3 characters",
+      "usageLimitNegative": "Usage limit cannot be negative",
+      "failedToDeleteProducts": "Failed to delete products",
+      "invalidValue": "Invalid value",
+      "endDateBeforeStart": "End date must be after start date",
+      "failedToUploadImage": "Failed to upload image",
+      "offerCreated": "Offer created successfully",
+      "failedToAcceptOrder": "Failed to accept order",
+      "bulkEditFailed": "Bulk edit failed",
+      "failedToLoadSettings": "Failed to load settings",
+      "campaignDeleted": "Campaign deleted successfully",
+      "failedToCancelOrder": "Failed to cancel order",
+      "couponCodeRequired": "Coupon code is required",
+      "failedToLoadShops": "Failed to load shops"
+    },
+    "shopSwitcher": {
+      "activeShop": "Active Shop",
+      "switching": "Switching...",
+      "selectShop": "Select Shop"
     }
   },
   "delivery": {
@@ -3967,7 +5816,9 @@
       "status": "حیثیت",
       "date": "تاریخ",
       "cancel": "منسوخ",
-      "viewAll": "سب دیکھیں"
+      "viewAll": "سب دیکھیں",
+      "refreshProfile": "Refresh profile",
+      "refreshData": "Refresh"
     },
     "sidebar": {
       "dashboard": "ڈیش بورڈ",
@@ -4000,7 +5851,27 @@
       "goOnline": "آن لائن ہوں",
       "goOffline": "آف لائن ہوں",
       "online": "آن لائن",
-      "offline": "آف لائن"
+      "offline": "آف لائن",
+      "performance": "Performance",
+      "totalEarned": "Total Earned",
+      "checkBackLater": "Check back later for new delivery requests",
+      "newOrdersAppear": "New orders will appear here",
+      "weekDeliveries": "This Week",
+      "noPendingOrders": "No pending orders",
+      "ordersWaiting": "orders waiting",
+      "deliveries": "Deliveries",
+      "pending": "pending",
+      "rating": "درجہ بندی",
+      "thisWeek": "this week",
+      "availableForDelivery": "Available for Delivery",
+      "onDelivery": "On Delivery",
+      "pendingEarnings": "Pending Earnings",
+      "noOrdersAvailable": "No orders available",
+      "rider": "Rider",
+      "customerRating": "Customer Rating",
+      "loadFailed": "Failed to load dashboard data",
+      "weekEarnings": "This Week's Earnings",
+      "notAvailable": "Not Available"
     },
     "orders": {
       "title": "ترسیل آرڈرز",
@@ -4020,14 +5891,94 @@
       "callCustomer": "صارف کو کال کریں",
       "getDirections": "سمت حاصل کریں",
       "orderAccepted": "آرڈر کامیابی سے قبول ہو گیا",
-      "deliveryCompleted": "ترسیل کامیابی سے مکمل ہو گئی"
+      "deliveryCompleted": "ترسیل کامیابی سے مکمل ہو گئی",
+      "pickup": "Pickup",
+      "actions": "اعمال",
+      "deliveryLocation": "Delivery Location",
+      "orderDeclined": "Order declined",
+      "noOrdersToDisplay": "No orders to display",
+      "pickedUp": "Picked Up",
+      "confirmPickup": "Confirm Pickup",
+      "rejectOrder": "Reject Order",
+      "dropoff": "Dropoff",
+      "searchOrders": "آرڈرز تلاش کریں...",
+      "accepted": "Accepted",
+      "pickupOrder": "Pickup Order",
+      "assigned": "Assigned",
+      "confirmDelivery": "Confirm Delivery",
+      "specialInstructions": "Special Instructions",
+      "customer": "گاہک",
+      "declineFailed": "Failed to decline order",
+      "orderId": "آرڈر آئی ڈی",
+      "store": "Store",
+      "viewDetails": "View Details",
+      "completeFailed": "Failed to complete delivery",
+      "noOrdersFound": "No orders found",
+      "order": "Order",
+      "orderItems": "Order Items",
+      "deliveryFee": "ترسیل کی فیس",
+      "loadingOrders": "Loading orders...",
+      "customerPhone": "گاہک کا فون",
+      "all": "تمام",
+      "updateFailed": "Failed to update order status",
+      "noCompletedOrders": "No completed orders yet",
+      "noActiveOrders": "No active orders",
+      "pickupLocation": "Pickup Location",
+      "status": "حیثیت",
+      "markedPickedUp": "Order marked as picked up",
+      "fee": "Fee",
+      "acceptFailed": "Failed to accept order",
+      "activeFilter": "فعال",
+      "noOrdersMatch": "No orders match your search",
+      "loadFailed": "Failed to load orders",
+      "tip": "Tip",
+      "completedFilter": "مکمل",
+      "onTheWay": "On the Way",
+      "distance": "Distance",
+      "tipAmount": "tip",
+      "shop": "Shop",
+      "markedOnTheWay": "Marked as on the way",
+      "complete": "Complete",
+      "notes": "Notes",
+      "decline": "Decline"
     },
     "history": {
       "title": "ترسیل کی تاریخ",
       "subtitle": "اپنی ماضی کی ترسیلات دیکھیں",
       "noHistory": "ترسیل کی تاریخ نہیں",
       "totalDeliveries": "کل ترسیلات",
-      "totalEarned": "کل آمدنی"
+      "totalEarned": "کل آمدنی",
+      "earned": "Earned",
+      "refresh": "Refresh",
+      "noDeliveriesMatch": "No deliveries match your search",
+      "date": "Date",
+      "page": "Page",
+      "earnings": "کمائی",
+      "completedAppearHere": "Completed deliveries will appear here",
+      "refreshed": "Refreshed",
+      "tip": "Tip",
+      "details": "تفصیلات",
+      "status": "حیثیت",
+      "month": "Month",
+      "today": "Today",
+      "filterByDate": "Filter by Date",
+      "exportHistory": "Export History",
+      "all": "تمام",
+      "of": "of",
+      "dropoff": "Dropoff",
+      "refreshFailed": "Failed to refresh",
+      "deliveryFee": "ترسیل کی فیس",
+      "delivery": "Delivery",
+      "tipAmount": "tip",
+      "cancelled": "منسوخ",
+      "completed": "مکمل",
+      "week": "Week",
+      "allDeliveries": "All Deliveries",
+      "pickup": "Pickup",
+      "orderId": "آرڈر آئی ڈی",
+      "deliveryAddress": "ترسیل کا پتہ",
+      "delivered": "پہنچا دیا گیا",
+      "searchPlaceholder": "Search by order number..."
     },
     "earnings": {
       "title": "آمدنی",
@@ -4041,21 +5992,104 @@
       "netEarnings": "خالص آمدنی",
       "noEarnings": "ابھی تک کوئی آمدنی نہیں",
       "withdraw": "نکالیں",
-      "withdrawalSuccess": "نکالنے کی درخواست کامیابی سے ہو گئی"
+      "withdrawalSuccess": "نکالنے کی درخواست کامیابی سے ہو گئی",
+      "refreshFailed": "Failed to refresh earnings",
+      "bonuses": "Bonuses",
+      "processingTime": "Processing time: 2-3 business days",
+      "withdrawalAmount": "Withdrawal Amount",
+      "yourRegisteredName": "Your name as registered",
+      "pending": "زیر التوا",
+      "enterAccountNumber": "Enter account number",
+      "weekEarnings": "This Week",
+      "invalidAmount": "Invalid amount",
+      "nagadNumber": "Nagad Number",
+      "week": "Week",
+      "loadFailed": "Failed to load earnings",
+      "bankName": "Bank Name",
+      "bankAccount": "Bank Account",
+      "total": "Total",
+      "withdrawalHistory": "Withdrawal History",
+      "this": "This",
+      "month": "Month",
+      "paymentMethod": "Payment Method",
+      "thisMonth": "This Month",
+      "bkashNumber": "bKash Number",
+      "all": "تمام",
+      "withdrawalFailed": "Withdrawal failed",
+      "insufficientBalance": "Insufficient balance",
+      "accountNameOptional": "Account Name (Optional)",
+      "monthEarnings": "This Month",
+      "orderOrders_plural": "{{count}} orders",
+      "enterBankDetails": "Enter bank account details",
+      "bankTransfer": "Bank Transfer",
+      "earningsHistory": "Earnings History",
+      "orderOrders": "{{count}} order",
+      "withdrawAll": "Withdraw All",
+      "noTransactions": "No transactions yet",
+      "accountHolderName": "Account Holder Name",
+      "availableBalance": "Available Balance",
+      "nameOnBankAccount": "Name on bank account",
+      "cash": "Cash",
+      "deductions": "Deductions",
+      "enterBankName": "e.g., Dutch Bangla Bank",
+      "cashWithdrawalNote": "Cash earnings collected on delivery",
+      "nagad": "Nagad",
+      "bkash": "bKash",
+      "today": "Today",
+      "completed": "مکمل",
+      "enterMobileNumber": "Enter mobile number",
+      "minWithdrawal": "Minimum withdrawal amount",
+      "allTime": "All Time",
+      "cashInHand": "Cash in Hand",
+      "thisWeek": "This Week",
+      "requestWithdrawal": "Request Withdrawal",
+      "addBankAccount": "Add Bank Account",
+      "recentTransactions": "Recent Transactions",
+      "toBeDeposited": "To be Deposited",
+      "bank": "Bank Transfer",
+      "accountNumber": "Account Number",
+      "processing": "پروسیسنگ",
+      "breakdown": "Breakdown",
+      "periodEarnings": "{{period}} Earnings",
+      "readyToWithdraw": "Ready to Withdraw"
     },
     "reviews": {
       "title": "جائزے",
       "subtitle": "آپ کے صارفین کے جائزے",
       "averageRating": "اوسط درجہ بندی",
       "totalReviews": "کل جائزے",
-      "noReviews": "ابھی تک کوئی جائزے نہیں"
+      "noReviews": "ابھی تک کوئی جائزے نہیں",
+      "rating": "درجہ بندی",
+      "recentReviews": "Recent Reviews",
+      "comment": "Comment",
+      "deliverMore": "Complete more deliveries to receive reviews",
+      "ratingDistribution": "Rating Distribution",
+      "fiveStarReviews": "5-Star Reviews",
+      "customer": "گاہک",
+      "date": "Date"
     },
     "zones": {
       "title": "ترسیل زونز",
       "subtitle": "اپنے ترسیل کے علاقے منظم کریں",
       "noZones": "کوئی زونز دستیاب نہیں",
       "myZone": "میرا زون",
-      "assignedZone": "تفویض شدہ زون"
+      "assignedZone": "تفویض شدہ زون",
+      "baseFee": "Base Fee",
+      "zoneName": "Zone Name",
+      "status": "حیثیت",
+      "contactVendor": "Contact Vendor",
+      "kmCoverageRadius": "کلومیٹر کوریج ریڈیس",
+      "noZoneAssigned": "No Zone Assigned",
+      "activate": "Activate",
+      "active": "فعال",
+      "activeZones": "Active Zones",
+      "aboutYourZone": "About Your Zone",
+      "zoneAssignedByVendor": "Your delivery zone is assigned by the vendor",
+      "area": "Area",
+      "receiveOrdersInZone": "You will receive orders from this zone",
+      "availableZones": "Available Zones",
+      "contactVendorToChange": "Contact your vendor to change your zone",
+      "deactivate": "Deactivate"
     },
     "profile": {
       "title": "پروفائل",
@@ -4067,7 +6101,42 @@
       "saveProfile": "پروفائل محفوظ کریں",
       "profileSaved": "پروفائل کامیابی سے محفوظ ہو گیا",
       "profileUpdated": "پروفائل کامیابی سے اپ ڈیٹ ہو گیا",
-      "deleteAccount": "اکاؤنٹ حذف کریں"
+      "deleteAccount": "اکاؤنٹ حذف کریں",
+      "vehicleRegistration": "Vehicle Registration",
+      "uploadDocument": "Upload Document",
+      "insurance": "Insurance",
+      "deleteItem2": "Your delivery history and earnings",
+      "vehicleType": "Vehicle Type",
+      "deleteMyAccount": "Delete My Account",
+      "selectImageFile": "Please select an image file",
+      "verified": "Verified",
+      "updateFailed": "Failed to update profile",
+      "typeDeletePlaceholder": "DELETE ٹائپ کریں",
+      "editProfile": "Edit Profile",
+      "vehicleNumber": "Vehicle Number",
+      "pending": "زیر التوا",
+      "documentStatus": "Document Status",
+      "deleteWarning": "This will permanently delete:",
+      "deleteConfirmMessage": "This action cannot be undone. All your data will be permanently deleted.",
+      "deleteItem3": "Your ratings and reviews",
+      "memberSince": "Member Since",
+      "rejected": "Rejected",
+      "toConfirm": "to confirm",
+      "documents": "Documents",
+      "deleteItem1": "Your profile and personal information",
+      "lastName": "Last Name",
+      "notProvided": "Not provided",
+      "imageUpdated": "Profile image updated",
+      "drivingLicense": "Driving License",
+      "vehicleInfo": "Vehicle Information",
+      "firstName": "First Name",
+      "idProof": "ID Proof",
+      "typeDelete": "قسم",
+      "deleteFailed": "Failed to delete account",
+      "licenseNumber": "License Number",
+      "imageSizeLimit": "Image must be less than 5MB",
+      "accountDeleted": "Account deleted successfully",
+      "uploadFailed": "Failed to upload image"
     },
     "settings": {
       "title": "ترتیبات",
@@ -4075,7 +6144,40 @@
       "notifications": "اطلاعات",
       "autoAcceptOrders": "آرڈرز خود بخود قبول کریں",
       "saveSettings": "ترتیبات محفوظ کریں",
-      "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں"
+      "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں",
+      "autoAccept": "Auto Accept Orders",
+      "soundDesc": "Play sound for new orders",
+      "maxOrders": "Maximum Active Orders",
+      "preferredZones": "Preferred Zones",
+      "maxConcurrentOrders": "Max Concurrent Orders",
+      "smsNotifications": "SMS Notifications",
+      "logoutSuccess": "Logged out successfully",
+      "saveFailed": "ترتیبات محفوظ کرنے میں ناکامی",
+      "pushNotifications": "Push Notifications",
+      "language": "Language",
+      "startTime": "Start Time",
+      "privacySecurity": "Privacy & Security",
+      "orders": "orders",
+      "orderSettings": "Order Settings",
+      "availability": "Availability",
+      "helpSupportDesc": "Get help and contact support",
+      "vibrationDesc": "Vibrate for new orders",
+      "managePreferredAreas": "Manage preferred delivery areas",
+      "orderNotifications": "Order Notifications",
+      "appVersion": "App Version",
+      "endTime": "End Time",
+      "emailNotifications": "Email Notifications",
+      "sound": "Sound",
+      "vibration": "Vibration",
+      "maxConcurrentOrdersDesc": "Maximum number of active orders at once",
+      "privacySecurityDesc": "Manage your privacy and security settings",
+      "order": "order",
+      "workingHoursDesc": "Set your available hours",
+      "autoAcceptOrdersDesc": "Automatically accept new delivery requests",
+      "saveChanges": "Save Changes",
+      "workingHours": "Working Hours",
+      "pushNotificationsDesc": "Receive push notifications for orders",
+      "helpSupport": "Help & Support"
     },
     "login": {
       "title": "ترسیل پارٹنر لاگ ان",
@@ -4087,24 +6189,64 @@
       "forgotPassword": "پاس ورڈ بھول گئے؟",
       "welcomeBack": "واپسی پر خوش آمدید، ترسیل پارٹنر!",
       "loginFailed": "لاگ ان ناکام",
-      "backToStore": "اسٹور پر واپس"
+      "backToStore": "اسٹور پر واپس",
+      "accessDenied": "Access denied. Delivery partner account required.",
+      "portalFooter": "Delivery partner portal for Vasty Shop",
+      "invalidCredentials": "Invalid credentials",
+      "register": "Register here",
+      "phone": "فون",
+      "noAccount": "Want to become a delivery partner?",
+      "profileNotFound": "Delivery partner profile not found. Please contact support."
     },
     "topbar": {
       "notifications": "اطلاعات",
       "deliveryPartner": "ترسیل پارٹنر",
-      "partner": "پارٹنر"
+      "partner": "پارٹنر",
+      "updateAvailabilityFailed": "Failed to update availability",
+      "orderDeliveredMsg": "Order delivered successfully",
+      "locationTrackingActive": "Location tracking active",
+      "deliverToMsg": "Deliver to",
+      "unread": "unread",
+      "hoursAgo": "hours ago",
+      "loadingNotifications": "Loading notifications...",
+      "statusChanged": "You are now {{status}}",
+      "activeDelivery": "Active Delivery",
+      "newOrderAssigned": "New Order Assigned",
+      "deliveryCompleted": "Delivery Completed",
+      "minutesAgo": "minutes ago",
+      "daysAgo": "days ago",
+      "orderAssignedMsg": "You have been assigned order",
+      "justNow": "Just now",
+      "noNotifications": "No notifications yet",
+      "viewAllNotifications": "View all notifications"
     },
     "location": {
       "live": "لائیو",
       "error": "GPS خرابی",
       "sharingActive": "آپ کا مقام صارفین کے ساتھ شیئر ہو رہا ہے",
       "permissionDenied": "مقام کی اجازت سے انکار",
-      "enableLocation": "ترسیل شروع کرنے کے لیے لوکیشن سروسز فعال کریں"
+      "enableLocation": "ترسیل شروع کرنے کے لیے لوکیشن سروسز فعال کریں",
+      "waiting": "Waiting...",
+      "sharingInactive": "Waiting for GPS signal",
+      "accuracyLow": "Low GPS accuracy",
+      "lastUpdate": "Last update",
+      "sharingError": "Unable to share your location"
     },
     "notifications": {
       "title": "اطلاعات",
       "unreadCount": "{{count}} نہ پڑھی ہوئی اطلاعات",
-      "markAllRead": "سب پڑھی ہوئی بنائیں"
+      "markAllRead": "سب پڑھی ہوئی بنائیں",
+      "filter": {
+        "unread": "Unread",
+        "all": "تمام",
+        "read": "Read"
+      },
+      "allRead": "All notifications read",
+      "refresh": "Refresh",
+      "markedAllRead": "All notifications marked as read",
+      "loadError": "Failed to load notifications",
+      "refreshed": "Notifications refreshed",
+      "loading": "Loading notifications..."
     }
   },
   "settingsPage": {
@@ -4136,7 +6278,21 @@
       "confirmNewPassword": "نئے پاس ورڈ کی تصدیق",
       "changePasswordBtn": "پاس ورڈ تبدیل کریں",
       "twoFactorAuth": "دو عنصری تصدیق",
-      "twoFactorAuthDesc": "اپنے اکاؤنٹ میں سیکیورٹی کی اضافی تہہ شامل کریں"
+      "twoFactorAuthDesc": "اپنے اکاؤنٹ میں سیکیورٹی کی اضافی تہہ شامل کریں",
+      "updateEmail": "Update Email",
+      "loginLocation2": "New York, NY • Yesterday at 6:15 PM",
+      "loginHistory": "Login History",
+      "current": "Current",
+      "lastActiveNow": "Last active: Just now",
+      "chromeOnWindows": "Chrome on Windows",
+      "loginLocation1": "New York, NY • Today at 10:30 AM",
+      "currentEmail": "Current Email",
+      "newEmail": "New Email",
+      "newEmailPlaceholder": "new.email@example.com",
+      "safariOnIphone": "Safari on iPhone",
+      "activeSessions": "Active Sessions",
+      "revoke": "Revoke",
+      "changeEmail": "Change Email"
     },
     "notifications": {
       "title": "اطلاعاتی ترجیحات",
@@ -4169,7 +6325,19 @@
       "downloadData": "ڈیٹا ڈاؤن لوڈ",
       "deleteAccount": "اکاؤنٹ حذف کریں",
       "deleteAccountDesc": "اپنا اکاؤنٹ اور تمام منسلک ڈیٹا مستقل طور پر حذف کریں۔ یہ عمل واپس نہیں ہو سکتا۔",
-      "typeDeleteToConfirm": "تصدیق کے لیے \"DELETE\" ٹائپ کریں"
+      "typeDeleteToConfirm": "تصدیق کے لیے \"DELETE\" ٹائپ کریں",
+      "allowPersonalization": "Allow personalized recommendations",
+      "analyticsCookies": "Analytics Cookies",
+      "dataSharingPreferences": "Data Sharing Preferences",
+      "essentialCookies": "Essential Cookies",
+      "marketingCookies": "Marketing Cookies",
+      "deleteConfirmation": "Are you sure you want to delete your account? This action is permanent and cannot be undone. All your data, orders, and preferences will be permanently deleted.",
+      "essentialCookiesDesc": "Required for the website to function",
+      "shareAnalytics": "Share analytics data",
+      "analyticsCookiesDesc": "Help us improve the website",
+      "marketingCookiesDesc": "Used for personalized ads",
+      "cookiePreferences": "Cookie Preferences",
+      "downloadDataDesc": "Request a copy of your personal data in compliance with GDPR"
     },
     "languageRegion": {
       "title": "زبان اور علاقہ",
@@ -4218,7 +6386,12 @@
       "twoFAActive": "2FA فعال ہے",
       "twoFAActiveDesc": "آپ کا اکاؤنٹ دو عنصری تصدیق سے محفوظ ہے۔",
       "loginAlerts": "لاگ ان الرٹس",
-      "loginAlertsDesc": "جب کوئی آپ کے اکاؤنٹ میں لاگ ان کرے تو اطلاع حاصل کریں"
+      "loginAlertsDesc": "جب کوئی آپ کے اکاؤنٹ میں لاگ ان کرے تو اطلاع حاصل کریں",
+      "manage2FA": "Manage 2FA Settings",
+      "addedToday": "Added today",
+      "addedDaysAgo": "Added {{days}} days ago",
+      "trustedDevices": "Trusted Devices",
+      "remove": "Remove"
     },
     "communication": {
       "title": "مواصلات",
@@ -4227,7 +6400,10 @@
       "promotionsOffers": "پروموشنز اور پیشکشیں",
       "newsletter": "نیوز لیٹر",
       "pushNotifications": "پش اطلاعات",
-      "pushNotificationsDesc": "اپنے براؤزر میں حقیقی وقت اپ ڈیٹس وصول کریں"
+      "pushNotificationsDesc": "اپنے براؤزر میں حقیقی وقت اپ ڈیٹس وصول کریں",
+      "smsPreferences": "SMS Preferences",
+      "orderShippedNotifications": "Order Shipped Notifications",
+      "deliveryUpdates": "Delivery Updates"
     }
   },
   "profilePage": {
@@ -4252,7 +6428,12 @@
       "imageTooLarge": "تصویر 5MB سے کم ہونی چاہیے",
       "photoUpdated": "پروفائل تصویر کامیابی سے اپ ڈیٹ ہو گئی",
       "profileUpdated": "پروفائل اپ ڈیٹ",
-      "profileUpdatedDesc": "آپ کا پروفائل کامیابی سے اپ ڈیٹ ہو گیا ہے"
+      "profileUpdatedDesc": "آپ کا پروفائل کامیابی سے اپ ڈیٹ ہو گیا ہے",
+      "updateFailed": "Update Failed",
+      "deleteAccountFailed": "Failed to delete account. Please contact support.",
+      "photoUploadFailed": "Failed to upload photo",
+      "accountDeleted": "Account deleted successfully",
+      "failedToUpdate": "Failed to update profile"
     },
     "dashboard": {
       "welcome": "واپسی پر خوش آمدید، {{name}}!",
@@ -4279,13 +6460,15 @@
         "title": "اکاؤنٹ سیکیورٹی",
         "emailVerified": "ای میل تصدیق شدہ",
         "twoFactorActive": "دو عنصری تصدیق فعال",
-        "manage": "منظم کریں"
+        "manage": "منظم کریں",
+        "phoneVerified": "Phone Verified"
       }
     },
     "loading": {
       "orders": "آرڈرز لوڈ ہو رہے ہیں...",
       "addresses": "پتے لوڈ ہو رہے ہیں...",
-      "paymentMethods": "ادائیگی کے طریقے لوڈ ہو رہے ہیں..."
+      "paymentMethods": "ادائیگی کے طریقے لوڈ ہو رہے ہیں...",
+      "address": "Loading address..."
     },
     "common": {
       "retry": "دوبارہ کوشش",
@@ -4305,7 +6488,8 @@
       "uploadNewPhoto": "نئی تصویر اپ لوڈ کریں",
       "photoRequirements": "JPG، PNG یا GIF۔ زیادہ سے زیادہ 5MB۔",
       "saving": "محفوظ ہو رہا ہے...",
-      "saveChanges": "تبدیلیاں محفوظ کریں"
+      "saveChanges": "تبدیلیاں محفوظ کریں",
+      "profileAlt": "Profile"
     },
     "addresses": {
       "title": "محفوظ شدہ پتے",
@@ -4317,7 +6501,9 @@
       "title": "ادائیگی کے طریقے",
       "addNew": "نیا کارڈ شامل کریں",
       "noMethods": "کوئی محفوظ شدہ ادائیگی کے طریقے نہیں",
-      "secureMessage": "ادائیگی کے طریقے چیک آؤٹ پر محفوظ طریقے سے کارروائی ہوتے ہیں"
+      "secureMessage": "ادائیگی کے طریقے چیک آؤٹ پر محفوظ طریقے سے کارروائی ہوتے ہیں",
+      "expires": "Expires",
+      "addMethod": "Add Payment Method"
     },
     "orderHistory": {
       "title": "آرڈر کی تاریخ",
