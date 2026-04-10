@@ -7,8 +7,8 @@ import { DatabaseService } from '../../modules/database/database.service';
  * Decodes token and validates user via database SDK
  */
 @Injectable()
-export class databaseAuthGuard implements CanActivate {
-  private readonly logger = new Logger(databaseAuthGuard.name);
+export class AuthGuard implements CanActivate {
+  private readonly logger = new Logger(AuthGuard.name);
 
   constructor(private readonly db: DatabaseService) {}
 

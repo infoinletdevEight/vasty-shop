@@ -4,7 +4,7 @@
 -- ============================================
 -- 1. Add currency preference to users (via metadata)
 -- ============================================
--- Note: Users are stored in Fluxez auth.users table
+-- Note: Users are stored in vasty auth.users table
 -- We'll use the raw_user_meta_data JSONB field to store:
 -- {
 --   "preferred_currency": "USD",

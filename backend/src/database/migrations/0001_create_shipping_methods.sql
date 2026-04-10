@@ -1,7 +1,7 @@
 -- Migration: Create shipping_methods table
 -- Generated: 2025-10-29
 -- Description: Creates the shipping_methods table for managing various shipping options
--- Note: This SQL is for reference. Actual migrations are handled by Fluxez SDK via schema.ts
+-- Note: This SQL is for reference. Actual migrations are handled by vasty SDK via schema.ts
 
 -- Create shipping_methods table
 CREATE TABLE IF NOT EXISTS public.shipping_methods (

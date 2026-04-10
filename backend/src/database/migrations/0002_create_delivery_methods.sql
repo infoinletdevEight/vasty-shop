@@ -1,7 +1,7 @@
 -- Migration: Create delivery_methods table
 -- Generated: 2025-12-18
 -- Description: Creates the delivery_methods table for shop-specific delivery method configurations
--- Note: Run this SQL in your Fluxez dashboard or database console to create the table
+-- Note: Run this SQL in your vasty dashboard or database console to create the table
 
 -- Create delivery_methods table
 CREATE TABLE IF NOT EXISTS public.delivery_methods (
