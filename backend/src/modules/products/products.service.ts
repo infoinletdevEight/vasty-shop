@@ -456,9 +456,7 @@ export class ProductsService {
     const shop = await this.verifyShopOwnership(createProductDto.shopId, userId);
 
     // Check product limit based on user's subscription
-    if (!productCheck.allowed) {
-      throw new ForbiddenException(productCheck.reason || 'Product limit reached. Please upgrade your plan to add more products.');
-    }
+    // Open-source: all features available
 
     // Generate slug
     const slug = await this.generateUniqueSlug(createProductDto.name);

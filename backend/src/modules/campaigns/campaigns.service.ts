@@ -101,11 +101,7 @@ export class CampaignsService {
     user: any,
   ): Promise<CampaignEntity> {
     const userId = user.sub || user.userId;
-
-    // Check if user has promotions access based on their plan (Pro+ required)
-    if (!hasPromotionsAccess) {
-      throw new ForbiddenException('Campaigns and promotions require a Pro or Business plan. Please upgrade your subscription to access this feature.');
-    }
+    // Open-source: all features available
 
     // Authorization check - only shop owner/admin can create campaigns for a shop
     if (createCampaignDto.shopId) {

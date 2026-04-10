@@ -35,14 +35,6 @@ export class ShopsService {
   async create(userId: string, createShopDto: CreateShopDto): Promise<ShopEntity> {
     this.logger.log(`[create] Creating shop for user: ${userId}, shop name: ${createShopDto.name}`);
 
-    // Check store limit based on user's subscription
-    this.logger.log(`[create] Store limit check result: allowed=${storeCheck.allowed}, used=${storeCheck.used}/${storeCheck.limit}`);
-
-    if (!storeCheck.allowed) {
-      this.logger.warn(`[create] Store creation blocked for user ${userId}: ${storeCheck.reason}`);
-      throw new ForbiddenException(storeCheck.reason || 'Store limit reached. Please upgrade your plan to create more stores.');
-    }
-
     // Generate unique slug
     const slug = await this.generateUniqueSlug(createShopDto.name);
 
@@ -1552,9 +1544,7 @@ export class ShopsService {
     await this.verifyOwnershipOrRole(shopId, userId, ['owner', 'admin']);
 
     // Check if user has mobile app access based on their plan
-    if (!hasMobileAccess) {
-      throw new ForbiddenException('Mobile app publishing requires a Pro or Business plan. Please upgrade your subscription to access this feature.');
-    }
+    // Open-source: all features available
 
     const shop = await this.findOne(shopId);
 
@@ -1668,9 +1658,7 @@ export class ShopsService {
     // Skip check in development mode for testing
     const isDevelopment = process.env.NODE_ENV !== 'production';
     if (!isDevelopment) {
-      if (!hasMobileAccess) {
-        throw new ForbiddenException('Mobile app download requires a Pro or Business plan. Please upgrade your subscription to access this feature.');
-      }
+    // Open-source: all features available
     }
 
     const mobileFolderPath = path.join(process.cwd(), '..', 'mobile');

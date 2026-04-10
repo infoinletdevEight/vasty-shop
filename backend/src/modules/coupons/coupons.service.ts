@@ -27,10 +27,7 @@ export class CouponsService {
    * Create a new coupon
    */
   async create(dto: CreateCouponDto, creatorId: string) {
-    // Check if user has promotions access based on their plan (Pro+ required)
-    if (!hasPromotionsAccess) {
-      throw new ForbiddenException('Coupons and promotions require a Pro or Business plan. Please upgrade your subscription to access this feature.');
-    }
+    // Open-source: all features available
 
     // Check if code already exists
     const existing = await this.db.query_builder()

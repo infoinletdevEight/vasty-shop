@@ -27,11 +27,7 @@ export class OffersService {
     user: any,
   ): Promise<OfferEntity> {
     const userId = user.sub || user.userId;
-
-    // Check if user has promotions access based on their plan (Pro+ required)
-    if (!hasPromotionsAccess) {
-      throw new ForbiddenException('Offers and promotions require a Pro or Business plan. Please upgrade your subscription to access this feature.');
-    }
+    // Open-source: all features available
 
     // Validate dates
     if (new Date(createOfferDto.validFrom) >= new Date(createOfferDto.validTo)) {

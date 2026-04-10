@@ -54,15 +54,7 @@ export class ApiAccessGuard implements CanActivate {
       throw new ForbiddenException('Invalid user token');
     }
 
-    // Check if user has API access based on their plan
-
-    if (!hasApiAccess) {
-      this.logger.warn(`User ${userId} denied API access - requires Business plan`);
-      throw new ForbiddenException(
-        'API access requires a Business plan. Please upgrade your subscription to access this feature.'
-      );
-    }
-
+    // In open-source self-hosted version, all features are available
     this.logger.debug(`User ${userId} granted API access`);
     return true;
   }

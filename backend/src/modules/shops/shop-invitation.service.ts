@@ -60,14 +60,6 @@ export class ShopInvitationService {
       const ownerId = shop.owner_id || shop.ownerId;
       this.logger.log(`[inviteToShop] Shop owner ID: ${ownerId}`);
 
-      // Check team member limit based on subscription plan
-      if (!teamMemberCheck.allowed) {
-        throw new ForbiddenException(
-          teamMemberCheck.message ||
-          `Team member limit reached (${teamMemberCheck.current}/${teamMemberCheck.limit}). Please upgrade your plan to invite more team members.`
-        );
-      }
-
       // Check if user is already a team member
       const existingMembers = await this.db.queryEntities(
         EntityType.SHOP_TEAM_MEMBER,
@@ -435,17 +427,6 @@ export class ShopInvitationService {
         );
 
         throw new ConflictException('You are already a member of this shop');
-      }
-
-      // Get shop to check owner's team member limit
-      const shop = await this.db.getEntity(EntityType.SHOP, invitationShopId);
-      if (shop) {
-        const ownerId = shop.owner_id || shop.ownerId;
-        if (!teamMemberCheck.allowed) {
-          throw new ForbiddenException(
-            `The shop owner has reached their team member limit (${teamMemberCheck.current}/${teamMemberCheck.limit}). Please contact the shop owner to upgrade their plan.`
-          );
-        }
       }
 
       // Add user to shop team
