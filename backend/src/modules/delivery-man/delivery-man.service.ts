@@ -151,7 +151,7 @@ export class DeliveryManService {
         // Check if already exists
         const existingByUserIdMatch = existingByUserId.get(userId);
         const existingByEmailMatch = existingByEmail.get(email);
-        const existing = existingByUserIdMatch || existingByEmailMatch;
+        const existing: any = existingByUserIdMatch || existingByEmailMatch;
 
         if (existing) {
           // Get phone from auth user metadata

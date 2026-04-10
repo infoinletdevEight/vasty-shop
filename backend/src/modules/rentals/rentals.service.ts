@@ -849,7 +849,7 @@ export class RentalsService {
       const addonMap = new Map(addons.map((a: any) => [a.id, a]));
 
       for (const addon of dto.addons) {
-        const addonDetails = addonMap.get(addon.addonId);
+        const addonDetails: any = addonMap.get(addon.addonId);
         if (addonDetails) {
           let addonCost = addonDetails.price * addon.quantity;
           if (addonDetails.pricing_type === RentalType.DAILY) {

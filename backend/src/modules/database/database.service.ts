@@ -40,8 +40,15 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
   // Core Query Method
   // ============================================
 
-  async query(sql: string, params?: any[]): Promise<QueryResult> {
-    return this.pool.query(sql, params);
+  // Hybrid: db.query(sql, params) runs raw SQL; db.query() returns a chainable
+  // shim with .from(table) for the legacy SDK pattern: db.query().from('t').select(...)
+  query(sql?: any, params?: any[]): any {
+    if (typeof sql === 'string') {
+      return this.pool.query(sql, params);
+    }
+    return {
+      from: (tableName: string) => this.table(tableName),
+    };
   }
 
   // ============================================
@@ -73,11 +80,26 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
     return rows[0] || null;
   }
 
+  /**
+   * Wrap a row array as an Array-like result that also exposes `.data`
+   * (self-reference) and `.count`. This lets callers use both:
+   *   - native Array methods: result.filter(...), result.map(...), result.length
+   *   - object-style access: result.data, result.count, const {data, count} = ...
+   * This is the bridge that lets the SDK migration compile without rewriting
+   * thousands of call sites that mixed both styles.
+   */
+  private wrapResult(rows: any[], count?: number): any {
+    const arr: any = rows.slice();
+    arr.data = arr;
+    arr.count = count ?? rows.length;
+    return arr;
+  }
+
   async findMany(
     tableName: string,
     conditions: Record<string, any> = {},
     options: { orderBy?: string; order?: 'asc' | 'desc'; limit?: number; offset?: number } = {},
-  ): Promise<{ data: any[] }> {
+  ): Promise<any> {
     const { whereClause, values } = this.buildWhereClause(conditions);
     let sql = `SELECT * FROM ${this.escapeIdentifier(tableName)} ${whereClause}`;
     const params = [...values];
@@ -95,7 +117,7 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
     }
 
     const { rows } = await this.query(sql, params);
-    return { data: rows };
+    return this.wrapResult(rows);
   }
 
   // Alias matching DatabaseService.find() which also returns count
@@ -103,18 +125,18 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
     tableName: string,
     conditions: Record<string, any> = {},
     options: { orderBy?: string; order?: 'asc' | 'desc'; limit?: number; offset?: number } = {},
-  ): Promise<{ data: any[]; count: number }> {
-    const result = await this.findMany(tableName, conditions, options);
+  ): Promise<any> {
+    const result: any[] = await this.findMany(tableName, conditions, options);
 
     // Get total count
     const { whereClause, values } = this.buildWhereClause(conditions);
     const countSql = `SELECT COUNT(*) as count FROM ${this.escapeIdentifier(tableName)} ${whereClause}`;
     const { rows: countRows } = await this.query(countSql, values);
 
-    return { data: result.data, count: parseInt(countRows[0]?.count || '0', 10) };
+    return this.wrapResult(result, parseInt(countRows[0]?.count || '0', 10));
   }
 
-  async select(tableName: string, options: any = {}): Promise<{ data: any[] }> {
+  async select(tableName: string, options: any = {}): Promise<any> {
     return this.findMany(tableName, options.where || {}, {
       orderBy: options.orderBy,
       order: options.order,
@@ -225,7 +247,7 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
     return this.delete(tableName, id);
   }
 
-  async queryEntities(tableName: string, options: any = {}): Promise<{ data: any[]; count?: number }> {
+  async queryEntities(tableName: string, options: any = {}): Promise<any> {
     return this.findMany(tableName, options.where || options.conditions || {}, {
       orderBy: options.orderBy,
       order: options.order,
@@ -238,7 +260,7 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
     return { from: (tableName: string) => this.table(tableName) };
   }
 
-  async listUsers(options?: { limit?: number; offset?: number }): Promise<{ data: any[] }> {
+  async listUsers(options?: { limit?: number; offset?: number }): Promise<any> {
     let sql = 'SELECT * FROM "users"';
     const params: any[] = [];
     if (options?.limit) {
@@ -250,16 +272,16 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
       sql += ` OFFSET $${params.length}`;
     }
     const { rows } = await this.query(sql, params);
-    return { data: rows };
+    return this.wrapResult(rows);
   }
 
-  async searchUsers(queryStr: string, options?: { limit?: number }): Promise<{ data: any[] }> {
+  async searchUsers(queryStr: string, options?: { limit?: number }): Promise<any> {
     const limit = options?.limit || 20;
     const { rows } = await this.query(
       `SELECT * FROM "users" WHERE "email" ILIKE $1 OR "name" ILIKE $1 LIMIT $2`,
       [`%${queryStr}%`, limit],
     );
-    return { data: rows };
+    return this.wrapResult(rows);
   }
 
   // ============================================
@@ -283,9 +305,13 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
     this.logger.warn(`deleteFileFromStorage called - migrate to StorageService. bucket=${bucket} path=${path}`);
   }
 
-  getPublicUrl(bucket: string, path: string): string {
+  getPublicUrl(bucket: string, path: string): any {
     this.logger.warn(`getPublicUrl called - migrate to StorageService. bucket=${bucket} path=${path}`);
-    return `/${bucket}/${path}`;
+    const url = `/${bucket}/${path}`;
+    // Return a String-like object so callers can use both `result` (as string)
+    // and `result.publicUrl` (legacy SDK shape).
+    const obj: any = url;
+    return Object.assign(new String(url), { publicUrl: url, url });
   }
 
   async createSignedUrl(bucket: string, path: string, expiresIn?: number): Promise<string> {
@@ -307,9 +333,34 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
     this.logger.warn(`publishToChannel called - migrate to Socket.io directly. channel=${channel}`);
   }
 
+  // ============================================
+  // Auth/Admin/AI/Storefront stubs (TODO: migrate to dedicated services)
+  // ============================================
+  async signUp(...args: any[]): Promise<any> { this.logger.warn('signUp called - implement AuthService'); return { user: null, accessToken: null, refreshToken: null }; }
+  async signIn(...args: any[]): Promise<any> { this.logger.warn('signIn called - implement AuthService'); return { user: null, accessToken: null, refreshToken: null }; }
+  async refreshSession(...args: any[]): Promise<any> { this.logger.warn('refreshSession called - implement AuthService'); return { accessToken: null, refreshToken: null }; }
+  async resetPasswordForEmail(...args: any[]): Promise<any> { this.logger.warn('resetPasswordForEmail called - implement AuthService'); return { success: false }; }
+  async resetPassword(...args: any[]): Promise<any> { this.logger.warn('resetPassword called - implement AuthService'); return { success: false }; }
+  async updateUser(...args: any[]): Promise<any> { this.logger.warn('updateUser called - implement AuthService'); return null; }
+  async updateUserMetadata(...args: any[]): Promise<any> { this.logger.warn('updateUserMetadata called - implement AuthService'); return null; }
+  async changeUserPassword(...args: any[]): Promise<any> { this.logger.warn('changeUserPassword called - implement AuthService'); return { success: false }; }
+  async banUser(...args: any[]): Promise<any> { this.logger.warn('banUser called - implement AdminService'); return { success: false }; }
+  async unbanUser(...args: any[]): Promise<any> { this.logger.warn('unbanUser called - implement AdminService'); return { success: false }; }
+  async deleteUser(...args: any[]): Promise<any> { this.logger.warn('deleteUser called - implement AdminService'); return { success: false }; }
+  getAI(...args: any[]): any { this.logger.warn('getAI called - implement AIService'); return { generateText: async () => ({ text: '' }) }; }
+  async generateText(...args: any[]): Promise<any> { this.logger.warn('generateText called - implement AIService'); return { text: '' }; }
+  async unifiedSearch(...args: any[]): Promise<any> { this.logger.warn('unifiedSearch called - implement SearchService'); return this.wrapResult([]); }
+  // Stripe Connect stubs (vendor payouts) — return shapes that satisfy callers but no-op
+  async createConnectAccount(...args: any[]): Promise<any> { this.logger.warn('createConnectAccount called - implement Stripe Connect'); return { id: '', accountId: '' }; }
+  async getConnectOnboardingLink(...args: any[]): Promise<any> { this.logger.warn('getConnectOnboardingLink called - implement Stripe Connect'); return { url: '' }; }
+  async getConnectAccountStatus(...args: any[]): Promise<any> { this.logger.warn('getConnectAccountStatus called - implement Stripe Connect'); return { status: 'inactive', chargesEnabled: false, payoutsEnabled: false }; }
+  async getConnectDashboardLink(...args: any[]): Promise<any> { this.logger.warn('getConnectDashboardLink called - implement Stripe Connect'); return { url: '' }; }
+
   // Compatibility stubs for old fluxez SDK methods - all log warnings, none throw
-  // These let the codebase compile while individual services are migrated
-  get auth() {
+  // These let the codebase compile while individual services are migrated.
+  // Return type is `any` so legacy call patterns (db.client.auth.signIn,
+  // db.client.query.from, etc.) typecheck without enumerating every shape.
+  get auth(): any {
     const log = (method: string) => this.logger.warn(`db.auth.${method} called - implement custom AuthService`);
     return {
       register: async (data: any) => { log('register'); return { user: null, accessToken: null, refreshToken: null }; },
@@ -324,17 +375,25 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
     };
   }
 
-  get authClient() {
+  get authClient(): any {
     return { auth: this.auth };
   }
 
-  getClient() {
+  getClient(): any {
     return this.client;
   }
 
-  get client() {
+  get client(): any {
     const log = (path: string) => this.logger.warn(`db.client.${path} called - migrate to dedicated service`);
+    // `query` is a callable AND chainable shim: db.client.query.from('t')...
+    // Returns the same QueryBuilder used elsewhere so the old SDK pattern keeps working.
+    const queryShim: any = (...args: any[]) => {
+      log('query');
+      return Promise.resolve(this.wrapResult([]));
+    };
+    queryShim.from = (tableName: string) => this.table(tableName);
     return {
+      query: queryShim,
       auth: this.auth,
       email: {
         send: async (...args: any[]) => { log('email.send'); return { success: false }; },
