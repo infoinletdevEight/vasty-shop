@@ -59,6 +59,10 @@
     "socket.io": "^4.8.1",
     "stripe": "^14.10.0"
   },
+  "optionalDependencies": {
+    "@google-cloud/storage": "^7.11.0",
+    "@azure/storage-blob": "^12.17.0"
+  },
   "devDependencies": {
     "@nestjs/cli": "^10.2.1",
     "@nestjs/schematics": "^10.0.3",
