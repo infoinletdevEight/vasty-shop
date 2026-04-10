@@ -70,6 +70,81 @@ Vasty Shop is an open-source multi-vendor e-commerce marketplace platform. Build
 
 ## Quick Start
 
+### Docker (Recommended)
+
+> **Prerequisites**: [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/)
+
+```bash
+git clone https://github.com/vasty-shop/vasty-shop.git
+cd vasty-shop
+
+# 1. Create env files from examples
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env
+
+# 2. Start all services (PostgreSQL, Redis, Backend, Frontend)
+docker compose up --build
+
+# 3. Run database migrations (in a new terminal)
+docker compose exec backend npm run migrate
+
+# 4. (Optional) Seed the database
+docker compose exec backend npm run seed
+```
+
+The app will be available at:
+
+| Service | URL |
+|---------|-----|
+| **Frontend** | http://localhost:5186 |
+| **Backend API** | http://localhost:4005/api/v1 |
+| **API Docs (Swagger)** | http://localhost:4005/api/v1/docs |
+| **WebSocket** | http://localhost:3002 |
+
+#### Default Admin Credentials
+
+| Field | Value |
+|-------|-------|
+| **Email** | `admin@vasty.shop` |
+| **Password** | `admin123` |
+
+> **Note:** Change the admin password immediately in production.
+
+#### Docker Services
+
+| Service | Image | Port |
+|---------|-------|------|
+| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **Redis** | redis:7-alpine | 6379 |
+| **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
+| **Frontend** | node:20-alpine (Vite) | 5186 |
+
+#### Useful Commands
+
+```bash
+# Stop all services
+docker compose down
+
+# Stop and remove all data (database, redis)
+docker compose down -v
+
+# View backend logs
+docker compose logs -f backend
+
+# Run migrations
+docker compose exec backend npm run migrate
+
+# Seed database
+docker compose exec backend npm run seed
+
+# Access PostgreSQL shell
+docker compose exec postgres psql -U postgres -d vasty_shop_dev
+```
+
+### Local Development (without Docker)
+
+> **Prerequisites**: Node.js 20+, PostgreSQL 16+, Redis 7+
+
 ```bash
 git clone https://github.com/vasty-shop/vasty-shop.git
 cd vasty-shop
@@ -77,13 +152,15 @@ cd vasty-shop
 # Backend
 cd backend
 cp .env.example .env
+# Edit .env: set DATABASE_HOST=localhost and REDIS_HOST=localhost
 npm install
 npm run migrate
 npm run start:dev
 
 # Frontend (new terminal)
 cd frontend
-npm install
+cp .env.example .env
+npm install --legacy-peer-deps
 npm run dev
 ```
 
