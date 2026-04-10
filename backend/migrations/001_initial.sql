@@ -4,6 +4,34 @@
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
+-- CATEGORIES (must be before shops due to FK reference)
+CREATE TABLE IF NOT EXISTS "categories" (
+  "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  "name" VARCHAR(255) NOT NULL,
+  "slug" VARCHAR(255) NOT NULL,
+  "description" TEXT,
+  "parent_id" UUID,
+  "level" INTEGER DEFAULT 0,
+  "image" VARCHAR(255),
+  "icon" VARCHAR(255),
+  "display_order" INTEGER DEFAULT 0,
+  "is_active" BOOLEAN DEFAULT true,
+  "is_featured" BOOLEAN DEFAULT false,
+  "meta_title" VARCHAR(255),
+  "meta_description" TEXT,
+  "meta_keywords" JSONB DEFAULT '[]',
+  "product_count" INTEGER DEFAULT 0,
+  "created_at" TIMESTAMPTZ DEFAULT now(),
+  "updated_at" TIMESTAMPTZ DEFAULT now(),
+  "deleted_at" TIMESTAMPTZ
+);
+CREATE UNIQUE INDEX IF NOT EXISTS "idx_categories_slug" ON "categories" ("slug");
+CREATE INDEX IF NOT EXISTS "idx_categories_parent_id" ON "categories" ("parent_id");
+CREATE INDEX IF NOT EXISTS "idx_categories_is_active" ON "categories" ("is_active");
+CREATE INDEX IF NOT EXISTS "idx_categories_is_featured" ON "categories" ("is_featured");
+CREATE INDEX IF NOT EXISTS "idx_categories_display_order" ON "categories" ("display_order");
+CREATE INDEX IF NOT EXISTS "idx_categories_level" ON "categories" ("level");
+
 -- SHOPS
 CREATE TABLE IF NOT EXISTS "shops" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -13,7 +41,7 @@ CREATE TABLE IF NOT EXISTS "shops" (
   "description" TEXT,
   "logo" VARCHAR(255),
   "banner" VARCHAR(255),
-  "category_id" UUID REFERENCES "categories"(id) ON DELETE CASCADE,
+  "category_id" UUID,
   "category" VARCHAR(255),
   "template" VARCHAR(255),
   "default_language" VARCHAR(255) DEFAULT 'en',
@@ -70,7 +98,7 @@ CREATE INDEX IF NOT EXISTS "idx_shops_created_at" ON "shops" ("created_at");
 -- SHOP_TEAM_MEMBERS
 CREATE TABLE IF NOT EXISTS "shop_team_members" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "shop_id" UUID NOT NULL REFERENCES "shops"(id) ON DELETE CASCADE,
+  "shop_id" UUID NOT NULL,
   "user_id" VARCHAR(255) NOT NULL,
   "role" VARCHAR(255) NOT NULL,
   "permissions" JSONB DEFAULT '[]',
@@ -92,7 +120,7 @@ CREATE INDEX IF NOT EXISTS "idx_shop_team_members_is_active" ON "shop_team_membe
 -- SHOP_INVITES
 CREATE TABLE IF NOT EXISTS "shop_invites" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "shop_id" UUID NOT NULL REFERENCES "shops"(id) ON DELETE CASCADE,
+  "shop_id" UUID NOT NULL,
   "email" VARCHAR(255) NOT NULL,
   "role" VARCHAR(255) DEFAULT 'staff',
   "permissions" JSONB DEFAULT '[]',
@@ -109,34 +137,6 @@ CREATE INDEX IF NOT EXISTS "idx_shop_invites_email" ON "shop_invites" ("email");
 CREATE UNIQUE INDEX IF NOT EXISTS "idx_shop_invites_token" ON "shop_invites" ("token");
 CREATE INDEX IF NOT EXISTS "idx_shop_invites_status" ON "shop_invites" ("status");
 CREATE INDEX IF NOT EXISTS "idx_shop_invites_expires_at" ON "shop_invites" ("expires_at");
-
--- CATEGORIES
-CREATE TABLE IF NOT EXISTS "categories" (
-  "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "name" VARCHAR(255) NOT NULL,
-  "slug" VARCHAR(255) NOT NULL,
-  "description" TEXT,
-  "parent_id" UUID,
-  "level" INTEGER DEFAULT 0,
-  "image" VARCHAR(255),
-  "icon" VARCHAR(255),
-  "display_order" INTEGER DEFAULT 0,
-  "is_active" BOOLEAN DEFAULT true,
-  "is_featured" BOOLEAN DEFAULT false,
-  "meta_title" VARCHAR(255),
-  "meta_description" TEXT,
-  "meta_keywords" JSONB DEFAULT '[]',
-  "product_count" INTEGER DEFAULT 0,
-  "created_at" TIMESTAMPTZ DEFAULT now(),
-  "updated_at" TIMESTAMPTZ DEFAULT now(),
-  "deleted_at" TIMESTAMPTZ
-);
-CREATE UNIQUE INDEX IF NOT EXISTS "idx_categories_slug" ON "categories" ("slug");
-CREATE INDEX IF NOT EXISTS "idx_categories_parent_id" ON "categories" ("parent_id");
-CREATE INDEX IF NOT EXISTS "idx_categories_is_active" ON "categories" ("is_active");
-CREATE INDEX IF NOT EXISTS "idx_categories_is_featured" ON "categories" ("is_featured");
-CREATE INDEX IF NOT EXISTS "idx_categories_display_order" ON "categories" ("display_order");
-CREATE INDEX IF NOT EXISTS "idx_categories_level" ON "categories" ("level");
 
 -- PRODUCTS
 CREATE TABLE IF NOT EXISTS "products" (
@@ -258,7 +258,7 @@ CREATE TABLE IF NOT EXISTS "orders" (
   "delivery_method" VARCHAR(255),
   "tracking_number" VARCHAR(255),
   "carrier" VARCHAR(255),
-  "delivery_man_id" UUID REFERENCES "delivery_men"(id) ON DELETE CASCADE,
+  "delivery_man_id" UUID,
   "delivery_man_name" VARCHAR(255),
   "delivery_fee" TEXT DEFAULT 0,
   "estimated_delivery" DATE,
@@ -413,7 +413,7 @@ CREATE INDEX IF NOT EXISTS "idx_delivery_addresses_postal_code" ON "delivery_add
 -- DELIVERY_METHODS
 CREATE TABLE IF NOT EXISTS "delivery_methods" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "shop_id" UUID NOT NULL REFERENCES "shops"(id) ON DELETE CASCADE,
+  "shop_id" UUID NOT NULL,
   "name" VARCHAR(255) NOT NULL,
   "type" VARCHAR(255) NOT NULL,
   "description" TEXT,
@@ -439,7 +439,7 @@ CREATE INDEX IF NOT EXISTS "idx_delivery_methods_sort_order" ON "delivery_method
 -- SHIPPING_ZONES
 CREATE TABLE IF NOT EXISTS "shipping_zones" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "shop_id" UUID NOT NULL REFERENCES "shops"(id) ON DELETE CASCADE,
+  "shop_id" UUID NOT NULL,
   "name" VARCHAR(255) NOT NULL,
   "countries" JSONB DEFAULT '[]',
   "regions" JSONB DEFAULT '[]',
@@ -956,7 +956,7 @@ CREATE INDEX IF NOT EXISTS "idx_wallets_currency" ON "wallets" ("currency");
 -- WALLET_TRANSACTIONS
 CREATE TABLE IF NOT EXISTS "wallet_transactions" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "wallet_id" UUID NOT NULL REFERENCES "wallets"(id) ON DELETE CASCADE,
+  "wallet_id" UUID NOT NULL,
   "user_id" VARCHAR(255) NOT NULL,
   "type" VARCHAR(255) NOT NULL,
   "amount" TEXT NOT NULL,
@@ -985,7 +985,7 @@ CREATE INDEX IF NOT EXISTS "idx_wallet_transactions_created_at" ON "wallet_trans
 -- WALLET_TOPUPS
 CREATE TABLE IF NOT EXISTS "wallet_topups" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "wallet_id" UUID NOT NULL REFERENCES "wallets"(id) ON DELETE CASCADE,
+  "wallet_id" UUID NOT NULL,
   "user_id" VARCHAR(255) NOT NULL,
   "amount" TEXT NOT NULL,
   "currency" VARCHAR(255) DEFAULT 'USD',
@@ -1036,9 +1036,9 @@ CREATE INDEX IF NOT EXISTS "idx_wallet_bonuses_end_date" ON "wallet_bonuses" ("e
 -- REFUND_REQUESTS
 CREATE TABLE IF NOT EXISTS "refund_requests" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "order_id" UUID NOT NULL REFERENCES "orders"(id) ON DELETE CASCADE,
+  "order_id" UUID NOT NULL,
   "user_id" VARCHAR(255) NOT NULL,
-  "shop_id" UUID NOT NULL REFERENCES "shops"(id) ON DELETE CASCADE,
+  "shop_id" UUID NOT NULL,
   "reason" VARCHAR(255) NOT NULL,
   "description" TEXT,
   "images" JSONB DEFAULT '[]',
@@ -1190,8 +1190,8 @@ CREATE INDEX IF NOT EXISTS "idx_subscription_plans_sort_order" ON "subscription_
 -- SHOP_SUBSCRIPTIONS
 CREATE TABLE IF NOT EXISTS "shop_subscriptions" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "shop_id" UUID NOT NULL REFERENCES "shops"(id) ON DELETE CASCADE,
-  "plan_id" UUID NOT NULL REFERENCES "subscription_plans"(id) ON DELETE CASCADE,
+  "shop_id" UUID NOT NULL,
+  "plan_id" UUID NOT NULL,
   "billing_cycle" VARCHAR(255) NOT NULL,
   "current_period_start" TIMESTAMPTZ NOT NULL,
   "current_period_end" TIMESTAMPTZ NOT NULL,
@@ -1218,8 +1218,8 @@ CREATE INDEX IF NOT EXISTS "idx_shop_subscriptions_stripe_subscription_id" ON "s
 -- SUBSCRIPTION_INVOICES
 CREATE TABLE IF NOT EXISTS "subscription_invoices" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "subscription_id" UUID NOT NULL REFERENCES "shop_subscriptions"(id) ON DELETE CASCADE,
-  "shop_id" UUID NOT NULL REFERENCES "shops"(id) ON DELETE CASCADE,
+  "subscription_id" UUID NOT NULL,
+  "shop_id" UUID NOT NULL,
   "invoice_number" VARCHAR(255) NOT NULL,
   "amount" TEXT NOT NULL,
   "currency" VARCHAR(255) DEFAULT 'USD',
@@ -1275,8 +1275,8 @@ CREATE INDEX IF NOT EXISTS "idx_cashback_rules_priority" ON "cashback_rules" ("p
 CREATE TABLE IF NOT EXISTS "cashback_transactions" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   "user_id" VARCHAR(255) NOT NULL,
-  "order_id" UUID NOT NULL REFERENCES "orders"(id) ON DELETE CASCADE,
-  "rule_id" UUID REFERENCES "cashback_rules"(id) ON DELETE CASCADE,
+  "order_id" UUID NOT NULL,
+  "rule_id" UUID,
   "order_amount" TEXT NOT NULL,
   "cashback_amount" TEXT NOT NULL,
   "cashback_type" VARCHAR(255) NOT NULL,
@@ -1333,9 +1333,9 @@ CREATE TABLE IF NOT EXISTS "referrals" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   "referrer_id" VARCHAR(255) NOT NULL,
   "referee_id" VARCHAR(255) NOT NULL,
-  "referral_code_id" UUID NOT NULL REFERENCES "referral_codes"(id) ON DELETE CASCADE,
+  "referral_code_id" UUID NOT NULL,
   "status" VARCHAR(255) DEFAULT 'pending',
-  "first_order_id" UUID REFERENCES "orders"(id) ON DELETE CASCADE,
+  "first_order_id" UUID,
   "first_order_amount" TEXT,
   "first_order_at" TIMESTAMPTZ,
   "referrer_reward_amount" TEXT,
@@ -1446,9 +1446,9 @@ CREATE INDEX IF NOT EXISTS "idx_delivery_men_stripe_connect_status" ON "delivery
 -- DELIVERY_ASSIGNMENTS
 CREATE TABLE IF NOT EXISTS "delivery_assignments" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "order_id" UUID NOT NULL REFERENCES "orders"(id) ON DELETE CASCADE,
-  "delivery_man_id" UUID NOT NULL REFERENCES "delivery_men"(id) ON DELETE CASCADE,
-  "shop_id" UUID REFERENCES "shops"(id) ON DELETE CASCADE,
+  "order_id" UUID NOT NULL,
+  "delivery_man_id" UUID NOT NULL,
+  "shop_id" UUID,
   "assigned_by" VARCHAR(255),
   "assigned_at" TIMESTAMPTZ DEFAULT now(),
   "status" VARCHAR(255) DEFAULT 'assigned',
@@ -1483,7 +1483,7 @@ CREATE INDEX IF NOT EXISTS "idx_delivery_assignments_delivery_man_id_status" ON 
 -- EMAIL_LOGS
 CREATE TABLE IF NOT EXISTS "email_logs" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "template_id" UUID REFERENCES "email_templates"(id) ON DELETE CASCADE,
+  "template_id" UUID,
   "to_email" VARCHAR(255) NOT NULL,
   "to_name" VARCHAR(255),
   "user_id" VARCHAR(255),
@@ -1507,7 +1507,7 @@ CREATE INDEX IF NOT EXISTS "idx_email_logs_created_at" ON "email_logs" ("created
 -- DELIVERY_ZONES
 CREATE TABLE IF NOT EXISTS "delivery_zones" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "shop_id" UUID REFERENCES "shops"(id) ON DELETE CASCADE,
+  "shop_id" UUID,
   "name" VARCHAR(255) NOT NULL,
   "description" TEXT,
   "type" VARCHAR(255) DEFAULT 'polygon',
@@ -1532,7 +1532,7 @@ CREATE INDEX IF NOT EXISTS "idx_delivery_zones_sort_order" ON "delivery_zones" (
 -- ZONE_DELIVERY_OPTIONS
 CREATE TABLE IF NOT EXISTS "zone_delivery_options" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "zone_id" UUID NOT NULL REFERENCES "delivery_zones"(id) ON DELETE CASCADE,
+  "zone_id" UUID NOT NULL,
   "delivery_type" VARCHAR(255) NOT NULL,
   "name" VARCHAR(255) NOT NULL,
   "description" TEXT,
@@ -1552,8 +1552,8 @@ CREATE INDEX IF NOT EXISTS "idx_zone_delivery_options_is_active" ON "zone_delive
 -- SHOP_ZONES
 CREATE TABLE IF NOT EXISTS "shop_zones" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "shop_id" UUID NOT NULL REFERENCES "shops"(id) ON DELETE CASCADE,
-  "zone_id" UUID NOT NULL REFERENCES "delivery_zones"(id) ON DELETE CASCADE,
+  "shop_id" UUID NOT NULL,
+  "zone_id" UUID NOT NULL,
   "base_fee_override" TEXT,
   "min_delivery_time_override" INTEGER,
   "max_delivery_time_override" INTEGER,
@@ -1569,8 +1569,8 @@ CREATE INDEX IF NOT EXISTS "idx_shop_zones_is_active" ON "shop_zones" ("is_activ
 -- DELIVERY_MAN_ZONES
 CREATE TABLE IF NOT EXISTS "delivery_man_zones" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "delivery_man_id" UUID NOT NULL REFERENCES "delivery_men"(id) ON DELETE CASCADE,
-  "zone_id" UUID NOT NULL REFERENCES "delivery_zones"(id) ON DELETE CASCADE,
+  "delivery_man_id" UUID NOT NULL,
+  "zone_id" UUID NOT NULL,
   "is_primary" BOOLEAN DEFAULT false,
   "is_active" BOOLEAN DEFAULT true,
   "created_at" TIMESTAMPTZ DEFAULT now(),
@@ -1584,8 +1584,8 @@ CREATE INDEX IF NOT EXISTS "idx_delivery_man_zones_is_active" ON "delivery_man_z
 -- DELIVERY_MAN_REVIEWS
 CREATE TABLE IF NOT EXISTS "delivery_man_reviews" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "delivery_man_id" UUID NOT NULL REFERENCES "delivery_men"(id) ON DELETE CASCADE,
-  "order_id" UUID NOT NULL REFERENCES "orders"(id) ON DELETE CASCADE,
+  "delivery_man_id" UUID NOT NULL,
+  "order_id" UUID NOT NULL,
   "customer_id" VARCHAR(255) NOT NULL,
   "rating" INTEGER NOT NULL,
   "comment" TEXT,
@@ -1600,7 +1600,7 @@ CREATE INDEX IF NOT EXISTS "idx_delivery_man_reviews_created_at" ON "delivery_ma
 -- DELIVERY_MAN_WITHDRAWALS
 CREATE TABLE IF NOT EXISTS "delivery_man_withdrawals" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "delivery_man_id" UUID NOT NULL REFERENCES "delivery_men"(id) ON DELETE CASCADE,
+  "delivery_man_id" UUID NOT NULL,
   "amount" TEXT NOT NULL,
   "payment_method" VARCHAR(255),
   "payment_details" JSONB DEFAULT '{}',
@@ -1618,8 +1618,8 @@ CREATE INDEX IF NOT EXISTS "idx_delivery_man_withdrawals_created_at" ON "deliver
 -- DELIVERY_LOCATION_LOGS
 CREATE TABLE IF NOT EXISTS "delivery_location_logs" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "delivery_man_id" UUID NOT NULL REFERENCES "delivery_men"(id) ON DELETE CASCADE,
-  "assignment_id" UUID REFERENCES "delivery_assignments"(id) ON DELETE CASCADE,
+  "delivery_man_id" UUID NOT NULL,
+  "assignment_id" UUID,
   "lat" TEXT NOT NULL,
   "lng" TEXT NOT NULL,
   "heading" TEXT,
@@ -1637,7 +1637,7 @@ CREATE TABLE IF NOT EXISTS "blog_categories" (
   "slug" VARCHAR(255) NOT NULL,
   "description" TEXT,
   "image_url" VARCHAR(255),
-  "parent_id" UUID REFERENCES "blog_categories"(id) ON DELETE CASCADE,
+  "parent_id" UUID,
   "is_active" BOOLEAN DEFAULT true,
   "sort_order" INTEGER DEFAULT 0,
   "created_at" TIMESTAMPTZ DEFAULT now(),
@@ -1687,9 +1687,9 @@ CREATE INDEX IF NOT EXISTS "idx_blog_posts_likes_count" ON "blog_posts" ("likes_
 -- BLOG_COMMENTS
 CREATE TABLE IF NOT EXISTS "blog_comments" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "post_id" UUID NOT NULL REFERENCES "blog_posts"(id) ON DELETE CASCADE,
+  "post_id" UUID NOT NULL,
   "user_id" VARCHAR(255) NOT NULL,
-  "parent_id" UUID REFERENCES "blog_comments"(id) ON DELETE CASCADE,
+  "parent_id" UUID,
   "content" TEXT NOT NULL,
   "status" VARCHAR(255) DEFAULT 'approved',
   "created_at" TIMESTAMPTZ DEFAULT now(),
@@ -1704,7 +1704,7 @@ CREATE INDEX IF NOT EXISTS "idx_blog_comments_created_at" ON "blog_comments" ("c
 -- BLOG_LIKES
 CREATE TABLE IF NOT EXISTS "blog_likes" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "post_id" UUID NOT NULL REFERENCES "blog_posts"(id) ON DELETE CASCADE,
+  "post_id" UUID NOT NULL,
   "user_id" VARCHAR(255) NOT NULL,
   "created_at" TIMESTAMPTZ DEFAULT now()
 );
@@ -1715,7 +1715,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS "idx_blog_likes_post_id_user_id" ON "blog_like
 -- BLOG_RATINGS
 CREATE TABLE IF NOT EXISTS "blog_ratings" (
   "id" UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  "post_id" UUID NOT NULL REFERENCES "blog_posts"(id) ON DELETE CASCADE,
+  "post_id" UUID NOT NULL,
   "user_id" VARCHAR(255) NOT NULL,
   "rating" INTEGER NOT NULL,
   "created_at" TIMESTAMPTZ DEFAULT now(),
@@ -1724,3 +1724,97 @@ CREATE TABLE IF NOT EXISTS "blog_ratings" (
 CREATE INDEX IF NOT EXISTS "idx_blog_ratings_post_id" ON "blog_ratings" ("post_id");
 CREATE INDEX IF NOT EXISTS "idx_blog_ratings_user_id" ON "blog_ratings" ("user_id");
 CREATE UNIQUE INDEX IF NOT EXISTS "idx_blog_ratings_post_id_user_id" ON "blog_ratings" ("post_id", "user_id");
+
+-- ============================================================
+-- FOREIGN KEY CONSTRAINTS (added after all tables are created)
+-- ============================================================
+
+-- shops
+ALTER TABLE "shops" ADD CONSTRAINT "fk_shops_category_id" FOREIGN KEY ("category_id") REFERENCES "categories"(id) ON DELETE CASCADE;
+
+-- shop_team_members
+ALTER TABLE "shop_team_members" ADD CONSTRAINT "fk_shop_team_members_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+
+-- shop_invites
+ALTER TABLE "shop_invites" ADD CONSTRAINT "fk_shop_invites_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+
+-- orders
+ALTER TABLE "orders" ADD CONSTRAINT "fk_orders_delivery_man_id" FOREIGN KEY ("delivery_man_id") REFERENCES "delivery_men"(id) ON DELETE CASCADE;
+
+-- delivery_methods
+ALTER TABLE "delivery_methods" ADD CONSTRAINT "fk_delivery_methods_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+
+-- shipping_zones
+ALTER TABLE "shipping_zones" ADD CONSTRAINT "fk_shipping_zones_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+
+-- wallet_transactions
+ALTER TABLE "wallet_transactions" ADD CONSTRAINT "fk_wallet_transactions_wallet_id" FOREIGN KEY ("wallet_id") REFERENCES "wallets"(id) ON DELETE CASCADE;
+
+-- wallet_topups
+ALTER TABLE "wallet_topups" ADD CONSTRAINT "fk_wallet_topups_wallet_id" FOREIGN KEY ("wallet_id") REFERENCES "wallets"(id) ON DELETE CASCADE;
+
+-- refund_requests
+ALTER TABLE "refund_requests" ADD CONSTRAINT "fk_refund_requests_order_id" FOREIGN KEY ("order_id") REFERENCES "orders"(id) ON DELETE CASCADE;
+ALTER TABLE "refund_requests" ADD CONSTRAINT "fk_refund_requests_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+
+-- shop_subscriptions
+ALTER TABLE "shop_subscriptions" ADD CONSTRAINT "fk_shop_subscriptions_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+ALTER TABLE "shop_subscriptions" ADD CONSTRAINT "fk_shop_subscriptions_plan_id" FOREIGN KEY ("plan_id") REFERENCES "subscription_plans"(id) ON DELETE CASCADE;
+
+-- subscription_invoices
+ALTER TABLE "subscription_invoices" ADD CONSTRAINT "fk_subscription_invoices_subscription_id" FOREIGN KEY ("subscription_id") REFERENCES "shop_subscriptions"(id) ON DELETE CASCADE;
+ALTER TABLE "subscription_invoices" ADD CONSTRAINT "fk_subscription_invoices_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+
+-- cashback_transactions
+ALTER TABLE "cashback_transactions" ADD CONSTRAINT "fk_cashback_transactions_order_id" FOREIGN KEY ("order_id") REFERENCES "orders"(id) ON DELETE CASCADE;
+ALTER TABLE "cashback_transactions" ADD CONSTRAINT "fk_cashback_transactions_rule_id" FOREIGN KEY ("rule_id") REFERENCES "cashback_rules"(id) ON DELETE CASCADE;
+
+-- referrals
+ALTER TABLE "referrals" ADD CONSTRAINT "fk_referrals_referral_code_id" FOREIGN KEY ("referral_code_id") REFERENCES "referral_codes"(id) ON DELETE CASCADE;
+ALTER TABLE "referrals" ADD CONSTRAINT "fk_referrals_first_order_id" FOREIGN KEY ("first_order_id") REFERENCES "orders"(id) ON DELETE CASCADE;
+
+-- delivery_assignments
+ALTER TABLE "delivery_assignments" ADD CONSTRAINT "fk_delivery_assignments_order_id" FOREIGN KEY ("order_id") REFERENCES "orders"(id) ON DELETE CASCADE;
+ALTER TABLE "delivery_assignments" ADD CONSTRAINT "fk_delivery_assignments_delivery_man_id" FOREIGN KEY ("delivery_man_id") REFERENCES "delivery_men"(id) ON DELETE CASCADE;
+ALTER TABLE "delivery_assignments" ADD CONSTRAINT "fk_delivery_assignments_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+
+-- email_logs
+ALTER TABLE "email_logs" ADD CONSTRAINT "fk_email_logs_template_id" FOREIGN KEY ("template_id") REFERENCES "email_templates"(id) ON DELETE CASCADE;
+
+-- delivery_zones
+ALTER TABLE "delivery_zones" ADD CONSTRAINT "fk_delivery_zones_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+
+-- zone_delivery_options
+ALTER TABLE "zone_delivery_options" ADD CONSTRAINT "fk_zone_delivery_options_zone_id" FOREIGN KEY ("zone_id") REFERENCES "delivery_zones"(id) ON DELETE CASCADE;
+
+-- shop_zones
+ALTER TABLE "shop_zones" ADD CONSTRAINT "fk_shop_zones_shop_id" FOREIGN KEY ("shop_id") REFERENCES "shops"(id) ON DELETE CASCADE;
+ALTER TABLE "shop_zones" ADD CONSTRAINT "fk_shop_zones_zone_id" FOREIGN KEY ("zone_id") REFERENCES "delivery_zones"(id) ON DELETE CASCADE;
+
+-- delivery_man_zones
+ALTER TABLE "delivery_man_zones" ADD CONSTRAINT "fk_delivery_man_zones_delivery_man_id" FOREIGN KEY ("delivery_man_id") REFERENCES "delivery_men"(id) ON DELETE CASCADE;
+ALTER TABLE "delivery_man_zones" ADD CONSTRAINT "fk_delivery_man_zones_zone_id" FOREIGN KEY ("zone_id") REFERENCES "delivery_zones"(id) ON DELETE CASCADE;
+
+-- delivery_man_reviews
+ALTER TABLE "delivery_man_reviews" ADD CONSTRAINT "fk_delivery_man_reviews_delivery_man_id" FOREIGN KEY ("delivery_man_id") REFERENCES "delivery_men"(id) ON DELETE CASCADE;
+ALTER TABLE "delivery_man_reviews" ADD CONSTRAINT "fk_delivery_man_reviews_order_id" FOREIGN KEY ("order_id") REFERENCES "orders"(id) ON DELETE CASCADE;
+
+-- delivery_man_withdrawals
+ALTER TABLE "delivery_man_withdrawals" ADD CONSTRAINT "fk_delivery_man_withdrawals_delivery_man_id" FOREIGN KEY ("delivery_man_id") REFERENCES "delivery_men"(id) ON DELETE CASCADE;
+
+-- delivery_location_logs
+ALTER TABLE "delivery_location_logs" ADD CONSTRAINT "fk_delivery_location_logs_delivery_man_id" FOREIGN KEY ("delivery_man_id") REFERENCES "delivery_men"(id) ON DELETE CASCADE;
+ALTER TABLE "delivery_location_logs" ADD CONSTRAINT "fk_delivery_location_logs_assignment_id" FOREIGN KEY ("assignment_id") REFERENCES "delivery_assignments"(id) ON DELETE CASCADE;
+
+-- blog_categories
+ALTER TABLE "blog_categories" ADD CONSTRAINT "fk_blog_categories_parent_id" FOREIGN KEY ("parent_id") REFERENCES "blog_categories"(id) ON DELETE CASCADE;
+
+-- blog_comments
+ALTER TABLE "blog_comments" ADD CONSTRAINT "fk_blog_comments_post_id" FOREIGN KEY ("post_id") REFERENCES "blog_posts"(id) ON DELETE CASCADE;
+ALTER TABLE "blog_comments" ADD CONSTRAINT "fk_blog_comments_parent_id" FOREIGN KEY ("parent_id") REFERENCES "blog_comments"(id) ON DELETE CASCADE;
+
+-- blog_likes
+ALTER TABLE "blog_likes" ADD CONSTRAINT "fk_blog_likes_post_id" FOREIGN KEY ("post_id") REFERENCES "blog_posts"(id) ON DELETE CASCADE;
+
+-- blog_ratings
+ALTER TABLE "blog_ratings" ADD CONSTRAINT "fk_blog_ratings_post_id" FOREIGN KEY ("post_id") REFERENCES "blog_posts"(id) ON DELETE CASCADE;
