@@ -72,6 +72,8 @@ Vasty Shop is an open-source multi-vendor e-commerce marketplace platform. Build
 
 ### Docker (Recommended)
 
+> **Prerequisites**: [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/)
+
 ```bash
 git clone https://github.com/vasty-shop/vasty-shop.git
 cd vasty-shop
@@ -88,26 +90,55 @@ docker compose exec backend npm run migrate
 
 # 4. (Optional) Seed the database
 docker compose exec backend npm run seed
-
-# 5. (Optional) Create an admin user
-docker compose exec backend npm run create:admin
 ```
 
 The app will be available at:
-- **Frontend**: http://localhost:5186
-- **Backend API**: http://localhost:4005/api/v1
-- **WebSocket**: http://localhost:3002
 
-To stop all services:
+| Service | URL |
+|---------|-----|
+| **Frontend** | http://localhost:5186 |
+| **Backend API** | http://localhost:4005/api/v1 |
+| **API Docs (Swagger)** | http://localhost:4005/api/v1/docs |
+| **WebSocket** | http://localhost:3002 |
+
+#### Default Admin Credentials
+
+| Field | Value |
+|-------|-------|
+| **Email** | `admin@vasty.shop` |
+| **Password** | `admin123` |
+
+> **Note:** Change the admin password immediately in production.
+
+#### Docker Services
+
+| Service | Image | Port |
+|---------|-------|------|
+| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **Redis** | redis:7-alpine | 6379 |
+| **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
+| **Frontend** | node:20-alpine (Vite) | 5186 |
+
+#### Useful Commands
 
 ```bash
+# Stop all services
 docker compose down
-```
 
-To stop and remove all data (database, redis):
-
-```bash
+# Stop and remove all data (database, redis)
 docker compose down -v
+
+# View backend logs
+docker compose logs -f backend
+
+# Run migrations
+docker compose exec backend npm run migrate
+
+# Seed database
+docker compose exec backend npm run seed
+
+# Access PostgreSQL shell
+docker compose exec postgres psql -U postgres -d vasty_shop_dev
 ```
 
 ### Local Development (without Docker)
@@ -129,7 +160,7 @@ npm run start:dev
 # Frontend (new terminal)
 cd frontend
 cp .env.example .env
-npm install
+npm install --legacy-peer-deps
 npm run dev
 ```
 
