@@ -6,7 +6,6 @@ import {
   Logger,
 } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
-import { SubscriptionService } from '../subscription/subscription.service';
 import { EntityType, ProductEntity, ShopEntity } from '../../database/schema';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
@@ -22,7 +21,6 @@ export class ProductsService {
 
   constructor(
     private readonly db: DatabaseService,
-    private readonly subscriptionService: SubscriptionService,
   ) {}
 
   /**
@@ -458,7 +456,6 @@ export class ProductsService {
     const shop = await this.verifyShopOwnership(createProductDto.shopId, userId);
 
     // Check product limit based on user's subscription
-    const productCheck = await this.subscriptionService.canAddProductForUser(userId);
     if (!productCheck.allowed) {
       throw new ForbiddenException(productCheck.reason || 'Product limit reached. Please upgrade your plan to add more products.');
     }

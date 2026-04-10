@@ -1,6 +1,5 @@
 import { Injectable, CanActivate, ExecutionContext, ForbiddenException, Logger } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { SubscriptionService } from '../../modules/subscription/subscription.service';
 
 export const REQUIRES_API_ACCESS_KEY = 'requires_api_access';
 
@@ -28,7 +27,6 @@ export class ApiAccessGuard implements CanActivate {
 
   constructor(
     private reflector: Reflector,
-    private subscriptionService: SubscriptionService,
   ) {}
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
@@ -57,7 +55,6 @@ export class ApiAccessGuard implements CanActivate {
     }
 
     // Check if user has API access based on their plan
-    const hasApiAccess = await this.subscriptionService.hasApiAccess(userId);
 
     if (!hasApiAccess) {
       this.logger.warn(`User ${userId} denied API access - requires Business plan`);

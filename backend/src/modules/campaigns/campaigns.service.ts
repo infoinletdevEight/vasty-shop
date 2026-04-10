@@ -8,7 +8,6 @@ import {
   forwardRef,
 } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
-import { SubscriptionService } from '../subscription/subscription.service';
 import { EntityType, CampaignEntity, ShopEntity } from '../../database/schema';
 import { CreateCampaignDto } from './dto/create-campaign.dto';
 import { UpdateCampaignDto } from './dto/update-campaign.dto';
@@ -19,8 +18,6 @@ export class CampaignsService {
 
   constructor(
     private readonly db: DatabaseService,
-    @Inject(forwardRef(() => SubscriptionService))
-    private readonly subscriptionService: SubscriptionService,
   ) {}
 
   /**
@@ -106,7 +103,6 @@ export class CampaignsService {
     const userId = user.sub || user.userId;
 
     // Check if user has promotions access based on their plan (Pro+ required)
-    const hasPromotionsAccess = await this.subscriptionService.hasPromotionsAccess(userId);
     if (!hasPromotionsAccess) {
       throw new ForbiddenException('Campaigns and promotions require a Pro or Business plan. Please upgrade your subscription to access this feature.');
     }

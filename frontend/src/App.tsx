@@ -79,7 +79,6 @@ import { OfferAddPage } from './features/vendor/pages/OfferAddPage';
 import { CampaignsPage as VendorCampaignsPage } from './features/vendor/pages/CampaignsPage';
 import { CustomersPage } from './features/vendor/pages/CustomersPage';
 import { TeamPage } from './features/vendor/pages/TeamPage';
-import { BillingPage } from './features/vendor/pages/BillingPage';
 import { PaymentSettingsPage } from './features/vendor/pages/PaymentSettingsPage';
 import { VendorProfilePage } from './features/vendor/pages/VendorProfilePage';
 import { VendorNotificationsPage } from './features/vendor/pages/VendorNotificationsPage';
@@ -502,7 +501,6 @@ const AppContent: React.FC = () => {
           <Route path="analytics" element={<AnalyticsPage />} />
           <Route path="settings" element={<ShopSettingsPage />} />
           <Route path="payment-settings" element={<PaymentSettingsPage />} />
-          <Route path="billing" element={<BillingPage />} />
           <Route path="profile" element={<VendorProfilePage />} />
           <Route path="notifications" element={<VendorNotificationsPage />} />
         </Route>

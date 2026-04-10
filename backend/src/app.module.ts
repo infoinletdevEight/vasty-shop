@@ -27,8 +27,6 @@ import { WalletModule } from './modules/wallet/wallet.module';
 import { RefundModule } from './modules/refund/refund.module';
 import { LoyaltyModule } from './modules/loyalty/loyalty.module';
 // Phase 2 Modules
-import { SubscriptionModule } from './modules/subscription/subscription.module';
-import { BillingModule } from './modules/billing/billing.module';
 import { CashbackModule } from './modules/cashback/cashback.module';
 import { ReferralModule } from './modules/referral/referral.module';
 import { EmailTemplateModule } from './modules/email-templates/email-template.module';
@@ -95,8 +93,6 @@ import { BlogModule } from './modules/blog/blog.module';
     RefundModule,
     LoyaltyModule,
     // Phase 2 Modules
-    SubscriptionModule,
-    BillingModule,
     CashbackModule,
     ReferralModule,
     EmailTemplateModule,

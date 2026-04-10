@@ -7,7 +7,6 @@ import {
   forwardRef,
 } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
-import { SubscriptionService } from '../subscription/subscription.service';
 import { EntityType, OfferEntity } from '../../database/schema';
 import { CreateOfferDto } from './dto/create-offer.dto';
 import { ValidateCouponDto, ApplyCouponDto } from './dto/validate-coupon.dto';
@@ -18,8 +17,6 @@ export class OffersService {
   constructor(
     private readonly db: DatabaseService,
     private readonly currencyService: CurrencyService,
-    @Inject(forwardRef(() => SubscriptionService))
-    private readonly subscriptionService: SubscriptionService,
   ) {}
 
   /**
@@ -32,7 +29,6 @@ export class OffersService {
     const userId = user.sub || user.userId;
 
     // Check if user has promotions access based on their plan (Pro+ required)
-    const hasPromotionsAccess = await this.subscriptionService.hasPromotionsAccess(userId);
     if (!hasPromotionsAccess) {
       throw new ForbiddenException('Offers and promotions require a Pro or Business plan. Please upgrade your subscription to access this feature.');
     }

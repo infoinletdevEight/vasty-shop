@@ -1,6 +1,5 @@
 import { Injectable, NotFoundException, BadRequestException, ConflictException, ForbiddenException, Inject, forwardRef } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
-import { SubscriptionService } from '../subscription/subscription.service';
 import {
   CreateCouponDto,
   UpdateCouponDto,
@@ -18,8 +17,6 @@ import {
 export class CouponsService {
   constructor(
     private readonly db: DatabaseService,
-    @Inject(forwardRef(() => SubscriptionService))
-    private readonly subscriptionService: SubscriptionService,
   ) {}
 
   // ============================================
@@ -31,7 +28,6 @@ export class CouponsService {
    */
   async create(dto: CreateCouponDto, creatorId: string) {
     // Check if user has promotions access based on their plan (Pro+ required)
-    const hasPromotionsAccess = await this.subscriptionService.hasPromotionsAccess(creatorId);
     if (!hasPromotionsAccess) {
       throw new ForbiddenException('Coupons and promotions require a Pro or Business plan. Please upgrade your subscription to access this feature.');
     }

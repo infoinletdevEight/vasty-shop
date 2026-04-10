@@ -8,7 +8,6 @@ import {
   StreamableFile,
 } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
-import { SubscriptionService } from '../subscription/subscription.service';
 import { EntityType, ShopEntity, ShopTeamMemberEntity } from '../../database/schema';
 import { CreateShopDto } from './dto/create-shop.dto';
 import { UpdateShopDto } from './dto/update-shop.dto';
@@ -27,7 +26,6 @@ export class ShopsService {
 
   constructor(
     private readonly db: DatabaseService,
-    private readonly subscriptionService: SubscriptionService,
   ) {}
 
   /**
@@ -38,7 +36,6 @@ export class ShopsService {
     this.logger.log(`[create] Creating shop for user: ${userId}, shop name: ${createShopDto.name}`);
 
     // Check store limit based on user's subscription
-    const storeCheck = await this.subscriptionService.canCreateStore(userId);
     this.logger.log(`[create] Store limit check result: allowed=${storeCheck.allowed}, used=${storeCheck.used}/${storeCheck.limit}`);
 
     if (!storeCheck.allowed) {
@@ -112,7 +109,6 @@ export class ShopsService {
       const billingPeriodValue = billing_period || 'yearly';
       this.logger.log(`[create] Creating trial subscription for plan: ${selected_plan}, billing: ${billingPeriodValue}`);
       try {
-        await this.subscriptionService.createTrialSubscription(userId, shop.id, selected_plan, billingPeriodValue);
         this.logger.log(`[create] Trial subscription created successfully for shop: ${shop.id}`);
       } catch (error) {
         this.logger.error(`[create] Failed to create trial subscription: ${error.message}`);
@@ -1556,7 +1552,6 @@ export class ShopsService {
     await this.verifyOwnershipOrRole(shopId, userId, ['owner', 'admin']);
 
     // Check if user has mobile app access based on their plan
-    const hasMobileAccess = await this.subscriptionService.hasMobileAppAccess(userId);
     if (!hasMobileAccess) {
       throw new ForbiddenException('Mobile app publishing requires a Pro or Business plan. Please upgrade your subscription to access this feature.');
     }
@@ -1673,7 +1668,6 @@ export class ShopsService {
     // Skip check in development mode for testing
     const isDevelopment = process.env.NODE_ENV !== 'production';
     if (!isDevelopment) {
-      const hasMobileAccess = await this.subscriptionService.hasMobileAppAccess(userId);
       if (!hasMobileAccess) {
         throw new ForbiddenException('Mobile app download requires a Pro or Business plan. Please upgrade your subscription to access this feature.');
       }

@@ -9,7 +9,6 @@ import {
   forwardRef,
 } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
-import { SubscriptionService } from '../subscription/subscription.service';
 import * as crypto from 'crypto';
 import {
   EntityType,
@@ -36,8 +35,6 @@ export class ShopInvitationService {
 
   constructor(
     private readonly db: DatabaseService,
-    @Inject(forwardRef(() => SubscriptionService))
-    private subscriptionService: SubscriptionService,
   ) {}
 
   /**
@@ -64,7 +61,6 @@ export class ShopInvitationService {
       this.logger.log(`[inviteToShop] Shop owner ID: ${ownerId}`);
 
       // Check team member limit based on subscription plan
-      const teamMemberCheck = await this.subscriptionService.canAddTeamMember(ownerId);
       if (!teamMemberCheck.allowed) {
         throw new ForbiddenException(
           teamMemberCheck.message ||
@@ -445,7 +441,6 @@ export class ShopInvitationService {
       const shop = await this.db.getEntity(EntityType.SHOP, invitationShopId);
       if (shop) {
         const ownerId = shop.owner_id || shop.ownerId;
-        const teamMemberCheck = await this.subscriptionService.canAddTeamMember(ownerId);
         if (!teamMemberCheck.allowed) {
           throw new ForbiddenException(
             `The shop owner has reached their team member limit (${teamMemberCheck.current}/${teamMemberCheck.limit}). Please contact the shop owner to upgrade their plan.`
