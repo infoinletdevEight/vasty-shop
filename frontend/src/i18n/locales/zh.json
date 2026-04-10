@@ -313,7 +313,7 @@
       "beFirstToReview": "成为第一个评价此商品的人",
       "clearFilter": "Clear filter",
       "verified": "已验证购买",
-      "helpful": "有帮助",
+      "helpful": "有帮助 ({{count}})",
       "reviewSubmitted": "Review submitted successfully!",
       "selectRating": "Please select a rating",
       "reviewMinLength": "Review must be at least 10 characters"
@@ -533,8 +533,8 @@
     "downloadInvoice": "下载发票",
     "item": "件商品",
     "items": "件商品",
-    "moreItems": "件其他商品",
-    "showingOrders": "显示 {{count}} 个订单",
+    "moreItems": "还有 {{count}} 件商品",
+    "showingOrders": "显示 {{from}} 到 {{to}} 条，共 {{total}} 条订单",
     "orderStatuses": {
       "pending": "待处理",
       "confirmed": "已确认",
@@ -2505,7 +2505,7 @@
       "slug": "别名",
       "rootCategory": "根分类",
       "products": "产品",
-      "deleteConfirm": "确定要删除此分类吗？",
+      "deleteConfirm": "确定要删除 \"{{name}}\" 吗？此操作无法撤销。",
       "saveFailed": "Failed to save category",
       "searchPlaceholder": "搜索分类...",
       "enterCategoryName": "Enter category name",
@@ -2579,7 +2579,7 @@
       "reviewsWillAppear": "Reviews will appear here",
       "viewDetails": "查看详情",
       "deleteReview": "Delete Review",
-      "showingReviews": "Showing {{count}} reviews",
+      "showingReviews": "显示 {{from}} 到 {{to}} 条，共 {{total}} 条评论",
       "pageOf": "Page {{current}} of {{total}}",
       "reviewDetails": "评论详情",
       "customer": "客户",
@@ -2705,7 +2705,7 @@
       "notificationDetails": "通知详情",
       "viewNotificationInfo": "View notification information",
       "notificationTitle": "标题",
-      "recipientsCount": "收件人",
+      "recipientsCount": "{{total}} 条中已读 {{read}} 条，未读 {{unread}} 条",
       "createNotification": "创建通知",
       "createDesc": "Send a notification to admins",
       "titleLabel": "标题",
@@ -3783,7 +3783,7 @@
       "updateZone": "更新区域",
       "createZone": "创建区域",
       "editZoneAssignment": "编辑区域分配",
-      "assigningZoneFor": "分配区域给：",
+      "assigningZoneFor": "为 {{name}} 分配区域",
       "selectDeliveryZone": "选择配送区域",
       "noZone": "无区域",
       "zoneAssignmentUpdated": "区域分配已更新",
@@ -6307,53 +6307,40 @@
       "intro": "Vasty提供灵活的价格方案，适合各种规模的企业。所有方案都包含在线销售的核心功能。",
       "table": {
         "headers": [
-          "功能",
-          "入门版",
-          "专业版",
-          "企业版"
+          "套餐",
+          "价格",
+          "店铺",
+          "商品",
+          "功能"
         ],
         "rows": [
           [
-            "商品数量",
-            "最多50个",
-            "最多500个",
-            "无限制"
+            "免费版",
+            "¥0/月",
+            "1",
+            "10",
+            "基础店面，标准支持"
           ],
           [
-            "交易手续费",
-            "5%",
-            "3%",
-            "1.5%"
+            "入门版",
+            "¥29.99/月",
+            "2",
+            "100",
+            "高级定制，优先支持"
           ],
           [
-            "数据分析",
-            "基础",
-            "高级",
-            "专业"
+            "专业版",
+            "¥79.99/月",
+            "5",
+            "无限制",
+            "移动应用，高级主题，数据分析"
           ],
           [
-            "客户支持",
-            "邮件",
-            "优先",
-            "专属客服"
-          ],
-          [
-            "自定义域名",
-            "否",
-            "是",
-            "是"
-          ],
-          [
-            "API集成",
-            "否",
-            "是",
-            "是"
-          ],
-          [
-            "用户数",
-            "1人",
-            "5人",
-            "无限制"
+            "企业版",
+            "¥199.99/月",
+            "无限制",
+            "无限制",
+            "API 访问，专属经理，白标"
           ]
         ]
       },
@@ -6445,18 +6432,15 @@
         "items": [
           {
             "title": "邮件",
-            "desc": "support@vasty.shop",
-            "note": "24小时内回复"
+            "desc": "support@vasty.shop"
           },
           {
             "title": "在线客服",
-            "desc": "在后台可用",
-            "note": "周一至周五 9:00-18:00"
+            "desc": "在后台可用"
           },
           {
             "title": "帮助中心",
-            "desc": "自助服务文档",
-            "note": "全天候可用"
+            "desc": "自助服务文档"
           }
         ]
       },
@@ -6464,20 +6448,20 @@
         "title": "常见问题",
         "items": [
           {
-            "issue": "无法登录",
-            "solution": "尝试重置密码或检查邮箱是否已验证。"
+            "title": "无法登录",
+            "desc": "尝试重置密码或检查邮箱是否已验证。"
           },
           {
-            "issue": "支付失败",
-            "solution": "检查您的银行卡信息或尝试其他支付方式。"
+            "title": "支付失败",
+            "desc": "检查您的银行卡信息或尝试其他支付方式。"
           },
           {
-            "issue": "订单延迟",
-            "solution": "查看追踪状态或直接联系商家。"
+            "title": "订单延迟",
+            "desc": "查看追踪状态或直接联系商家。"
           },
           {
-            "issue": "申请退款",
-            "solution": "通过订单历史提交退款申请。"
+            "title": "申请退款",
+            "desc": "通过订单历史提交退款申请。"
           }
         ]
       },

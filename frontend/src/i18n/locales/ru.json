@@ -1374,7 +1374,7 @@
         "feature6": "Поддержка сообщества"
       },
       "starter": {
-        "name": "Starter",
+        "name": "Стартовый",
         "description": "Запуск и рост",
         "feature1": "2 магазина с безлимитными товарами",
         "feature2": "Свой домен",
@@ -1394,7 +1394,7 @@
         "feature5": "Базовые акции"
       },
       "pro": {
-        "name": "Pro",
+        "name": "Профессиональный",
         "description": "Развитие бизнеса",
         "feature1": "5 магазинов с безлимитными товарами",
         "feature2": "Свой домен для каждого магазина",
@@ -1405,7 +1405,7 @@
         "feature7": "Расширенные акции и кампании"
       },
       "business": {
-        "name": "Business",
+        "name": "Бизнес",
         "description": "Масштабирование без ограничений",
         "feature1": "Безлимитные магазины и товары",
         "feature2": "Свой домен для каждого магазина",
@@ -1684,7 +1684,7 @@
           "Access"
         ],
         "vendor": [
-          "Vendor",
+          "Продавец",
           "Create stores, sell products, manage orders",
           "/vendor/dashboard"
         ],
@@ -1811,17 +1811,17 @@
           ],
           "rows": [
             [
-              "Dashboard",
+              "Панель управления",
               "/vendor/dashboard",
               "Overview of sales, orders, and stats"
             ],
             [
-              "Products",
+              "Продукты",
               "/vendor/products",
               "Manage your product catalog"
             ],
             [
-              "Orders",
+              "Заказы",
               "/vendor/orders",
               "View and process customer orders"
             ],
@@ -1831,12 +1831,12 @@
               "Sales reports and insights"
             ],
             [
-              "Customers",
+              "Клиенты",
               "/vendor/customers",
               "Customer list and details"
             ],
             [
-              "Reviews",
+              "Отзывы",
               "/vendor/reviews",
               "Customer reviews and ratings"
             ],
@@ -1846,7 +1846,7 @@
               "Discounts and promotions"
             ],
             [
-              "Settings",
+              "Настройки",
               "/vendor/settings",
               "Store settings and configuration"
             ]
@@ -1885,7 +1885,7 @@
           "headers": [
             "Статус",
             "Описание",
-            "Action"
+            "Действие"
           ],
           "rows": [
             [
@@ -2282,12 +2282,12 @@
           ],
           "rows": [
             [
-              "Dashboard",
+              "Панель управления",
               "/delivery/dashboard",
               "Overview and available orders"
             ],
             [
-              "Orders",
+              "Заказы",
               "/delivery/orders",
               "View and manage assigned deliveries"
             ],
@@ -2302,7 +2302,7 @@
               "Past deliveries"
             ],
             [
-              "Profile",
+              "Профиль",
               "/delivery/profile",
               "Your profile and settings"
             ]
@@ -2410,9 +2410,9 @@
       "table": {
         "headers": [
           "Plan",
-          "Price",
-          "Stores",
-          "Products",
+          "Цена",
+          "Магазины",
+          "Продукты",
           "Features"
         ],
         "rows": [
@@ -2424,24 +2424,24 @@
             "Basic storefront, Standard support"
           ],
           [
-            "Starter",
+            "Стартовый",
             "$29.99/month",
             "2",
             "100",
             "Advanced customization, Priority support"
           ],
           [
-            "Pro",
+            "Профессиональный",
             "$79.99/month",
             "5",
-            "Unlimited",
+            "Неограниченно",
             "Mobile app, Premium themes, Analytics"
           ],
           [
-            "Business",
+            "Бизнес",
             "$199.99/month",
-            "Unlimited",
-            "Unlimited",
+            "Неограниченно",
+            "Неограниченно",
             "API access, Dedicated manager, White-label"
           ]
         ]
@@ -2759,7 +2759,7 @@
             "Contact our customer service team"
           ],
           "downloadData": "Download My Data",
-          "deleteAccount": "Delete My Account",
+          "deleteAccount": "Удалить мой аккаунт",
           "responseTime": "We will respond to your request within 30 days. We may need to verify your identity before processing your request."
         },
         "children": {
@@ -3400,7 +3400,7 @@
       "suspendUser": "Приостановить пользователя",
       "activateUser": "Активировать пользователя",
       "deleteUser": "Удалить пользователя",
-      "pageOf": "Page {{current}} of {{total}}",
+      "pageOf": "Страница {{current}} из {{total}}",
       "changeUserRole": "Изменить роль пользователя",
       "changeRoleConfirm": "Are you sure you want to change this user's role from {{from}} to {{to}}?",
       "roleChanged": "User role changed to {{role}}",
@@ -3570,7 +3570,7 @@
       "paymentMethod": "Метод",
       "completed": "Выполнен",
       "pending": "В ожидании",
-      "failed": "Failed",
+      "failed": "Не удалось",
       "refunded": "Возвращено",
       "noPayments": "No Transactions Found",
       "noPaymentsMatch": "Try adjusting your search or filter criteria",
@@ -3619,7 +3619,7 @@
       "viewDetails": "Подробнее",
       "deleteReview": "Delete review",
       "showingReviews": "Showing {{from}} to {{to}} of {{total}} reviews",
-      "pageOf": "Page {{current}} of {{total}}",
+      "pageOf": "Страница {{current}} из {{total}}",
       "reviewDetails": "Review Details",
       "customer": "Клиент",
       "submittedOn": "Submitted on",
@@ -3674,7 +3674,7 @@
       "dateRange": "Период",
       "reportType": "Report Type",
       "format": "Format",
-      "download": "Download",
+      "download": "Скачать",
       "noReports": "No reports available",
       "reportGenerated": "Report generated successfully",
       "reportFailed": "Failed to generate report",
@@ -3686,8 +3686,8 @@
       "downloadReport": "Download Report",
       "downloadFailed": "Failed to download report. Please try again.",
       "noReportData": "No report data available. Please generate the report first.",
-      "from": "From",
-      "to": "To",
+      "from": "С",
+      "to": "До",
       "customRange": "Custom Range",
       "lastGenerated": "Last generated",
       "neverGenerated": "Never generated",
@@ -3727,10 +3727,10 @@
       "vendors": "Vendors Only",
       "customers": "Customers Only",
       "system": "System",
-      "order": "Order",
+      "order": "Заказ",
       "shop": "Магазин",
       "user": "User",
-      "failed": "Failed",
+      "failed": "Не удалось",
       "totalSent": "Total Sent",
       "read": "Read",
       "unread": "Unread",
@@ -3740,14 +3740,14 @@
       "noNotificationsMatch": "No notifications match your current filters",
       "adjustFilters": "Try adjusting your search or filter criteria",
       "notificationsWillAppear": "Notifications will appear here once they are sent",
-      "pageOf": "Page {{current}} of {{total}}",
+      "pageOf": "Страница {{current}} из {{total}}",
       "notificationDetails": "Notification Details",
       "viewNotificationInfo": "View notification information",
-      "notificationTitle": "Title",
+      "notificationTitle": "Заголовок",
       "recipientsCount": "{{read}} read, {{unread}} unread of {{total}} total",
       "createNotification": "Create Notification",
       "createDesc": "Send a new notification to users",
-      "titleLabel": "Title",
+      "titleLabel": "Заголовок",
       "titlePlaceholder": "Enter notification title...",
       "messageLabel": "Message",
       "messagePlaceholder": "Enter notification message...",
@@ -3757,16 +3757,16 @@
       "allVendors": "All Vendors",
       "allCustomers": "All Customers",
       "ofTotal": "of {{count}} total",
-      "sending": "Sending...",
-      "send": "Send",
-      "loading": "Loading notifications...",
+      "sending": "Отправка...",
+      "send": "Отправить",
+      "loading": "Загрузка уведомлений...",
       "empty": "No notifications yet",
       "justNow": "Just now",
       "minutesAgo": "min ago",
       "hoursAgo": "hours ago",
       "daysAgo": "days ago",
       "markAllRead": "Mark all read",
-      "allMarkedRead": "All notifications marked as read",
+      "allMarkedRead": "Все уведомления отмечены как прочитанные",
       "newOrder": "New Order",
       "newOrderMsg": "Order #{{orderNumber}} worth ${{total}} placed",
       "newShopRegistration": "New Shop Registration",
@@ -3786,7 +3786,7 @@
       "pageTitle": "Page Title",
       "slug": "URL-адрес",
       "status": "Статус",
-      "lastUpdated": "Last Updated",
+      "lastUpdated": "Последнее обновление",
       "published": "Опубликовано",
       "draft": "Черновик",
       "archived": "Archived",
@@ -3812,13 +3812,13 @@
       "delete": "Удалить",
       "validationError": "Validation Error",
       "slugTitleRequired": "Slug and title are required",
-      "public": "Public",
-      "private": "Private",
-      "pageOf": "Page {{current}} of {{total}}",
+      "public": "Публичный",
+      "private": "Приватный",
+      "pageOf": "Страница {{current}} из {{total}}",
       "createNewPage": "Create New Page",
       "addNewCmsPage": "Add a new CMS page",
       "editing": "Editing",
-      "saving": "Saving...",
+      "saving": "Сохранение...",
       "savePage": "Save Page",
       "pageTitleLabel": "Page Title *",
       "pageTitlePlaceholder": "e.g., Privacy Policy",
@@ -3835,7 +3835,7 @@
       "metaDescPlaceholder": "Short description for search engines...",
       "pageSettings": "Page Settings",
       "showBreadcrumb": "Show Breadcrumb",
-      "tableOfContents": "Table of Contents",
+      "tableOfContents": "Содержание",
       "publicPage": "Public Page",
       "requiresLogin": "Requires Login",
       "pageStatus": "Page Status",
@@ -3850,7 +3850,7 @@
       "payments": "Платежи",
       "email": "Электронная почта",
       "security": "Security",
-      "payment": "Payment",
+      "payment": "Оплата",
       "maintenance": "Maintenance",
       "platformName": "Platform Name",
       "platformNameRequired": "Platform Name *",
@@ -3912,12 +3912,12 @@
       "payWithCash": "Pay with cash upon delivery",
       "active": "Активный",
       "inactive": "Неактивный",
-      "error": "Error",
+      "error": "Ошибка",
       "notificationSettings": "Notification Settings",
       "configureNotificationChannels": "Configure notification channels",
-      "emailNotifications": "Email Notifications",
+      "emailNotifications": "Уведомления по эл. почте",
       "sendViaEmail": "Send notifications via email",
-      "pushNotifications": "Push Notifications",
+      "pushNotifications": "Push-уведомления",
       "browserPush": "Browser push notifications",
       "smsNotifications": "SMS Notifications",
       "sendViaSms": "Send notifications via SMS",
@@ -4006,15 +4006,15 @@
       "myProfile": "My Profile",
       "title": "My Profile",
       "subtitle": "Manage your personal information",
-      "firstName": "First Name",
-      "lastName": "Last Name",
+      "firstName": "Имя",
+      "lastName": "Фамилия",
       "email": "Email Address",
       "emailCannotChange": "Email cannot be changed",
-      "phone": "Phone Number",
+      "phone": "Номер телефона",
       "address": "Адрес",
       "bio": "Bio",
-      "saveChanges": "Save Changes",
-      "saving": "Saving...",
+      "saveChanges": "Сохранить изменения",
+      "saving": "Сохранение...",
       "avatarUploadSuccess": "Avatar uploaded successfully",
       "avatarUploadFailed": "Failed to upload avatar",
       "profileUpdateSuccess": "Profile updated successfully",
@@ -4024,7 +4024,7 @@
       "deleteAccount": {
         "title": "Удалить аккаунт",
         "description": "Once you delete your account, all of your data including shops and products will be permanently removed. This action cannot be undone.",
-        "button": "Delete My Account",
+        "button": "Удалить мой аккаунт",
         "modalTitle": "Удалить аккаунт",
         "modalDescription": "This will permanently delete your account and all associated data including:",
         "profileInfo": "Your profile information",
@@ -4034,7 +4034,7 @@
         "confirmPrompt": "Type <strong>DELETE</strong> to confirm:",
         "cancel": "Отмена",
         "confirm": "Удалить аккаунт",
-        "success": "Account deleted successfully",
+        "success": "Аккаунт успешно удалён",
         "failed": "Failed to delete account. Please contact support."
       }
     },
@@ -4042,14 +4042,14 @@
       "title": "Уведомления",
       "unreadCount": "{{count}} unread notifications",
       "allRead": "All notifications read",
-      "loading": "Loading notifications...",
+      "loading": "Загрузка уведомлений...",
       "empty": "No notifications yet",
       "viewAll": "View all notifications",
       "refresh": "Обновить",
       "refreshed": "Notifications refreshed",
       "markAllRead": "Mark all read",
-      "markedAllRead": "All notifications marked as read",
-      "allMarkedRead": "All notifications marked as read",
+      "markedAllRead": "Все уведомления отмечены как прочитанные",
+      "allMarkedRead": "Все уведомления отмечены как прочитанные",
       "loadError": "Failed to load notifications",
       "justNow": "Just now",
       "minutesAgo": "min ago",
@@ -4203,7 +4203,7 @@
       "pendingOrders": "Pending Orders",
       "todayOrders": "Today's Orders",
       "todayRevenue": "Today's Revenue",
-      "averageRating": "Average Rating",
+      "averageRating": "Средний рейтинг",
       "recentOrders": "Недавние заказы",
       "topProducts": "Топ-товары",
       "quickActions": "Быстрые действия",
@@ -4269,7 +4269,7 @@
       "images": "Images",
       "status": "Статус",
       "visibility": "Visibility",
-      "featured": "Featured",
+      "featured": "Рекомендуемое",
       "variants": "Variants",
       "attributes": "Attributes",
       "noProducts": "No products found",
@@ -4282,7 +4282,7 @@
       "basicInfo": "Основная информация",
       "pricing": "Pricing",
       "inventory": "Inventory",
-      "shipping": "Shipping",
+      "shipping": "Доставка",
       "seo": "SEO",
       "actionType": "Action Type",
       "applyChanges": "Apply Changes",
@@ -4290,7 +4290,7 @@
       "archived": "Archived",
       "bulkEdit": "Bulk Edit",
       "bulkEditProducts": "Bulk Edit Products",
-      "clear": "Clear",
+      "clear": "Очистить",
       "decreaseByAmount": "Decrease by Amount",
       "deleteProducts": "Delete Products",
       "deleteSelected": "Delete Selected",
@@ -4299,7 +4299,7 @@
       "discountPlaceholder": "Enter discount %",
       "editing": "Editing",
       "enterQuantity": "Enter quantity",
-      "import": "Import",
+      "import": "Импорт",
       "increaseByAmount": "Increase by Amount",
       "inventoryAction": "Inventory Action",
       "newStatus": "New Status",
@@ -4307,7 +4307,7 @@
       "product": "Товар",
       "products": "товаров",
       "productsSelected": "products selected",
-      "sales": "Sales",
+      "sales": "Продажи",
       "selectAction": "Select Action",
       "selectStatus": "Select Status",
       "setToValue": "Set to Value",
@@ -4339,8 +4339,8 @@
         "published": "Опубликовано"
       },
       "visibilityOptions": {
-        "public": "Public",
-        "private": "Private",
+        "public": "Публичный",
+        "private": "Приватный",
         "passwordProtected": "Password Protected"
       },
       "tabs": {
@@ -4359,7 +4359,7 @@
       "orderId": "ID заказа",
       "customer": "Клиент",
       "items": "Items",
-      "total": "Total",
+      "total": "Итого",
       "status": "Статус",
       "date": "Дата",
       "actions": "Действия",
@@ -4388,7 +4388,7 @@
       "addTrackingNumber": "Add Tracking Number",
       "acceptOrder": "Accept Order",
       "allMethods": "All Methods",
-      "bankTransfer": "Bank Transfer",
+      "bankTransfer": "Банковский перевод",
       "cancelConfirmMessage": "Are you sure you want to cancel this order?",
       "cancellationReason": "Cancellation Reason",
       "cancelling": "Cancelling...",
@@ -4399,12 +4399,12 @@
       "enterCancellationReason": "Enter cancellation reason",
       "orderDate": "Order Date",
       "orderStatus": "Order Status",
-      "paymentMethod": "Payment Method",
+      "paymentMethod": "Способ оплаты",
       "paypal": "PayPal",
       "products": "Товары",
-      "quantity": "Quantity",
-      "shipping": "Shipping",
-      "subtotal": "Subtotal",
+      "quantity": "Количество",
+      "shipping": "Доставка",
+      "subtotal": "Промежуточный итог",
       "totalOrders": "Всего заказов",
       "noOrdersYet": "No Orders Yet",
       "ordersWillAppear": "Orders will appear here once customers start purchasing from your shop.",
@@ -4438,7 +4438,7 @@
       "adjustFilters": "Попробуйте изменить фильтры",
       "avgOrder": "Avg Order",
       "avgOrderValue": "Average Order Value",
-      "contact": "Contact",
+      "contact": "Контакт",
       "contactInfo": "Контактная информация",
       "customer": "Клиент",
       "customerSince": "Customer Since",
@@ -4481,7 +4481,7 @@
       "thisWeek": "Эта неделя",
       "thisMonth": "Этот месяц",
       "thisYear": "Этот год",
-      "custom": "Custom",
+      "custom": "Пользовательский",
       "compareWith": "Compare with",
       "previousPeriod": "Previous Period",
       "allTime": "All Time",
@@ -4494,7 +4494,7 @@
       "loading": "Loading analytics...",
       "failedToLoad": "Failed to load analytics",
       "category": "Категория",
-      "sales": "Sales",
+      "sales": "Продажи",
       "growth": "Growth",
       "comingSoon": "Detailed Analytics Coming Soon",
       "comingSoonDescription": "Basic shop statistics are shown above. Detailed revenue trends, category performance, and customer insights will be available as your shop grows.",
@@ -4529,7 +4529,7 @@
       "reply": "Reply",
       "replyToReview": "Reply to Review",
       "noReviews": "No reviews yet",
-      "averageRating": "Average Rating",
+      "averageRating": "Средний рейтинг",
       "totalReviews": "Total Reviews",
       "loading": "Loading reviews...",
       "failedToLoad": "Failed to load reviews",
@@ -4545,7 +4545,7 @@
       "replyPosted": "Reply posted successfully",
       "failedToSubmitReply": "Failed to submit reply",
       "outOf5": "out of 5",
-      "featured": "Featured",
+      "featured": "Рекомендуемое",
       "helpfulVotes": "Helpful Votes",
       "ratingDistribution": "Rating Distribution",
       "all": "Все",
@@ -4598,7 +4598,7 @@
       "conversionRate": "Conversion Rate",
       "loadingOffers": "Loading offers...",
       "tryAgain": "Повторить",
-      "discount": "Discount",
+      "discount": "Скидка",
       "used": "Used",
       "remaining": "Remaining",
       "usage": "Usage",
@@ -4945,7 +4945,7 @@
       "permissionsLabel": "Permissions",
       "personalMessage": "Personal Message (optional)",
       "sendInvitation": "Send Invitation",
-      "sending": "Sending...",
+      "sending": "Отправка...",
       "managePermissions": "Manage Permissions",
       "updatePermissions": "Update Permissions",
       "updating": "Updating...",
@@ -4954,7 +4954,7 @@
       "fullAccess": "Full Access",
       "resendInvitation": "Resend invitation",
       "cancelInvitation": "Cancel invitation",
-      "expires": "Expires",
+      "expires": "Истекает",
       "permissions": {
         "manageTeam": "Manage Team",
         "manageShop": "Manage Shop",
@@ -5026,12 +5026,12 @@
       "accessUntil": "Access Until",
       "upgrade": "Upgrade",
       "freePlan": "Free Plan",
-      "popular": "Popular",
-      "default": "Default",
-      "expires": "Expires",
+      "popular": "Популярный",
+      "default": "По умолчанию",
+      "expires": "Истекает",
       "description": "Описание",
       "actions": "Действия",
-      "download": "Download",
+      "download": "Скачать",
       "subscriptionPayment": "Subscription payment",
       "cancelConfirmMessage": "Your subscription will remain active until the end of the current billing period. You won't be charged again.",
       "year": "year",
@@ -5063,7 +5063,7 @@
       "account": {
         "title": "Account Settings",
         "subtitle": "Manage your account",
-        "profile": "Profile",
+        "profile": "Профиль",
         "fullName": "Полное имя",
         "email": "Электронная почта",
         "phone": "Телефон",
@@ -5073,8 +5073,8 @@
         "newPassword": "New Password",
         "confirmPassword": "Confirm Password",
         "notifications": "Уведомления",
-        "emailNotifications": "Email Notifications",
-        "pushNotifications": "Push Notifications",
+        "emailNotifications": "Уведомления по эл. почте",
+        "pushNotifications": "Push-уведомления",
         "security": "Security",
         "twoFactorAuth": "Two-Factor Authentication",
         "saveSettings": "Save Settings",
@@ -5110,8 +5110,8 @@
       "updatePassword": "Update Password",
       "tabs": {
         "general": "General",
-        "business": "Business",
-        "payment": "Payment",
+        "business": "Бизнес",
+        "payment": "Оплата",
         "notifications": "Уведомления",
         "seo": "SEO",
         "domain": "Domain",
@@ -5120,8 +5120,8 @@
       "pageTitle": "Настройки магазина",
       "pageSubtitle": "Configure your shop preferences",
       "loadingSettings": "Loading shop settings...",
-      "saveChanges": "Save Changes",
-      "savingChanges": "Saving...",
+      "saveChanges": "Сохранить изменения",
+      "savingChanges": "Сохранение...",
       "saveAllChanges": "Save All Changes",
       "savingAllChanges": "Saving All Changes...",
       "generalInfo": "General Information",
@@ -5206,7 +5206,7 @@
       "advancedSettings": "Advanced Settings",
       "advancedWarning": "Warning: Advanced Settings",
       "advancedWarningDesc": "These settings are for advanced users only. Incorrect code may break your shop or create security issues.",
-      "customCss": "Custom CSS",
+      "customCss": "Пользовательский CSS",
       "customCssDesc": "Add custom styles to personalize your shop appearance",
       "analyticsCode": "Analytics Code (Google Analytics, etc.)",
       "analyticsCodeDesc": "Track visitor behavior and shop performance",
@@ -5253,7 +5253,7 @@
       "step1": "Basic Info",
       "step2": "Contact Details",
       "step3": "Documents",
-      "step4": "Review",
+      "step4": "Отзыв",
       "shopName": "Название магазина",
       "shopDescription": "Shop Description",
       "category": "Категория",
@@ -5275,7 +5275,7 @@
       "benefits": {
         "freeToStart": "Free to start",
         "noMonthlyFees": "No monthly fees",
-        "support247": "24/7 Support"
+        "support247": "Поддержка 24/7"
       },
       "form": {
         "storeName": "Store Name",
@@ -5344,7 +5344,7 @@
             }
           },
           "starter": {
-            "name": "Starter",
+            "name": "Стартовый",
             "description": "Launch & grow",
             "features": {
               "storesUnlimited": "2 stores with unlimited products",
@@ -5356,7 +5356,7 @@
             }
           },
           "pro": {
-            "name": "Pro",
+            "name": "Профессиональный",
             "description": "Grow your business",
             "features": {
               "storesUnlimited": "5 stores with unlimited products",
@@ -5369,7 +5369,7 @@
             }
           },
           "business": {
-            "name": "Business",
+            "name": "Бизнес",
             "description": "Scale without limits",
             "features": {
               "unlimitedStores": "Unlimited stores & products",
@@ -5393,7 +5393,7 @@
           "storeType": "Store Type",
           "storeDetails": "Store Details",
           "businessInfo": "Business Info",
-          "review": "Review"
+          "review": "Отзыв"
         },
         "storeTypes": {
           "fashion": "Fashion & Apparel",
@@ -5407,7 +5407,7 @@
           "books": "Books & Media",
           "gifts": "Gifts & Occasions",
           "general": "General Store",
-          "other": "Other"
+          "other": "Другое"
         },
         "step1": {
           "title": "What will you sell?",
@@ -5465,7 +5465,7 @@
           }
         },
         "navigation": {
-          "continue": "Continue",
+          "continue": "Продолжить",
           "launchStore": "Launch Store",
           "creatingStore": "Creating Store..."
         },
@@ -5493,7 +5493,7 @@
       "title": "Storefront Builder",
       "subtitle": "Customize your store's appearance",
       "preview": "Предпросмотр",
-      "publish": "Publish",
+      "publish": "Опубликовать",
       "saveDraft": "Save Draft",
       "theme": "Theme",
       "colors": "Colors",
@@ -5503,7 +5503,7 @@
       "footer": "Footer",
       "homepage": "Homepage",
       "productPage": "Product Page",
-      "customCSS": "Custom CSS",
+      "customCSS": "Пользовательский CSS",
       "changesSaved": "Changes saved successfully",
       "copyFailed": "Failed to copy URL",
       "copyUrl": "Copy URL",
@@ -5520,8 +5520,8 @@
       "backToDashboard": "Back to Dashboard",
       "preview": "Предпросмотр",
       "save": "Сохранить",
-      "saving": "Saving...",
-      "publish": "Publish",
+      "saving": "Сохранение...",
+      "publish": "Опубликовать",
       "publishing": "Publishing...",
       "sections": "Sections",
       "theme": "Theme",
@@ -5534,7 +5534,7 @@
       "noSectionsYet": "No sections yet",
       "addFirstSection": "Add your first section",
       "generalSettings": "General Settings",
-      "customCss": "Custom CSS",
+      "customCss": "Пользовательский CSS",
       "customJavascript": "Custom JavaScript",
       "addSection": "Add Section",
       "addingTo": "Adding to",
@@ -5617,7 +5617,7 @@
       "imageFormats": "JPG, PNG, GIF (Max 5MB)",
       "primary": "Primary",
       "trackInventory": "Track inventory",
-      "inStock": "In Stock",
+      "inStock": "В наличии",
       "lowStock": "Low Stock",
       "outOfStock": "Нет в наличии",
       "addSizePlaceholder": "Add size...",
@@ -5666,7 +5666,7 @@
         "draftRestoredDescription": "Your previous work has been restored",
         "validationError": "Validation Error",
         "fixErrorsDescription": "Please fix the errors before submitting",
-        "error": "Error",
+        "error": "Ошибка",
         "shopContextNotFound": "Shop context not found"
       },
       "validation": {
@@ -5808,7 +5808,7 @@
       "earnings": "Доходы",
       "reviews": "Отзывы",
       "zones": "Зоны",
-      "profile": "Profile",
+      "profile": "Профиль",
       "settings": "Настройки",
       "logout": "Выйти",
       "delivery": "Delivery",
@@ -5829,11 +5829,11 @@
       "pendingOrders": "Pending Orders",
       "activeOrders": "Active Orders",
       "completionRate": "Completion Rate",
-      "averageRating": "Average Rating",
+      "averageRating": "Средний рейтинг",
       "goOnline": "Go Online",
       "goOffline": "Go Offline",
-      "online": "Online",
-      "offline": "Offline",
+      "online": "Онлайн",
+      "offline": "Не в сети",
       "availableForDelivery": "Available for Delivery",
       "notAvailable": "Not Available",
       "noOrdersAvailable": "No orders available",
@@ -5855,7 +5855,7 @@
     "orders": {
       "title": "Delivery Orders",
       "subtitle": "Manage your deliveries",
-      "available": "Available",
+      "available": "Доступно",
       "active": "Активный",
       "completed": "Выполнен",
       "orderId": "ID заказа",
@@ -5909,7 +5909,7 @@
       "noOrdersMatch": "No orders match your search",
       "noOrdersToDisplay": "No orders to display",
       "notes": "Notes",
-      "order": "Order",
+      "order": "Заказ",
       "orderAccepted": "Order accepted successfully",
       "orderDeclined": "Order declined",
       "pickupLocation": "Pickup Location",
@@ -5919,7 +5919,7 @@
       "activeFilter": "Активный",
       "completedFilter": "Выполнен",
       "tipAmount": "tip",
-      "store": "Store"
+      "store": "Магазин"
     },
     "history": {
       "title": "Delivery History",
@@ -5975,7 +5975,7 @@
       "bonuses": "Bonuses",
       "deductions": "Deductions",
       "netEarnings": "Net Earnings",
-      "paymentMethod": "Payment Method",
+      "paymentMethod": "Способ оплаты",
       "bankAccount": "Bank Account",
       "addBankAccount": "Add Bank Account",
       "withdrawalHistory": "Withdrawal History",
@@ -5999,7 +5999,7 @@
       "refreshFailed": "Failed to refresh earnings",
       "this": "This",
       "toBeDeposited": "To be Deposited",
-      "total": "Total",
+      "total": "Итого",
       "withdraw": "Withdraw",
       "withdrawAll": "Withdraw All",
       "withdrawalAmount": "Withdrawal Amount",
@@ -6016,11 +6016,11 @@
       "pending": "В ожидании",
       "bkashNumber": "bKash Number",
       "nagadNumber": "Nagad Number",
-      "bankTransfer": "Bank Transfer",
+      "bankTransfer": "Банковский перевод",
       "cash": "Cash",
       "bkash": "bKash",
       "nagad": "Nagad",
-      "bank": "Bank Transfer",
+      "bank": "Банковский перевод",
       "accountNameOptional": "Account Name (Optional)",
       "yourRegisteredName": "Your name as registered",
       "bankName": "Bank Name",
@@ -6035,7 +6035,7 @@
     "reviews": {
       "title": "Отзывы",
       "subtitle": "Your customer reviews",
-      "averageRating": "Average Rating",
+      "averageRating": "Средний рейтинг",
       "totalReviews": "Total Reviews",
       "recentReviews": "Recent Reviews",
       "rating": "Рейтинг",
@@ -6071,7 +6071,7 @@
       "zoneAssignedByVendor": "Your delivery zone is assigned by the vendor"
     },
     "profile": {
-      "title": "Profile",
+      "title": "Профиль",
       "subtitle": "Manage your profile",
       "personalInfo": "Personal Information",
       "fullName": "Полное имя",
@@ -6093,20 +6093,20 @@
       "rejected": "Отклонено",
       "saveProfile": "Save Profile",
       "profileSaved": "Profile saved successfully",
-      "accountDeleted": "Account deleted successfully",
+      "accountDeleted": "Аккаунт успешно удалён",
       "deleteAccount": "Удалить аккаунт",
       "deleteConfirmMessage": "This action cannot be undone. All your data will be permanently deleted.",
       "deleteFailed": "Failed to delete account",
       "deleteItem1": "Your profile and personal information",
       "deleteItem2": "Your delivery history and earnings",
       "deleteItem3": "Your ratings and reviews",
-      "deleteMyAccount": "Delete My Account",
+      "deleteMyAccount": "Удалить мой аккаунт",
       "deleteWarning": "This will permanently delete:",
       "editProfile": "Edit Profile",
-      "firstName": "First Name",
+      "firstName": "Имя",
       "imageSizeLimit": "Image must be less than 5MB",
       "imageUpdated": "Profile image updated",
-      "lastName": "Last Name",
+      "lastName": "Фамилия",
       "memberSince": "Участник с",
       "notProvided": "Not provided",
       "profileUpdated": "Profile updated successfully",
@@ -6122,14 +6122,14 @@
       "subtitle": "Manage your preferences",
       "notifications": "Уведомления",
       "orderNotifications": "Order Notifications",
-      "pushNotifications": "Push Notifications",
-      "emailNotifications": "Email Notifications",
+      "pushNotifications": "Push-уведомления",
+      "emailNotifications": "Уведомления по эл. почте",
       "smsNotifications": "SMS Notifications",
       "availability": "Availability",
       "autoAccept": "Auto Accept Orders",
       "maxOrders": "Maximum Active Orders",
       "preferredZones": "Preferred Zones",
-      "language": "Language",
+      "language": "Язык",
       "saveSettings": "Save Settings",
       "settingsSaved": "Настройки успешно сохранены",
       "appVersion": "App Version",
@@ -6146,7 +6146,7 @@
       "privacySecurity": "Privacy & Security",
       "privacySecurityDesc": "Manage your privacy and security settings",
       "pushNotificationsDesc": "Receive push notifications for orders",
-      "saveChanges": "Save Changes",
+      "saveChanges": "Сохранить изменения",
       "saveFailed": "Не удалось сохранить настройки",
       "sound": "Sound",
       "soundDesc": "Play sound for new orders",
@@ -6186,7 +6186,7 @@
       "statusChanged": "You are now {{status}}",
       "updateAvailabilityFailed": "Failed to update availability",
       "locationTrackingActive": "Location tracking active",
-      "loadingNotifications": "Loading notifications...",
+      "loadingNotifications": "Загрузка уведомлений...",
       "noNotifications": "No notifications yet",
       "justNow": "Just now",
       "minutesAgo": "minutes ago",
@@ -6218,8 +6218,8 @@
       "refresh": "Обновить",
       "markAllRead": "Mark all read",
       "refreshed": "Notifications refreshed",
-      "markedAllRead": "All notifications marked as read",
-      "loading": "Loading notifications...",
+      "markedAllRead": "Все уведомления отмечены как прочитанные",
+      "loading": "Загрузка уведомлений...",
       "loadError": "Failed to load notifications",
       "filter": {
         "all": "Все",
@@ -6232,7 +6232,7 @@
     "title": "Настройки",
     "subtitle": "Manage your account settings and preferences",
     "breadcrumb": {
-      "account": "Account",
+      "account": "Аккаунт",
       "settings": "Настройки"
     },
     "toasts": {
@@ -6275,9 +6275,9 @@
     },
     "notifications": {
       "title": "Notification Preferences",
-      "emailNotifications": "Email Notifications",
+      "emailNotifications": "Уведомления по эл. почте",
       "smsNotifications": "SMS Notifications",
-      "pushNotifications": "Push Notifications",
+      "pushNotifications": "Push-уведомления",
       "pushNotificationsDesc": "Receive notifications in your browser",
       "email": {
         "orderUpdates": "Order Updates",
@@ -6296,9 +6296,9 @@
     "privacy": {
       "title": "Privacy Settings",
       "profileVisibility": "Profile Visibility",
-      "public": "Public",
+      "public": "Публичный",
       "publicDesc": "Anyone can view your profile",
-      "private": "Private",
+      "private": "Приватный",
       "privateDesc": "Only you can view your profile",
       "dataSharingPreferences": "Data Sharing Preferences",
       "shareAnalytics": "Share analytics data",
@@ -6320,7 +6320,7 @@
     },
     "languageRegion": {
       "title": "Language & Region",
-      "language": "Language",
+      "language": "Язык",
       "languages": {
         "english": "English",
         "spanish": "Spanish",
@@ -6329,7 +6329,7 @@
         "italian": "Italian",
         "portuguese": "Portuguese"
       },
-      "currency": "Currency",
+      "currency": "Валюта",
       "timeZone": "Time Zone",
       "timezones": {
         "eastern": "Eastern Time (ET)",
@@ -6368,7 +6368,7 @@
       "trustedDevices": "Trusted Devices",
       "addedToday": "Added today",
       "addedDaysAgo": "Added {{days}} days ago",
-      "remove": "Remove",
+      "remove": "Удалить",
       "loginAlerts": "Login Alerts",
       "loginAlertsDesc": "Get notified when someone logs into your account"
     },
@@ -6381,13 +6381,13 @@
       "smsPreferences": "SMS Preferences",
       "orderShippedNotifications": "Order Shipped Notifications",
       "deliveryUpdates": "Delivery Updates",
-      "pushNotifications": "Push Notifications",
+      "pushNotifications": "Push-уведомления",
       "pushNotificationsDesc": "Receive real-time updates in your browser"
     }
   },
   "profilePage": {
     "breadcrumb": {
-      "account": "Account"
+      "account": "Аккаунт"
     },
     "nav": {
       "dashboard": "Панель управления",
@@ -6411,7 +6411,7 @@
       "profileUpdatedDesc": "Your profile has been updated successfully",
       "updateFailed": "Update Failed",
       "failedToUpdate": "Failed to update profile",
-      "accountDeleted": "Account deleted successfully",
+      "accountDeleted": "Аккаунт успешно удалён",
       "deleteAccountFailed": "Failed to delete account. Please contact support."
     },
     "dashboard": {
@@ -6453,22 +6453,22 @@
       "retry": "Повторить",
       "cancel": "Отмена",
       "edit": "Редактировать",
-      "default": "Default",
+      "default": "По умолчанию",
       "setDefault": "Set Default"
     },
     "personalInfo": {
       "title": "Personal Information",
-      "firstName": "First Name",
-      "lastName": "Last Name",
+      "firstName": "Имя",
+      "lastName": "Фамилия",
       "email": "Email Address",
-      "phone": "Phone Number",
+      "phone": "Номер телефона",
       "profilePhoto": "Profile Photo",
-      "profileAlt": "Profile",
+      "profileAlt": "Профиль",
       "uploading": "Загрузка...",
       "uploadNewPhoto": "Upload New Photo",
       "photoRequirements": "JPG, PNG or GIF. Max 5MB.",
-      "saving": "Saving...",
-      "saveChanges": "Save Changes"
+      "saving": "Сохранение...",
+      "saveChanges": "Сохранить изменения"
     },
     "addresses": {
       "title": "Saved Addresses",
@@ -6482,7 +6482,7 @@
       "noMethods": "No saved payment methods",
       "secureMessage": "Payment methods are processed securely at checkout",
       "addMethod": "Add Payment Method",
-      "expires": "Expires"
+      "expires": "Истекает"
     },
     "orderHistory": {
       "title": "История заказов",
@@ -6511,7 +6511,7 @@
     "deleteAccount": {
       "title": "Удалить аккаунт",
       "warning": "Once you delete your account, all of your data will be permanently removed. This action cannot be undone.",
-      "button": "Delete My Account"
+      "button": "Удалить мой аккаунт"
     },
     "deleteModal": {
       "title": "Удалить аккаунт",

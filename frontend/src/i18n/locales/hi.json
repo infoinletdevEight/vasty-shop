@@ -1374,7 +1374,7 @@
         "feature6": "सामुदायिक सहायता"
       },
       "starter": {
-        "name": "Starter",
+        "name": "स्टार्टर",
         "description": "लॉन्च करें और बढ़ाएं",
         "feature1": "असीमित उत्पादों के साथ 2 स्टोर",
         "feature2": "कस्टम डोमेन",
@@ -1394,7 +1394,7 @@
         "feature5": "बेसिक प्रमोशन"
       },
       "pro": {
-        "name": "Pro",
+        "name": "प्रो",
         "description": "अपना व्यवसाय बढ़ाएं",
         "feature1": "असीमित उत्पादों के साथ 5 स्टोर",
         "feature2": "प्रति स्टोर कस्टम डोमेन",
@@ -1405,7 +1405,7 @@
         "feature7": "उन्नत प्रमोशन और कैंपेन"
       },
       "business": {
-        "name": "Business",
+        "name": "व्यापार",
         "description": "बिना सीमा के स्केल करें",
         "feature1": "असीमित स्टोर और उत्पाद",
         "feature2": "प्रति स्टोर कस्टम डोमेन",
@@ -1463,7 +1463,7 @@
       "explore": "Explore",
       "freeShipping": "मुफ़्त शिपिंग",
       "freeShippingDesc": "मुफ़्त shipping on all online order",
-      "support247": "24/7 Support",
+      "support247": "24/7 सहायता",
       "support247Desc": "Contact us 24 hours",
       "daysReturn": "90 Days Return",
       "daysReturnDesc": "If goods have damage issues",
@@ -1532,7 +1532,7 @@
       "learnMore": "Learn More",
       "noMonthlyFees": "नहीं monthly fees",
       "freeToStart": "मुफ़्त to start",
-      "support247": "24/7 Support",
+      "support247": "24/7 सहायता",
       "activeSellers": "सक्रिय Sellers",
       "productsListed": "उत्पाद Listed",
       "happyCustomers": "Happy ग्राहक",
@@ -1555,7 +1555,7 @@
       "allRightsReserved": "सर्वाधिकार सुरक्षित.",
       "privacy": "Privacy",
       "terms": "Terms",
-      "contact": "Contact",
+      "contact": "संपर्क",
       "sections": {
         "platform": "Platform",
         "company": "Company",
@@ -1568,9 +1568,9 @@
         "pricing": "Pricing",
         "marketplace": "Marketplace",
         "forSellers": "For Sellers",
-        "aboutUs": "About Us",
+        "aboutUs": "हमारे बारे में",
         "press": "Press",
-        "contact": "Contact",
+        "contact": "संपर्क",
         "privacyPolicy": "गोपनीयता नीति",
         "termsOfService": "सेवा की शर्तें",
         "cookiePolicy": "Cookie Policy",
@@ -1582,7 +1582,7 @@
     },
     "demoAccess": {
       "title": "Demo Access",
-      "comingSoon": "Coming Soon",
+      "comingSoon": "जल्द आ रहा है",
       "googlePlay": "Google Play",
       "appStore": "App स्टोर",
       "getItOn": "GET IT ON",
@@ -1874,7 +1874,7 @@
           "description": "जोड़ें size, color, or other variants with individual stock and pricing."
         },
         "step4": {
-          "title": "Publish",
+          "title": "प्रकाशित करें",
           "description": "Click \"Publish\" to make your product live on your store."
         }
       },
@@ -1885,7 +1885,7 @@
           "headers": [
             "स्थिति",
             "विवरण",
-            "Action"
+            "क्रिया"
           ],
           "rows": [
             [
@@ -1954,7 +1954,7 @@
           "description": "Set app name, icon, splash screen, and color scheme."
         },
         "step3": {
-          "title": "Publish",
+          "title": "प्रकाशित करें",
           "description": "We handle publishing to Apple App स्टोर and Google Play स्टोर."
         }
       },
@@ -2133,9 +2133,9 @@
           "description": "देखें your cart at <code>/cart</code>. Adjust quantities or remove items."
         },
         "step3": {
-          "title": "Checkout",
+          "title": "चेकआउट",
           "description": "Enter shipping address and payment details. We accept credit cards via Stripe.",
-          "linkText": "Checkout"
+          "linkText": "चेकआउट"
         }
       },
       "trackOrders": {
@@ -2424,24 +2424,24 @@
             "Basic storefront, Standard support"
           ],
           [
-            "Starter",
+            "स्टार्टर",
             "$29.99/month",
             "2",
             "100",
             "Advanced customization, Priority support"
           ],
           [
-            "Pro",
+            "प्रो",
             "$79.99/month",
             "5",
-            "Unlimited",
+            "असीमित",
             "Mobile app, Premium themes, एनालिटिक्स"
           ],
           [
-            "Business",
+            "व्यापार",
             "$199.99/month",
-            "Unlimited",
-            "Unlimited",
+            "असीमित",
+            "असीमित",
             "API access, Dedicated manager, White-label"
           ]
         ]
@@ -2600,7 +2600,7 @@
       "subtitle": "Your privacy is important to us. Learn how we collect, use, and protect your personal information.",
       "lastUpdated": "अंतिम अपडेट: October 26, 2025",
       "compliance": "GDPR & CCPA Compliant",
-      "toc": "Table of Contents",
+      "toc": "विषय-सूची",
       "savePolicy": "Want to save this policy?",
       "printPage": "Print this page",
       "badges": {
@@ -2838,7 +2838,7 @@
       "subtitle": "Please read these terms carefully before using our marketplace platform",
       "lastUpdated": "अंतिम अपडेट: January 2, 2026",
       "effectiveDate": "Effective तिथि: January 1, 2026",
-      "toc": "Table of Contents",
+      "toc": "विषय-सूची",
       "saveTerms": "Want to save these terms?",
       "printPage": "Print this page",
       "sidebar": {
@@ -3097,7 +3097,7 @@
       "sections": {
         "mainPages": "Main Pages",
         "shopping": "दुकानping",
-        "account": "Account",
+        "account": "खाता",
         "sellerHub": "Seller Hub",
         "deliveryPartners": "डिलीवरी Partners",
         "company": "Company",
@@ -3105,7 +3105,7 @@
         "helpSupport": "Help & Support"
       },
       "links": {
-        "home": "Home",
+        "home": "होम",
         "homeDesc": "Main landing page",
         "explore": "Explore",
         "exploreDesc": "Browse products and stores",
@@ -3115,15 +3115,15 @@
         "offersDesc": "Current deals and discounts",
         "products": "उत्पाद",
         "productsDesc": "सभी products",
-        "cart": "Cart",
+        "cart": "कार्ट",
         "cartDesc": "Your shopping cart",
-        "checkout": "Checkout",
+        "checkout": "चेकआउट",
         "checkoutDesc": "Complete your purchase",
         "wishlist": "इच्छा सूची",
         "wishlistDesc": "सहेजेंd items",
-        "login": "Login",
+        "login": "लॉगिन",
         "loginDesc": "साइन इन to your account",
-        "register": "Register",
+        "register": "रजिस्टर",
         "registerDesc": "बनाएं a new account",
         "profile": "प्रोफ़ाइल",
         "profileDesc": "Manage your profile",
@@ -3151,7 +3151,7 @@
         "availableOrdersDesc": "देखें available orders",
         "earnings": "कमाई",
         "earningsDesc": "Track your earnings",
-        "aboutUs": "About Us",
+        "aboutUs": "हमारे बारे में",
         "aboutUsDesc": "Learn about {{appName}}",
         "press": "Press",
         "pressDesc": "Press releases and media",
@@ -3198,8 +3198,8 @@
     "subtitle": "Share your unique code with friends. When they make their first purchase, you both get rewarded!",
     "yourCode": "Your Referral Code",
     "shareCodeDesc": "Share this code or link with your friends",
-    "custom": "Custom",
-    "share": "Share",
+    "custom": "कस्टम",
+    "share": "शेयर करें",
     "customize": "Customize",
     "referralLink": "Referral Link",
     "copyLink": "Copy Link",
@@ -3260,7 +3260,7 @@
       "searchPlaceholder": "खोजें...",
       "showing": "Showing",
       "of": "of",
-      "page": "Page",
+      "page": "पृष्ठ",
       "vsLastPeriod": "पिछली अवधि की तुलना में",
       "adminPanel": "एडमिन पैनल"
     },
@@ -3274,12 +3274,12 @@
       "payments": "भुगतानs",
       "reviews": "समीक्षाएं",
       "referrals": "Referrals",
-      "reports": "Reports",
+      "reports": "रिपोर्ट",
       "notifications": "सूचनाएं",
       "cms": "CMS Pages",
       "settings": "सेटिंग्स",
       "analytics": "एनालिटिक्स",
-      "logout": "Logout",
+      "logout": "लॉगआउट",
       "managePlatform": "Manage Platform",
       "collapse": "Collapse"
     },
@@ -3400,7 +3400,7 @@
       "suspendUser": "Suspend User",
       "activateUser": "Activate User",
       "deleteUser": "हटाएं User",
-      "pageOf": "Page {{current}} of {{total}}",
+      "pageOf": "पृष्ठ {{current}} / {{total}}",
       "changeUserRole": "Change User Role",
       "changeRoleConfirm": "क्या आप वाकई चाहते हैं change this user's role from {{from}} to {{to}}?",
       "roleChanged": "User role changed to {{role}}",
@@ -3505,7 +3505,7 @@
       "title": "सभी उत्पाद",
       "subtitle": "देखें and manage products across all shops",
       "allProducts": "सभी उत्पाद",
-      "productName": "Product",
+      "productName": "उत्पाद",
       "shop": "दुकान",
       "category": "श्रेणी",
       "price": "मूल्य",
@@ -3570,7 +3570,7 @@
       "paymentMethod": "तरीका",
       "completed": "पूर्ण",
       "pending": "लंबित",
-      "failed": "Failed",
+      "failed": "असफल",
       "refunded": "रिफंड किया गया",
       "noPayments": "नहीं Transactions Found",
       "noPaymentsMatch": "Try adjusting your search or filter criteria",
@@ -3592,7 +3592,7 @@
       "productReviews": "Product समीक्षाएं",
       "shopReviews": "दुकान समीक्षाएं",
       "reviewer": "Reviewer",
-      "product": "Product",
+      "product": "उत्पाद",
       "shop": "दुकान",
       "rating": "रेटिंग",
       "comment": "Comment",
@@ -3619,7 +3619,7 @@
       "viewDetails": "देखें details",
       "deleteReview": "हटाएं review",
       "showingReviews": "Showing {{from}} to {{to}} of {{total}} reviews",
-      "pageOf": "Page {{current}} of {{total}}",
+      "pageOf": "पृष्ठ {{current}} / {{total}}",
       "reviewDetails": "Review Details",
       "customer": "ग्राहक",
       "submittedOn": "सबमिट करेंted on",
@@ -3664,7 +3664,7 @@
       "settings": "सेटिंग्स"
     },
     "reports": {
-      "title": "Reports",
+      "title": "रिपोर्ट",
       "subtitle": "Generate and view platform reports",
       "generateReport": "Generate Report",
       "salesReport": "Sales Report",
@@ -3674,7 +3674,7 @@
       "dateRange": "तिथि सीमा",
       "reportType": "Report Type",
       "format": "Format",
-      "download": "Download",
+      "download": "डाउनलोड",
       "noReports": "नहीं reports available",
       "reportGenerated": "Report generated सफलतापूर्वक",
       "reportFailed": "Failed to generate report",
@@ -3686,8 +3686,8 @@
       "downloadReport": "Download Report",
       "downloadFailed": "Failed to download report. कृपया पुनः प्रयास करें.",
       "noReportData": "नहीं report data available. Please generate the report first.",
-      "from": "From",
-      "to": "To",
+      "from": "से",
+      "to": "तक",
       "customRange": "Custom Range",
       "lastGenerated": "Last generated",
       "neverGenerated": "Never generated",
@@ -3727,10 +3727,10 @@
       "vendors": "विक्रेताs Only",
       "customers": "ग्राहक Only",
       "system": "System",
-      "order": "Order",
+      "order": "ऑर्डर",
       "shop": "दुकान",
       "user": "User",
-      "failed": "Failed",
+      "failed": "असफल",
       "totalSent": "कुल Sent",
       "read": "Read",
       "unread": "Unread",
@@ -3740,14 +3740,14 @@
       "noNotificationsMatch": "कोई सूचना नहीं match your current filters",
       "adjustFilters": "Try adjusting your search or filter criteria",
       "notificationsWillAppear": "सूचनाएं will appear here once they are sent",
-      "pageOf": "Page {{current}} of {{total}}",
+      "pageOf": "पृष्ठ {{current}} / {{total}}",
       "notificationDetails": "नहींtification Details",
       "viewNotificationInfo": "देखें notification information",
-      "notificationTitle": "Title",
+      "notificationTitle": "शीर्षक",
       "recipientsCount": "{{read}} read, {{unread}} unread of {{total}} total",
       "createNotification": "बनाएं नहींtification",
       "createDesc": "Send a new notification to users",
-      "titleLabel": "Title",
+      "titleLabel": "शीर्षक",
       "titlePlaceholder": "Enter notification title...",
       "messageLabel": "Message",
       "messagePlaceholder": "Enter notification message...",
@@ -3758,7 +3758,7 @@
       "allCustomers": "सभी ग्राहक",
       "ofTotal": "of {{count}} total",
       "sending": "भेजा जा रहा है...",
-      "send": "Send",
+      "send": "भेजें",
       "loading": "लोड हो रहा है notifications...",
       "empty": "कोई सूचना नहीं yet",
       "justNow": "अभी",
@@ -3812,9 +3812,9 @@
       "delete": "हटाएं",
       "validationError": "Validation Error",
       "slugTitleRequired": "Slug and title are required",
-      "public": "Public",
-      "private": "Private",
-      "pageOf": "Page {{current}} of {{total}}",
+      "public": "सार्वजनिक",
+      "private": "निजी",
+      "pageOf": "पृष्ठ {{current}} / {{total}}",
       "createNewPage": "बनाएं New Page",
       "addNewCmsPage": "जोड़ें a new CMS page",
       "editing": "संपादित करेंing",
@@ -3835,7 +3835,7 @@
       "metaDescPlaceholder": "Short description for search engines...",
       "pageSettings": "Page सेटिंग्स",
       "showBreadcrumb": "Show Breadcrumb",
-      "tableOfContents": "Table of Contents",
+      "tableOfContents": "विषय-सूची",
       "publicPage": "Public Page",
       "requiresLogin": "Requires Login",
       "pageStatus": "Page स्थिति",
@@ -3912,7 +3912,7 @@
       "payWithCash": "Pay with cash upon delivery",
       "active": "सक्रिय",
       "inactive": "निष्क्रिय",
-      "error": "Error",
+      "error": "त्रुटि",
       "notificationSettings": "नहींtification सेटिंग्स",
       "configureNotificationChannels": "Configure notification channels",
       "emailNotifications": "ईमेल सूचनाएं",
@@ -3988,10 +3988,10 @@
       "close": "बंद करें",
       "next": "अगला",
       "of": "of",
-      "page": "Page",
+      "page": "पृष्ठ",
       "previous": "पिछला",
       "retry": "पुनः प्रयास करें",
-      "tryAgain": "Try Again",
+      "tryAgain": "पुनः प्रयास करें",
       "viewAll": "सभी देखें",
       "failedToLoad": "लोड करने में विफल",
       "create": "बनाएं",
@@ -4186,7 +4186,7 @@
       "accountSettings": "खाता सेटिंग्स",
       "storefront": "स्टोरfront",
       "storefrontBuilder": "स्टोरफ्रंट बिल्डर",
-      "logout": "Logout",
+      "logout": "लॉगआउट",
       "allProducts": "सभी उत्पाद",
       "addProduct": "उत्पाद जोड़ें",
       "viewStorefront": "देखें स्टोरfront",
@@ -4269,7 +4269,7 @@
       "images": "Images",
       "status": "स्थिति",
       "visibility": "Visibility",
-      "featured": "Featured",
+      "featured": "विशेष रुप से प्रदर्शित",
       "variants": "Variants",
       "attributes": "Attributes",
       "noProducts": "कोई उत्पाद नहीं मिला",
@@ -4290,7 +4290,7 @@
       "archived": "Archived",
       "bulkEdit": "Bulk संपादित करें",
       "bulkEditProducts": "Bulk उत्पाद संपादित करेंs",
-      "clear": "Clear",
+      "clear": "साफ़ करें",
       "decreaseByAmount": "Decrease by राशि",
       "deleteProducts": "उत्पाद हटाएंs",
       "deleteSelected": "हटाएं Selected",
@@ -4299,15 +4299,15 @@
       "discountPlaceholder": "Enter discount %",
       "editing": "संपादित करेंing",
       "enterQuantity": "Enter quantity",
-      "import": "Import",
+      "import": "आयात",
       "increaseByAmount": "Increase by राशि",
       "inventoryAction": "Inventory Action",
       "newStatus": "New स्थिति",
       "priceRange": "मूल्य Range",
-      "product": "Product",
+      "product": "उत्पाद",
       "products": "products",
       "productsSelected": "products selected",
-      "sales": "Sales",
+      "sales": "बिक्री",
       "selectAction": "Select Action",
       "selectStatus": "Select स्थिति",
       "setToValue": "Set to Value",
@@ -4339,8 +4339,8 @@
         "published": "प्रकाशित"
       },
       "visibilityOptions": {
-        "public": "Public",
-        "private": "Private",
+        "public": "सार्वजनिक",
+        "private": "निजी",
         "passwordProtected": "पासवर्ड Protected"
       },
       "tabs": {
@@ -4402,9 +4402,9 @@
       "paymentMethod": "भुगतान विधि",
       "paypal": "PayPal",
       "products": "उत्पाद",
-      "quantity": "Quantity",
+      "quantity": "मात्रा",
       "shipping": "शिपिंग",
-      "subtotal": "Subtotal",
+      "subtotal": "उप-कुल",
       "totalOrders": "कुल ऑर्डर",
       "noOrdersYet": "नहीं ऑर्डर Yet",
       "ordersWillAppear": "ऑर्डर will appear here once customers start purchasing from your shop.",
@@ -4438,7 +4438,7 @@
       "adjustFilters": "Try adjusting your filters",
       "avgOrder": "Avg Order",
       "avgOrderValue": "Average Order Value",
-      "contact": "Contact",
+      "contact": "संपर्क",
       "contactInfo": "संपर्क जानकारी",
       "customer": "ग्राहक",
       "customerSince": "ग्राहक Since",
@@ -4481,7 +4481,7 @@
       "thisWeek": "इस सप्ताह",
       "thisMonth": "इस महीने",
       "thisYear": "इस वर्ष",
-      "custom": "Custom",
+      "custom": "कस्टम",
       "compareWith": "Compare with",
       "previousPeriod": "पिछला Period",
       "allTime": "सभी समय",
@@ -4494,7 +4494,7 @@
       "loading": "लोड हो रहा है analytics...",
       "failedToLoad": "लोड करने में विफल analytics",
       "category": "श्रेणी",
-      "sales": "Sales",
+      "sales": "बिक्री",
       "growth": "Growth",
       "comingSoon": "Detailed एनालिटिक्स Coming Soon",
       "comingSoonDescription": "Basic shop statistics are shown above. Detailed revenue trends, category performance, and customer insights will be available as your shop grows.",
@@ -4522,7 +4522,7 @@
       "productReviews": "Product समीक्षाएं",
       "shopReviews": "दुकान समीक्षाएं",
       "reviewer": "Reviewer",
-      "product": "Product",
+      "product": "उत्पाद",
       "rating": "रेटिंग",
       "comment": "Comment",
       "date": "तिथि",
@@ -4545,7 +4545,7 @@
       "replyPosted": "Reply posted सफलतापूर्वक",
       "failedToSubmitReply": "Failed to submit reply",
       "outOf5": "out of 5",
-      "featured": "Featured",
+      "featured": "विशेष रुप से प्रदर्शित",
       "helpfulVotes": "Helpful Votes",
       "ratingDistribution": "Rating Distribution",
       "all": "सभी",
@@ -4597,7 +4597,7 @@
       "revenueImpact": "राजस्व Impact",
       "conversionRate": "Conversion Rate",
       "loadingOffers": "लोड हो रहा है offers...",
-      "tryAgain": "Try Again",
+      "tryAgain": "पुनः प्रयास करें",
       "discount": "छूट",
       "used": "Used",
       "remaining": "Remaining",
@@ -4954,7 +4954,7 @@
       "fullAccess": "Full Access",
       "resendInvitation": "Resend invitation",
       "cancelInvitation": "रद्द करें invitation",
-      "expires": "Expires",
+      "expires": "समाप्त होता है",
       "permissions": {
         "manageTeam": "Manage Team",
         "manageShop": "Manage Shop",
@@ -5026,12 +5026,12 @@
       "accessUntil": "Access Until",
       "upgrade": "Upgrade",
       "freePlan": "मुफ़्त Plan",
-      "popular": "Popular",
-      "default": "Default",
-      "expires": "Expires",
+      "popular": "लोकप्रिय",
+      "default": "डिफ़ॉल्ट",
+      "expires": "समाप्त होता है",
       "description": "विवरण",
       "actions": "कार्य",
-      "download": "Download",
+      "download": "डाउनलोड",
       "subscriptionPayment": "सब्सक्रिप्शन payment",
       "cancelConfirmMessage": "Your subscription will remain active until the end of the current billing period. You won't be charged again.",
       "year": "year",
@@ -5110,7 +5110,7 @@
       "updatePassword": "अपडेट करें पासवर्ड",
       "tabs": {
         "general": "General",
-        "business": "Business",
+        "business": "व्यापार",
         "payment": "भुगतान",
         "notifications": "सूचनाएं",
         "seo": "SEO",
@@ -5206,7 +5206,7 @@
       "advancedSettings": "Advanced सेटिंग्स",
       "advancedWarning": "Warning: Advanced सेटिंग्स",
       "advancedWarningDesc": "These settings are for advanced users only. Incorrect code may break your shop or create security issues.",
-      "customCss": "Custom CSS",
+      "customCss": "कस्टम CSS",
       "customCssDesc": "जोड़ें custom styles to personalize your shop appearance",
       "analyticsCode": "एनालिटिक्स Code (Google एनालिटिक्स, etc.)",
       "analyticsCodeDesc": "Track visitor behavior and shop performance",
@@ -5253,7 +5253,7 @@
       "step1": "Basic Info",
       "step2": "Contact Details",
       "step3": "Documents",
-      "step4": "Review",
+      "step4": "समीक्षा",
       "shopName": "दुकान नाम",
       "shopDescription": "दुकान विवरण",
       "category": "श्रेणी",
@@ -5275,7 +5275,7 @@
       "benefits": {
         "freeToStart": "मुफ़्त to start",
         "noMonthlyFees": "नहीं monthly fees",
-        "support247": "24/7 Support"
+        "support247": "24/7 सहायता"
       },
       "form": {
         "storeName": "स्टोर नाम",
@@ -5344,7 +5344,7 @@
             }
           },
           "starter": {
-            "name": "Starter",
+            "name": "स्टार्टर",
             "description": "Launch & grow",
             "features": {
               "storesUnlimited": "2 stores with unlimited products",
@@ -5356,7 +5356,7 @@
             }
           },
           "pro": {
-            "name": "Pro",
+            "name": "प्रो",
             "description": "Grow your business",
             "features": {
               "storesUnlimited": "5 stores with unlimited products",
@@ -5369,7 +5369,7 @@
             }
           },
           "business": {
-            "name": "Business",
+            "name": "व्यापार",
             "description": "Scale without limits",
             "features": {
               "unlimitedStores": "Unlimited stores & products",
@@ -5393,7 +5393,7 @@
           "storeType": "स्टोर Type",
           "storeDetails": "स्टोर Details",
           "businessInfo": "Business Info",
-          "review": "Review"
+          "review": "समीक्षा"
         },
         "storeTypes": {
           "fashion": "Fashion & Apparel",
@@ -5407,7 +5407,7 @@
           "books": "Books & Media",
           "gifts": "Gifts & Occasions",
           "general": "General स्टोर",
-          "other": "Other"
+          "other": "अन्य"
         },
         "step1": {
           "title": "What will you sell?",
@@ -5465,7 +5465,7 @@
           }
         },
         "navigation": {
-          "continue": "Continue",
+          "continue": "जारी रखें",
           "launchStore": "Launch स्टोर",
           "creatingStore": "Creating स्टोर..."
         },
@@ -5493,7 +5493,7 @@
       "title": "स्टोरफ्रंट बिल्डर",
       "subtitle": "Customize your store's appearance",
       "preview": "पूर्वावलोकन",
-      "publish": "Publish",
+      "publish": "प्रकाशित करें",
       "saveDraft": "सहेजें ड्राफ़्ट",
       "theme": "Theme",
       "colors": "Colors",
@@ -5503,7 +5503,7 @@
       "footer": "Footer",
       "homepage": "Homepage",
       "productPage": "Product Page",
-      "customCSS": "Custom CSS",
+      "customCSS": "कस्टम CSS",
       "changesSaved": "Changes saved सफलतापूर्वक",
       "copyFailed": "Failed to copy URL",
       "copyUrl": "Copy URL",
@@ -5521,20 +5521,20 @@
       "preview": "पूर्वावलोकन",
       "save": "सहेजें",
       "saving": "सहेजा जा रहा है...",
-      "publish": "Publish",
+      "publish": "प्रकाशित करें",
       "publishing": "Publishing...",
       "sections": "Sections",
       "theme": "Theme",
       "settings": "सेटिंग्स",
       "seo": "SEO",
       "pages": "Pages",
-      "page": "Page",
+      "page": "पृष्ठ",
       "header": "Header",
       "footer": "Footer",
       "noSectionsYet": "नहीं sections yet",
       "addFirstSection": "जोड़ें your first section",
       "generalSettings": "General सेटिंग्स",
-      "customCss": "Custom CSS",
+      "customCss": "कस्टम CSS",
       "customJavascript": "Custom JavaScript",
       "addSection": "जोड़ें Section",
       "addingTo": "जोड़ेंing to",
@@ -5666,7 +5666,7 @@
         "draftRestoredDescription": "Your previous work has been restored",
         "validationError": "Validation Error",
         "fixErrorsDescription": "Please fix the errors before submitting",
-        "error": "Error",
+        "error": "त्रुटि",
         "shopContextNotFound": "दुकान context not found"
       },
       "validation": {
@@ -5810,7 +5810,7 @@
       "zones": "क्षेत्र",
       "profile": "प्रोफ़ाइल",
       "settings": "सेटिंग्स",
-      "logout": "Logout",
+      "logout": "लॉगआउट",
       "delivery": "डिलीवरी",
       "partnerDashboard": "Partner डैशबोर्ड",
       "collapse": "Collapse"
@@ -5855,7 +5855,7 @@
     "orders": {
       "title": "डिलीवरी ऑर्डर",
       "subtitle": "Manage your deliveries",
-      "available": "Available",
+      "available": "उपलब्ध",
       "active": "सक्रिय",
       "completed": "पूर्ण",
       "orderId": "ऑर्डर आईडी",
@@ -5909,7 +5909,7 @@
       "noOrdersMatch": "नहीं orders match your search",
       "noOrdersToDisplay": "नहीं orders to display",
       "notes": "नहींtes",
-      "order": "Order",
+      "order": "ऑर्डर",
       "orderAccepted": "Order accepted सफलतापूर्वक",
       "orderDeclined": "Order declined",
       "pickupLocation": "Pickup Location",
@@ -5945,7 +5945,7 @@
       "earned": "Earned",
       "noDeliveriesMatch": "नहीं deliveries match your search",
       "of": "of",
-      "page": "Page",
+      "page": "पृष्ठ",
       "refresh": "रीफ्रेश करें",
       "refreshFailed": "Failed to refresh",
       "refreshed": "रीफ्रेश करेंed",
@@ -6129,7 +6129,7 @@
       "autoAccept": "Auto Accept ऑर्डर",
       "maxOrders": "Maximum सक्रिय ऑर्डर",
       "preferredZones": "Preferred Zones",
-      "language": "Language",
+      "language": "भाषा",
       "saveSettings": "सेटिंग्स सहेजें",
       "settingsSaved": "सेटिंग्स saved सफलतापूर्वक",
       "appVersion": "App Version",
@@ -6232,7 +6232,7 @@
     "title": "सेटिंग्स",
     "subtitle": "Manage your account settings and preferences",
     "breadcrumb": {
-      "account": "Account",
+      "account": "खाता",
       "settings": "सेटिंग्स"
     },
     "toasts": {
@@ -6296,9 +6296,9 @@
     "privacy": {
       "title": "Privacy सेटिंग्स",
       "profileVisibility": "प्रोफ़ाइल Visibility",
-      "public": "Public",
+      "public": "सार्वजनिक",
       "publicDesc": "Anyone can view your profile",
-      "private": "Private",
+      "private": "निजी",
       "privateDesc": "Only you can view your profile",
       "dataSharingPreferences": "Data Sharing Preferences",
       "shareAnalytics": "Share analytics data",
@@ -6320,7 +6320,7 @@
     },
     "languageRegion": {
       "title": "Language & Region",
-      "language": "Language",
+      "language": "भाषा",
       "languages": {
         "english": "English",
         "spanish": "Spanish",
@@ -6329,7 +6329,7 @@
         "italian": "Italian",
         "portuguese": "Portuguese"
       },
-      "currency": "Currency",
+      "currency": "मुद्रा",
       "timeZone": "Time Zone",
       "timezones": {
         "eastern": "Eastern Time (ET)",
@@ -6387,7 +6387,7 @@
   },
   "profilePage": {
     "breadcrumb": {
-      "account": "Account"
+      "account": "खाता"
     },
     "nav": {
       "dashboard": "डैशबोर्ड",
@@ -6453,7 +6453,7 @@
       "retry": "पुनः प्रयास करें",
       "cancel": "रद्द करें",
       "edit": "संपादित करें",
-      "default": "Default",
+      "default": "डिफ़ॉल्ट",
       "setDefault": "Set Default"
     },
     "personalInfo": {
@@ -6482,7 +6482,7 @@
       "noMethods": "नहीं saved payment methods",
       "secureMessage": "भुगतान methods are processed securely at checkout",
       "addMethod": "जोड़ें भुगतान विधि",
-      "expires": "Expires"
+      "expires": "समाप्त होता है"
     },
     "orderHistory": {
       "title": "ऑर्डर इतिहास",
@@ -6528,7 +6528,7 @@
       "confirmButton": "खाता हटाएं"
     },
     "memberSince": "Member since {{year}}",
-    "logout": "Logout"
+    "logout": "लॉगआउट"
   },
   "tracking": {
     "live": "LIVE",

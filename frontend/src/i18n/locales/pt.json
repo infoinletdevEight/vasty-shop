@@ -2505,7 +2505,7 @@
       "slug": "Slug",
       "rootCategory": "Categoria raiz",
       "products": "Produtos",
-      "deleteConfirm": "Tem certeza de que deseja excluir esta categoria?",
+      "deleteConfirm": "Tem certeza de que deseja excluir \"{{name}}\"? Esta ação não pode ser desfeita.",
       "saveFailed": "Failed to save category",
       "searchPlaceholder": "Pesquisar categorias...",
       "enterCategoryName": "Enter category name",
@@ -2579,7 +2579,7 @@
       "reviewsWillAppear": "Reviews will appear here",
       "viewDetails": "Ver detalhes",
       "deleteReview": "Delete Review",
-      "showingReviews": "Showing {{count}} reviews",
+      "showingReviews": "Mostrando {{from}} a {{to}} de {{total}} avaliações",
       "pageOf": "Page {{current}} of {{total}}",
       "reviewDetails": "Detalhes da avaliação",
       "customer": "Cliente",
@@ -2705,7 +2705,7 @@
       "notificationDetails": "Detalhes da notificação",
       "viewNotificationInfo": "View notification information",
       "notificationTitle": "Título",
-      "recipientsCount": "Destinatários",
+      "recipientsCount": "{{read}} lidos, {{unread}} não lidos de {{total}} no total",
       "createNotification": "Criar notificação",
       "createDesc": "Send a notification to admins",
       "titleLabel": "Título",
@@ -3724,7 +3724,7 @@
       "updateZone": "Atualizar zona",
       "createZone": "Criar zona",
       "editZoneAssignment": "Editar atribuição de zona",
-      "assigningZoneFor": "Atribuindo zona para:",
+      "assigningZoneFor": "Atribuindo zona para {{name}}",
       "selectDeliveryZone": "Selecionar zona de entrega",
       "noZone": "Sem zona",
       "noZonesAvailable": "Nenhuma zona disponível. Crie uma zona na aba \"Zonas\" primeiro.",
@@ -6307,53 +6307,40 @@
       "intro": "O Vasty oferece planos de preços flexíveis para atender negócios de todos os tamanhos. Todos os planos incluem recursos essenciais para vender online.",
       "table": {
         "headers": [
-          "Recurso",
-          "Iniciante",
-          "Profissional",
-          "Empresarial"
+          "Plano",
+          "Preço",
+          "Lojas",
+          "Produtos",
+          "Recursos"
         ],
         "rows": [
           [
-            "Listagem de Produtos",
-            "Até 50",
-            "Até 500",
-            "Ilimitado"
-          ],
-          [
-            "Taxa de Transação",
-            "5%",
-            "3%",
-            "1.5%"
-          ],
-          [
-            "Análises",
-            "Básico",
-            "Avançado",
-            "Premium"
-          ],
-          [
-            "Suporte",
-            "E-mail",
-            "Prioritário",
-            "Dedicado"
-          ],
-          [
-            "Domínio Personalizado",
-            "Não",
-            "Sim",
-            "Sim"
-          ],
-          [
-            "Integração de API",
-            "Não",
-            "Sim",
-            "Sim"
-          ],
-          [
-            "Múltiplos Usuários",
+            "Gratuito",
+            "R$0/mês",
             "1",
+            "10",
+            "Vitrine básica, Suporte padrão"
+          ],
+          [
+            "Iniciante",
+            "R$29,99/mês",
+            "2",
+            "100",
+            "Personalização avançada, Suporte prioritário"
+          ],
+          [
+            "Pro",
+            "R$79,99/mês",
             "5",
-            "Ilimitado"
+            "Ilimitado",
+            "App móvel, Temas premium, Análises"
+          ],
+          [
+            "Empresarial",
+            "R$199,99/mês",
+            "Ilimitado",
+            "Ilimitado",
+            "Acesso à API, Gerente dedicado, White-label"
           ]
         ]
       },
@@ -6445,18 +6432,15 @@
         "items": [
           {
             "title": "E-mail",
-            "desc": "support@vasty.shop",
-            "note": "Resposta em até 24 horas"
+            "desc": "support@vasty.shop"
           },
           {
             "title": "Chat ao Vivo",
-            "desc": "Disponível no painel",
-            "note": "Seg-Sex, 9h-18h"
+            "desc": "Disponível no painel"
           },
           {
             "title": "Central de Ajuda",
-            "desc": "Documentação de autoatendimento",
-            "note": "Disponível 24/7"
+            "desc": "Documentação de autoatendimento"
           }
         ]
       },
@@ -6464,20 +6448,20 @@
         "title": "Problemas Comuns",
         "items": [
           {
-            "issue": "Não consigo fazer login",
-            "solution": "Tente redefinir sua senha ou verifique se o email está verificado."
+            "title": "Não consigo fazer login",
+            "desc": "Tente redefinir sua senha ou verifique se o email está verificado."
           },
           {
-            "issue": "Pagamento falhou",
-            "solution": "Verifique os detalhes do seu cartão ou tente um método de pagamento diferente."
+            "title": "Pagamento falhou",
+            "desc": "Verifique os detalhes do seu cartão ou tente um método de pagamento diferente."
           },
           {
-            "issue": "Pedido atrasado",
-            "solution": "Verifique o status de rastreamento ou contate o vendedor diretamente."
+            "title": "Pedido atrasado",
+            "desc": "Verifique o status de rastreamento ou contate o vendedor diretamente."
           },
           {
-            "issue": "Solicitação de reembolso",
-            "solution": "Envie uma solicitação de reembolso pelo histórico de pedidos."
+            "title": "Solicitação de reembolso",
+            "desc": "Envie uma solicitação de reembolso pelo histórico de pedidos."
           }
         ]
       },
