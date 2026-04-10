@@ -22,7 +22,7 @@
     "seed:stripe-plans": "npx tsx src/database/seeds/seed-stripe-plans.ts",
     "seed:refresh": "npm run migrate:sync && npm run seed",
     "create:admin": "npx tsx src/scripts/create-admin.ts",
-    "create:delivery": "npx tsx src/scripts/create-delivery-partner.ts",
+    "create:delivery": "npx tsx src/scripts/create-delivery-partner.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1028.0",
