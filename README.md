@@ -70,6 +70,50 @@ Vasty Shop is an open-source multi-vendor e-commerce marketplace platform. Build
 
 ## Quick Start
 
+### Docker (Recommended)
+
+```bash
+git clone https://github.com/vasty-shop/vasty-shop.git
+cd vasty-shop
+
+# 1. Create env files from examples
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env
+
+# 2. Start all services (PostgreSQL, Redis, Backend, Frontend)
+docker compose up --build
+
+# 3. Run database migrations (in a new terminal)
+docker compose exec backend npm run migrate
+
+# 4. (Optional) Seed the database
+docker compose exec backend npm run seed
+
+# 5. (Optional) Create an admin user
+docker compose exec backend npm run create:admin
+```
+
+The app will be available at:
+- **Frontend**: http://localhost:5186
+- **Backend API**: http://localhost:4005/api/v1
+- **WebSocket**: http://localhost:3002
+
+To stop all services:
+
+```bash
+docker compose down
+```
+
+To stop and remove all data (database, redis):
+
+```bash
+docker compose down -v
+```
+
+### Local Development (without Docker)
+
+> **Prerequisites**: Node.js 20+, PostgreSQL 16+, Redis 7+
+
 ```bash
 git clone https://github.com/vasty-shop/vasty-shop.git
 cd vasty-shop
@@ -77,12 +121,14 @@ cd vasty-shop
 # Backend
 cd backend
 cp .env.example .env
+# Edit .env: set DATABASE_HOST=localhost and REDIS_HOST=localhost
 npm install
 npm run migrate
 npm run start:dev
 
 # Frontend (new terminal)
 cd frontend
+cp .env.example .env
 npm install
 npm run dev
 ```
