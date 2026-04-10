@@ -1,6 +1,6 @@
-# Fluxez Shop Backend
+# Vasty Shop Backend
 
-A comprehensive e-commerce backend built with NestJS and Fluxez SDK, supporting multi-vendor marketplace functionality.
+A comprehensive e-commerce backend built with NestJS and vasty SDK, supporting multi-vendor marketplace functionality.
 
 ## Features
 
@@ -23,15 +23,15 @@ A comprehensive e-commerce backend built with NestJS and Fluxez SDK, supporting 
 - ✅ **Shop Analytics**: Sales tracking, revenue reports
 
 ### Authentication
-- ✅ **Fluxez Auth**: Managed by Fluxez auth.users table
+- ✅ **vasty Auth**: Managed by vasty auth.users table
 - ✅ **JWT**: Token-based authentication
 - ✅ **Role-Based Access**: Guards for shop owners, admins, team members
 
 ## Tech Stack
 
 - **Framework**: NestJS 10.3.0
-- **Database**: PostgreSQL via Fluxez SDK
-- **Authentication**: Fluxez Auth + JWT
+- **Database**: PostgreSQL via vasty SDK
+- **Authentication**: vasty Auth + JWT
 - **Payments**: Stripe v19.1.0
 - **API Documentation**: Swagger/OpenAPI
 - **Validation**: class-validator, class-transformer
@@ -46,9 +46,9 @@ backend/
 │   │   ├── decorators/      # Custom decorators (Roles)
 │   │   └── guards/          # Auth guards (RolesGuard, ShopOwnerGuard)
 │   ├── database/
-│   │   └── schema.ts        # Fluxez database schema (15 tables)
+│   │   └── schema.ts        # vasty database schema (15 tables)
 │   ├── modules/
-│   │   ├── fluxez/          # Fluxez service wrapper
+│   │   ├── vasty/          # vasty service wrapper
 │   │   ├── auth/            # Authentication module
 │   │   ├── products/        # Products & Categories
 │   │   ├── shops/           # Multi-vendor shops
@@ -90,13 +90,13 @@ backend/
 15. **notifications** - In-app notifications
 
 ### Users
-Users are managed by Fluxez in the `auth.users` table. All application tables reference `user_id` (string) which corresponds to the Fluxez user ID.
+Users are managed by vasty in the `auth.users` table. All application tables reference `user_id` (string) which corresponds to the vasty user ID.
 
 ## Installation
 
 ### Prerequisites
 - Node.js 18+
-- PostgreSQL database (via Fluxez)
+- PostgreSQL database (via vasty)
 - Stripe account
 
 ### Steps
@@ -112,9 +112,9 @@ npm install
 Copy `.env.example` to `.env` and fill in:
 
 ```bash
-# Fluxez Configuration
-FLUXEZ_API_KEY=your_service_key_here
-FLUXEZ_ANON_KEY=your_anon_key_here
+# vasty Configuration
+vasty_API_KEY=your_service_key_here
+vasty_ANON_KEY=your_anon_key_here
 
 # Server Configuration
 PORT=5186
@@ -139,7 +139,7 @@ STRIPE_WEBHOOK_SECRET=whsec_...
 npm run migrate
 ```
 
-This will create all 15 tables in your Fluxez database.
+This will create all 15 tables in your vasty database.
 
 4. **Start development server**:
 ```bash
@@ -224,7 +224,7 @@ Authorization: Bearer <your-jwt-token>
 
 ### Getting a Token
 
-Use the Fluxez auth endpoints to sign in and get a token:
+Use the vasty auth endpoints to sign in and get a token:
 
 ```bash
 POST /api/v1/auth/login
@@ -299,7 +299,7 @@ npm run migrate
 
 This command:
 1. Builds the project
-2. Runs the Fluxez migration tool
+2. Runs the vasty migration tool
 3. Creates/updates all 15 tables in the database
 
 ### Manual Migration
@@ -309,7 +309,7 @@ This command:
 npm run build
 
 # Run migration
-npx fluxez migrate dist/src/database/schema.js
+npx vasty migrate dist/src/database/schema.js
 ```
 
 ## Deployment
@@ -318,7 +318,7 @@ npx fluxez migrate dist/src/database/schema.js
 
 1. **Environment Variables**:
    - Set production environment variables in `.env.production`
-   - Use production Fluxez keys
+   - Use production vasty keys
    - Use production Stripe keys
    - Set secure JWT_SECRET
 
@@ -360,8 +360,8 @@ CMD ["node", "dist/main.js"]
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `FLUXEZ_API_KEY` | Fluxez service key | `service_abc123...` |
-| `FLUXEZ_ANON_KEY` | Fluxez anon key | `anon_xyz456...` |
+| `vasty_API_KEY` | vasty service key | `service_abc123...` |
+| `vasty_ANON_KEY` | vasty anon key | `anon_xyz456...` |
 | `JWT_SECRET` | JWT signing secret | `your-secret-key` |
 | `STRIPE_SECRET_KEY` | Stripe secret key | `sk_test_...` |
 
@@ -521,7 +521,7 @@ npm run test:cov
 ## Support
 
 For issues or questions:
-- Fluxez Documentation: https://docs.fluxez.com
+- vasty Documentation: https://docs.vasty.com
 - NestJS Documentation: https://docs.nestjs.com
 - Stripe Documentation: https://stripe.com/docs
 

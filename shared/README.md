@@ -1,6 +1,6 @@
-# @fluxez/shared
+# @vasty/shared
 
-This package contains shared code between the Fluxez frontend (web) and mobile applications.
+This package contains shared code between the vasty frontend (web) and mobile applications.
 
 ## Structure
 
@@ -43,26 +43,26 @@ shared/
 
 ```typescript
 // Import types
-import { Product, Outfit, User } from '@fluxez/shared';
+import { Product, Outfit, User } from '@vasty/shared';
 
 // Import stores
-import { useCartStore, useFilterStore, useUserStore } from '@fluxez/shared';
+import { useCartStore, useFilterStore, useUserStore } from '@vasty/shared';
 
 // Import constants
-import { STYLES, WEATHER_CONDITIONS, COLORS } from '@fluxez/shared';
+import { STYLES, WEATHER_CONDITIONS, COLORS } from '@vasty/shared';
 
 // Import utilities
-import { formatPrice, formatTemperature } from '@fluxez/shared';
+import { formatPrice, formatTemperature } from '@vasty/shared';
 
 // Import mock data
-import { mockProducts, mockOutfits, mockUsers } from '@fluxez/shared';
+import { mockProducts, mockOutfits, mockUsers } from '@vasty/shared';
 ```
 
 ### In Mobile
 
 ```typescript
 // Same imports work in React Native
-import { Product, useCartStore, formatPrice } from '@fluxez/shared';
+import { Product, useCartStore, formatPrice } from '@vasty/shared';
 ```
 
 ## Dependencies
