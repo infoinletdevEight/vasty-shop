@@ -92,14 +92,17 @@ export class PostmarkProvider implements EmailProvider {
       body: JSON.stringify(payload),
     });
 
-    const body = await res.json();
+    const body = (await res.json()) as {
+      MessageID?: string;
+      ErrorCode?: number;
+    };
     if (!res.ok) {
       throw new Error(
         `Postmark API failed: ${res.status} ${JSON.stringify(body)}`,
       );
     }
     return {
-      messageId: body.MessageID,
+      messageId: body.MessageID ?? `postmark-${Date.now()}`,
       provider: 'postmark',
       accepted: body.ErrorCode === 0,
     };

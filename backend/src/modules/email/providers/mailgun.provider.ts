@@ -124,7 +124,7 @@ export class MailgunProvider implements EmailProvider {
       body: form,
     });
 
-    const body = await res.json();
+    const body = (await res.json()) as { id?: string };
     if (!res.ok) {
       throw new Error(
         `Mailgun API failed: ${res.status} ${JSON.stringify(body)}`,
