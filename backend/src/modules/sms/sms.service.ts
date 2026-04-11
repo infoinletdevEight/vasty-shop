@@ -1,5 +1,6 @@
 import { Injectable, Logger, BadRequestException, NotFoundException, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import * as crypto from 'crypto';
 import { DatabaseService } from '../database/database.service';
 import {
   SmsProvider,
@@ -270,6 +271,7 @@ export class SmsService implements OnModuleInit {
    * Send SMS using template
    */
   async sendSms(dto: SendSmsDto): Promise<any> {
+    this.validateE164(dto.to);
     const config = await this.getConfig();
 
     if (!config.isEnabled) {
@@ -359,6 +361,7 @@ export class SmsService implements OnModuleInit {
    * Send OTP
    */
   async sendOtp(phoneNumber: string, purpose = 'verification'): Promise<any> {
+    this.validateE164(phoneNumber);
     const config = await this.getConfig();
     const otp = this.generateOtp(config.otpLength);
     const expiresAt = new Date(Date.now() + config.otpExpiryMinutes * 60 * 1000);
@@ -395,11 +398,20 @@ export class SmsService implements OnModuleInit {
    * Verify OTP
    */
   async verifyOtp(phoneNumber: string, otp: string): Promise<{ valid: boolean; message: string }> {
+    this.validateE164(phoneNumber);
+
+    // Fetch the latest unverified OTP for this phone WITHOUT filtering
+    // by OTP value. The previous version added `.where('otp', otp)` so
+    // only a matching row was returned — which meant wrong guesses
+    // always fell through to "Invalid OTP" without ever incrementing
+    // attempts, and a scripted attacker had an unbounded window to
+    // brute-force the numeric code. Pulling the row by phone number
+    // and comparing in code lets us increment the counter on misses
+    // and lock out after 3.
     const otps = await /* TODO: replace client call */ this.db.client.query
       .from('sms_otps')
       .select('*')
       .where('phone_number', phoneNumber)
-      .where('otp', otp)
       .where('verified', false)
       .orderBy('created_at', 'DESC')
       .limit(1)
@@ -416,12 +428,34 @@ export class SmsService implements OnModuleInit {
       return { valid: false, message: 'OTP has expired' };
     }
 
-    // Check attempts
-    if (otpRecord.attempts >= 3) {
+    // Check attempts BEFORE comparing so a 4th attempt can't succeed
+    // even if someone finally guesses right.
+    if ((otpRecord.attempts ?? 0) >= 3) {
       return { valid: false, message: 'Too many attempts' };
     }
 
-    // Mark as verified
+    // Constant-time compare to avoid leaking per-digit timing info.
+    const expected = String(otpRecord.otp ?? '');
+    const provided = String(otp ?? '');
+    const expectedBuf = Buffer.from(expected, 'utf8');
+    const providedBuf = Buffer.from(provided, 'utf8');
+    const isMatch =
+      expectedBuf.length === providedBuf.length &&
+      crypto.timingSafeEqual(expectedBuf, providedBuf);
+
+    if (!isMatch) {
+      // Wrong code → increment the counter. This is the line that
+      // was previously dead, letting an attacker brute-force the
+      // whole OTP space within the TTL window.
+      await /* TODO: replace client call */ this.db.client.query
+        .from('sms_otps')
+        .where('id', otpRecord.id)
+        .update({ attempts: (otpRecord.attempts ?? 0) + 1 })
+        .execute();
+      return { valid: false, message: 'Invalid OTP' };
+    }
+
+    // Correct code → mark as verified.
     await /* TODO: replace client call */ this.db.client.query
       .from('sms_otps')
       .where('id', otpRecord.id)
@@ -553,10 +587,40 @@ export class SmsService implements OnModuleInit {
     return { messageId: result.messageId };
   }
 
+  /**
+   * Strict ISO E.164 validator. Must be + followed by a country
+   * code and subscriber number, 8–15 digits total. Everything else
+   * (trailing whitespace, parentheses, hyphens, US-style "(555)
+   * 555-1234", dialed prefixes like 00 or 011) is rejected — callers
+   * are expected to normalize upstream (e.g. via libphonenumber-js
+   * in the frontend) before handing a number to this service.
+   */
+  private static readonly E164_RE = /^\+[1-9][0-9]{7,14}$/;
+
+  private validateE164(phoneNumber: string): void {
+    if (!SmsService.E164_RE.test(phoneNumber)) {
+      throw new BadRequestException(
+        `Phone number "${phoneNumber}" is not in E.164 format. Expected "+" followed by country code and 8–15 digits (e.g. +14155551234). Normalize the input before calling SmsService.`,
+      );
+    }
+  }
+
+  /**
+   * Generate a numeric OTP with crypto-strong randomness.
+   *
+   * Math.random is NOT cryptographically secure — its PRNG state
+   * can be reconstructed from 3-4 observed outputs (the
+   * xorshift128+ weakness is well-documented). An OTP stream
+   * seeded by Math.random is guessable by an attacker who captures
+   * any sibling OTP from the same process.
+   *
+   * crypto.randomInt is a wrapper around /dev/urandom (or the OS
+   * equivalent) and is suitable for authentication codes.
+   */
   private generateOtp(length: number): string {
     let otp = '';
     for (let i = 0; i < length; i++) {
-      otp += Math.floor(Math.random() * 10);
+      otp += crypto.randomInt(0, 10).toString();
     }
     return otp;
   }
