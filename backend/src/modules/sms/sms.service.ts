@@ -1,4 +1,5 @@
-import { Injectable, Logger, BadRequestException, NotFoundException } from '@nestjs/common';
+import { Injectable, Logger, BadRequestException, NotFoundException, OnModuleInit } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { DatabaseService } from '../database/database.service';
 import {
   SmsProvider,
@@ -12,12 +13,33 @@ import {
   SendBulkSmsDto,
   GetSmsLogsDto,
 } from './dto/sms.dto';
+import {
+  createSmsProvider,
+  SmsProvider as PluggableSmsProvider,
+} from './providers';
 
 @Injectable()
-export class SmsService {
+export class SmsService implements OnModuleInit {
   private readonly logger = new Logger(SmsService.name);
 
-  constructor(private readonly db: DatabaseService) {}
+  /**
+   * Pluggable SMS provider resolved from SMS_PROVIDER env var at boot.
+   * Replaces the old `sendViaProvider` stub. See `./providers/` and
+   * `docs/providers/sms.md`.
+   */
+  private pluggableProvider!: PluggableSmsProvider;
+
+  constructor(
+    private readonly db: DatabaseService,
+    private readonly config: ConfigService,
+  ) {}
+
+  onModuleInit() {
+    this.pluggableProvider = createSmsProvider(this.config);
+    this.logger.log(
+      `SMS provider initialized: ${this.pluggableProvider.name} (available=${this.pluggableProvider.isAvailable()})`,
+    );
+  }
 
   // ============================================
   // CONFIGURATION
@@ -509,19 +531,26 @@ export class SmsService {
   // HELPERS
   // ============================================
 
-  private async sendViaProvider(config: any, to: string, message: string): Promise<{ messageId: string }> {
-    // This would integrate with actual SMS providers
-    // For now, simulate successful send
-    this.logger.log(`Sending SMS to ${to}: ${message.substring(0, 50)}...`);
-
-    // In production, integrate with:
-    // - Twilio: client.messages.create({ to, from, body })
-    // - Nexmo: nexmo.message.sendSms(from, to, text)
-    // - AWS SNS: sns.publish({ PhoneNumber, Message })
-
-    return {
-      messageId: `msg_${Date.now()}_${Math.random().toString(36).substring(7)}`,
-    };
+  /**
+   * Send via the pluggable provider adapter. Replaces the earlier
+   * fake-id stub. The `config` param (database-stored SMS config row)
+   * is kept for compatibility with existing callers but is no longer
+   * consulted — the authoritative provider selection lives in
+   * SMS_PROVIDER env var, which is the deskive pattern.
+   *
+   * See `backend/src/modules/sms/providers/` and
+   * `backend/docs/providers/sms.md`.
+   */
+  private async sendViaProvider(
+    _config: any,
+    to: string,
+    message: string,
+  ): Promise<{ messageId: string }> {
+    this.logger.log(
+      `Sending SMS to ${to} via ${this.pluggableProvider.name}: ${message.substring(0, 50)}...`,
+    );
+    const result = await this.pluggableProvider.send({ to, text: message });
+    return { messageId: result.messageId };
   }
 
   private generateOtp(length: number): string {
