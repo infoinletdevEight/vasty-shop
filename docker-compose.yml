@@ -89,6 +89,22 @@ services:
       - backend
     restart: unless-stopped
 
+  # ---------- One-shot utilities ----------
+
+  setup:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: development
+    command: ["npm", "run", "setup"]
+    profiles: ["setup"]
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./backend/.env:/app/.env
+      - ./backend/.env.example:/app/.env.example
+    working_dir: /app
+
   # ---------- Optional services (opt-in via --profile) ----------
 
   qdrant:
